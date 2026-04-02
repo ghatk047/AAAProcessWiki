@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-AG-07 &mdash; Agent Commission Dispute Resolution &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -295,33 +297,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/agency-operations/index.html">Insurance Agency Operations</a>
         </div>
-        <h1>🛡️ Insurance Agency Operations</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-AG-07 &mdash; Agent Commission Dispute Resolution
+        </h1>
+        <p>This process resolves disputes regarding agent commissions for AAA Northeast. It involves reviewing commission calculations, verifying data accuracy, and communicating the resolution to all parties involved.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-ag-01.html">AAA-IN-AG-01</a></td><td>Licensed Agent Appointment and Onboarding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-02.html">AAA-IN-AG-02</a></td><td>Agent Continuing Education and License Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-03.html">AAA-IN-AG-03</a></td><td>Agency Performance Reporting and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-04.html">AAA-IN-AG-04</a></td><td>E and O Compliance Review</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-05.html">AAA-IN-AG-05</a></td><td>Cross-Sell Insurance to Existing AAA Members</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-06.html">AAA-IN-AG-06</a></td><td>Insurance Lead Management and Pipeline (Salesforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-AG-07</td><td>Agent Commission Dispute Resolution</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-AG-08</td><td>AAA Approved Auto Repair Insurance Referral Process</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-ag-07.png" data-lightbox data-title="AAA-IN-AG-07 BPMN">
+              <img src="../../assets/img/aaa-in-ag-07.png" alt="AAA-IN-AG-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-AG-07</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency Operations</td></tr>
+            <tr><th>L3 Name</th><td>Agent Commission Dispute Resolution</td></tr>
+            <tr><th>Trigger</th><td>A licensed insurance agent submits a formal dispute claim through the Salesforce platform.</td></tr>
+            <tr><th>Outcome</th><td>The dispute is resolved with a clear decision on the commission amount, documented in both Guidewire Cloud and Salesforce systems. The agent receives a notification of the resolution via email.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast specifically uses the Guidewire Cloud for policy management and claims processing, whereas CAA SCO might use different tools like ClientBase and Power BI.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Dispute Claim</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Dispute claim form</td>
+          <td>Dispute ticket in Salesforce</td>
+          <td>Time to acknowledge dispute within 24 hours</td>
+          <td>Delays in acknowledging disputes can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Dispute to Analyst</td>
+          <td>Insurance Operations Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Dispute ticket in Salesforce</td>
+          <td>Assigned dispute case</td>
+          <td>Cases assigned within 4 hours of receipt</td>
+          <td>Overlooking disputes can result in prolonged resolution times.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Commission Calculation</td>
+          <td>Insurance Operations Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud</span></td>
+          <td>Agent's policy data and commission rules</td>
+          <td>Commission calculation report</td>
+          <td>Calculation review completed within 24 hours</td>
+          <td>Inaccurate calculations can lead to disputes.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Verify Data Accuracy</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Policy transaction data</td>
+          <td>Data verification report</td>
+          <td>Data verification completed within 48 hours</td>
+          <td>Incorrect data can lead to erroneous calculations.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Consult with Actuary</td>
+          <td>Actuary</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Commission calculation report and data verification report</td>
+          <td>Actuarial review report</td>
+          <td>Actuarial review completed within 72 hours</td>
+          <td>Inconsistent actuarial guidance can complicate dispute resolution.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Prepare Resolution Document</td>
+          <td>Insurance Operations Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud and Salesforce</span></td>
+          <td>Actuarial review report</td>
+          <td>Resolution document</td>
+          <td>Resolution document prepared within 24 hours of actuarial review</td>
+          <td>Delays in preparing the resolution can prolong the dispute.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Agent of Resolution</td>
+          <td>Insurance Operations Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce and Email</span></td>
+          <td>Resolution document</td>
+          <td>Notification email to agent</td>
+          <td>Agent notified within 48 hours of resolution preparation</td>
+          <td>Failure to notify promptly can lead to unresolved disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Dispute Case</td>
+          <td>Insurance Operations Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Notification email confirmation</td>
+          <td>Closed dispute case in Salesforce</td>
+          <td>Dispute case closed within 24 hours of notification</td>
+          <td>Open cases can lead to ongoing administrative burdens.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to acknowledge dispute within 24 hours</span> <span class="kpi-pill">Cases assigned within 4 hours of receipt</span> <span class="kpi-pill">Calculation review completed within 24 hours</span> <span class="kpi-pill">Data verification completed within 48 hours</span> <span class="kpi-pill">Actuarial review completed within 72 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate commission calculations leading to disputes</span> <span class="risk-pill">Incorrect data in Sabre GDS causing erroneous reviews</span> <span class="risk-pill">Delays in actuarial guidance complicating dispute resolution</span> <span class="risk-pill">Failure to notify agents promptly resulting in unresolved cases</span> <span class="risk-pill">Open dispute cases creating administrative burdens</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
