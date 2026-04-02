@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency & Broker Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-AG-04 &mdash; CAA Connect Telematics Enrolment for UBI Discount &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -326,33 +328,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-agency-operations/index.html">Insurance Agency & Broker Operations</a>
         </div>
-        <h1>🍁 Insurance Agency & Broker Operations</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-AG-04 &mdash; CAA Connect Telematics Enrolment for UBI Discount
+        </h1>
+        <p>This process outlines the steps for enrolling customers in CAA Connect Telematics to receive an UBI (Usage-Based Insurance) discount. The process is initiated by a customer request and successfully completes with the customer enrolled and receiving their discount.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-ag-01.html">CAA-CI-AG-01</a></td><td>Broker Appointment and RIBO Registration Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-02.html">CAA-CI-AG-02</a></td><td>RIBO Licence Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-03.html">CAA-CI-AG-03</a></td><td>CAA Member Cross-Sell Auto and Home Bundle</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-AG-04</td><td>CAA Connect Telematics Enrolment for UBI Discount</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-05</td><td>Broker Performance Reporting (Guidewire Analytics)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-06</td><td>Travel Medical Insurance Sales and Underwriting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-07</td><td>Pet Insurance Sales Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-08</td><td>Life Insurance Lead Referral (CAA Life Insurance)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-ag-04.png" data-lightbox data-title="CAA-CI-AG-04 BPMN">
+              <img src="../../assets/img/caa-ci-ag-04.png" alt="CAA-CI-AG-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-AG-04</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency & Broker Operations</td></tr>
+            <tr><th>L3 Name</th><td>CAA Connect Telematics Enrolment for UBI Discount</td></tr>
+            <tr><th>Trigger</th><td>Customer request for telematics enrollment</td></tr>
+            <tr><th>Outcome</th><td>Customer is enrolled in CAA Connect Telematics and receives an UBI discount on their insurance policy.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario uses FSRA regulations and Guidewire InsuranceSuite, whereas AAA Northeast primarily uses Verisk ISO rating and Mitchell 1 for auto repair. This difference affects the telematics enrollment process, particularly in compliance checks and data handling.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag caa-app">CAA MyCAA App</span> <span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag galileo">Galileo GDS</span> <span class="sys-tag fsra">FSRA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer Inquiry</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag caa-app">CAA MyCAA App</span></td>
+          <td>Customer request for telematics enrollment</td>
+          <td>Enrollment form</td>
+          <td>Response time to customer inquiry < 24 hours</td>
+          <td>Handling multiple customer inquiries simultaneously</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Collection</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Enrollment form</td>
+          <td>Customer data in Guidewire</td>
+          <td>Data entry accuracy > 98%</td>
+          <td>Inaccurate data entry leading to errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Compliance Check</td>
+          <td>Regulatory Compliance Officer</td>
+          <td><span class="sys-tag fsra">FSRA</span></td>
+          <td>Customer data in Guidewire</td>
+          <td>Compliance report</td>
+          <td>Compliance check completion within 2 business days</td>
+          <td>Meeting regulatory compliance requirements</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Device Installation</td>
+          <td>Field Technician</td>
+          <td><span class="sys-tag galileo">Galileo GDS</span></td>
+          <td>Compliance report</td>
+          <td>Installed telematics device</td>
+          <td>Device installation time < 2 hours</td>
+          <td>Logistical challenges in device delivery and installation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.5</td>
+          <td>Policy Update</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Installed telematics device confirmation</td>
+          <td>Updated policy with UBI discount</td>
+          <td>Policy update accuracy > 98%</td>
+          <td>Updating policies manually</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.6</td>
+          <td>Customer Notification</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag caa-app">CAA MyCAA App</span></td>
+          <td>Updated policy with UBI discount</td>
+          <td>Notification to customer</td>
+          <td>Notification sent within 24 hours of policy update</td>
+          <td>Ensuring timely communication with customers</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time to customer inquiry < 24 hours</span> <span class="kpi-pill">Data entry accuracy > 98%</span> <span class="kpi-pill">Compliance check completion within 2 business days</span> <span class="kpi-pill">Device installation time < 2 hours</span> <span class="kpi-pill">Policy update accuracy > 98%</span> <span class="kpi-pill">Notification sent within 24 hours of policy update</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate data entry leading to errors in compliance checks</span> <span class="risk-pill">Non-compliance with FSRA regulations affecting enrollment</span> <span class="risk-pill">Logistical challenges in timely device delivery and installation</span> <span class="risk-pill">Manual policy updates increasing the risk of human error</span> <span class="risk-pill">Delays in customer notification impacting satisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
