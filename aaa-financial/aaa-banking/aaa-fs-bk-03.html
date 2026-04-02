@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Banking & Deposits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-BK-03 &mdash; EFT and Direct Deposit Setup &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -381,33 +383,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
         </div>
-        <h1>🏦 AAA Banking & Deposits</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-BK-03 &mdash; EFT and Direct Deposit Setup
+        </h1>
+        <p>This process outlines the setup for Electronic Fund Transfers (EFT) and Direct Deposits within AAA Northeast, ensuring seamless financial transactions between members and AAA.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-bk-01.html">AAA-FS-BK-01</a></td><td>AAA Triple Advantage Checking Account Opening (Grasshopper Bank)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-02.html">AAA-FS-BK-02</a></td><td>Certificate of Deposit Application and Funding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-BK-03</td><td>EFT and Direct Deposit Setup</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-04</td><td>Debit Card Issuance and PIN Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-05</td><td>Online and Mobile Banking Onboarding</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-06</td><td>Account Closure and Fund Transfer Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-07</td><td>FDIC Compliance and Regulatory Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-08</td><td>Banking Product Rate Review and Competitive Pricing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-bk-03.png" data-lightbox data-title="AAA-FS-BK-03 BPMN">
+              <img src="../../assets/img/aaa-fs-bk-03.png" alt="AAA-FS-BK-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-BK-03</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Banking & Deposits</td></tr>
+            <tr><th>L3 Name</th><td>EFT and Direct Deposit Setup</td></tr>
+            <tr><th>Trigger</th><td>Initiated by a request from a member to set up EFT or direct deposit, typically through the AAA App or Salesforce platform.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the activation of EFT or direct deposit services for the member, allowing automated payments or deposits to be processed efficiently.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific state regulations and compliance requirements that differ from other regions. Additionally, the use of Guidewire Cloud ensures a centralized and scalable solution for managing financial transactions.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag guidewire">Guidewire BillingCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Member Request Submission</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Member request form</td>
+          <td>Request logged in Salesforce</td>
+          <td>Response time within 24 hours</td>
+          <td>Handling incorrect or incomplete member information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Validation</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Member request from Salesforce</td>
+          <td>Validated member data</td>
+          <td>Validation accuracy rate > 95%</td>
+          <td>Data discrepancies between systems</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>EFT/Direct Deposit Setup</td>
+          <td>Financial Processor</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Validated member data</td>
+          <td>EFT or direct deposit setup in Guidewire</td>
+          <td>Setup completion rate > 98%</td>
+          <td>System integration issues with external banks</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Bank Verification</td>
+          <td>Financial Processor</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>EFT or direct deposit setup details</td>
+          <td>Verified bank information</td>
+          <td>Verification accuracy rate > 90%</td>
+          <td>Bank API connectivity issues</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Final Review and Activation</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Verified bank information</td>
+          <td>Activated EFT or direct deposit service</td>
+          <td>Activation rate > 95%</td>
+          <td>Manual intervention required for complex cases</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirmation Notification</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Activated EFT or direct deposit service</td>
+          <td>Notification sent to member</td>
+          <td>Notification delivery rate > 98%</td>
+          <td>Member contact information issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Activation Monitoring</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Activated EFT or direct deposit service</td>
+          <td>Monitoring report</td>
+          <td>Error rate < 1%</td>
+          <td>Transaction processing delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Audit and Compliance Review</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Monitoring report</td>
+          <td>Compliance audit report</td>
+          <td>Compliance rate > 95%</td>
+          <td>Regulatory changes affecting compliance</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 24 hours</span> <span class="kpi-pill">Validation accuracy rate > 95%</span> <span class="kpi-pill">Setup completion rate > 98%</span> <span class="kpi-pill">Verification accuracy rate > 90%</span> <span class="kpi-pill">Activation rate > 95%</span> <span class="kpi-pill">Notification delivery rate > 98%</span> <span class="kpi-pill">Error rate < 1%</span> <span class="kpi-pill">Compliance rate > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">System integration issues with external banks</span> <span class="risk-pill">Bank API connectivity issues</span> <span class="risk-pill">Manual intervention required for complex cases</span> <span class="risk-pill">Member contact information issues</span> <span class="risk-pill">Transaction processing delays</span> <span class="risk-pill">Regulatory changes affecting compliance</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
