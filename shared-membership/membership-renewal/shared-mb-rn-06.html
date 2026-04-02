@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Renewal & Retention &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-RN-06 &mdash; Cancellation Request Handling and Save Offer &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -252,33 +254,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-renewal/index.html">Membership Renewal & Retention</a>
         </div>
-        <h1>👥 Membership Renewal & Retention</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-RN-06 &mdash; Cancellation Request Handling and Save Offer
+        </h1>
+        <p>This process handles membership cancellation requests and saves offers for renewal. It ensures that cancellations are processed correctly and potential renewals are offered based on member engagement and policy status.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-rn-01.html">SHARED-MB-RN-01</a></td><td>Annual Renewal Notice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-02.html">SHARED-MB-RN-02</a></td><td>Auto-Renewal Processing (Credit Card on File)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-03.html">SHARED-MB-RN-03</a></td><td>Lapsed Member Reinstatement Campaign</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-04.html">SHARED-MB-RN-04</a></td><td>Membership Upgrade and Tier Change Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-05.html">SHARED-MB-RN-05</a></td><td>Associate and Household Member Add-On Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-RN-06</td><td>Cancellation Request Handling and Save Offer</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-RN-07</td><td>Renewal Rate Review and Pricing Update</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-RN-08</td><td>Membership Winback Campaign (12-36 Month Lapsed)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-rn-06.png" data-lightbox data-title="SHARED-MB-RN-06 BPMN">
+              <img src="../../assets/img/shared-mb-rn-06.png" alt="SHARED-MB-RN-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-RN-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Renewal & Retention</td></tr>
+            <tr><th>L3 Name</th><td>Cancellation Request Handling and Save Offer</td></tr>
+            <tr><th>Trigger</th><td>A member initiates a cancellation request through the AAA App or website.</td></tr>
+            <tr><th>Outcome</th><td>The cancellation is processed, and an offer to renew the membership is saved for future communication.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO has additional steps involving FSRA regulatory compliance checks that are not present in AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag sys-generic">Email System</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Cancellation Request</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag aaa-app">AAA App / Website</span></td>
+          <td>Cancellation request form</td>
+          <td>Acknowledgment of receipt</td>
+          <td>Response time within 24 hours</td>
+          <td>Delayed response times affecting member satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Cancellation Request</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member profile and policy details</td>
+          <td>Validation report</td>
+          <td>Accuracy of validation within 1 hour</td>
+          <td>Incorrect validation leading to processing errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Cancellation Reason</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Validation report</td>
+          <td>Reason for cancellation</td>
+          <td>Completion within 30 minutes</td>
+          <td>Lack of clear reasons affecting retention strategies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Generate Renewal Offer</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Member profile and policy details</td>
+          <td>Renewal offer document</td>
+          <td>Offer generation within 1 hour</td>
+          <td>Inaccurate offers leading to loss of potential renewals</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Save Renewal Offer</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Renewal offer document</td>
+          <td>Saved renewal offer in system</td>
+          <td>Offer saving within 10 minutes</td>
+          <td>Failed saves affecting follow-up actions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Member of Cancellation</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag aaa-app">AAA App / Email System</span></td>
+          <td>Cancellation request and reason</td>
+          <td>Notification sent to member</td>
+          <td>Notification sent within 24 hours</td>
+          <td>Delayed notifications affecting member trust</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Member of Renewal Offer</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag aaa-app">AAA App / Email System</span></td>
+          <td>Renewal offer document</td>
+          <td>Notification sent to member</td>
+          <td>Notification sent within 48 hours</td>
+          <td>Delayed offers affecting retention rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Cancellation Request</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Cancellation request and offer details</td>
+          <td>Closed cancellation request record</td>
+          <td>Request closure within 1 hour</td>
+          <td>Open requests affecting system performance</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 24 hours</span> <span class="kpi-pill">Accuracy of validation within 1 hour</span> <span class="kpi-pill">Completion of review within 30 minutes</span> <span class="kpi-pill">Offer generation within 1 hour</span> <span class="kpi-pill">Offer saving within 10 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed response times affecting member satisfaction</span> <span class="risk-pill">Incorrect validation leading to processing errors</span> <span class="risk-pill">Lack of clear reasons affecting retention strategies</span> <span class="risk-pill">Inaccurate offers leading to loss of potential renewals</span> <span class="risk-pill">Failed saves affecting follow-up actions</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
