@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Services & Benefits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-SV-05 &mdash; Member Portal Profile and Preferences Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -259,33 +261,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/member-services/index.html">Member Services & Benefits</a>
         </div>
-        <h1>👥 Member Services & Benefits</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-SV-05 &mdash; Member Portal Profile and Preferences Management
+        </h1>
+        <p>This process manages the creation and maintenance of member profiles and preferences in the AAA Northeast membership management system. It ensures that members can update their information and select benefits tailored to their needs.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-sv-01.html">SHARED-MB-SV-01</a></td><td>Member Discount Partner Redemption</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-02.html">SHARED-MB-SV-02</a></td><td>Passport Photo Service Delivery (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-03.html">SHARED-MB-SV-03</a></td><td>International Driving Permit (IDP) Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-04.html">SHARED-MB-SV-04</a></td><td>Notary and Document Authentication Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-SV-05</td><td>Member Portal Profile and Preferences Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-06</td><td>Lost and Stolen Membership Card Replacement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-07</td><td>Member Data Privacy Request (CCPA and PIPEDA)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-08</td><td>Member Satisfaction Survey and NPS Tracking</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-sv-05.png" data-lightbox data-title="SHARED-MB-SV-05 BPMN">
+              <img src="../../assets/img/shared-mb-sv-05.png" alt="SHARED-MB-SV-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-SV-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Member Services & Benefits</td></tr>
+            <tr><th>L3 Name</th><td>Member Portal Profile and Preferences Management</td></tr>
+            <tr><th>Trigger</th><td>Member initiates a profile update or preference change through the AAA App or online portal.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in an updated member profile with accurate personal and preference data, enabling personalized services and benefits.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses the Guidewire InsuranceSuite for policy management, while AAA Northeast primarily uses Salesforce and SAP S/4HANA. CAA SCO also integrates with ClientBase for additional client management features.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag snowflake">Snowflake</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Profile Update Request</td>
+          <td>Member Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App/Salesforce</span></td>
+          <td>Member's updated profile data</td>
+          <td>Updated member record in the system</td>
+          <td>Profile update completion time < 5 minutes</td>
+          <td>Handling of outdated contact information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Validation</td>
+          <td>Data Validator</td>
+          <td><span class="sys-tag salesforce">Salesforce/SAP S/4HANA</span></td>
+          <td>Updated member record</td>
+          <td>Validated and cleaned data</td>
+          <td>Validation accuracy rate > 95%</td>
+          <td>Data inconsistencies across systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Preference Selection</td>
+          <td>Member Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App/Salesforce</span></td>
+          <td>Member's preference choices</td>
+          <td>Updated preferences in the system</td>
+          <td>Preference selection accuracy > 90%</td>
+          <td>Complexity of preference options</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Profile Update Notification</td>
+          <td>Notification Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce/AAA App</span></td>
+          <td>Updated member record</td>
+          <td>Notification sent to the member</td>
+          <td>Notification delivery rate > 98%</td>
+          <td>Email deliverability issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Preference Application</td>
+          <td>Benefit Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated preferences</td>
+          <td>Applied benefits in the system</td>
+          <td>Benefit application accuracy > 95%</td>
+          <td>Integration issues with external benefit providers</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Audit Log Generation</td>
+          <td>System Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated member record and preferences</td>
+          <td>Audit log entry</td>
+          <td>Log generation time < 2 minutes</td>
+          <td>Audit log storage capacity</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Profile Update Confirmation</td>
+          <td>Member Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App/Salesforce</span></td>
+          <td>Notification of successful update</td>
+          <td>Confirmation from the member</td>
+          <td>Confirmation rate > 90%</td>
+          <td>Member engagement issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Update Review</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Audit logs and member data</td>
+          <td>Review report</td>
+          <td>Review completion time < 1 hour</td>
+          <td>Data analysis tools</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Risk Assessment</td>
+          <td>Risk Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Review report</td>
+          <td>Risk assessment document</td>
+          <td>Assessment accuracy > 85%</td>
+          <td>Data-driven decision-making</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Action Plan</td>
+          <td>Risk Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Risk assessment document</td>
+          <td>Action plan for mitigation</td>
+          <td>Plan implementation time < 2 weeks</td>
+          <td>Resource allocation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Profile update completion time < 5 minutes</span> <span class="kpi-pill">Validation accuracy rate > 95%</span> <span class="kpi-pill">Preference selection accuracy > 90%</span> <span class="kpi-pill">Notification delivery rate > 98%</span> <span class="kpi-pill">Benefit application accuracy > 95%</span> <span class="kpi-pill">Log generation time < 2 minutes</span> <span class="kpi-pill">Confirmation rate > 90%</span> <span class="kpi-pill">Review completion time < 1 hour</span> <span class="kpi-pill">Assessment accuracy > 85%</span> <span class="kpi-pill">Plan implementation time < 2 weeks</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data inconsistencies across systems</span> <span class="risk-pill">Email deliverability issues</span> <span class="risk-pill">Integration issues with external benefit providers</span> <span class="risk-pill">Audit log storage capacity</span> <span class="risk-pill">Member engagement issues</span> <span class="risk-pill">Data analysis tools</span> <span class="risk-pill">Resource allocation</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
