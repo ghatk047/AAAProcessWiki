@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA/CAA Vacations & Packages &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-VK-06 &mdash; Member-Exclusive Rate Loading and Promotion &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -376,33 +378,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/vacations-packages/index.html">AAA/CAA Vacations & Packages</a>
         </div>
-        <h1>✈️ AAA/CAA Vacations & Packages</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-VK-06 &mdash; Member-Exclusive Rate Loading and Promotion
+        </h1>
+        <p>The process for applying member-exclusive rate loading and promotion to AAA/CAA vacations and packages.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-vk-01.html">SHARED-TR-VK-01</a></td><td>AAA and CAA Vacations Package Catalogue Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-02.html">SHARED-TR-VK-02</a></td><td>Supplier Contract Negotiation and Allotment Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-03.html">SHARED-TR-VK-03</a></td><td>Package Pricing and Margin Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-04.html">SHARED-TR-VK-04</a></td><td>Dynamic Package Bundling (Air and Hotel and Car)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-05.html">SHARED-TR-VK-05</a></td><td>Theme Travel Product Design (River Cruises and Tours and Sports)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-VK-06</td><td>Member-Exclusive Rate Loading and Promotion</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-07</td><td>Agency Commission Reconciliation and BSP Settlement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-08</td><td>Travel Supplier Performance Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-vk-06.png" data-lightbox data-title="SHARED-TR-VK-06 BPMN">
+              <img src="../../assets/img/shared-tr-vk-06.png" alt="SHARED-TR-VK-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-VK-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>AAA/CAA Vacations & Packages</td></tr>
+            <tr><th>L3 Name</th><td>Member-Exclusive Rate Loading and Promotion</td></tr>
+            <tr><th>Trigger</th><td>Initiated by a request from the Travel Agency & Packages department or upon detection of a qualifying membership status change.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the application of discounted rates and promotions to eligible members' vacation and package bookings.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific rate structures and promotional campaigns that differ from CAA SCO, particularly in terms of regional pricing models and available discounts.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span> <span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Eligible Members</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Membership status data</td>
+          <td>List of eligible members</td>
+          <td>95% accuracy in identifying eligible members</td>
+          <td>Inaccurate membership status data leading to missed promotions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Package Availability</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span></td>
+          <td>List of eligible members</td>
+          <td>Available package options for each member</td>
+          <td>100% availability check within 24 hours</td>
+          <td>Delayed or incomplete package availability checks</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Determine Discount Rates</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Available package options for each member</td>
+          <td>Discounted rates for eligible packages</td>
+          <td>90% consistency in discount application</td>
+          <td>Inconsistent or incorrect discount calculations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Communicate Promotions to Members</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Discounted rates for eligible packages</td>
+          <td>Promotional emails and notifications sent to members</td>
+          <td>90% open rate on promotional emails</td>
+          <td>Low engagement with promotional communications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Process Booking Requests</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span></td>
+          <td>Booking requests from members</td>
+          <td>Confirmed bookings with applied discounts</td>
+          <td>95% successful booking rate</td>
+          <td>Failed bookings due to system errors or incorrect data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Billing Information</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Confirmed bookings with applied discounts</td>
+          <td>Updated billing records and invoices</td>
+          <td>98% accuracy in billing information</td>
+          <td>Incorrect or delayed billing updates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Promotion Performance</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Promotional email open rates and booking data</td>
+          <td>Performance report</td>
+          <td>90% completion of performance reports within 7 days</td>
+          <td>Delayed or incomplete performance reporting</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Promotions Based on Performance</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span></td>
+          <td>Performance report</td>
+          <td>Updated promotional strategies and rates</td>
+          <td>85% effectiveness in adjusting promotions based on performance</td>
+          <td>Ineffective adjustments leading to missed opportunities</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Finalize Bookings and Confirmations</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span></td>
+          <td>Updated promotional strategies and rates</td>
+          <td>Finalized bookings with final discounts and confirmations sent to members</td>
+          <td>98% successful confirmation rate</td>
+          <td>Failed confirmations due to system issues or incorrect data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review and Close Process</td>
+          <td>Travel Agency & Packages Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite (PolicyCenter/ClaimCenter/BillingCenter)</span></td>
+          <td>Finalized bookings and confirmations</td>
+          <td>Process closure documentation</td>
+          <td>100% completion of process closure within 24 hours</td>
+          <td>Delayed or incomplete process closures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">95% accuracy in identifying eligible members</span> <span class="kpi-pill">100% availability check within 24 hours</span> <span class="kpi-pill">90% consistency in discount application</span> <span class="kpi-pill">90% open rate on promotional emails</span> <span class="kpi-pill">95% successful booking rate</span> <span class="kpi-pill">98% accuracy in billing information</span> <span class="kpi-pill">90% completion of performance reports within 7 days</span> <span class="kpi-pill">85% effectiveness in adjusting promotions based on performance</span> <span class="kpi-pill">98% successful confirmation rate</span> <span class="kpi-pill">100% completion of process closure within 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate membership status data leading to missed promotions</span> <span class="risk-pill">Delayed or incomplete package availability checks</span> <span class="risk-pill">Inconsistent or incorrect discount calculations</span> <span class="risk-pill">Low engagement with promotional communications</span> <span class="risk-pill">Failed bookings due to system errors or incorrect data</span> <span class="risk-pill">Incorrect or delayed billing updates</span> <span class="risk-pill">Delayed or incomplete performance reporting</span> <span class="risk-pill">Ineffective adjustments leading to missed opportunities</span> <span class="risk-pill">Failed confirmations due to system issues or incorrect data</span> <span class="risk-pill">Delayed or incomplete process closures</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
