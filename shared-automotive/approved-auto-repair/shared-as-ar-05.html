@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Approved Auto Repair Network &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-AS-AR-05 &mdash; Shop Dispute Mediation and Arbitration &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -423,33 +425,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Automotive Services</a>
+          <a href="../../shared-automotive/index.html">Automotive Services</a> &rsaquo;
+          <a href="../../shared-automotive/approved-auto-repair/index.html">Approved Auto Repair Network</a>
         </div>
-        <h1>🔧 Approved Auto Repair Network</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-AS-AR-05 &mdash; Shop Dispute Mediation and Arbitration
+        </h1>
+        <p>This process handles disputes and arbitrations between AAA Northeast members and approved auto repair shops. It ensures fair resolution through mediation and arbitration.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-as-ar-01.html">SHARED-AS-AR-01</a></td><td>Shop Inspection and AAA and CAA Approved Certification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-02.html">SHARED-AS-AR-02</a></td><td>Shop Re-Inspection and Annual Compliance Audit</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-03.html">SHARED-AS-AR-03</a></td><td>Member Referral to Approved Shop (Digital and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-04.html">SHARED-AS-AR-04</a></td><td>Complaint Investigation Against Approved Shop</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-AS-AR-05</td><td>Shop Dispute Mediation and Arbitration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-06</td><td>Auto Repair Cost Estimator Publication (Mitchell 1 data)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-07</td><td>Shop Performance Reporting and Tier Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-08</td><td>AAA and CAA Co-Branded Marketing with Approved Shops</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-as-ar-05.png" data-lightbox data-title="SHARED-AS-AR-05 BPMN">
+              <img src="../../assets/img/shared-as-ar-05.png" alt="SHARED-AS-AR-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-AS-AR-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Automotive Services</td></tr>
+            <tr><th>L2 Process</th><td>Approved Auto Repair Network</td></tr>
+            <tr><th>L3 Name</th><td>Shop Dispute Mediation and Arbitration</td></tr>
+            <tr><th>Trigger</th><td>A member reports a dispute with an approved auto repair shop regarding the quality of service or repair costs.</td></tr>
+            <tr><th>Outcome</th><td>The dispute is resolved either through mediation, where both parties agree on a solution, or through arbitration if mediation fails.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight and different telematics systems used for monitoring repairs.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI)</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Dispute Report</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Dispute report from member</td>
+          <td>Dispute case created in ClaimCenter</td>
+          <td>Time to create dispute case < 24 hours</td>
+          <td>Delays in creating cases can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Mediator</td>
+          <td>Dispute Mediator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Dispute case</td>
+          <td>Mediator assigned to the case</td>
+          <td>Time to assign mediator < 48 hours</td>
+          <td>Inefficient assignment can prolong dispute resolution.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Initial Mediation Meeting</td>
+          <td>Dispute Mediator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Mediator assigned to the case</td>
+          <td>Meeting notes and resolution proposal</td>
+          <td>Time to complete initial mediation < 7 days</td>
+          <td>Failed mediations can lead to increased costs and time.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review Mediation Proposal</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Mediation proposal</td>
+          <td>Approval or rejection of mediation proposal</td>
+          <td>Time to review and respond < 3 days</td>
+          <td>Delays in reviewing proposals can escalate disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Arbitration Request</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Rejected mediation proposal</td>
+          <td>Arbitration request submitted</td>
+          <td>Time to submit arbitration request < 5 days</td>
+          <td>Failed arbitrations can lead to legal costs and prolonged disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Conduct Arbitration Hearing</td>
+          <td>Arbitrator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Arbitration request</td>
+          <td>Arbitration decision and resolution</td>
+          <td>Time to conduct arbitration hearing < 10 days</td>
+          <td>Prolonged hearings can increase costs and dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Implement Arbitration Decision</td>
+          <td>Claims Adjuster, Dispute Mediator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Arbitration decision</td>
+          <td>Resolution implemented and communicated to parties</td>
+          <td>Time to implement resolution < 5 days</td>
+          <td>Failed implementation can lead to ongoing disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Dispute Case</td>
+          <td>Claims Adjuster, Dispute Mediator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (Einstein AI)</span></td>
+          <td>Resolution implemented</td>
+          <td>Dispute case closed</td>
+          <td>Time to close dispute case < 24 hours</td>
+          <td>Delays in closing cases can lead to administrative inefficiencies.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to create dispute case < 24 hours</span> <span class="kpi-pill">Time to assign mediator < 48 hours</span> <span class="kpi-pill">Time to complete initial mediation < 7 days</span> <span class="kpi-pill">Time to review and respond < 3 days</span> <span class="kpi-pill">Time to submit arbitration request < 5 days</span> <span class="kpi-pill">Time to conduct arbitration hearing < 10 days</span> <span class="kpi-pill">Time to implement resolution < 5 days</span> <span class="kpi-pill">Time to close dispute case < 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in creating and assigning cases can lead to customer dissatisfaction.</span> <span class="risk-pill">Failed mediations can lead to increased costs and time.</span> <span class="risk-pill">Prolonged hearings can increase costs and dissatisfaction.</span> <span class="risk-pill">Failed implementation can lead to ongoing disputes.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
