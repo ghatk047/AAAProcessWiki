@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billing & Premium Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-BI-07 &mdash; Premium Audit (Commercial Lines) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -287,33 +289,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
         </div>
-        <h1>🛡️ Billing & Premium Management</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-BI-07 &mdash; Premium Audit (Commercial Lines)
+        </h1>
+        <p>The Premium Audit process for Commercial Lines involves reviewing and auditing insurance premiums to ensure accuracy and compliance with state regulations. This process is crucial for maintaining trust with policyholders and ensuring financial stability.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-bi-01.html">AAA-IN-BI-01</a></td><td>Premium Invoice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-02.html">AAA-IN-BI-02</a></td><td>Installment Plan Setup and Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-03.html">AAA-IN-BI-03</a></td><td>Payment Receipt and EFT and Credit Card Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-04.html">AAA-IN-BI-04</a></td><td>NSF and Failed Payment Handling and Notice</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-05.html">AAA-IN-BI-05</a></td><td>Agent Commission Calculation and Statement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-06.html">AAA-IN-BI-06</a></td><td>Refund Processing (Cancellation and Overpayment)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-BI-07</td><td>Premium Audit (Commercial Lines)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-08</td><td>Statutory Reserve and Premium Tax Calculation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-bi-07.png" data-lightbox data-title="AAA-IN-BI-07 BPMN">
+              <img src="../../assets/img/aaa-in-bi-07.png" alt="AAA-IN-BI-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-BI-07</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management</td></tr>
+            <tr><th>L3 Name</th><td>Premium Audit (Commercial Lines)</td></tr>
+            <tr><th>Trigger</th><td>Annual review cycle or upon detection of discrepancies in premium calculations.</td></tr>
+            <tr><th>Outcome</th><td>Accurate and compliant premium data, leading to improved customer satisfaction and regulatory compliance.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast specifically uses the Guidewire Cloud platform for premium management, which differs from CAA's use of Guidewire InsuranceSuite. Additionally, AAA leverages Sabre GDS for travel-related insurance products, while CAA does not have this integration.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag verisk">Verisk ISO rating</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sabre">Sabre GDS</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Audit Request</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Audit request form</td>
+          <td>Audit plan</td>
+          <td>Time to initiate audit (days)</td>
+          <td>Delays in initiating the audit process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Extraction</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Audit plan</td>
+          <td>Extracted premium data</td>
+          <td>Data extraction accuracy (95%)</td>
+          <td>Inaccurate data extraction leading to audit errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Premium Calculation Review</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Extracted premium data</td>
+          <td>Reviewed premium calculations</td>
+          <td>Review accuracy (98%)</td>
+          <td>Complexity in reviewing multiple policies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Regulatory Compliance Check</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Reviewed premium calculations</td>
+          <td>Compliance report</td>
+          <td>Compliance rate (100%)</td>
+          <td>Keeping up with constantly changing regulations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Discrepancy Analysis</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Compliance report</td>
+          <td>Analyzed discrepancies</td>
+          <td>Discrepancy resolution rate (90%)</td>
+          <td>Handling large volumes of data for analysis</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Prepare Audit Report</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Analyzed discrepancies</td>
+          <td>Audit report</td>
+          <td>Report preparation time (days)</td>
+          <td>Timely delivery of audit reports</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Approve Report</td>
+          <td>Senior Management</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Audit report</td>
+          <td>Approved audit report</td>
+          <td>Approval time (days)</td>
+          <td>Delays in senior management approval</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implement Changes</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Approved audit report</td>
+          <td>Updated premium data</td>
+          <td>Change implementation accuracy (95%)</td>
+          <td>Errors during change implementation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Notify Stakeholders</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Updated premium data</td>
+          <td>Stakeholder notifications</td>
+          <td>Notification accuracy (100%)</td>
+          <td>Ensuring all stakeholders are notified</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Close Audit Process</td>
+          <td>Premium Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Stakeholder notifications</td>
+          <td>Audit closure document</td>
+          <td>Time to close audit (days)</td>
+          <td>Finalizing the audit process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate audit (days) < 5 days</span> <span class="kpi-pill">Data extraction accuracy (95%)</span> <span class="kpi-pill">Review accuracy (98%)</span> <span class="kpi-pill">Compliance rate (100%)</span> <span class="kpi-pill">Discrepancy resolution rate (90%)</span> <span class="kpi-pill">Report preparation time (days) < 7 days</span> <span class="kpi-pill">Approval time (days) < 3 days</span> <span class="kpi-pill">Change implementation accuracy (95%)</span> <span class="kpi-pill">Notification accuracy (100%)</span> <span class="kpi-pill">Time to close audit (days) < 2 days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in initiating the audit process due to internal communication issues</span> <span class="risk-pill">Inaccurate data extraction leading to errors in premium calculations</span> <span class="risk-pill">Complexity in reviewing multiple policies and identifying discrepancies</span> <span class="risk-pill">Difficulty in keeping up with constantly changing regulations</span> <span class="risk-pill">Handling large volumes of data for analysis efficiently</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
