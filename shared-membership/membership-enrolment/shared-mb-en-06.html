@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-06 &mdash; Payment Processing and First-Year Billing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -244,33 +246,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-06 &mdash; Payment Processing and First-Year Billing
+        </h1>
+        <p>This process handles the payment processing and first-year billing for new memberships. It ensures timely receipt of payments, accurate billing, and proper record-keeping.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-03.html">SHARED-MB-EN-03</a></td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-04.html">SHARED-MB-EN-04</a></td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-05.html">SHARED-MB-EN-05</a></td><td>Membership Tier Selection and Upsell</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-06</td><td>Payment Processing and First-Year Billing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-07</td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-06.png" data-lightbox data-title="SHARED-MB-EN-06 BPMN">
+              <img src="../../assets/img/shared-mb-en-06.png" alt="SHARED-MB-EN-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Payment Processing and First-Year Billing</td></tr>
+            <tr><th>Trigger</th><td>New membership application approval</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a paid membership with an active policy and recorded billing information.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Salesforce for customer interactions and SAP S/4HANA for financial processing. CAA SCO primarily relies on Guidewire InsuranceSuite for both policy management and billing, with additional use of Salesforce for customer engagement.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Membership Application Review</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>New membership application form</td>
+          <td>Approved membership application</td>
+          <td>Application approval time < 24 hours</td>
+          <td>Delays in reviewing applications due to high volume</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Generate Billing Document</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved membership application</td>
+          <td>Billing document</td>
+          <td>Billing document generation time < 30 minutes</td>
+          <td>Errors in billing calculations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Send Billing Invoice</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Billing document</td>
+          <td>Sent invoice to member</td>
+          <td>Invoice sent time < 2 hours</td>
+          <td>Failed email deliveries</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Receive Payment</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Payment from member</td>
+          <td>Received payment record</td>
+          <td>Payment receipt time < 2 hours</td>
+          <td>Late payments or non-payment</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Billing Status</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Received payment record</td>
+          <td>Updated billing status</td>
+          <td>Billing status update time < 15 minutes</td>
+          <td>Incorrect updates to billing records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Generate Receipt</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Updated billing status</td>
+          <td>Payment receipt sent to member</td>
+          <td>Receipt sent time < 1 hour</td>
+          <td>Lost or damaged receipts</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Activate Membership</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated billing status</td>
+          <td>Active membership record</td>
+          <td>Membership activation time < 5 minutes</td>
+          <td>Delayed activation of memberships</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Send Welcome Email</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Active membership record</td>
+          <td>Welcome email sent to member</td>
+          <td>Email sent time < 1 hour</td>
+          <td>Unopened welcome emails</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Case</td>
+          <td>Case Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>All steps completed</td>
+          <td>Closed case record</td>
+          <td>Case closure time < 1 hour</td>
+          <td>Open cases due to incomplete steps</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application approval time < 24 hours</span> <span class="kpi-pill">Billing document generation time < 30 minutes</span> <span class="kpi-pill">Invoice sent time < 2 hours</span> <span class="kpi-pill">Payment receipt time < 2 hours</span> <span class="kpi-pill">Membership activation time < 5 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in reviewing applications due to high volume</span> <span class="risk-pill">Errors in billing calculations</span> <span class="risk-pill">Failed email deliveries</span> <span class="risk-pill">Late payments or non-payment</span> <span class="risk-pill">Incorrect updates to billing records</span> <span class="risk-pill">Lost or damaged receipts</span> <span class="risk-pill">Delayed activation of memberships</span> <span class="risk-pill">Unopened welcome emails</span> <span class="risk-pill">Open cases due to incomplete steps</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
