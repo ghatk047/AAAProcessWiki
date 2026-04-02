@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-BI-01 &mdash; Premium Invoice Generation and Distribution &mdash; AAA / CAA Process Wiki</title>
+  <link rel="stylesheet" href="../../assets/css/wiki.css">
+</head>
+<body>
+  <div class="topbar">
+    <button id="topbarToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <span class="topbar-brand">AAA / CAA Process Wiki</span>
+    <span class="topbar-sub">AAA Insurance &rsaquo; Billing & Premium Management</span>
+    <span class="topbar-spacer"></span>
+  </div>
+  <div class="wiki-layout">
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+<nav class="wiki-nav">
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-01.html">SHARED-MB-EN-01 &mdash; New Member Walk-In Enrolment (Branch)</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-02.html">SHARED-MB-EN-02 &mdash; Online Membership Self-Enrolment (Web/Ap</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-03.html">SHARED-MB-EN-03 &mdash; Phone Enrolment via Contact Centre</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-04.html">SHARED-MB-EN-04 &mdash; Affiliate and Employer Group Enrolment</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-05.html">SHARED-MB-EN-05 &mdash; Membership Tier Selection and Upsell</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-06.html">SHARED-MB-EN-06 &mdash; Payment Processing and First-Year Billin</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-07.html">SHARED-MB-EN-07 &mdash; Welcome Kit and Digital Card Issuance</a>
+        <a class="nav-l3" href="../../shared-membership/membership-enrolment/shared-mb-en-08.html">SHARED-MB-EN-08 &mdash; Duplicate Member Detection and Merge</a>
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-membership/membership-renewal/index.html">Membership Renewal & Retention</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-01.html">SHARED-MB-RN-01 &mdash; Annual Renewal Notice Generation and Dis</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-02.html">SHARED-MB-RN-02 &mdash; Auto-Renewal Processing (Credit Card on </a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-03.html">SHARED-MB-RN-03 &mdash; Lapsed Member Reinstatement Campaign</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-04.html">SHARED-MB-RN-04 &mdash; Membership Upgrade and Tier Change Proce</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-05.html">SHARED-MB-RN-05 &mdash; Associate and Household Member Add-On Pr</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-06.html">SHARED-MB-RN-06 &mdash; Cancellation Request Handling and Save O</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-07.html">SHARED-MB-RN-07 &mdash; Renewal Rate Review and Pricing Update</a>
+        <a class="nav-l3" href="../../shared-membership/membership-renewal/shared-mb-rn-08.html">SHARED-MB-RN-08 &mdash; Membership Winback Campaign (12-36 Month</a>
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-membership/member-services/index.html">Member Services & Benefits</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-01.html">SHARED-MB-SV-01 &mdash; Member Discount Partner Redemption</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-02.html">SHARED-MB-SV-02 &mdash; Passport Photo Service Delivery (Branch)</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-03.html">SHARED-MB-SV-03 &mdash; International Driving Permit (IDP) Proce</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-04.html">SHARED-MB-SV-04 &mdash; Notary and Document Authentication Servi</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-05.html">SHARED-MB-SV-05 &mdash; Member Portal Profile and Preferences Ma</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-06.html">SHARED-MB-SV-06 &mdash; Lost and Stolen Membership Card Replacem</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-07.html">SHARED-MB-SV-07 &mdash; Member Data Privacy Request (CCPA and PI</a>
+        <a class="nav-l3" href="../../shared-membership/member-services/shared-mb-sv-08.html">SHARED-MB-SV-08 &mdash; Member Satisfaction Survey and NPS Track</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain open">
+  <a class="nav-l1" href="../../aaa-insurance/index.html"><span class="nav-l1-icon">🛡️</span><span class="nav-org-dot aaa"></span><span class="nav-l1-text">AAA Insurance</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../aaa-insurance/insurance-quoting/index.html">Quoting & Underwriting</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-01.html">AAA-IN-QU-01 &mdash; Auto Insurance Quote Initiation (Web and</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-02.html">AAA-IN-QU-02 &mdash; Driver and Vehicle Information Capture</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-03.html">AAA-IN-QU-03 &mdash; MVR Pull and Scoring</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-04.html">AAA-IN-QU-04 &mdash; Credit Score Pull and Rating Tier Assign</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-05.html">AAA-IN-QU-05 &mdash; ISO Rating Engine Calculation</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-06.html">AAA-IN-QU-06 &mdash; Policy Comparison and Coverage Options P</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-07.html">AAA-IN-QU-07 &mdash; Underwriting Rule Application and Referr</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-08.html">AAA-IN-QU-08 &mdash; Quote Bind Conversion and Application Su</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-09.html">AAA-IN-QU-09 &mdash; Home Insurance Quote and Property Risk A</a>
+        <a class="nav-l3" href="../../aaa-insurance/insurance-quoting/aaa-in-qu-10.html">AAA-IN-QU-10 &mdash; Multi-Policy Discount Calculation and Bu</a>
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../aaa-insurance/policy-administration/index.html">Policy Administration</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-01.html">AAA-IN-PO-01 &mdash; New Policy Issuance and Document Generat</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-02.html">AAA-IN-PO-02 &mdash; Policy Endorsement and Mid-Term Change P</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-03.html">AAA-IN-PO-03 &mdash; Policy Renewal Processing and Rate Refre</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-04.html">AAA-IN-PO-04 &mdash; Non-Renewal and Cancellation Processing</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-05.html">AAA-IN-PO-05 &mdash; State DOI Filing and Rate Filing Complia</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-06.html">AAA-IN-PO-06 &mdash; Lienholder and Mortgagee Certificate Iss</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-07.html">AAA-IN-PO-07 &mdash; Reinsurance Cession and Treaty Allocatio</a>
+        <a class="nav-l3" href="../../aaa-insurance/policy-administration/aaa-in-po-08.html">AAA-IN-PO-08 &mdash; Policy Document Delivery (Digital and Pr</a>
+      </div>
+    </div>
+    <div class="nav-l2-group open">
+      <a class="nav-l2-title" href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../aaa-insurance/agency-operations/index.html">Insurance Agency Operations</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../caa-insurance/index.html"><span class="nav-l1-icon">🍁</span><span class="nav-org-dot caa"></span><span class="nav-l1-text">CAA Insurance (Ontario)</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../caa-insurance/caa-insurance-quoting/index.html">Quoting & Underwriting (CAA)</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../caa-insurance/caa-policy-administration/index.html">Policy Administration (CAA)</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../caa-insurance/caa-insurance-billing/index.html">Billing & Premium Management (CAA)</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../caa-insurance/caa-agency-operations/index.html">Insurance Agency & Broker Operations</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-roadside/index.html"><span class="nav-l1-icon">🚨</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Roadside Assistance</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-roadside/roadside-dispatch/index.html">Dispatch Operations</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-roadside/roadside-service-delivery/index.html">Roadside Service Delivery</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-travel/index.html"><span class="nav-l1-icon">✈️</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Travel Agency & Packages</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-travel/travel-booking/index.html">Travel Booking & Reservations</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-travel/vacations-packages/index.html">AAA/CAA Vacations & Packages</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../aaa-financial/index.html"><span class="nav-l1-icon">🏦</span><span class="nav-org-dot aaa"></span><span class="nav-l1-text">AAA Financial Services</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../aaa-financial/aaa-lending/index.html">AAA Lending Products</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-claims/index.html"><span class="nav-l1-icon">📋</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Claims Management</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-automotive/index.html"><span class="nav-l1-icon">🔧</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Automotive Services</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-automotive/approved-auto-repair/index.html">Approved Auto Repair Network</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-automotive/driver-training/index.html">Driver Training & Safety</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-digital/index.html"><span class="nav-l1-icon">💻</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Digital & Technology</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-digital/digital-platforms/index.html">Digital Platforms & Member App</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-hr/index.html"><span class="nav-l1-icon">👤</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Human Resources & Workforce</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-hr/workforce-management/index.html">Workforce Management</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-hr/talent-development/index.html">Talent Acquisition & Development</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../shared-marketing/index.html"><span class="nav-l1-icon">📣</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Marketing & Member Experience</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-marketing/brand-communications/index.html">Brand & Communications</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../shared-marketing/member-experience/index.html">Member Experience & Loyalty</a>
+      <div class="nav-l3-list">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-domain">
+  <a class="nav-l1" href="../../ea/index.html"><span class="nav-l1-icon">🗺️</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Enterprise Architecture</span><span class="nav-l1-caret">&#9654;</span></a>
+  <div class="nav-l2-list">
+    <div class="nav-l2-group">
+      <a class="nav-l2-title" href="../../ea/index.html">EA Diagrams</a>
+      <div class="nav-l3-list">
+        <a class="nav-l3" href="../../ea/ea-01.html">EA-01 &mdash; AAA Enterprise System Landscape</a>
+        <a class="nav-l3" href="../../ea/ea-02.html">EA-02 &mdash; CAA SCO Enterprise System Landscape</a>
+        <a class="nav-l3" href="../../ea/ea-03.html">EA-03 &mdash; Insurance Claims Data Flow</a>
+        <a class="nav-l3" href="../../ea/ea-04.html">EA-04 &mdash; Member Lifecycle Data Flow</a>
+        <a class="nav-l3" href="../../ea/ea-05.html">EA-05 &mdash; Travel Booking Architecture</a>
+        <a class="nav-l3" href="../../ea/ea-06.html">EA-06 &mdash; Roadside Assistance Dispatch Archit</a>
+        <a class="nav-l3" href="../../ea/ea-07.html">EA-07 &mdash; CAA Insurance Policy Lifecycle</a>
+        <a class="nav-l3" href="../../ea/ea-08.html">EA-08 &mdash; CAA Insurance Claims Architecture</a>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+    </nav>
+    <main class="wiki-main">
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="../../index.html">Home</a> &rsaquo;
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
+        </div>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-BI-01 &mdash; Premium Invoice Generation and Distribution
+        </h1>
+        <p>The Premium Invoice Generation and Distribution process for AAA Northeast involves generating accurate premium invoices based on policy data and distributing them to members via various channels.</p>
+      </div>
+
+      <!-- BPMN Diagram -->
+      <div class="card">
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
+        <div class="card-body">
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-bi-01.png" data-lightbox data-title="AAA-IN-BI-01 BPMN">
+              <img src="../../assets/img/aaa-in-bi-01.png" alt="AAA-IN-BI-01 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-BI-01</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management</td></tr>
+            <tr><th>L3 Name</th><td>Premium Invoice Generation and Distribution</td></tr>
+            <tr><th>Trigger</th><td>Policy renewal or new policy issuance</td></tr>
+            <tr><th>Outcome</th><td>Members receive accurate premium invoices via email, postal mail, or mobile app.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses heavily on digital distribution of invoices through Salesforce and the AAA App, whereas CAA may have a more traditional paper-based approach in some regions.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag guidewire">Guidewire BillingCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag aaa-app">AAA App</span></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Policy Data Extraction</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Policy records</td>
+          <td>Extracted policy data</td>
+          <td>Data extraction accuracy rate > 99%</td>
+          <td>Inaccurate policy data leading to incorrect invoices</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Premium Calculation</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Extracted policy data</td>
+          <td>Calculated premiums</td>
+          <td>Premium calculation accuracy rate > 98%</td>
+          <td>Errors in premium calculations affecting member payments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Invoice Generation</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Calculated premiums</td>
+          <td>Generated invoices</td>
+          <td>Invoice generation time < 24 hours</td>
+          <td>Delayed invoice generation impacting member payments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Invoice Review</td>
+          <td>Billing Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Generated invoices</td>
+          <td>Reviewed invoices</td>
+          <td>Invoice review accuracy rate > 95%</td>
+          <td>Missed errors in invoice reviews leading to disputes</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Distribution Channel Selection</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Member contact information</td>
+          <td>Selected distribution channel</td>
+          <td>Preferred channel selection rate > 90%</td>
+          <td>Incorrect channel selection affecting member receipt</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Invoice Distribution</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Reviewed invoices and selected distribution channel</td>
+          <td>Distributed invoices</td>
+          <td>Invoice distribution success rate > 98%</td>
+          <td>Failed invoice distributions leading to member complaints</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Member Notification</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Distributed invoices</td>
+          <td>Notification sent to members</td>
+          <td>Notification delivery rate > 95%</td>
+          <td>Undelivered notifications causing member confusion</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Invoice Receipt Acknowledgment</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Member acknowledgment</td>
+          <td>Acknowledged invoices</td>
+          <td>Acknowledgment rate > 90%</td>
+          <td>Low acknowledgment rates indicating distribution issues</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Distribution Review</td>
+          <td>Billing Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, Salesforce</span></td>
+          <td>Acknowledged invoices</td>
+          <td>Distribution review report</td>
+          <td>Review completion time < 48 hours</td>
+          <td>Delayed reviews affecting future distribution strategies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Loop</td>
+          <td>Billing Manager</td>
+          <td><span class="sys-tag guidewire">Salesforce, Guidewire BillingCenter</span></td>
+          <td>Distribution review report</td>
+          <td>Updated distribution strategy</td>
+          <td>Strategy update frequency > 4 times/year</td>
+          <td>Lack of feedback leading to inefficient processes</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Data extraction accuracy rate > 99%</span> <span class="kpi-pill">Premium calculation accuracy rate > 98%</span> <span class="kpi-pill">Invoice generation time < 24 hours</span> <span class="kpi-pill">Invoice review accuracy rate > 95%</span> <span class="kpi-pill">Preferred channel selection rate > 90%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate policy data leading to incorrect invoices</span> <span class="risk-pill">Errors in premium calculations affecting member payments</span> <span class="risk-pill">Delayed invoice generation impacting member payments</span> <span class="risk-pill">Missed errors in invoice reviews leading to disputes</span> <span class="risk-pill">Incorrect channel selection affecting member receipt</span></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
+  <script src="../../assets/js/wiki.js"></script>
+</body>
+</html>
