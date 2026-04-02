@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadside Service Delivery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-SV-07 &mdash; EV Roadside Assistance (Mobile Charge and Tow to Charger) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -345,33 +347,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-service-delivery/index.html">Roadside Service Delivery</a>
         </div>
-        <h1>🚨 Roadside Service Delivery</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-SV-07 &mdash; EV Roadside Assistance (Mobile Charge and Tow to Charger)
+        </h1>
+        <p>This process handles the delivery of EV roadside assistance services including mobile charging and towing to a charger. It ensures that electric vehicle members receive timely and effective support when their vehicles are in need.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-sv-01.html">SHARED-RS-SV-01</a></td><td>Towing Service Light Duty Dispatch and Hook-Up</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-02.html">SHARED-RS-SV-02</a></td><td>Battery Jump-Start and Battery Replacement Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-03.html">SHARED-RS-SV-03</a></td><td>Flat Tyre Service (Change or Inflate)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-04.html">SHARED-RS-SV-04</a></td><td>Fuel Delivery Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-05.html">SHARED-RS-SV-05</a></td><td>Lockout Service (Slim-Jim and Locksmith Dispatch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-06.html">SHARED-RS-SV-06</a></td><td>Winching and Extraction Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-SV-07</td><td>EV Roadside Assistance (Mobile Charge and Tow to Charger)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-08</td><td>After-Hours and Winter Surge Operations</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-sv-07.png" data-lightbox data-title="SHARED-RS-SV-07 BPMN">
+              <img src="../../assets/img/shared-rs-sv-07.png" alt="SHARED-RS-SV-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-SV-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Roadside Service Delivery</td></tr>
+            <tr><th>L3 Name</th><td>EV Roadside Assistance (Mobile Charge and Tow to Charger)</td></tr>
+            <tr><th>Trigger</th><td>A member contacts AAA Northeast or CAA SCO via phone, online chat, or mobile app requesting EV roadside assistance for issues like dead battery or being stranded without access to a charging station.</td></tr>
+            <tr><th>Outcome</th><td>The member's electric vehicle is successfully charged and towed to a nearby charger, ensuring the member can continue their journey safely and efficiently.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under FSRA regulations and may have additional compliance requirements compared to AAA Northeast. CAA SCO also uses different systems like ClientBase for customer management.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag sys-generic">GPS tracking</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Assistance Request</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Member's contact details and location</td>
+          <td>Dispatch ticket created</td>
+          <td>Response time within 5 minutes</td>
+          <td>Delays in response can lead to increased member dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Technician</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Dispatch ticket</td>
+          <td>Assigned technician details</td>
+          <td>Technician dispatched within 10 minutes of request</td>
+          <td>Inefficient dispatch can lead to longer wait times for members.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Arrive at Scene</td>
+          <td>EV Roadside Technician</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch, GPS tracking</span></td>
+          <td>Assigned technician details</td>
+          <td>On-site confirmation</td>
+          <td>Time to arrive at scene within 30 minutes</td>
+          <td>Delays in arrival can cause member frustration.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assess Situation</td>
+          <td>EV Roadside Technician</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>On-site confirmation</td>
+          <td>Assessment report</td>
+          <td>Assessment completed within 10 minutes of arrival</td>
+          <td>Inaccurate assessment can lead to incorrect service provision.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Provide Mobile Charging</td>
+          <td>EV Roadside Technician</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Assessment report</td>
+          <td>Vehicle charged</td>
+          <td>Charging completed within 45 minutes</td>
+          <td>Long charging times can cause member inconvenience.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Tow to Charger</td>
+          <td>EV Roadside Technician</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Vehicle charged</td>
+          <td>Vehicle towed to charger</td>
+          <td>Towing completed within 30 minutes</td>
+          <td>Delays in towing can cause member frustration.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm Completion</td>
+          <td>EV Roadside Technician</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Vehicle towed to charger</td>
+          <td>Completion report</td>
+          <td>Completion confirmed within 5 minutes of towing</td>
+          <td>Delays in confirmation can lead to unresolved issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Member</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, AAA App, CAA MyCAA App</span></td>
+          <td>Completion report</td>
+          <td>Member notification</td>
+          <td>Notification sent within 10 minutes of completion</td>
+          <td>Delayed notifications can cause member confusion.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Ticket</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Member notification</td>
+          <td>Closed ticket</td>
+          <td>Ticket closed within 5 minutes of notification</td>
+          <td>Open tickets can lead to unresolved issues and potential legal liabilities.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 5 minutes</span> <span class="kpi-pill">Technician dispatched within 10 minutes of request</span> <span class="kpi-pill">Time to arrive at scene within 30 minutes</span> <span class="kpi-pill">Assessment completed within 10 minutes of arrival</span> <span class="kpi-pill">Charging completed within 45 minutes</span> <span class="kpi-pill">Towing completed within 30 minutes</span> <span class="kpi-pill">Completion confirmed within 5 minutes of towing</span> <span class="kpi-pill">Notification sent within 10 minutes of completion</span> <span class="kpi-pill">Ticket closed within 5 minutes of notification</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in response and dispatch leading to increased member dissatisfaction.</span> <span class="risk-pill">Inefficient assessment causing incorrect service provision.</span> <span class="risk-pill">Long charging times causing member inconvenience.</span> <span class="risk-pill">Delays in towing causing member frustration.</span> <span class="risk-pill">Open tickets leading to unresolved issues and potential legal liabilities.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
