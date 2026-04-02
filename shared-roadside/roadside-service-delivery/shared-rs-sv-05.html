@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadside Service Delivery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-SV-05 &mdash; Lockout Service (Slim-Jim and Locksmith Dispatch) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -343,33 +345,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-service-delivery/index.html">Roadside Service Delivery</a>
         </div>
-        <h1>🚨 Roadside Service Delivery</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-SV-05 &mdash; Lockout Service (Slim-Jim and Locksmith Dispatch)
+        </h1>
+        <p>The Lockout Service process involves dispatching a locksmith or slim-jim service to assist members who are locked out of their vehicles. This ensures timely resolution and customer satisfaction.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-sv-01.html">SHARED-RS-SV-01</a></td><td>Towing Service Light Duty Dispatch and Hook-Up</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-02.html">SHARED-RS-SV-02</a></td><td>Battery Jump-Start and Battery Replacement Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-03.html">SHARED-RS-SV-03</a></td><td>Flat Tyre Service (Change or Inflate)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-04.html">SHARED-RS-SV-04</a></td><td>Fuel Delivery Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-SV-05</td><td>Lockout Service (Slim-Jim and Locksmith Dispatch)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-06</td><td>Winching and Extraction Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-07</td><td>EV Roadside Assistance (Mobile Charge and Tow to Charger)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-08</td><td>After-Hours and Winter Surge Operations</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-sv-05.png" data-lightbox data-title="SHARED-RS-SV-05 BPMN">
+              <img src="../../assets/img/shared-rs-sv-05.png" alt="SHARED-RS-SV-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-SV-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Roadside Service Delivery</td></tr>
+            <tr><th>L3 Name</th><td>Lockout Service (Slim-Jim and Locksmith Dispatch)</td></tr>
+            <tr><th>Trigger</th><td>Member initiates a lockout assistance request through the AAA Northeast mobile app, online portal, or by contacting customer service.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the member being unlocked and provided with a repair estimate if necessary.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a different telematics system (CAA Connect) for dispatch compared to AAA Northeast's DriveAssist. Additionally, CAA SCO has stricter regulatory requirements due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag driveassist">DriveAssist telematics</span> <span class="sys-tag mitchell">Mitchell 1 (auto repair)</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Lockout Request</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Lockout request from member</td>
+          <td>Dispatch ticket created</td>
+          <td>Response time within 5 minutes</td>
+          <td>Delayed response times affecting customer satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Service Provider</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Dispatch ticket</td>
+          <td>Service provider assigned and notified</td>
+          <td>Assignment accuracy rate 95%</td>
+          <td>Incorrect assignment leading to delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Member</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Service provider details</td>
+          <td>Notification sent to member</td>
+          <td>Notification accuracy rate 98%</td>
+          <td>Incorrect notifications causing confusion</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Arrive at Scene</td>
+          <td>Locksmith/Slim-Jim Technician</td>
+          <td><span class="sys-tag driveassist">DriveAssist telematics (AAA) / CAA Connect telematics (CAA SCO)</span></td>
+          <td>Dispatch ticket and member location</td>
+          <td>Technician arrives at scene</td>
+          <td>Arrival time within 15 minutes of notification</td>
+          <td>Late arrivals affecting customer satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Unlock Vehicle</td>
+          <td>Locksmith/Slim-Jim Technician</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Vehicle and key information</td>
+          <td>Vehicle unlocked</td>
+          <td>Unlock success rate 90%</td>
+          <td>Failed unlock attempts leading to additional costs</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Provide Repair Estimate</td>
+          <td>Locksmith/Slim-Jim Technician</td>
+          <td><span class="sys-tag mitchell">Mitchell 1 (auto repair)</span></td>
+          <td>Vehicle condition and repair details</td>
+          <td>Repair estimate provided to member</td>
+          <td>Estimate accuracy rate 85%</td>
+          <td>Inaccurate estimates causing disputes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Complete Service Ticket</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Service details and outcome</td>
+          <td>Service ticket closed</td>
+          <td>Ticket closure rate 99%</td>
+          <td>Incomplete tickets affecting billing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Member Status</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Service outcome and repair estimate</td>
+          <td>Member updated on status</td>
+          <td>Status update accuracy rate 97%</td>
+          <td>Incorrect updates causing confusion</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Process Payment</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank / Comenity Bank</span></td>
+          <td>Service ticket and payment details</td>
+          <td>Payment processed</td>
+          <td>Payment processing time within 24 hours</td>
+          <td>Delays in payment processing affecting cash flow</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 5 minutes</span> <span class="kpi-pill">Assignment accuracy rate 95%</span> <span class="kpi-pill">Notification accuracy rate 98%</span> <span class="kpi-pill">Arrival time within 15 minutes of notification</span> <span class="kpi-pill">Unlock success rate 90%</span> <span class="kpi-pill">Estimate accuracy rate 85%</span> <span class="kpi-pill">Ticket closure rate 99%</span> <span class="kpi-pill">Status update accuracy rate 97%</span> <span class="kpi-pill">Payment processing time within 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed response times affecting customer satisfaction</span> <span class="risk-pill">Incorrect assignment leading to delays</span> <span class="risk-pill">Incorrect notifications causing confusion</span> <span class="risk-pill">Late arrivals affecting customer satisfaction</span> <span class="risk-pill">Failed unlock attempts leading to additional costs</span> <span class="risk-pill">Inaccurate estimates causing disputes</span> <span class="risk-pill">Incomplete tickets affecting billing</span> <span class="risk-pill">Incorrect updates causing confusion</span> <span class="risk-pill">Delays in payment processing affecting cash flow</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
