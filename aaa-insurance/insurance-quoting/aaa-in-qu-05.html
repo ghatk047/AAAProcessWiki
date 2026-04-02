@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quoting & Underwriting &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-QU-05 &mdash; ISO Rating Engine Calculation &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -267,35 +269,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-quoting/index.html">Quoting & Underwriting</a>
         </div>
-        <h1>🛡️ Quoting & Underwriting</h1>
-        <p>4 of 10 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-QU-05 &mdash; ISO Rating Engine Calculation
+        </h1>
+        <p>The ISO Rating Engine Calculation process is responsible for determining the insurance premium rates based on vehicle information and risk factors. This process is initiated when a new quote request is received, and it produces a detailed quote with accurate premium calculations.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-qu-01.html">AAA-IN-QU-01</a></td><td>Auto Insurance Quote Initiation (Web and Agent and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-02.html">AAA-IN-QU-02</a></td><td>Driver and Vehicle Information Capture</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-03.html">AAA-IN-QU-03</a></td><td>MVR Pull and Scoring</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-04.html">AAA-IN-QU-04</a></td><td>Credit Score Pull and Rating Tier Assignment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-QU-05</td><td>ISO Rating Engine Calculation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-QU-06</td><td>Policy Comparison and Coverage Options Presentation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-QU-07</td><td>Underwriting Rule Application and Referral Decision</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-QU-08</td><td>Quote Bind Conversion and Application Submission</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-QU-09</td><td>Home Insurance Quote and Property Risk Assessment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-QU-10</td><td>Multi-Policy Discount Calculation and Bundling</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-qu-05.png" data-lightbox data-title="AAA-IN-QU-05 BPMN">
+              <img src="../../assets/img/aaa-in-qu-05.png" alt="AAA-IN-QU-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-QU-05</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Quoting & Underwriting</td></tr>
+            <tr><th>L3 Name</th><td>ISO Rating Engine Calculation</td></tr>
+            <tr><th>Trigger</th><td>A new quote request is submitted by a customer through the AAA App or Salesforce Einstein AI.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion of this process results in the generation of a detailed insurance quote with accurate premium rates, which is then presented to the customer for review and approval.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast specifically uses Verisk ISO rating for premium calculations, while CAA may use different methodologies or systems. Additionally, AAA leverages Salesforce Einstein AI for enhanced customer interaction during the quoting process.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Quote Request</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Customer quote request with vehicle details</td>
+          <td>Quote request logged in Salesforce</td>
+          <td>Time to log quote request < 5 minutes</td>
+          <td>High volume of incoming requests can overwhelm the system.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Vehicle Information</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Vehicle details from quote request</td>
+          <td>Validated vehicle information</td>
+          <td>Accuracy of validation > 95%</td>
+          <td>Inaccurate or incomplete data can lead to incorrect ratings.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Calculate Premium Rates</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Validated vehicle information and risk factors</td>
+          <td>Premium rates calculation</td>
+          <td>Time to calculate premiums < 10 minutes</td>
+          <td>Complex calculations can slow down the process.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Quote Document</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Premium rates calculation</td>
+          <td>Detailed insurance quote document</td>
+          <td>Quote generation time < 5 minutes</td>
+          <td>System downtime can delay quote generation.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approve Quote</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Detailed insurance quote document</td>
+          <td>Approved quote document</td>
+          <td>Quote approval time < 1 hour</td>
+          <td>Manual review can introduce errors.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Send Quote to Customer</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Approved quote document</td>
+          <td>Quote sent to customer via email or app</td>
+          <td>Customer notification time < 10 minutes</td>
+          <td>Email delivery issues can delay notifications.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Customer Response</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Customer response to quote</td>
+          <td>Response logged in Salesforce</td>
+          <td>Time to log customer response < 5 minutes</td>
+          <td>High volume of responses can overwhelm the system.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Customer Record</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Customer response and quote details</td>
+          <td>Updated customer record in Guidewire</td>
+          <td>Time to update record < 10 minutes</td>
+          <td>System integration issues can cause delays.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Quote Process</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Updated customer record and quote details</td>
+          <td>Quote process closed in Salesforce</td>
+          <td>Time to close process < 5 minutes</td>
+          <td>Manual closure can introduce errors.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to log quote request < 5 minutes</span> <span class="kpi-pill">Accuracy of validation > 95%</span> <span class="kpi-pill">Time to calculate premiums < 10 minutes</span> <span class="kpi-pill">Quote generation time < 5 minutes</span> <span class="kpi-pill">Quote approval time < 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">High volume of incoming requests can overwhelm the system.</span> <span class="risk-pill">Inaccurate or incomplete data can lead to incorrect ratings.</span> <span class="risk-pill">Complex calculations can slow down the process.</span> <span class="risk-pill">System downtime can delay quote generation.</span> <span class="risk-pill">Email delivery issues can delay notifications.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
