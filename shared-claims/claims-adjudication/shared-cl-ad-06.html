@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claims Adjudication & Settlement &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-AD-06 &mdash; Payment Issuance (EFT and Cheque and Repair Shop Direct) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -408,33 +410,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
         </div>
-        <h1>📋 Claims Adjudication & Settlement</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-AD-06 &mdash; Payment Issuance (EFT and Cheque and Repair Shop Direct)
+        </h1>
+        <p>This process handles the issuance of payments to claimants via Electronic Funds Transfer (EFT), cheques, and repair shop direct. It ensures timely and accurate payment processing for AAA Northeast.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-ad-01.html">SHARED-CL-AD-01</a></td><td>Field Inspection and Damage Assessment Scheduling</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-02.html">SHARED-CL-AD-02</a></td><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-03.html">SHARED-CL-AD-03</a></td><td>Liability Determination and Coverage Decision</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-04.html">SHARED-CL-AD-04</a></td><td>Subrogation Identification and Preservation of Rights</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-05.html">SHARED-CL-AD-05</a></td><td>Settlement Negotiation and Authority Approval Levels</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-AD-06</td><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-07</td><td>Salvage Title Processing and Vehicle Total Loss Declaration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-08</td><td>Claim Closure and Reserve Release</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-ad-06.png" data-lightbox data-title="SHARED-CL-AD-06 BPMN">
+              <img src="../../assets/img/shared-cl-ad-06.png" alt="SHARED-CL-AD-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-AD-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Claims Adjudication & Settlement</td></tr>
+            <tr><th>L3 Name</th><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td></tr>
+            <tr><th>Trigger</th><td>Completion of claims adjudication and settlement by the Claims Adjuster.</td></tr>
+            <tr><th>Outcome</th><td>Successful issuance of payments to claimants via EFT, cheques, or repair shop direct.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have different regulatory requirements and uses a different telematics system (CAA Connect) compared to AAA Northeast's DriveAssist.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Payment Process</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Settled claim details</td>
+          <td>Payment request form</td>
+          <td>Time to initiate payment: 24 hours</td>
+          <td>Delayed initiation due to missing claim documents</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Payment Request</td>
+          <td>Claims Processor</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Payment request form</td>
+          <td>Approved payment request</td>
+          <td>Time to review payment: 4 hours</td>
+          <td>Inaccurate claim data entry</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Payment File</td>
+          <td>Payment Processor</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved payment request</td>
+          <td>Payment file for EFT or cheque</td>
+          <td>Time to generate payment file: 2 hours</td>
+          <td>System integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Payment File</td>
+          <td>Payment Processor</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Payment file</td>
+          <td>Confirmation of payment sent</td>
+          <td>Time to send payment: 1 hour</td>
+          <td>Network connectivity issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm Payment Receipt</td>
+          <td>Claims Processor</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Confirmation of payment sent</td>
+          <td>Payment confirmation in system</td>
+          <td>Time to confirm receipt: 24 hours</td>
+          <td>Delayed bank processing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Claimant</td>
+          <td>Claims Processor</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Payment confirmation in system</td>
+          <td>Notification to claimant</td>
+          <td>Time to notify claimant: 1 hour</td>
+          <td>Claimant contact information errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate payment: 24 hours</span> <span class="kpi-pill">Time to review payment: 4 hours</span> <span class="kpi-pill">Time to generate payment file: 2 hours</span> <span class="kpi-pill">Time to send payment: 1 hour</span> <span class="kpi-pill">Time to confirm receipt: 24 hours</span> <span class="kpi-pill">Time to notify claimant: 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed initiation due to missing claim documents</span> <span class="risk-pill">Inaccurate claim data entry</span> <span class="risk-pill">System integration issues</span> <span class="risk-pill">Network connectivity issues</span> <span class="risk-pill">Delayed bank processing</span> <span class="risk-pill">Claimant contact information errors</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
