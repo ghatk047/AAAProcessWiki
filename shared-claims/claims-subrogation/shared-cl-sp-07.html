@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-07 &mdash; Recovery Proceeds Accounting and Reserve Credit &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -417,33 +419,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-07 &mdash; Recovery Proceeds Accounting and Reserve Credit
+        </h1>
+        <p>This process handles the accounting and reserve credit for recovery proceeds in claims management. It ensures that all recovery funds are properly accounted for and credited back to reserves.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-02.html">SHARED-CL-SP-02</a></td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-03.html">SHARED-CL-SP-03</a></td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-04.html">SHARED-CL-SP-04</a></td><td>Recovery Negotiation and Settlement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-05.html">SHARED-CL-SP-05</a></td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-06.html">SHARED-CL-SP-06</a></td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-07</td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-07.png" data-lightbox data-title="SHARED-CL-SP-07 BPMN">
+              <img src="../../assets/img/shared-cl-sp-07.png" alt="SHARED-CL-SP-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Recovery Proceeds Accounting and Reserve Credit</td></tr>
+            <tr><th>Trigger</th><td>Recovery of funds from third parties involved in a claim</td></tr>
+            <tr><th>Outcome</th><td>Accurate accounting of recovery proceeds and proper crediting to reserves, ensuring financial integrity and compliance with regulatory requirements.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Guidewire PolicyCenter/ClaimCenter/BillingCenter for claims management, while CAA SCO utilizes the Guidewire InsuranceSuite. AAA Northeast also integrates with Salesforce for customer interactions, whereas CAA SCO relies more on internal systems like ClientBase and Power BI for data analysis.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce (AAA Northeast)</span> <span class="sys-tag sys-generic">ClientBase (CAA SCO)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Recovery Proceeds Process</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Recovery notification from third party</td>
+          <td>Recovery case created in ClaimCenter</td>
+          <td>Time to initiate recovery process < 24 hours</td>
+          <td>Delays in initiating the recovery process can lead to missed opportunities for timely reimbursement.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Recovery Amount</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Recovery documentation</td>
+          <td>Verified recovery amount</td>
+          <td>Accuracy of verified recovery amount > 95%</td>
+          <td>Incorrect verification can lead to financial discrepancies and potential legal issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Policyholder</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA Northeast) / ClientBase (CAA SCO)</span></td>
+          <td>Verified recovery amount</td>
+          <td>Notification to policyholder</td>
+          <td>Policyholder notification within 48 hours of verification</td>
+          <td>Delayed notifications can cause dissatisfaction and potential disputes with policyholders.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Allocate Recovery Proceeds to Reserves</td>
+          <td>Accountant</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Verified recovery amount</td>
+          <td>Reserve credit entry in SAP</td>
+          <td>Time to allocate proceeds < 3 business days</td>
+          <td>Delays in allocating funds can impact cash flow and financial planning.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Billing Records</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Reserve credit entry</td>
+          <td>Updated billing records</td>
+          <td>Accuracy of updated billing records > 98%</td>
+          <td>Inaccurate billing updates can lead to financial errors and customer complaints.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Generate Financial Reports</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA / Power BI (CAA SCO)</span></td>
+          <td>Allocated recovery proceeds</td>
+          <td>Financial reports</td>
+          <td>Timely generation of financial reports < 5 business days</td>
+          <td>Late reporting can delay decision-making and strategic planning.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Approve Recovery Process</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Financial reports</td>
+          <td>Approval of recovery process</td>
+          <td>Process approval within 7 business days</td>
+          <td>Delays in approvals can cause bottlenecks and increased workload.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Recovery Case</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Approval of recovery process</td>
+          <td>Closed recovery case</td>
+          <td>Time to close recovery case < 1 business day</td>
+          <td>Open cases can lead to administrative overhead and potential compliance issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Policyholder Records</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA Northeast) / ClientBase (CAA SCO)</span></td>
+          <td>Closed recovery case</td>
+          <td>Updated policyholder records</td>
+          <td>Accuracy of updated records > 95%</td>
+          <td>Inaccurate record updates can lead to customer service issues and potential disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate recovery process < 24 hours</span> <span class="kpi-pill">Accuracy of verified recovery amount > 95%</span> <span class="kpi-pill">Policyholder notification within 48 hours of verification</span> <span class="kpi-pill">Time to allocate proceeds < 3 business days</span> <span class="kpi-pill">Accuracy of updated billing records > 98%</span> <span class="kpi-pill">Timely generation of financial reports < 5 business days</span> <span class="kpi-pill">Process approval within 7 business days</span> <span class="kpi-pill">Time to close recovery case < 1 business day</span> <span class="kpi-pill">Accuracy of updated records > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in initiating the recovery process can lead to missed opportunities for timely reimbursement.</span> <span class="risk-pill">Incorrect verification can lead to financial discrepancies and potential legal issues.</span> <span class="risk-pill">Delayed notifications can cause dissatisfaction and potential disputes with policyholders.</span> <span class="risk-pill">Delays in allocating funds can impact cash flow and financial planning.</span> <span class="risk-pill">Inaccurate billing updates can lead to financial errors and customer complaints.</span> <span class="risk-pill">Late reporting can delay decision-making and strategic planning.</span> <span class="risk-pill">Delays in approvals can cause bottlenecks and increased workload.</span> <span class="risk-pill">Open cases can lead to administrative overhead and potential compliance issues.</span> <span class="risk-pill">Inaccurate record updates can lead to customer service issues and potential disputes.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
