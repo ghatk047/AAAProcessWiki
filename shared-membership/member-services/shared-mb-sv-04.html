@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Services & Benefits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-SV-04 &mdash; Notary and Document Authentication Service &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -258,33 +260,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/member-services/index.html">Member Services & Benefits</a>
         </div>
-        <h1>👥 Member Services & Benefits</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-SV-04 &mdash; Notary and Document Authentication Service
+        </h1>
+        <p>This process handles the authentication and notarization of documents submitted by AAA Northeast members. It ensures that all documents meet legal standards before they are processed further.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-sv-01.html">SHARED-MB-SV-01</a></td><td>Member Discount Partner Redemption</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-02.html">SHARED-MB-SV-02</a></td><td>Passport Photo Service Delivery (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-03.html">SHARED-MB-SV-03</a></td><td>International Driving Permit (IDP) Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-SV-04</td><td>Notary and Document Authentication Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-05</td><td>Member Portal Profile and Preferences Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-06</td><td>Lost and Stolen Membership Card Replacement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-07</td><td>Member Data Privacy Request (CCPA and PIPEDA)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-08</td><td>Member Satisfaction Survey and NPS Tracking</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-sv-04.png" data-lightbox data-title="SHARED-MB-SV-04 BPMN">
+              <img src="../../assets/img/shared-mb-sv-04.png" alt="SHARED-MB-SV-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-SV-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Member Services & Benefits</td></tr>
+            <tr><th>L3 Name</th><td>Notary and Document Authentication Service</td></tr>
+            <tr><th>Trigger</th><td>A member submits a document for authentication and notarization through the AAA App or via email.</td></tr>
+            <tr><th>Outcome</th><td>The document is authenticated, notarized if required, and returned to the member with a confirmation receipt.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO differs in that they use their own internal notary service rather than an external provider. Additionally, CAA SCO has stricter compliance requirements for document authentication due to FSRA regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag sys-generic">External Notary Service Provider</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Document Submission</td>
+          <td>Member Services Representative</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Document submission from member</td>
+          <td>Acknowledgment of receipt</td>
+          <td>Response time within 24 hours</td>
+          <td>Handling large volumes of document submissions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Document Review</td>
+          <td>Document Control Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Received document</td>
+          <td>Review report</td>
+          <td>Completion within 3 business days</td>
+          <td>Ensuring compliance with legal standards</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notarization Request</td>
+          <td>Notary Public</td>
+          <td><span class="sys-tag sys-generic">External Notary Service Provider</span></td>
+          <td>Approved document</td>
+          <td>Notarized document</td>
+          <td>Notarization within 2 business days</td>
+          <td>Coordination with external notaries</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Final Document Authentication</td>
+          <td>Document Control Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Notarized document</td>
+          <td>Authenticated document</td>
+          <td>Completion within 1 business day</td>
+          <td>Maintaining accurate records</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Confirmation Receipt</td>
+          <td>Member Services Representative</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Authenticated document</td>
+          <td>Confirmation receipt</td>
+          <td>Receipt issued within 1 business day</td>
+          <td>Ensuring receipt accuracy</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Member Record</td>
+          <td>Membership Management Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Authenticated document</td>
+          <td>Updated member record</td>
+          <td>Record update within 1 business day</td>
+          <td>Handling sensitive member data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Member of Completion</td>
+          <td>Member Services Representative</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Confirmation receipt</td>
+          <td>Notification sent to member</td>
+          <td>Notification sent within 1 business day</td>
+          <td>Ensuring notification delivery</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Archive Document</td>
+          <td>Document Control Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Authenticated document</td>
+          <td>Archived document</td>
+          <td>Document archived within 1 business day</td>
+          <td>Maintaining secure storage</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Audit Process</td>
+          <td>Internal Auditor</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Process logs</td>
+          <td>Audit report</td>
+          <td>Audit completed within 1 month</td>
+          <td>Ensuring process compliance</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Process</td>
+          <td>Process Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Audit report</td>
+          <td>Closed process record</td>
+          <td>Process closure within 1 business day</td>
+          <td>Finalizing records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 24 hours</span> <span class="kpi-pill">Completion of initial review within 3 business days</span> <span class="kpi-pill">Notarization within 2 business days</span> <span class="kpi-pill">Final authentication completion within 1 business day</span> <span class="kpi-pill">Receipt issued within 1 business day</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in document submission handling</span> <span class="risk-pill">Non-compliance with legal standards during review</span> <span class="risk-pill">Coordination issues with external notaries</span> <span class="risk-pill">Data breaches during member record updates</span> <span class="risk-pill">Failed notification deliveries to members</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
