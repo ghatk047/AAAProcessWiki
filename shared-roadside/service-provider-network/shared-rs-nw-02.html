@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Provider Network Mgmt &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-NW-02 &mdash; Contract and Rate Negotiation with Tow Providers &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -348,33 +350,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
         </div>
-        <h1>🚨 Service Provider Network Mgmt</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-NW-02 &mdash; Contract and Rate Negotiation with Tow Providers
+        </h1>
+        <p>This process involves negotiating contracts and rates with tow providers to ensure cost-effective and reliable roadside assistance services for AAA Northeast members.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-nw-01.html">SHARED-RS-NW-01</a></td><td>Service Provider Onboarding and Vetting (Background Check)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-NW-02</td><td>Contract and Rate Negotiation with Tow Providers</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-03</td><td>Service Provider Performance Monitoring and Scorecard</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-04</td><td>Provider Payment Processing and Invoice Reconciliation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-05</td><td>Provider Complaint and Incident Investigation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-06</td><td>Network Coverage Gap Analysis and Recruitment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-07</td><td>Equipment and Compliance Verification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-08</td><td>Swoop API Integration with Provider Dispatch Software</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-nw-02.png" data-lightbox data-title="SHARED-RS-NW-02 BPMN">
+              <img src="../../assets/img/shared-rs-nw-02.png" alt="SHARED-RS-NW-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-NW-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Service Provider Network Mgmt</td></tr>
+            <tr><th>L3 Name</th><td>Contract and Rate Negotiation with Tow Providers</td></tr>
+            <tr><th>Trigger</th><td>Initiated by the Roadside Assistance Manager upon receiving a request for contract renewal or new provider onboarding.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in signed contracts with agreed-upon rates, ensuring continued availability of tow services at competitive prices.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight and different market dynamics. CAA SCO also uses the Guidewire InsuranceSuite for contract management instead of Salesforce.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag snowflake">Snowflake</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag guidewire">Guidewire ClaimCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Contract Review</td>
+          <td>Roadside Assistance Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Contract renewal request or new provider information</td>
+          <td>Review checklist and initial contract proposal</td>
+          <td>Time to initiate review within 2 business days</td>
+          <td>Delays in initiating reviews can lead to missed negotiation opportunities.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Negotiate Contract Terms</td>
+          <td>Contract Negotiator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Initial contract proposal and provider feedback</td>
+          <td>Negotiated contract draft</td>
+          <td>Number of negotiation rounds within 3 iterations</td>
+          <td>Excessive negotiation rounds can lead to increased costs.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Review Financial Projections</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Negotiated contract draft</td>
+          <td>Financial analysis report</td>
+          <td>Time to complete financial review within 5 business days</td>
+          <td>Inaccurate financial projections can lead to budget overruns.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Finalize Contract</td>
+          <td>Legal Counsel</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Financial analysis report and legal review checklist</td>
+          <td>Signed contract</td>
+          <td>Time to finalize contract within 7 business days</td>
+          <td>Legal delays can cause service disruptions.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Onboard New Provider</td>
+          <td>Service Coordinator</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Signed contract</td>
+          <td>Provider onboarding checklist</td>
+          <td>Time to onboard provider within 2 business days</td>
+          <td>Delays in onboarding can affect service availability.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Provider Database</td>
+          <td>Data Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Provider onboarding checklist</td>
+          <td>Updated provider database</td>
+          <td>Time to update database within 1 business day</td>
+          <td>Outdated databases can lead to incorrect dispatching.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Contract Performance</td>
+          <td>Service Quality Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Contract terms and service data</td>
+          <td>Performance report</td>
+          <td>Time to generate performance report within 1 week</td>
+          <td>Poor contract performance can lead to member dissatisfaction.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Adjust Rates Based on Performance</td>
+          <td>Rate Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Performance report and market analysis</td>
+          <td>Adjusted rate proposal</td>
+          <td>Number of adjustments within 2 iterations</td>
+          <td>Ineffective rate adjustments can impact profitability.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Approve Adjustments</td>
+          <td>Roadside Assistance Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Adjusted rate proposal</td>
+          <td>Approved rate schedule</td>
+          <td>Time to approve adjustments within 3 business days</td>
+          <td>Delays in approving rate changes can lead to financial risks.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Communicate Changes to Providers</td>
+          <td>Service Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Approved rate schedule</td>
+          <td>Communication log</td>
+          <td>Time to communicate changes within 1 business day</td>
+          <td>Poor communication can lead to provider dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate review within 2 business days</span> <span class="kpi-pill">Number of negotiation rounds within 3 iterations</span> <span class="kpi-pill">Time to complete financial review within 5 business days</span> <span class="kpi-pill">Time to finalize contract within 7 business days</span> <span class="kpi-pill">Time to onboard provider within 2 business days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in initiating reviews can lead to missed negotiation opportunities.</span> <span class="risk-pill">Excessive negotiation rounds can lead to increased costs.</span> <span class="risk-pill">Inaccurate financial projections can lead to budget overruns.</span> <span class="risk-pill">Legal delays can cause service disruptions.</span> <span class="risk-pill">Poor contract performance can lead to member dissatisfaction.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
