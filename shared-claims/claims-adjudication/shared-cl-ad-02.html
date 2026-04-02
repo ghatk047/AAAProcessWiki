@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claims Adjudication & Settlement &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-AD-02 &mdash; Estimate Preparation (Mitchell RepairCenter and CCC ONE) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -404,33 +406,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
         </div>
-        <h1>📋 Claims Adjudication & Settlement</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-AD-02 &mdash; Estimate Preparation (Mitchell RepairCenter and CCC ONE)
+        </h1>
+        <p>The Estimate Preparation process involves gathering and analyzing repair estimates from Mitchell RepairCenter and CCC ONE to determine the appropriate settlement for claims. This ensures accurate compensation for members' vehicle repairs.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-ad-01.html">SHARED-CL-AD-01</a></td><td>Field Inspection and Damage Assessment Scheduling</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-AD-02</td><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-03</td><td>Liability Determination and Coverage Decision</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-04</td><td>Subrogation Identification and Preservation of Rights</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-05</td><td>Settlement Negotiation and Authority Approval Levels</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-06</td><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-07</td><td>Salvage Title Processing and Vehicle Total Loss Declaration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-08</td><td>Claim Closure and Reserve Release</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-ad-02.png" data-lightbox data-title="SHARED-CL-AD-02 BPMN">
+              <img src="../../assets/img/shared-cl-ad-02.png" alt="SHARED-CL-AD-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-AD-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Claims Adjudication & Settlement</td></tr>
+            <tr><th>L3 Name</th><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td></tr>
+            <tr><th>Trigger</th><td>A claim is received and identified as requiring repair services.</td></tr>
+            <tr><th>Outcome</th><td>A detailed estimate is prepared, reviewed, and approved for payment, ensuring fair compensation for the member's repair costs.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Mitchell RepairCenter primarily, while CAA SCO may integrate additional systems or have different workflows for estimate preparation.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag mitchell">Mitchell RepairCenter</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Claim Assignment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>New claim details</td>
+          <td>Assigned claim to adjuster</td>
+          <td>Average time to assign claims < 2 hours</td>
+          <td>Delays in assigning claims can lead to increased member dissatisfaction.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Estimate Request</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag mitchell">Mitchell RepairCenter</span></td>
+          <td>Assigned claim details</td>
+          <td>Request sent for repair estimates</td>
+          <td>95% of estimate requests processed within 24 hours</td>
+          <td>Delays in receiving estimates can prolong the claims process.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Estimate Review</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag mitchell">Mitchell RepairCenter</span></td>
+          <td>Received repair estimates</td>
+          <td>Reviewed and annotated estimate</td>
+          <td>80% of estimates reviewed within 4 hours</td>
+          <td>Inconsistent review times can affect claim processing speed.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Estimate Approval</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Reviewed estimate</td>
+          <td>Approved or rejected estimate</td>
+          <td>90% of estimates approved within 2 business days</td>
+          <td>Delays in approval can cause member frustration.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Payment Authorization</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved estimate</td>
+          <td>Authorized payment details</td>
+          <td>100% of payments authorized within 2 business days</td>
+          <td>Payment delays can lead to financial discrepancies.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Payment Processing</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Authorized payment details</td>
+          <td>Processed payment to repair shop</td>
+          <td>98% of payments processed within 1 business day</td>
+          <td>Payment processing errors can cause financial losses.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Claim Closure</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Processed payment confirmation</td>
+          <td>Closed claim record</td>
+          <td>95% of claims closed within 3 business days after payment processing</td>
+          <td>Open claims can lead to ongoing administrative tasks.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Member Communication</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Closed claim record</td>
+          <td>Notification sent to member</td>
+          <td>100% of members notified within 2 business days after claim closure</td>
+          <td>Unnotified members may contact for updates.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Audit Review</td>
+          <td>Internal Auditor</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Closed claim record</td>
+          <td>Audit report</td>
+          <td>Monthly audit completion rate > 85%</td>
+          <td>Audit delays can lead to compliance issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Average time to assign claims < 2 hours</span> <span class="kpi-pill">95% of estimate requests processed within 24 hours</span> <span class="kpi-pill">80% of estimates reviewed within 4 hours</span> <span class="kpi-pill">90% of estimates approved within 2 business days</span> <span class="kpi-pill">100% of payments authorized within 2 business days</span> <span class="kpi-pill">98% of payments processed within 1 business day</span> <span class="kpi-pill">95% of claims closed within 3 business days after payment processing</span> <span class="kpi-pill">100% of members notified within 2 business days after claim closure</span> <span class="kpi-pill">Monthly audit completion rate > 85%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in assigning claims can lead to increased member dissatisfaction.</span> <span class="risk-pill">Delays in receiving estimates can prolong the claims process.</span> <span class="risk-pill">Inconsistent review times can affect claim processing speed.</span> <span class="risk-pill">Delays in approval can cause member frustration.</span> <span class="risk-pill">Payment delays can cause financial discrepancies.</span> <span class="risk-pill">Payment processing errors can cause financial losses.</span> <span class="risk-pill">Open claims can lead to ongoing administrative tasks.</span> <span class="risk-pill">Unnotified members may contact for updates.</span> <span class="risk-pill">Audit delays can lead to compliance issues.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
