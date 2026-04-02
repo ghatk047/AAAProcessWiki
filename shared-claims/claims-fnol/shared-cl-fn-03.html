@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Notice of Loss (FNOL) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-FN-03 &mdash; Loss Details Capture (Date and Location and Parties) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -397,33 +399,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
         </div>
-        <h1>📋 First Notice of Loss (FNOL)</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-FN-03 &mdash; Loss Details Capture (Date and Location and Parties)
+        </h1>
+        <p>This process captures the essential details of a loss incident, including the date, location, and parties involved. It is critical for initiating the claims management workflow.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-fn-01.html">SHARED-CL-FN-01</a></td><td>FNOL Intake (Phone and Digital and Agent Reported)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-02.html">SHARED-CL-FN-02</a></td><td>Claimant Identity Verification and Policy Lookup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-FN-03</td><td>Loss Details Capture (Date and Location and Parties)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-04</td><td>Coverage Verification and Reservation of Rights Letter</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-05</td><td>Initial Reserves Setting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-06</td><td>Claim Assignment to Adjuster (Rules-Based Routing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-07</td><td>Acknowledgement Letter and Digital Notification to Claimant</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-08</td><td>Third-Party Claimant Notification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-fn-03.png" data-lightbox data-title="SHARED-CL-FN-03 BPMN">
+              <img src="../../assets/img/shared-cl-fn-03.png" alt="SHARED-CL-FN-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-FN-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>First Notice of Loss (FNOL)</td></tr>
+            <tr><th>L3 Name</th><td>Loss Details Capture (Date and Location and Parties)</td></tr>
+            <tr><th>Trigger</th><td>A member reports a loss to AAA Northeast or CAA South Central Ontario.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the accurate recording of loss details, enabling timely claims processing.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Salesforce Einstein AI and Agentforce for initial data capture, while CAA SCO relies on Guidewire InsuranceSuite for this purpose. Additionally, AAA Northeast integrates with Agero Swoop dispatch for immediate response, whereas CAA SCO does not have this integration.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter</span> <span class="sys-tag guidewire">Guidewire ClaimCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Loss</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Member's report via phone or online portal</td>
+          <td>Initial loss report in Salesforce</td>
+          <td>Time to first response < 5 minutes</td>
+          <td>Handling inaccurate initial reports</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Loss Details</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter</span></td>
+          <td>Initial loss report from Salesforce</td>
+          <td>Verified loss details in Guidewire ClaimCenter</td>
+          <td>Details verification accuracy > 95%</td>
+          <td>Missing critical information</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Capture Date and Location</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Verified loss details</td>
+          <td>Date, location, and parties involved recorded in Guidewire ClaimCenter</td>
+          <td>Data entry accuracy > 98%</td>
+          <td>Manual data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Identify Parties Involved</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Loss details and parties involved</td>
+          <td>Parties involved recorded in Guidewire ClaimCenter</td>
+          <td>Party identification accuracy > 90%</td>
+          <td>Complex party relationships</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Member of Loss Report</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Verified loss details and parties involved</td>
+          <td>Notification sent to member via email or phone</td>
+          <td>Member notification response rate > 95%</td>
+          <td>Ineffective communication</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Assign Case to Claims Handler</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Verified loss details and parties involved</td>
+          <td>Case assigned to claims handler in Guidewire ClaimCenter</td>
+          <td>Case assignment accuracy > 98%</td>
+          <td>Overloaded claims handlers</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first response < 5 minutes</span> <span class="kpi-pill">Details verification accuracy > 95%</span> <span class="kpi-pill">Data entry accuracy > 98%</span> <span class="kpi-pill">Party identification accuracy > 90%</span> <span class="kpi-pill">Member notification response rate > 95%</span> <span class="kpi-pill">Case assignment accuracy > 98%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate initial reports leading to delayed claims processing</span> <span class="risk-pill">Manual data entry errors causing rework</span> <span class="risk-pill">Complex party relationships complicating case management</span> <span class="risk-pill">Overloaded claims handlers affecting response times</span> <span class="risk-pill">Ineffective communication with members leading to dissatisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
