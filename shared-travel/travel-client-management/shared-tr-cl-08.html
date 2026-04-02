@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Management & Servicing &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-CL-08 &mdash; Travel Advisory Communication (FCDO and State Dept Alerts) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -370,33 +372,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
         </div>
-        <h1>✈️ Client Management & Servicing</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-CL-08 &mdash; Travel Advisory Communication (FCDO and State Dept Alerts)
+        </h1>
+        <p>This process involves monitoring and disseminating travel advisory communications from the Foreign Commonwealth & Development Office (FCDO) and State Department alerts to AAA Northeast members. The goal is to ensure timely and accurate information is provided to clients, enhancing their travel safety and peace of mind.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-cl-01.html">SHARED-TR-CL-01</a></td><td>Client Profile Creation and Preference Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-02.html">SHARED-TR-CL-02</a></td><td>Visa and Passport Advisory Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-03.html">SHARED-TR-CL-03</a></td><td>Pre-Departure Document Checklist and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-04.html">SHARED-TR-CL-04</a></td><td>Post-Booking Amendment and Cancellation Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-05.html">SHARED-TR-CL-05</a></td><td>Refund and Credit Processing (Airline and Supplier)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-06.html">SHARED-TR-CL-06</a></td><td>Group Travel Coordination and Group Contract Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-07.html">SHARED-TR-CL-07</a></td><td>Corporate Travel Account Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-CL-08</td><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-cl-08.png" data-lightbox data-title="SHARED-TR-CL-08 BPMN">
+              <img src="../../assets/img/shared-tr-cl-08.png" alt="SHARED-TR-CL-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-CL-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Client Management & Servicing</td></tr>
+            <tr><th>L3 Name</th><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td></tr>
+            <tr><th>Trigger</th><td>Receiving a new travel advisory communication from FCDO or State Dept.</td></tr>
+            <tr><th>Outcome</th><td>AAA Northeast members receive up-to-date travel advisories via email, SMS, and the AAA App, allowing them to make informed decisions about their travel plans.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements related to FSRA (Financial Services Regulatory Authority) compliance. CAA SCO also uses different systems like ClientBase and Power BI for data management and reporting.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Monitor Travel Alerts</td>
+          <td>Travel Advisory Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>FCDO or State Dept travel advisory communication</td>
+          <td>Internal alert log</td>
+          <td>Time to first review of new alert < 2 hours</td>
+          <td>Delays in receiving official communications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Classify Alert Severity</td>
+          <td>Travel Advisory Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Internal alert log</td>
+          <td>Alert severity classification (Low, Medium, High)</td>
+          <td>100% accurate classification within 30 minutes</td>
+          <td>Misclassification leading to incorrect communication</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Communication Content</td>
+          <td>Content Writer</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Alert severity classification</td>
+          <td>Communication draft</td>
+          <td>Draft completed within 1 hour</td>
+          <td>Inaccurate or outdated content</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approve Content</td>
+          <td>Travel Advisory Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Communication draft</td>
+          <td>Approved communication content</td>
+          <td>Approval within 30 minutes of submission</td>
+          <td>Content approval delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Identify Target Audience</td>
+          <td>Client Relationship Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved communication content</td>
+          <td>Target audience list</td>
+          <td>Audience identification completed within 1 hour</td>
+          <td>Incorrect audience targeting</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Send Communication</td>
+          <td>Client Relationship Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Approved communication content and target audience list</td>
+          <td>Sent communication records</td>
+          <td>95% successful delivery rate within 1 hour</td>
+          <td>Delivery failures or delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Feedback and Responses</td>
+          <td>Travel Advisory Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Sent communication records</td>
+          <td>Feedback log</td>
+          <td>Feedback captured within 24 hours of sending</td>
+          <td>Lack of feedback or poor response rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Internal Records</td>
+          <td>Travel Advisory Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Feedback log</td>
+          <td>Updated internal records</td>
+          <td>Records updated within 24 hours of feedback receipt</td>
+          <td>Inconsistent or outdated records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first review of new alert < 2 hours</span> <span class="kpi-pill">100% accurate classification within 30 minutes</span> <span class="kpi-pill">Draft completed within 1 hour</span> <span class="kpi-pill">Approval within 30 minutes of submission</span> <span class="kpi-pill">Audience identification completed within 1 hour</span> <span class="kpi-pill">95% successful delivery rate within 1 hour</span> <span class="kpi-pill">Feedback captured within 24 hours of sending</span> <span class="kpi-pill">Records updated within 24 hours of feedback receipt</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in receiving official communications</span> <span class="risk-pill">Misclassification leading to incorrect communication</span> <span class="risk-pill">Inaccurate or outdated content</span> <span class="risk-pill">Content approval delays</span> <span class="risk-pill">Incorrect audience targeting</span> <span class="risk-pill">Delivery failures or delays</span> <span class="risk-pill">Lack of feedback or poor response rates</span> <span class="risk-pill">Inconsistent or outdated records</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
