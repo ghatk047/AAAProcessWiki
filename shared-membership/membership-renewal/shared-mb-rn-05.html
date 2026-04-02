@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Renewal & Retention &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-RN-05 &mdash; Associate and Household Member Add-On Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -251,33 +253,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-renewal/index.html">Membership Renewal & Retention</a>
         </div>
-        <h1>👥 Membership Renewal & Retention</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-RN-05 &mdash; Associate and Household Member Add-On Processing
+        </h1>
+        <p>This process handles the addition of associates and household members during membership renewal and retention. It ensures that all necessary information is captured, validated, and integrated into the system to maintain accurate membership records.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-rn-01.html">SHARED-MB-RN-01</a></td><td>Annual Renewal Notice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-02.html">SHARED-MB-RN-02</a></td><td>Auto-Renewal Processing (Credit Card on File)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-03.html">SHARED-MB-RN-03</a></td><td>Lapsed Member Reinstatement Campaign</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-04.html">SHARED-MB-RN-04</a></td><td>Membership Upgrade and Tier Change Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-RN-05</td><td>Associate and Household Member Add-On Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-RN-06</td><td>Cancellation Request Handling and Save Offer</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-RN-07</td><td>Renewal Rate Review and Pricing Update</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-RN-08</td><td>Membership Winback Campaign (12-36 Month Lapsed)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-rn-05.png" data-lightbox data-title="SHARED-MB-RN-05 BPMN">
+              <img src="../../assets/img/shared-mb-rn-05.png" alt="SHARED-MB-RN-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-RN-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Renewal & Retention</td></tr>
+            <tr><th>L3 Name</th><td>Associate and Household Member Add-On Processing</td></tr>
+            <tr><th>Trigger</th><td>Membership renewal or retention request initiated by a member</td></tr>
+            <tr><th>Outcome</th><td>Successful addition of associates and household members with updated membership records in the system.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses different telematics systems (CAA Connect vs CAA MyCAA App) and has additional regulatory compliance requirements (FSRA).</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag agero">Agero Swoop dispatch</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Add-On Request</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member's renewal request</td>
+          <td>Add-on request form</td>
+          <td>Request initiation time < 1 minute</td>
+          <td>Handling multiple add-ons simultaneously</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Add-On Information</td>
+          <td>Data Entry Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Add-on request form</td>
+          <td>Validated add-on information</td>
+          <td>Validation accuracy > 98%</td>
+          <td>Manual data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Assign Add-On to Agent</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Validated add-on information</td>
+          <td>Assigned agent notification</td>
+          <td>Assignment time < 5 minutes</td>
+          <td>Overloaded agents</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Add-On Information</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Assigned add-on information</td>
+          <td>Reviewed add-on information</td>
+          <td>Review time < 10 minutes</td>
+          <td>Complex policy rules</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Underwrite Add-On</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Reviewed add-on information</td>
+          <td>Underwriting decision</td>
+          <td>Underwriting accuracy > 95%</td>
+          <td>High-risk cases</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Issue Add-On Policy</td>
+          <td>Policy Issuer</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Underwriting decision</td>
+          <td>Issued policy document</td>
+          <td>Issuance time < 15 minutes</td>
+          <td>Document generation errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Member of Add-On</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Issued policy document</td>
+          <td>Notification sent to member</td>
+          <td>Notification delivery rate > 99%</td>
+          <td>Email deliverability issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Membership Records</td>
+          <td>Data Entry Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Issued policy document</td>
+          <td>Updated membership records</td>
+          <td>Record update accuracy > 98%</td>
+          <td>Data synchronization issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Add-On Request</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated membership records</td>
+          <td>Closed add-on request</td>
+          <td>Request closure time < 5 minutes</td>
+          <td>Overlooking closed requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Request initiation time < 1 minute</span> <span class="kpi-pill">Validation accuracy > 98%</span> <span class="kpi-pill">Review time < 10 minutes</span> <span class="kpi-pill">Underwriting accuracy > 95%</span> <span class="kpi-pill">Issuance time < 15 minutes</span> <span class="kpi-pill">Notification delivery rate > 99%</span> <span class="kpi-pill">Record update accuracy > 98%</span> <span class="kpi-pill">Request closure time < 5 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data entry errors leading to incorrect add-on information</span> <span class="risk-pill">Overloaded agents causing delays in processing</span> <span class="risk-pill">Complex policy rules affecting underwriting decisions</span> <span class="risk-pill">High-risk cases requiring additional scrutiny</span> <span class="risk-pill">Email deliverability issues preventing member notifications</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
