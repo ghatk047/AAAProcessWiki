@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billing & Premium Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-BI-08 &mdash; Statutory Reserve and Premium Tax Calculation &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -288,33 +290,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
         </div>
-        <h1>🛡️ Billing & Premium Management</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-BI-08 &mdash; Statutory Reserve and Premium Tax Calculation
+        </h1>
+        <p>The process for calculating statutory reserve and premium tax for AAA Northeast involves gathering policy data, applying state regulations, and generating reports for compliance.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-bi-01.html">AAA-IN-BI-01</a></td><td>Premium Invoice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-02.html">AAA-IN-BI-02</a></td><td>Installment Plan Setup and Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-03.html">AAA-IN-BI-03</a></td><td>Payment Receipt and EFT and Credit Card Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-04.html">AAA-IN-BI-04</a></td><td>NSF and Failed Payment Handling and Notice</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-05.html">AAA-IN-BI-05</a></td><td>Agent Commission Calculation and Statement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-06.html">AAA-IN-BI-06</a></td><td>Refund Processing (Cancellation and Overpayment)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-07.html">AAA-IN-BI-07</a></td><td>Premium Audit (Commercial Lines)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-BI-08</td><td>Statutory Reserve and Premium Tax Calculation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-bi-08.png" data-lightbox data-title="AAA-IN-BI-08 BPMN">
+              <img src="../../assets/img/aaa-in-bi-08.png" alt="AAA-IN-BI-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-BI-08</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management</td></tr>
+            <tr><th>L3 Name</th><td>Statutory Reserve and Premium Tax Calculation</td></tr>
+            <tr><th>Trigger</th><td>Monthly billing cycle or changes in policy terms</td></tr>
+            <tr><th>Outcome</th><td>Accurate calculation of statutory reserves and premium taxes, ensuring compliance with state laws and timely reporting to regulatory bodies.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast operates under specific state DOI regulations, which differ from CAA's federal guidelines. This process requires detailed understanding of each state's insurance laws.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Extraction</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Policy data, claim information</td>
+          <td>Extracted policy and claim data</td>
+          <td>Data extraction accuracy rate > 98%</td>
+          <td>Inconsistent data quality from different sources</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Regulation Application</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag salesforce">Verisk ISO rating, Salesforce (Einstein AI)</span></td>
+          <td>Extracted policy and claim data, state regulations</td>
+          <td>Calculated statutory reserves and premium taxes</td>
+          <td>Regulatory compliance rate > 95%</td>
+          <td>Complexity of varying state insurance laws</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Report Generation</td>
+          <td>Reporting Analyst</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Calculated statutory reserves and premium taxes</td>
+          <td>Compliance reports</td>
+          <td>Report generation time < 5 working days</td>
+          <td>Timely report delivery to regulatory bodies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approval</td>
+          <td>Senior Compliance Officer</td>
+          <td><span class="sys-tag salesforce">Salesforce, SAP S/4HANA</span></td>
+          <td>Compliance reports</td>
+          <td>Approved compliance reports</td>
+          <td>Approval time < 3 working days</td>
+          <td>Delays in review process</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Submission to State DOI</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Approved compliance reports</td>
+          <td>Submitted reports</td>
+          <td>Submission accuracy rate > 98%</td>
+          <td>Errors in submission process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Audit and Review</td>
+          <td>Internal Auditor</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Submitted reports</td>
+          <td>Audit findings</td>
+          <td>Audit completion time < 7 working days</td>
+          <td>Resource constraints for audits</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Remediation and Reporting</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Audit findings</td>
+          <td>Remediated reports</td>
+          <td>Remediation time < 10 working days</td>
+          <td>Complex remediation processes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Submission</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Remediated reports</td>
+          <td>Final submitted reports</td>
+          <td>Final submission accuracy rate > 98%</td>
+          <td>Errors in final submission</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Data extraction accuracy rate > 98%</span> <span class="kpi-pill">Regulatory compliance rate > 95%</span> <span class="kpi-pill">Report generation time < 5 working days</span> <span class="kpi-pill">Approval time < 3 working days</span> <span class="kpi-pill">Submission accuracy rate > 98%</span> <span class="kpi-pill">Audit completion time < 7 working days</span> <span class="kpi-pill">Remediation time < 10 working days</span> <span class="kpi-pill">Final submission accuracy rate > 98%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent data quality from different sources</span> <span class="risk-pill">Complexity of varying state insurance laws</span> <span class="risk-pill">Timely report delivery to regulatory bodies</span> <span class="risk-pill">Delays in review process</span> <span class="risk-pill">Errors in submission process</span> <span class="risk-pill">Resource constraints for audits</span> <span class="risk-pill">Complex remediation processes</span> <span class="risk-pill">Errors in final submission</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
