@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search &mdash; AAA / CAA Process Wiki</title>
+  <link rel="stylesheet" href="assets/css/wiki.css">
+</head>
+<body>
+  <div class="topbar">
+    <button id="topbarToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="topbar-brand">AAA / CAA Process Wiki</span>
+    <span class="topbar-sub">Search Results</span>
+    <span class="topbar-spacer"></span>
+  </div>
+  <div class="wiki-layout">
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    </nav>
+    <main class="wiki-main">
+      <div class="page-header">
+        <h1>&#x1F50D; Search</h1>
+        <p id="searchQueryDisplay"></p>
+      </div>
+      <div id="searchResults" class="card">
+        <div class="card-body">
+          <div class="search-count" id="resultCount">Loading&hellip;</div>
+          <div id="resultList"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
+  <script src="assets/js/wiki.js"></script>
+  <script>
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var q = (params.get('q') || '').trim().toLowerCase();
+    var qDisplay = document.getElementById('searchQueryDisplay');
+    var countEl  = document.getElementById('resultCount');
+    var listEl   = document.getElementById('resultList');
+    if (!q) { countEl.textContent = 'Enter a search term.'; return; }
+    qDisplay.textContent = 'Query: "' + params.get('q') + '"';
+
+    fetch('search-index.json')
+      .then(function(r){ return r.json(); })
+      .then(function(idx){
+        var tokens = q.split(/\s+/).filter(Boolean);
+        var results = idx.filter(function(item){
+          var hay = (item.pid + ' ' + item.l1 + ' ' + item.l2 + ' ' +
+                     item.l3 + ' ' + (item.steps||'') + ' ' + (item.systems||'')).toLowerCase();
+          return tokens.every(function(t){ return hay.indexOf(t) >= 0; });
+        });
+        countEl.textContent = results.length + ' result' + (results.length !== 1 ? 's' : '') + ' for "' + params.get('q') + '"';
+        if (!results.length) {
+          listEl.innerHTML = '<p class="text-muted mt-16">No processes matched your search.</p>';
+          return;
+        }
+        listEl.innerHTML = results.map(function(r){
+          return '<div class="search-result"><h4><a href="' + r.url + '">' +
+                 r.pid + ' &mdash; ' + r.l3 + '</a></h4>' +
+                 '<p>' + r.l1 + ' &rsaquo; ' + r.l2 + '</p></div>';
+        }).join('');
+      })
+      .catch(function(){ countEl.textContent = 'Search index not yet available.'; });
+  })();
+  </script>
+</body>
+</html>
