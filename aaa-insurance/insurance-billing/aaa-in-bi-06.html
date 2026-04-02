@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billing & Premium Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-BI-06 &mdash; Refund Processing (Cancellation and Overpayment) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -286,33 +288,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
         </div>
-        <h1>🛡️ Billing & Premium Management</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-BI-06 &mdash; Refund Processing (Cancellation and Overpayment)
+        </h1>
+        <p>This process handles the refund processing for cancellations and overpayments in AAA Northeast's insurance operations. It ensures timely and accurate refunds to policyholders while maintaining compliance with state regulations.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-bi-01.html">AAA-IN-BI-01</a></td><td>Premium Invoice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-02.html">AAA-IN-BI-02</a></td><td>Installment Plan Setup and Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-03.html">AAA-IN-BI-03</a></td><td>Payment Receipt and EFT and Credit Card Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-04.html">AAA-IN-BI-04</a></td><td>NSF and Failed Payment Handling and Notice</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-05.html">AAA-IN-BI-05</a></td><td>Agent Commission Calculation and Statement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-BI-06</td><td>Refund Processing (Cancellation and Overpayment)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-07</td><td>Premium Audit (Commercial Lines)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-08</td><td>Statutory Reserve and Premium Tax Calculation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-bi-06.png" data-lightbox data-title="AAA-IN-BI-06 BPMN">
+              <img src="../../assets/img/aaa-in-bi-06.png" alt="AAA-IN-BI-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-BI-06</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management</td></tr>
+            <tr><th>L3 Name</th><td>Refund Processing (Cancellation and Overpayment)</td></tr>
+            <tr><th>Trigger</th><td>A cancellation request is received from a policyholder or an overpayment is detected during billing.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a processed refund being issued to the policyholder, with updated records in all relevant systems.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific regional policies and procedures that differ slightly from other AAA regions. Additionally, the use of Guidewire Cloud for policy management is more advanced compared to some other regions.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag guidewire">Guidewire BillingCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Cancellation Request</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Cancellation request from policyholder</td>
+          <td>Updated policy status in Guidewire PolicyCenter</td>
+          <td>Time to process cancellation request < 24 hours</td>
+          <td>Delays in processing cancellation requests can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Cancellation</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Updated policy status</td>
+          <td>Validation report</td>
+          <td>Accuracy of cancellation validation > 98%</td>
+          <td>Incorrect validations can lead to financial discrepancies.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Calculate Refund Amount</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Validation report</td>
+          <td>Refund calculation document</td>
+          <td>Accuracy of refund calculations > 99%</td>
+          <td>Errors in refund calculations can result in over or under payments.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Prepare Refund Document</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, Salesforce</span></td>
+          <td>Refund calculation document</td>
+          <td>Refund document for processing</td>
+          <td>Time to prepare refund document < 4 hours</td>
+          <td>Delays in preparing documents can cause delays in issuing refunds.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Issue Refund</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Refund document</td>
+          <td>Refund issued to policyholder</td>
+          <td>Time to issue refund < 24 hours</td>
+          <td>Failed refunds can lead to customer complaints and additional processing time.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Records in Guidewire PolicyCenter</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Refund issued confirmation</td>
+          <td>Updated policy and billing records</td>
+          <td>Accuracy of record updates > 98%</td>
+          <td>Inaccurate record updates can lead to discrepancies in future billing.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Policyholder</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Updated records</td>
+          <td>Notification to policyholder</td>
+          <td>Response time for notification < 24 hours</td>
+          <td>Delayed notifications can cause customer confusion and dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Refund Case</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, Salesforce</span></td>
+          <td>Notification confirmation</td>
+          <td>Closed refund case</td>
+          <td>Time to close refund case < 48 hours</td>
+          <td>Open cases can lead to operational inefficiencies and increased workload.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to process cancellation request < 24 hours</span> <span class="kpi-pill">Accuracy of cancellation validation > 98%</span> <span class="kpi-pill">Accuracy of refund calculations > 99%</span> <span class="kpi-pill">Time to prepare refund document < 4 hours</span> <span class="kpi-pill">Time to issue refund < 24 hours</span> <span class="kpi-pill">Accuracy of record updates > 98%</span> <span class="kpi-pill">Response time for notification < 24 hours</span> <span class="kpi-pill">Time to close refund case < 48 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in processing cancellation requests can lead to customer dissatisfaction.</span> <span class="risk-pill">Incorrect validations can lead to financial discrepancies.</span> <span class="risk-pill">Errors in refund calculations can result in over or under payments.</span> <span class="risk-pill">Failed refunds can lead to customer complaints and additional processing time.</span> <span class="risk-pill">Inaccurate record updates can lead to discrepancies in future billing.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
