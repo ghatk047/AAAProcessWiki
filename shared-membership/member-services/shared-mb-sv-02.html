@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Services & Benefits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-SV-02 &mdash; Passport Photo Service Delivery (Branch) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -256,33 +258,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/member-services/index.html">Member Services & Benefits</a>
         </div>
-        <h1>👥 Member Services & Benefits</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-SV-02 &mdash; Passport Photo Service Delivery (Branch)
+        </h1>
+        <p>This process handles the delivery of passport photos for AAA Northeast members. It involves initiating a request, processing the photo submission, and confirming its delivery.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-sv-01.html">SHARED-MB-SV-01</a></td><td>Member Discount Partner Redemption</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-SV-02</td><td>Passport Photo Service Delivery (Branch)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-03</td><td>International Driving Permit (IDP) Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-04</td><td>Notary and Document Authentication Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-05</td><td>Member Portal Profile and Preferences Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-06</td><td>Lost and Stolen Membership Card Replacement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-07</td><td>Member Data Privacy Request (CCPA and PIPEDA)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-08</td><td>Member Satisfaction Survey and NPS Tracking</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-sv-02.png" data-lightbox data-title="SHARED-MB-SV-02 BPMN">
+              <img src="../../assets/img/shared-mb-sv-02.png" alt="SHARED-MB-SV-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-SV-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Member Services & Benefits</td></tr>
+            <tr><th>L3 Name</th><td>Passport Photo Service Delivery (Branch)</td></tr>
+            <tr><th>Trigger</th><td>A member initiates a passport photo service request through the AAA App or by contacting the membership office.</td></tr>
+            <tr><th>Outcome</th><td>The member receives their passport photo via email or in-person pickup at a designated branch.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight and different GDS systems used for processing.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sys-generic">Image Processing Software</span> <span class="sys-tag sys-generic">Email System</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Request</td>
+          <td>Membership Services Representative</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Member's request form</td>
+          <td>Request logged in system</td>
+          <td>Request initiation time < 5 minutes</td>
+          <td>Delayed request logging</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Photo Submission</td>
+          <td>Member</td>
+          <td><span class="sys-tag aaa-app">AAA App, Email</span></td>
+          <td>Passport photo</td>
+          <td>Photo uploaded to system</td>
+          <td>Photo upload time < 30 seconds</td>
+          <td>Failed photo uploads</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Quality Check</td>
+          <td>Photography Technician</td>
+          <td><span class="sys-tag aaa-app">AAA App, Image Processing Software</span></td>
+          <td>Uploaded passport photo</td>
+          <td>Quality check report</td>
+          <td>Quality check completion time < 5 minutes</td>
+          <td>Inconsistent quality checks</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Approval for Processing</td>
+          <td>Membership Services Manager</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Quality check report</td>
+          <td>Approval status</td>
+          <td>Approval time < 10 minutes</td>
+          <td>Delayed approvals</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Photo Delivery</td>
+          <td>Membership Services Representative</td>
+          <td><span class="sys-tag aaa-app">AAA App, Email System</span></td>
+          <td>Approved passport photo</td>
+          <td>Delivered photo to member</td>
+          <td>Delivery time < 24 hours</td>
+          <td>Failed deliveries</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirmation of Receipt</td>
+          <td>Member</td>
+          <td><span class="sys-tag aaa-app">AAA App, Email System</span></td>
+          <td>Delivered photo</td>
+          <td>Receipt confirmation</td>
+          <td>Confirmation time < 5 minutes</td>
+          <td>No receipt confirmations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Request initiation time < 5 minutes</span> <span class="kpi-pill">Photo upload time < 30 seconds</span> <span class="kpi-pill">Quality check completion time < 5 minutes</span> <span class="kpi-pill">Approval time < 10 minutes</span> <span class="kpi-pill">Delivery time < 24 hours</span> <span class="kpi-pill">Confirmation time < 5 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent quality checks leading to rejected photos</span> <span class="risk-pill">Delayed approvals causing member dissatisfaction</span> <span class="risk-pill">Failed photo uploads due to system issues</span> <span class="risk-pill">Failed deliveries affecting member trust</span> <span class="risk-pill">No receipt confirmations impacting service tracking</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
