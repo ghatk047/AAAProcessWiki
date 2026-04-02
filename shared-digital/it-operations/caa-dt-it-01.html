@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-DT-IT-01 &mdash; Guidewire Cloud Platform Administration and Upgrades &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -456,42 +458,44 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>1 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-DT-IT-01 &mdash; Guidewire Cloud Platform Administration and Upgrades
+        </h1>
       </div>
+
+      <div class="dedup-panel">
+        <h4>&#x1F341; CAA SCO Process Reference</h4>
+        <p>This CAA process mirrors <a href="../../shared-digital/it-operations/aaa-dt-it-01.html"><strong>AAA-DT-IT-01</strong></a> in structure.
+           The table below lists the key CAA-specific differences:</p>
+        <ul style="margin-top:10px">
+          <li>AWS (CAA) vs AWS and Google Cloud (AAA)</li><li>PIPEDA compliance reporting vs US frameworks</li><li>Bill C-26 (Canadian cybersecurity legislation) compliance</li><li>Ontario data residency requirements</li>
+        </ul>
+        <p style="margin-top:12px">
+          <a href="../../shared-digital/it-operations/aaa-dt-it-01.html">&#8594; View the full AAA-DT-IT-01 process page with BPMN, L4 steps, KPIs, and risks</a>
+        </p>
+      </div>
+
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-DT-IT-01</td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-02</td><td>Salesforce Org Management and Release Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-02</td><td>Salesforce Org Management and Release Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-03</td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-03</td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-DT-IT-01</td></tr>
+            <tr><th>Organisation</th><td>CAA South Central Ontario</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>Guidewire Cloud Platform Administration and Upgrades</td></tr>
+            <tr><th>Reference Process</th>
+                <td><a href="../../shared-digital/it-operations/aaa-dt-it-01.html">AAA-DT-IT-01</a></td></tr>
           </table>
         </div>
       </div>
