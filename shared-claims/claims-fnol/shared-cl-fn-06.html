@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Notice of Loss (FNOL) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-FN-06 &mdash; Claim Assignment to Adjuster (Rules-Based Routing) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -400,33 +402,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
         </div>
-        <h1>📋 First Notice of Loss (FNOL)</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-FN-06 &mdash; Claim Assignment to Adjuster (Rules-Based Routing)
+        </h1>
+        <p>The process of assigning claims to adjusters based on predefined rules. This ensures that each claim is handled by the most appropriate adjuster, optimizing efficiency and accuracy.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-fn-01.html">SHARED-CL-FN-01</a></td><td>FNOL Intake (Phone and Digital and Agent Reported)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-02.html">SHARED-CL-FN-02</a></td><td>Claimant Identity Verification and Policy Lookup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-03.html">SHARED-CL-FN-03</a></td><td>Loss Details Capture (Date and Location and Parties)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-04.html">SHARED-CL-FN-04</a></td><td>Coverage Verification and Reservation of Rights Letter</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-05.html">SHARED-CL-FN-05</a></td><td>Initial Reserves Setting</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-FN-06</td><td>Claim Assignment to Adjuster (Rules-Based Routing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-07</td><td>Acknowledgement Letter and Digital Notification to Claimant</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-08</td><td>Third-Party Claimant Notification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-fn-06.png" data-lightbox data-title="SHARED-CL-FN-06 BPMN">
+              <img src="../../assets/img/shared-cl-fn-06.png" alt="SHARED-CL-FN-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-FN-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>First Notice of Loss (FNOL)</td></tr>
+            <tr><th>L3 Name</th><td>Claim Assignment to Adjuster (Rules-Based Routing)</td></tr>
+            <tr><th>Trigger</th><td>First Notice of Loss (FNOL) submission</td></tr>
+            <tr><th>Outcome</th><td>A claim is successfully assigned to an adjuster for further processing.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Guidewire PolicyCenter/ClaimCenter/BillingCenter for claims management, while CAA SCO utilizes the Guidewire InsuranceSuite. The routing rules may differ slightly due to these system differences.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sys-generic">Email System</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive FNOL</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>FNOL form</td>
+          <td>Claim record in Guidewire ClaimCenter</td>
+          <td>Time to receive FNOL < 5 minutes</td>
+          <td>Delays in FNOL submission can lead to increased claim processing time.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim record</td>
+          <td>Assessment report</td>
+          <td>Time to complete initial assessment < 30 minutes</td>
+          <td>Complex claims may require additional time for accurate assessment.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Rule-Based Routing</td>
+          <td>Claims Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Assessment report</td>
+          <td>Assigned adjuster</td>
+          <td>Routing accuracy > 95%</td>
+          <td>Incorrect routing can lead to delays and increased workload for adjusters.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Notify Assigned Adjuster</td>
+          <td>Claims Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Email System</span></td>
+          <td>Assigned adjuster information</td>
+          <td>Notification email</td>
+          <td>Time to notify adjuster < 5 minutes</td>
+          <td>Missed notifications can result in delayed claim processing.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Adjuster Acknowledgment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Email System, Guidewire ClaimCenter</span></td>
+          <td>Notification email</td>
+          <td>Acknowledgment receipt</td>
+          <td>Time to acknowledge < 10 minutes</td>
+          <td>Late acknowledgments can cause delays in claim processing.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Claim Review</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim record, Assessment report</td>
+          <td>Review notes</td>
+          <td>Time to complete review < 1 hour</td>
+          <td>Detailed claims may require more time for thorough review.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Claim Status</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Review notes</td>
+          <td>Updated claim status</td>
+          <td>Time to update status < 5 minutes</td>
+          <td>Delayed status updates can affect overall claim processing timeline.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Final Assignment Confirmation</td>
+          <td>Claims Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Email System</span></td>
+          <td>Updated claim status</td>
+          <td>Confirmation email</td>
+          <td>Time to send confirmation < 5 minutes</td>
+          <td>Missed confirmations can lead to confusion and delays.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Assignment Process</td>
+          <td>Claims Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Confirmation email</td>
+          <td>Closed assignment record</td>
+          <td>Time to close assignment < 5 minutes</td>
+          <td>Delayed closure can cause issues in tracking and reporting.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to receive FNOL < 5 minutes</span> <span class="kpi-pill">Routing accuracy > 95%</span> <span class="kpi-pill">Time to notify adjuster < 5 minutes</span> <span class="kpi-pill">Time to acknowledge < 10 minutes</span> <span class="kpi-pill">Time to complete review < 1 hour</span> <span class="kpi-pill">Time to update status < 5 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Incorrect FNOL submission leading to delays</span> <span class="risk-pill">Inaccurate initial assessment affecting routing decisions</span> <span class="risk-pill">Missed notifications or acknowledgments causing processing delays</span> <span class="risk-pill">Detailed claims requiring more time for review</span> <span class="risk-pill">Delayed status updates impacting overall claim timeline</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
