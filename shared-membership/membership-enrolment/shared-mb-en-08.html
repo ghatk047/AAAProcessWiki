@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-08 &mdash; Duplicate Member Detection and Merge &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -246,33 +248,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-08 &mdash; Duplicate Member Detection and Merge
+        </h1>
+        <p>This process detects and merges duplicate member records to ensure accurate membership management and prevent data inconsistencies.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-03.html">SHARED-MB-EN-03</a></td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-04.html">SHARED-MB-EN-04</a></td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-05.html">SHARED-MB-EN-05</a></td><td>Membership Tier Selection and Upsell</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-06.html">SHARED-MB-EN-06</a></td><td>Payment Processing and First-Year Billing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-07.html">SHARED-MB-EN-07</a></td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-08.png" data-lightbox data-title="SHARED-MB-EN-08 BPMN">
+              <img src="../../assets/img/shared-mb-en-08.png" alt="SHARED-MB-EN-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Duplicate Member Detection and Merge</td></tr>
+            <tr><th>Trigger</th><td>New member enrollment or update request</td></tr>
+            <tr><th>Outcome</th><td>Successful detection and merging of duplicate member records, ensuring clean and accurate membership database.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Guidewire InsuranceSuite for policy management while AAA Northeast primarily uses Guidewire PolicyCenter/ClaimCenter/BillingCenter. CAA SCO also integrates with FSRA regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag powerbi">Power BI</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Duplicate Detection</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (AAA) or Guidewire InsuranceSuite (CAA SCO)</span></td>
+          <td>New member enrollment data</td>
+          <td>Duplicate detection report</td>
+          <td>Detection rate of 95% within 10 minutes</td>
+          <td>Manual review required for false positives</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Duplicate Report</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (AAA) or Guidewire InsuranceSuite (CAA SCO)</span></td>
+          <td>Duplicate detection report</td>
+          <td>Approved merge list</td>
+          <td>Manual review time of 5 minutes per record</td>
+          <td>Time-consuming manual verification process</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Merge Duplicate Records</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (AAA) or Guidewire InsuranceSuite (CAA SCO)</span></td>
+          <td>Approved merge list</td>
+          <td>Merged member record</td>
+          <td>90% successful merges within 2 hours</td>
+          <td>Data loss or corruption during merge</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Related Systems</td>
+          <td>IT Specialist</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce (AAA) or Salesforce, Power BI (CAA SCO)</span></td>
+          <td>Merged member record</td>
+          <td>Updated system records</td>
+          <td>95% successful updates within 1 hour</td>
+          <td>System integration issues causing delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Verify Merged Records</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (AAA) or Guidewire InsuranceSuite (CAA SCO)</span></td>
+          <td>Merged member record</td>
+          <td>Verification report</td>
+          <td>100% successful verifications within 30 minutes</td>
+          <td>Manual verification errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Process</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (AAA) or Guidewire InsuranceSuite (CAA SCO)</span></td>
+          <td>Verification report</td>
+          <td>Closed process record</td>
+          <td>95% successful closure within 10 minutes</td>
+          <td>Incomplete closure leading to rework</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Detection rate of 95% within 10 minutes</span> <span class="kpi-pill">Manual review time of 5 minutes per record</span> <span class="kpi-pill">90% successful merges within 2 hours</span> <span class="kpi-pill">95% successful updates within 1 hour</span> <span class="kpi-pill">100% successful verifications within 30 minutes</span> <span class="kpi-pill">95% successful closure within 10 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data loss or corruption during merge</span> <span class="risk-pill">System integration issues causing delays</span> <span class="risk-pill">Manual verification errors</span> <span class="risk-pill">Incomplete closure leading to rework</span> <span class="risk-pill">False positives in duplicate detection</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
