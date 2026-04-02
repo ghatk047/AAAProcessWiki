@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Policy Administration &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-PO-04 &mdash; Non-Renewal and Cancellation Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -276,33 +278,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/policy-administration/index.html">Policy Administration</a>
         </div>
-        <h1>🛡️ Policy Administration</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-PO-04 &mdash; Non-Renewal and Cancellation Processing
+        </h1>
+        <p>The Non-Renewal and Cancellation Processing process handles the termination of insurance policies for AAA Northeast members. It ensures that all necessary notifications, cancellations, and refunds are processed accurately and efficiently.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-po-01.html">AAA-IN-PO-01</a></td><td>New Policy Issuance and Document Generation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-po-02.html">AAA-IN-PO-02</a></td><td>Policy Endorsement and Mid-Term Change Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-po-03.html">AAA-IN-PO-03</a></td><td>Policy Renewal Processing and Rate Refresh</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-PO-04</td><td>Non-Renewal and Cancellation Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-PO-05</td><td>State DOI Filing and Rate Filing Compliance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-PO-06</td><td>Lienholder and Mortgagee Certificate Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-PO-07</td><td>Reinsurance Cession and Treaty Allocation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-PO-08</td><td>Policy Document Delivery (Digital and Print)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-po-04.png" data-lightbox data-title="AAA-IN-PO-04 BPMN">
+              <img src="../../assets/img/aaa-in-po-04.png" alt="AAA-IN-PO-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-PO-04</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Policy Administration</td></tr>
+            <tr><th>L3 Name</th><td>Non-Renewal and Cancellation Processing</td></tr>
+            <tr><th>Trigger</th><td>Policy expiration date reached or member initiates cancellation request through the AAA App or Salesforce portal.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the policy being officially terminated, with accurate records updated in Guidewire Cloud, and appropriate notifications sent to the member via email or SMS.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific state DOI requirements that differ from other regions. Additionally, the use of Salesforce for customer interactions adds an extra layer of automation compared to CAA's focus on Guidewire portals.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Policy Expiry Check</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Policy expiration date</td>
+          <td>Policy status updated to 'Expired'</td>
+          <td>Accuracy of policy expiry updates: 99.5%</td>
+          <td>Manual intervention required for late notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Cancellation Request Handling</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Cancellation request from member</td>
+          <td>Cancellation request logged in Salesforce</td>
+          <td>Response time for cancellation requests: 30 minutes</td>
+          <td>Delays in processing due to system outages</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Policy Termination</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Cancellation request from Salesforce</td>
+          <td>Policy terminated in Guidewire</td>
+          <td>Time to policy termination: 2 hours</td>
+          <td>Data inconsistencies between systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Refund Calculation</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Terminated policy details</td>
+          <td>Refund amount calculated</td>
+          <td>Accuracy of refund calculations: 99%</td>
+          <td>Complexity in handling partial refunds</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Refund Processing</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Calculated refund amount</td>
+          <td>Refund processed and confirmed</td>
+          <td>Time to refund processing: 48 hours</td>
+          <td>Bank system integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notification Generation</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Terminated policy details</td>
+          <td>Notification template generated</td>
+          <td>Accuracy of notification content: 98%</td>
+          <td>Customization for different member segments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notification Dispatch</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Generated notification template</td>
+          <td>Notification sent to member</td>
+          <td>Delivery rate of notifications: 95%</td>
+          <td>High bounce rates from email notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Post-Cancellation Review</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Terminated policy details</td>
+          <td>Review report generated</td>
+          <td>Completion rate of post-cancellation reviews: 85%</td>
+          <td>Resource constraints for thorough reviews</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Accuracy of policy expiry updates: 99.5%</span> <span class="kpi-pill">Response time for cancellation requests: 30 minutes</span> <span class="kpi-pill">Time to policy termination: 2 hours</span> <span class="kpi-pill">Accuracy of refund calculations: 99%</span> <span class="kpi-pill">Time to refund processing: 48 hours</span> <span class="kpi-pill">Accuracy of notification content: 98%</span> <span class="kpi-pill">Delivery rate of notifications: 95%</span> <span class="kpi-pill">Completion rate of post-cancellation reviews: 85%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data inconsistencies between systems</span> <span class="risk-pill">Bank system integration issues</span> <span class="risk-pill">Customization for different member segments</span> <span class="risk-pill">High bounce rates from email notifications</span> <span class="risk-pill">Resource constraints for thorough reviews</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
