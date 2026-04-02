@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Provider Network Mgmt &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-NW-04 &mdash; Provider Payment Processing and Invoice Reconciliation &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -350,33 +352,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
         </div>
-        <h1>🚨 Service Provider Network Mgmt</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-NW-04 &mdash; Provider Payment Processing and Invoice Reconciliation
+        </h1>
+        <p>This process handles the payment processing and invoice reconciliation for service providers within the AAA Northeast network. It ensures timely payments to providers and accurate financial reporting.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-nw-01.html">SHARED-RS-NW-01</a></td><td>Service Provider Onboarding and Vetting (Background Check)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-02.html">SHARED-RS-NW-02</a></td><td>Contract and Rate Negotiation with Tow Providers</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-03.html">SHARED-RS-NW-03</a></td><td>Service Provider Performance Monitoring and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-NW-04</td><td>Provider Payment Processing and Invoice Reconciliation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-05</td><td>Provider Complaint and Incident Investigation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-06</td><td>Network Coverage Gap Analysis and Recruitment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-07</td><td>Equipment and Compliance Verification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-08</td><td>Swoop API Integration with Provider Dispatch Software</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-nw-04.png" data-lightbox data-title="SHARED-RS-NW-04 BPMN">
+              <img src="../../assets/img/shared-rs-nw-04.png" alt="SHARED-RS-NW-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-NW-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Service Provider Network Mgmt</td></tr>
+            <tr><th>L3 Name</th><td>Provider Payment Processing and Invoice Reconciliation</td></tr>
+            <tr><th>Trigger</th><td>Completion of a service request by a member, resulting in a billable event.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces accurate provider payments and reconciled invoices, ensuring financial integrity and compliance with regulatory requirements.</td></tr>
+            <tr><th>Org Notes</th><td>The process for CAA SCO may involve additional steps related to FSRA regulations and different telematics systems. Additionally, CAA SCO uses the Guidewire InsuranceSuite instead of PolicyCenter/ClaimCenter/BillingCenter used by AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span> <span class="sys-tag snowflake">Snowflake</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Payment Processing</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Billable service request details</td>
+          <td>Payment initiation document</td>
+          <td>Time to initiate payment < 2 hours</td>
+          <td>Late payments due to system delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Generate Invoice</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Payment initiation document</td>
+          <td>Invoice document</td>
+          <td>Invoice generation time < 1 hour</td>
+          <td>Incorrect invoice details</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Invoice</td>
+          <td>Accountant</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Invoice document</td>
+          <td>Reviewed invoice status</td>
+          <td>Invoice review time < 30 minutes</td>
+          <td>Manual corrections for errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Approve Payment</td>
+          <td>Financial Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Reviewed invoice status</td>
+          <td>Payment approval document</td>
+          <td>Payment approval time < 1 hour</td>
+          <td>Delays in payment approvals</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Process Payment</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Payment approval document</td>
+          <td>Payment confirmation</td>
+          <td>Payment processing time < 2 hours</td>
+          <td>Failed payments due to bank issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Reconcile Invoice</td>
+          <td>Accountant</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Snowflake</span></td>
+          <td>Payment confirmation</td>
+          <td>Reconciliation report</td>
+          <td>Invoice reconciliation time < 1 hour</td>
+          <td>Discrepancies in payment amounts</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate payment < 2 hours</span> <span class="kpi-pill">Invoice generation time < 1 hour</span> <span class="kpi-pill">Invoice review time < 30 minutes</span> <span class="kpi-pill">Payment approval time < 1 hour</span> <span class="kpi-pill">Payment processing time < 2 hours</span> <span class="kpi-pill">Invoice reconciliation time < 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">System delays affecting payment initiation and invoice generation</span> <span class="risk-pill">Manual corrections for errors in invoices leading to delays</span> <span class="risk-pill">Delays in financial approvals causing late payments</span> <span class="risk-pill">Bank issues resulting in failed payments</span> <span class="risk-pill">Discrepancies in payment amounts due to reconciliation errors</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
