@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-08 &mdash; Reinsurance Recovery Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -418,33 +420,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-08 &mdash; Reinsurance Recovery Processing
+        </h1>
+        <p>The Reinsurance Recovery Processing process involves identifying and recovering losses from reinsurers on behalf of the insured. This ensures that the organization is compensated for claims processed under reinsurance agreements.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-02.html">SHARED-CL-SP-02</a></td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-03.html">SHARED-CL-SP-03</a></td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-04.html">SHARED-CL-SP-04</a></td><td>Recovery Negotiation and Settlement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-05.html">SHARED-CL-SP-05</a></td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-06.html">SHARED-CL-SP-06</a></td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-07.html">SHARED-CL-SP-07</a></td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-08.png" data-lightbox data-title="SHARED-CL-SP-08 BPMN">
+              <img src="../../assets/img/shared-cl-sp-08.png" alt="SHARED-CL-SP-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Reinsurance Recovery Processing</td></tr>
+            <tr><th>Trigger</th><td>A claim is identified as being covered by a reinsurance agreement.</td></tr>
+            <tr><th>Outcome</th><td>Successful recovery of funds from reinsurers, ensuring financial compensation for processed claims.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates within a regulated environment (FSRA) and may have additional compliance requirements compared to AAA Northeast. CAA SCO also uses different systems like ClientBase and Power BI for reporting.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Reinsurance Agreement</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim details</td>
+          <td>Reinsurance agreement identification report</td>
+          <td>Agreement identification accuracy rate > 95%</td>
+          <td>Inaccurate identification of reinsurance agreements leading to missed recoveries.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prepare Recovery Request</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Reinsurance agreement report</td>
+          <td>Recovery request document</td>
+          <td>Request preparation time < 3 days</td>
+          <td>Delays in preparing recovery requests affecting overall claim processing times.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Submit Recovery Request to Reinsurer</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Recovery request document</td>
+          <td>Confirmation of submission</td>
+          <td>Submission success rate > 98%</td>
+          <td>Failed submissions due to incorrect data or system issues.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Recovery Status</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Confirmation of submission</td>
+          <td>Recovery status update</td>
+          <td>Status updates within 7 days post-submission</td>
+          <td>Delayed status updates affecting timely recovery processes.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Negotiate Recovery Terms</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Recovery status update</td>
+          <td>Negotiated terms document</td>
+          <td>Negotiation completion time < 10 days</td>
+          <td>Prolonged negotiation periods impacting financial recovery timelines.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Finalize Recovery Agreement</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Negotiated terms document</td>
+          <td>Finalized recovery agreement</td>
+          <td>Agreement finalization time < 5 days</td>
+          <td>Delays in finalizing agreements leading to extended claim processing times.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Process Payment from Reinsurer</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Finalized recovery agreement</td>
+          <td>Payment receipt</td>
+          <td>Payment processing time < 3 days</td>
+          <td>Delays in payment processing affecting cash flow.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Claim Status</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Payment receipt</td>
+          <td>Updated claim status</td>
+          <td>Status update accuracy rate > 98%</td>
+          <td>Inaccurate status updates leading to confusion in claim management.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Recovery Case</td>
+          <td>Recovery Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Updated claim status</td>
+          <td>Closed recovery case record</td>
+          <td>Case closure rate > 95%</td>
+          <td>Open cases leading to ongoing administrative burdens.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Agreement identification accuracy rate > 95%</span> <span class="kpi-pill">Request preparation time < 3 days</span> <span class="kpi-pill">Submission success rate > 98%</span> <span class="kpi-pill">Status updates within 7 days post-submission</span> <span class="kpi-pill">Negotiation completion time < 10 days</span> <span class="kpi-pill">Agreement finalization time < 5 days</span> <span class="kpi-pill">Payment processing time < 3 days</span> <span class="kpi-pill">Status update accuracy rate > 98%</span> <span class="kpi-pill">Case closure rate > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate identification of reinsurance agreements leading to missed recoveries.</span> <span class="risk-pill">Delays in preparing recovery requests affecting overall claim processing times.</span> <span class="risk-pill">Failed submissions due to incorrect data or system issues.</span> <span class="risk-pill">Delayed status updates affecting timely recovery processes.</span> <span class="risk-pill">Prolonged negotiation periods impacting financial recovery timelines.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
