@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadside Service Delivery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-SV-06 &mdash; Winching and Extraction Service &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -344,33 +346,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-service-delivery/index.html">Roadside Service Delivery</a>
         </div>
-        <h1>🚨 Roadside Service Delivery</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-SV-06 &mdash; Winching and Extraction Service
+        </h1>
+        <p>The Winching and Extraction Service process involves receiving a winching request from a member, dispatching the appropriate equipment and personnel to extract the vehicle, and ensuring safe delivery back to the road.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-sv-01.html">SHARED-RS-SV-01</a></td><td>Towing Service Light Duty Dispatch and Hook-Up</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-02.html">SHARED-RS-SV-02</a></td><td>Battery Jump-Start and Battery Replacement Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-03.html">SHARED-RS-SV-03</a></td><td>Flat Tyre Service (Change or Inflate)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-04.html">SHARED-RS-SV-04</a></td><td>Fuel Delivery Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-05.html">SHARED-RS-SV-05</a></td><td>Lockout Service (Slim-Jim and Locksmith Dispatch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-SV-06</td><td>Winching and Extraction Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-07</td><td>EV Roadside Assistance (Mobile Charge and Tow to Charger)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-08</td><td>After-Hours and Winter Surge Operations</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-sv-06.png" data-lightbox data-title="SHARED-RS-SV-06 BPMN">
+              <img src="../../assets/img/shared-rs-sv-06.png" alt="SHARED-RS-SV-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-SV-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Roadside Service Delivery</td></tr>
+            <tr><th>L3 Name</th><td>Winching and Extraction Service</td></tr>
+            <tr><th>Trigger</th><td>A member contacts AAA Northeast via phone or mobile app requesting winching services.</td></tr>
+            <tr><th>Outcome</th><td>The vehicle is safely extracted and returned to the road with minimal disruption to the member's journey.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements related to telematics data collection and reporting, which are not present in AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sys-generic">GPS Tracking System</span> <span class="sys-tag sys-generic">Winching Equipment</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Winching Request</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member contact details and vehicle location</td>
+          <td>Winching request ticket</td>
+          <td>Response time to winching request < 5 minutes</td>
+          <td>Delayed response times affecting member satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Winching Crew</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Winching request ticket</td>
+          <td>Assigned crew details</td>
+          <td>Crew assignment within 2 minutes of receiving request</td>
+          <td>Inefficient crew allocation leading to longer response times</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Notify Member</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Assigned crew details</td>
+          <td>Notification sent to member</td>
+          <td>Member notification within 1 minute of assigning crew</td>
+          <td>Delayed notifications causing further inconvenience to members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Arrive at Scene</td>
+          <td>Winching Crew Member</td>
+          <td><span class="sys-tag sys-generic">GPS Tracking System</span></td>
+          <td>Assigned crew details</td>
+          <td>Arrival confirmation</td>
+          <td>Crew arrival within 10 minutes of notification</td>
+          <td>Late arrivals affecting member's wait time</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Assess Vehicle Condition</td>
+          <td>Winching Crew Member</td>
+          <td><span class="sys-tag sys-generic">Mobile Device (for documentation)</span></td>
+          <td>Vehicle condition assessment form</td>
+          <td>Assessment report</td>
+          <td>Vehicle condition assessed within 5 minutes of arrival</td>
+          <td>Inaccurate assessments leading to improper handling</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Perform Winching</td>
+          <td>Winching Crew Member</td>
+          <td><span class="sys-tag sys-generic">Winching Equipment</span></td>
+          <td>Assessment report</td>
+          <td>Vehicle safely extracted</td>
+          <td>Extraction completed within 15 minutes of assessment</td>
+          <td>Extended extraction times causing further delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirm Extraction Completion</td>
+          <td>Winching Crew Member</td>
+          <td><span class="sys-tag sys-generic">GPS Tracking System</span></td>
+          <td>Vehicle safely extracted</td>
+          <td>Extraction completion confirmation</td>
+          <td>Completion confirmation within 2 minutes of extraction</td>
+          <td>Delayed confirmations affecting follow-up processes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Bill Member</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Extraction completion confirmation</td>
+          <td>Invoice sent to member</td>
+          <td>Invoice issued within 1 hour of extraction completion</td>
+          <td>Late billing causing financial dissatisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Case Status</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Invoice sent to member</td>
+          <td>Case status updated to closed</td>
+          <td>Case closure within 30 minutes of billing</td>
+          <td>Delayed case closures affecting internal tracking</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time to winching request < 5 minutes</span> <span class="kpi-pill">Crew assignment within 2 minutes of receiving request</span> <span class="kpi-pill">Member notification within 1 minute of assigning crew</span> <span class="kpi-pill">Crew arrival within 10 minutes of notification</span> <span class="kpi-pill">Vehicle condition assessed within 5 minutes of arrival</span> <span class="kpi-pill">Extraction completed within 15 minutes of assessment</span> <span class="kpi-pill">Completion confirmation within 2 minutes of extraction</span> <span class="kpi-pill">Invoice issued within 1 hour of extraction completion</span> <span class="kpi-pill">Case closure within 30 minutes of billing</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate vehicle condition assessments leading to improper handling</span> <span class="risk-pill">Late arrivals affecting member's wait time</span> <span class="risk-pill">Extended extraction times causing further delays</span> <span class="risk-pill">Delayed confirmations affecting follow-up processes</span> <span class="risk-pill">Late billing causing financial dissatisfaction</span> <span class="risk-pill">Delayed case closures affecting internal tracking</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
