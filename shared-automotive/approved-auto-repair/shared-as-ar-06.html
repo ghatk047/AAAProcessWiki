@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Approved Auto Repair Network &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-AS-AR-06 &mdash; Auto Repair Cost Estimator Publication (Mitchell 1 data) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -424,33 +426,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Automotive Services</a>
+          <a href="../../shared-automotive/index.html">Automotive Services</a> &rsaquo;
+          <a href="../../shared-automotive/approved-auto-repair/index.html">Approved Auto Repair Network</a>
         </div>
-        <h1>🔧 Approved Auto Repair Network</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-AS-AR-06 &mdash; Auto Repair Cost Estimator Publication (Mitchell 1 data)
+        </h1>
+        <p>The process for publishing auto repair cost estimates using Mitchell 1 data within the Approved Auto Repair Network. This ensures accurate and consistent pricing information is provided to members.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-as-ar-01.html">SHARED-AS-AR-01</a></td><td>Shop Inspection and AAA and CAA Approved Certification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-02.html">SHARED-AS-AR-02</a></td><td>Shop Re-Inspection and Annual Compliance Audit</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-03.html">SHARED-AS-AR-03</a></td><td>Member Referral to Approved Shop (Digital and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-04.html">SHARED-AS-AR-04</a></td><td>Complaint Investigation Against Approved Shop</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-05.html">SHARED-AS-AR-05</a></td><td>Shop Dispute Mediation and Arbitration</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-AS-AR-06</td><td>Auto Repair Cost Estimator Publication (Mitchell 1 data)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-07</td><td>Shop Performance Reporting and Tier Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-08</td><td>AAA and CAA Co-Branded Marketing with Approved Shops</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-as-ar-06.png" data-lightbox data-title="SHARED-AS-AR-06 BPMN">
+              <img src="../../assets/img/shared-as-ar-06.png" alt="SHARED-AS-AR-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-AS-AR-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Automotive Services</td></tr>
+            <tr><th>L2 Process</th><td>Approved Auto Repair Network</td></tr>
+            <tr><th>L3 Name</th><td>Auto Repair Cost Estimator Publication (Mitchell 1 data)</td></tr>
+            <tr><th>Trigger</th><td>Receipt of a new batch of Mitchell 1 data from the vendor.</td></tr>
+            <tr><th>Outcome</th><td>Published auto repair cost estimates accessible via the AAA Northeast mobile app and online portal for member use.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a similar process but integrates with their own telematics system (CAA Connect) for additional insights on vehicle usage patterns.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag snowflake">Snowflake</span> <span class="sys-tag mitchell">Mitchell 1</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag aaa-app">AAA App</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Ingestion</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Mitchell 1 data file</td>
+          <td>Ingested data in Snowflake</td>
+          <td>Data ingestion time < 2 hours</td>
+          <td>Delayed vendor data delivery</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Validation</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Ingested data in Snowflake</td>
+          <td>Validated data report</td>
+          <td>Validation error rate < 5%</td>
+          <td>Data quality issues from vendor</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Cost Estimation Calculation</td>
+          <td>Auto Repair Specialist</td>
+          <td><span class="sys-tag mitchell">Mitchell 1</span></td>
+          <td>Validated data report</td>
+          <td>Cost estimates document</td>
+          <td>Estimation accuracy > 90%</td>
+          <td>Complex repair codes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Data Transformation</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Cost estimates document</td>
+          <td>Transformed data for publication</td>
+          <td>Transformation time < 1 hour</td>
+          <td>Data format changes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Publication Preparation</td>
+          <td>Technical Support Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Transformed data for publication</td>
+          <td>Published data in SAP S/4HANA</td>
+          <td>Publication time < 30 minutes</td>
+          <td>System downtime</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notification to Members</td>
+          <td>Marketing Specialist</td>
+          <td><span class="sys-tag aaa-app">AAA App, Email System</span></td>
+          <td>Published data in SAP S/4HANA</td>
+          <td>Notifications sent to members</td>
+          <td>Notification open rate > 70%</td>
+          <td>Low member engagement</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Feedback Collection</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag aaa-app">AAA App, Email System</span></td>
+          <td>Notifications sent to members</td>
+          <td>Member feedback report</td>
+          <td>Response rate > 50%</td>
+          <td>Poor member response rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Analysis</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Member feedback report</td>
+          <td>Analysis report</td>
+          <td>Analysis completion time < 2 hours</td>
+          <td>Large volume of feedback</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Process Improvement</td>
+          <td>Process Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Snowflake</span></td>
+          <td>Analysis report</td>
+          <td>Improved process document</td>
+          <td>Improvement implementation time < 1 week</td>
+          <td>Resistance to change</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Data ingestion time < 2 hours</span> <span class="kpi-pill">Validation error rate < 5%</span> <span class="kpi-pill">Estimation accuracy > 90%</span> <span class="kpi-pill">Publication time < 30 minutes</span> <span class="kpi-pill">Notification open rate > 70%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed vendor data delivery</span> <span class="risk-pill">Data quality issues from vendor</span> <span class="risk-pill">Complex repair codes</span> <span class="risk-pill">System downtime</span> <span class="risk-pill">Low member engagement</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
