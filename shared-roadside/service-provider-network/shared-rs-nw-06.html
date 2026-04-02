@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Provider Network Mgmt &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-NW-06 &mdash; Network Coverage Gap Analysis and Recruitment &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -352,33 +354,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
         </div>
-        <h1>🚨 Service Provider Network Mgmt</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-NW-06 &mdash; Network Coverage Gap Analysis and Recruitment
+        </h1>
+        <p>This process involves identifying gaps in the roadside assistance network coverage and recruiting new service providers to fill those gaps. It ensures that AAA Northeast maintains a robust and reliable network for its members.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-nw-01.html">SHARED-RS-NW-01</a></td><td>Service Provider Onboarding and Vetting (Background Check)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-02.html">SHARED-RS-NW-02</a></td><td>Contract and Rate Negotiation with Tow Providers</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-03.html">SHARED-RS-NW-03</a></td><td>Service Provider Performance Monitoring and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-04.html">SHARED-RS-NW-04</a></td><td>Provider Payment Processing and Invoice Reconciliation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-05.html">SHARED-RS-NW-05</a></td><td>Provider Complaint and Incident Investigation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-NW-06</td><td>Network Coverage Gap Analysis and Recruitment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-07</td><td>Equipment and Compliance Verification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-08</td><td>Swoop API Integration with Provider Dispatch Software</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-nw-06.png" data-lightbox data-title="SHARED-RS-NW-06 BPMN">
+              <img src="../../assets/img/shared-rs-nw-06.png" alt="SHARED-RS-NW-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-NW-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Service Provider Network Mgmt</td></tr>
+            <tr><th>L3 Name</th><td>Network Coverage Gap Analysis and Recruitment</td></tr>
+            <tr><th>Trigger</th><td>Quarterly review of network performance metrics or identification of areas with insufficient coverage based on member complaints.</td></tr>
+            <tr><th>Outcome</th><td>A comprehensive network coverage analysis report, recruitment plan, and successful onboarding of new service providers to address identified gaps.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have different regulatory requirements (FSRA) and uses a different telematics system (CAA Connect) compared to AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag snowflake">Snowflake</span> <span class="sys-tag aws">AWS</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Collection</td>
+          <td>Network Analyst</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Historical service requests and member feedback data</td>
+          <td>Network coverage analysis report</td>
+          <td>Coverage gap identified per region (target: <10%)</td>
+          <td>Inaccurate or incomplete data leading to misidentified gaps</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Gap Analysis</td>
+          <td>Network Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake, AWS</span></td>
+          <td>Network coverage analysis report</td>
+          <td>Detailed gap analysis report with recommendations</td>
+          <td>Number of gaps identified (target: <5)</td>
+          <td>Overlooking critical areas due to data limitations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Recruitment Strategy Development</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag guidewire">Salesforce, Guidewire PolicyCenter</span></td>
+          <td>Detailed gap analysis report</td>
+          <td>Recruitment strategy and plan</td>
+          <td>Number of potential service providers identified (target: >10)</td>
+          <td>Insufficient pool of qualified candidates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Service Provider Outreach</td>
+          <td>Recruitment Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce, Email Marketing System</span></td>
+          <td>Recruitment strategy and plan</td>
+          <td>Outreach campaign results</td>
+          <td>Response rate from potential service providers (target: >20%)</td>
+          <td>Low engagement due to ineffective outreach methods</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Interview and Selection</td>
+          <td>Network Manager, Recruitment Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce, Video Conferencing System</span></td>
+          <td>Outreach campaign results</td>
+          <td>Selected service providers list</td>
+          <td>Number of selected service providers (target: >2)</td>
+          <td>Difficulty in finding qualified candidates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Onboarding Plan Development</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, SAP S/4HANA</span></td>
+          <td>Selected service providers list</td>
+          <td>Onboarding plan and schedule</td>
+          <td>Onboarding completion time (target: <30 days)</td>
+          <td>Delays in onboarding due to administrative bottlenecks</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Service Provider Onboarding</td>
+          <td>Network Analyst, Service Provider Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, SAP S/4HANA</span></td>
+          <td>Onboarding plan and schedule</td>
+          <td>Completed onboarding for new service providers</td>
+          <td>Number of successfully onboarded service providers (target: = number selected)</td>
+          <td>Technical issues during onboarding process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Post-Onboarding Review</td>
+          <td>Network Manager, Network Analyst</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Completed onboarding for new service providers</td>
+          <td>Post-onboarding review report</td>
+          <td>Service provider performance metrics (target: >90% satisfaction)</td>
+          <td>Low initial performance leading to high turnover</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Coverage gap identified per region (target: <10%)</span> <span class="kpi-pill">Number of gaps identified (target: <5)</span> <span class="kpi-pill">Number of potential service providers identified (target: >10)</span> <span class="kpi-pill">Response rate from potential service providers (target: >20%)</span> <span class="kpi-pill">Onboarding completion time (target: <30 days)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate data leading to misidentified gaps</span> <span class="risk-pill">Overlooking critical areas due to data limitations</span> <span class="risk-pill">Insufficient pool of qualified candidates</span> <span class="risk-pill">Low engagement due to ineffective outreach methods</span> <span class="risk-pill">Technical issues during onboarding process</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
