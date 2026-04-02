@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Management & Servicing &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-CL-06 &mdash; Group Travel Coordination and Group Contract Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -368,33 +370,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
         </div>
-        <h1>✈️ Client Management & Servicing</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-CL-06 &mdash; Group Travel Coordination and Group Contract Management
+        </h1>
+        <p>This process manages the coordination and administration of group travel for AAA Northeast members, including contract management and client servicing. It ensures smooth planning, execution, and follow-up for large-scale travel arrangements.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-cl-01.html">SHARED-TR-CL-01</a></td><td>Client Profile Creation and Preference Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-02.html">SHARED-TR-CL-02</a></td><td>Visa and Passport Advisory Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-03.html">SHARED-TR-CL-03</a></td><td>Pre-Departure Document Checklist and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-04.html">SHARED-TR-CL-04</a></td><td>Post-Booking Amendment and Cancellation Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-05.html">SHARED-TR-CL-05</a></td><td>Refund and Credit Processing (Airline and Supplier)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-CL-06</td><td>Group Travel Coordination and Group Contract Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-07</td><td>Corporate Travel Account Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-08</td><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-cl-06.png" data-lightbox data-title="SHARED-TR-CL-06 BPMN">
+              <img src="../../assets/img/shared-tr-cl-06.png" alt="SHARED-TR-CL-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-CL-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Client Management & Servicing</td></tr>
+            <tr><th>L3 Name</th><td>Group Travel Coordination and Group Contract Management</td></tr>
+            <tr><th>Trigger</th><td>A request from a group client to coordinate and manage their travel itinerary or when a new group contract needs to be initiated.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a well-coordinated group travel experience, adherence to contractual terms, and satisfied clients. The process also ensures accurate billing and reporting for the organization.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under different regulatory frameworks (FSRA) and may have additional compliance checks not present in AAA Northeast's processes. CAA SCO also uses distinct systems like ClientBase and Power BI for data management and analytics.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Client Inquiry</td>
+          <td>Travel Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Client inquiry details</td>
+          <td>Quotation for group travel services</td>
+          <td>Response time within 24 hours of inquiry</td>
+          <td>Handling large volumes of inquiries efficiently</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Contract Review and Approval</td>
+          <td>Legal Counsel</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Quotation and client details</td>
+          <td>Approved contract document</td>
+          <td>Contract approval within 5 business days</td>
+          <td>Complexity in navigating legal requirements</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Travel Itinerary Planning</td>
+          <td>Travel Coordinator</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Approved contract and client preferences</td>
+          <td>Detailed travel itinerary</td>
+          <td>Itinerary completion within 3 business days of contract approval</td>
+          <td>Managing multiple destinations and travel dates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Client Communication and Confirmation</td>
+          <td>Travel Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Travel itinerary</td>
+          <td>Confirmed travel arrangements</td>
+          <td>Confirmation rate above 95%</td>
+          <td>Ensuring client satisfaction and addressing concerns</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Billing and Invoicing</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Grasshopper Bank</span></td>
+          <td>Confirmed travel arrangements</td>
+          <td>Invoices for clients</td>
+          <td>Invoice accuracy rate above 98%</td>
+          <td>Handling multiple payment methods and currencies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Travel Follow-Up and Feedback</td>
+          <td>Travel Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Client feedback forms</td>
+          <td>Actionable insights for future improvements</td>
+          <td>Feedback response rate above 80%</td>
+          <td>Collecting and analyzing client feedback</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 24 hours of inquiry</span> <span class="kpi-pill">Contract approval within 5 business days</span> <span class="kpi-pill">Itinerary completion within 3 business days of contract approval</span> <span class="kpi-pill">Confirmation rate above 95%</span> <span class="kpi-pill">Invoice accuracy rate above 98%</span> <span class="kpi-pill">Feedback response rate above 80%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in client communication and confirmation</span> <span class="risk-pill">Complex legal requirements affecting contract review</span> <span class="risk-pill">Inaccuracies in billing and invoicing due to multiple payment methods</span> <span class="risk-pill">Low feedback response rates leading to missed improvement opportunities</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
