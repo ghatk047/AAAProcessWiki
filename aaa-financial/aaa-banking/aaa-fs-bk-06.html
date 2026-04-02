@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Banking & Deposits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-BK-06 &mdash; Account Closure and Fund Transfer Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -384,33 +386,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
         </div>
-        <h1>🏦 AAA Banking & Deposits</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-BK-06 &mdash; Account Closure and Fund Transfer Processing
+        </h1>
+        <p>The process for closing accounts and transferring funds within AAA Northeast involves verifying account status, processing the closure, and ensuring all financial transactions are accurately recorded.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-bk-01.html">AAA-FS-BK-01</a></td><td>AAA Triple Advantage Checking Account Opening (Grasshopper Bank)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-02.html">AAA-FS-BK-02</a></td><td>Certificate of Deposit Application and Funding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-03.html">AAA-FS-BK-03</a></td><td>EFT and Direct Deposit Setup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-04.html">AAA-FS-BK-04</a></td><td>Debit Card Issuance and PIN Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-05.html">AAA-FS-BK-05</a></td><td>Online and Mobile Banking Onboarding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-BK-06</td><td>Account Closure and Fund Transfer Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-07</td><td>FDIC Compliance and Regulatory Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-08</td><td>Banking Product Rate Review and Competitive Pricing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-bk-06.png" data-lightbox data-title="AAA-FS-BK-06 BPMN">
+              <img src="../../assets/img/aaa-fs-bk-06.png" alt="AAA-FS-BK-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-BK-06</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Banking & Deposits</td></tr>
+            <tr><th>L3 Name</th><td>Account Closure and Fund Transfer Processing</td></tr>
+            <tr><th>Trigger</th><td>A member initiates an account closure request through the AAA App or by contacting customer service.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a closed account with all funds transferred to the specified destination, and the member receives confirmation of the closure.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific state regulations that require additional documentation compared to other regions. The process also involves more frequent interactions with external systems like Verisk for rating and Sabre for travel services.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Account Closure Request</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Member request through app or phone call</td>
+          <td>Account closure ticket in Salesforce</td>
+          <td>Response time within 1 hour</td>
+          <td>Handling multiple requests simultaneously</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Account Status</td>
+          <td>Account Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, BillingCenter</span></td>
+          <td>Account closure ticket</td>
+          <td>Verified account status report</td>
+          <td>Verification completed within 30 minutes</td>
+          <td>Accessing multiple systems for verification</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Process Account Closure</td>
+          <td>Account Processor</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, Guidewire BillingCenter</span></td>
+          <td>Verified account status report</td>
+          <td>Closed account record in SAP and Guidewire</td>
+          <td>Closure processed within 1 hour</td>
+          <td>Data synchronization issues between systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Transfer Funds to Destination Account</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Closed account record</td>
+          <td>Fund transfer confirmation</td>
+          <td>Funds transferred within 2 business days</td>
+          <td>Banking system integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Closure Confirmation</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Fund transfer confirmation</td>
+          <td>Closure confirmation email/app notification</td>
+          <td>Confirmation sent within 1 hour of closure</td>
+          <td>Email delivery failures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Member Records</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag salesforce">Snowflake, Salesforce</span></td>
+          <td>Closure confirmation email/app notification</td>
+          <td>Updated member records in Snowflake and Salesforce</td>
+          <td>Records updated within 1 business day</td>
+          <td>Data integrity issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 1 hour</span> <span class="kpi-pill">Verification completed within 30 minutes</span> <span class="kpi-pill">Closure processed within 1 hour</span> <span class="kpi-pill">Funds transferred within 2 business days</span> <span class="kpi-pill">Confirmation sent within 1 hour of closure</span> <span class="kpi-pill">Records updated within 1 business day</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data synchronization issues between systems</span> <span class="risk-pill">Banking system integration issues</span> <span class="risk-pill">Email delivery failures</span> <span class="risk-pill">Data integrity issues</span> <span class="risk-pill">Compliance with state regulations</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
