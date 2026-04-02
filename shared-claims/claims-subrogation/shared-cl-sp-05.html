@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-05 &mdash; Salvage Vehicle Processing and Auction &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -415,33 +417,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-05 &mdash; Salvage Vehicle Processing and Auction
+        </h1>
+        <p>The Salvage Vehicle Processing and Auction process involves identifying, assessing, and selling salvaged vehicles to recover costs for AAA Northeast. This process ensures that all salvage vehicle transactions are handled efficiently and in compliance with regulatory requirements.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-02.html">SHARED-CL-SP-02</a></td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-03.html">SHARED-CL-SP-03</a></td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-04.html">SHARED-CL-SP-04</a></td><td>Recovery Negotiation and Settlement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-05</td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-06</td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-07</td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-05.png" data-lightbox data-title="SHARED-CL-SP-05 BPMN">
+              <img src="../../assets/img/shared-cl-sp-05.png" alt="SHARED-CL-SP-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Salvage Vehicle Processing and Auction</td></tr>
+            <tr><th>Trigger</th><td>A claim is identified where a vehicle is deemed totaled or salvageable.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion of the process results in the recovery of funds through the sale of salvaged vehicles, ensuring financial closure for the claim.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional compliance with FSRA regulations and different telematics systems like CAA Connect compared to AAA Northeast's DriveAssist.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag mitchell">Mitchell 1 (auto repair)</span> <span class="sys-tag agero">Swoop dispatch</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Salvage Vehicle</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim details</td>
+          <td>Salvage vehicle assessment report</td>
+          <td>Time to identify salvage vehicle < 24 hours</td>
+          <td>Delayed identification of salvageable vehicles</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assess Vehicle Condition</td>
+          <td>Mechanical Inspector</td>
+          <td><span class="sys-tag mitchell">Mitchell 1 (auto repair)</span></td>
+          <td>Salvage vehicle assessment report</td>
+          <td>Detailed condition report</td>
+          <td>Accuracy of condition report > 95%</td>
+          <td>Inaccurate condition assessments leading to improper valuation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Auction Listing</td>
+          <td>Auction Coordinator</td>
+          <td><span class="sys-tag agero">Swoop dispatch</span></td>
+          <td>Detailed condition report</td>
+          <td>Auction listing document</td>
+          <td>Time to prepare auction listing < 48 hours</td>
+          <td>Delayed auction listings affecting recovery times</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Conduct Auction</td>
+          <td>Auctioneer</td>
+          <td><span class="sys-tag agero">Swoop dispatch</span></td>
+          <td>Auction listing document</td>
+          <td>Auction results</td>
+          <td>Average auction price > $5000</td>
+          <td>Low auction prices affecting recovery amounts</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Verify Auction Results</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Auction results</td>
+          <td>Verified auction results document</td>
+          <td>Time to verify auction results < 72 hours</td>
+          <td>Delayed verification affecting claim closure</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Process Payment</td>
+          <td>Accounts Payable Clerk</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Verified auction results document</td>
+          <td>Payment confirmation</td>
+          <td>Time to process payment < 5 business days</td>
+          <td>Delayed payments impacting cash flow</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Claim Status</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Payment confirmation</td>
+          <td>Updated claim status</td>
+          <td>Time to update claim status < 24 hours</td>
+          <td>Delayed claim updates affecting customer service</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Claim</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Updated claim status</td>
+          <td>Closed claim record</td>
+          <td>Time to close claim < 48 hours</td>
+          <td>Delayed claim closure affecting customer satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to identify salvage vehicle < 24 hours</span> <span class="kpi-pill">Accuracy of condition report > 95%</span> <span class="kpi-pill">Time to prepare auction listing < 48 hours</span> <span class="kpi-pill">Average auction price > $5000</span> <span class="kpi-pill">Time to process payment < 5 business days</span> <span class="kpi-pill">Time to update claim status < 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed identification of salvageable vehicles</span> <span class="risk-pill">Inaccurate condition assessments leading to improper valuation</span> <span class="risk-pill">Low auction prices affecting recovery amounts</span> <span class="risk-pill">Delayed payments impacting cash flow</span> <span class="risk-pill">Delayed claim updates affecting customer service</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
