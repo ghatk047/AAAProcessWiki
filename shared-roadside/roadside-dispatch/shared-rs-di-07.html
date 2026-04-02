@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dispatch Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-DI-07 &mdash; Post-Service Quality Survey (NPS) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -337,33 +339,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-dispatch/index.html">Dispatch Operations</a>
         </div>
-        <h1>🚨 Dispatch Operations</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-DI-07 &mdash; Post-Service Quality Survey (NPS)
+        </h1>
+        <p>The Post-Service Quality Survey (NPS) process is initiated after a roadside assistance service has been completed. It collects feedback from customers to assess their satisfaction and identify areas for improvement.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-di-01.html">SHARED-RS-DI-01</a></td><td>Member Call Intake and Coverage Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-02.html">SHARED-RS-DI-02</a></td><td>Digital Request Intake (App and Web Self-Serve)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-03.html">SHARED-RS-DI-03</a></td><td>Breakdown Type Classification and Service Code Assignment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-04.html">SHARED-RS-DI-04</a></td><td>Service Provider Dispatch via Agero Swoop</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-05.html">SHARED-RS-DI-05</a></td><td>Real-Time GPS Tracking and ETA Communication to Member</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-06.html">SHARED-RS-DI-06</a></td><td>Service Provider On-Scene Confirmation and Job Completion</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-DI-07</td><td>Post-Service Quality Survey (NPS)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-DI-08</td><td>Dispatch Performance Monitoring (SLA and Swoop Dashboard)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-di-07.png" data-lightbox data-title="SHARED-RS-DI-07 BPMN">
+              <img src="../../assets/img/shared-rs-di-07.png" alt="SHARED-RS-DI-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-DI-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Dispatch Operations</td></tr>
+            <tr><th>L3 Name</th><td>Post-Service Quality Survey (NPS)</td></tr>
+            <tr><th>Trigger</th><td>Completion of a roadside assistance service</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces customer feedback data, which is analyzed to improve service quality and customer satisfaction.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Salesforce Einstein AI for automated survey distribution and analysis. CAA SCO utilizes their own telematics system, CAA Connect, for real-time feedback collection.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag caa-connect">CAA Connect</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce Einstein AI</span> <span class="sys-tag powerbi">Power BI</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Survey Distribution</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA) / CAA Connect (CAA SCO)</span></td>
+          <td>Service completion confirmation</td>
+          <td>Survey sent to customer</td>
+          <td>Survey distribution rate > 95%</td>
+          <td>Low response rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Monitor Survey Responses</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA) / CAA Connect (CAA SCO)</span></td>
+          <td>Survey responses</td>
+          <td>Response analysis report</td>
+          <td>Response rate > 70%</td>
+          <td>Delayed response processing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Analyze Survey Data</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI (AAA) / Power BI (CAA SCO)</span></td>
+          <td>Survey responses report</td>
+          <td>Insight report with action items</td>
+          <td>Actionable insights generated within 24 hours</td>
+          <td>Inaccurate data analysis</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Identify Improvement Areas</td>
+          <td>Quality Assurance Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA) / CAA Connect (CAA SCO)</span></td>
+          <td>Insight report with action items</td>
+          <td>Improvement plan</td>
+          <td>Number of identified improvement areas > 5</td>
+          <td>Lack of clear improvement strategies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Implement Improvements</td>
+          <td>Service Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA (AAA) / SAP S/4HANA (CAA SCO)</span></td>
+          <td>Improvement plan</td>
+          <td>Updated service procedures</td>
+          <td>Number of implemented improvements > 3</td>
+          <td>Resistance to change</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Improvement Impact</td>
+          <td>Customer Experience Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA) / CAA Connect (CAA SCO)</span></td>
+          <td>Service performance data</td>
+          <td>Impact analysis report</td>
+          <td>Improvement impact measured within 1 month</td>
+          <td>Inconsistent service quality</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Survey distribution rate > 95%</span> <span class="kpi-pill">Response rate > 70%</span> <span class="kpi-pill">Actionable insights generated within 24 hours</span> <span class="kpi-pill">Number of identified improvement areas > 5</span> <span class="kpi-pill">Number of implemented improvements > 3</span> <span class="kpi-pill">Improvement impact measured within 1 month</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Low response rates from customers</span> <span class="risk-pill">Delayed processing of survey responses</span> <span class="risk-pill">Inaccurate data analysis leading to incorrect insights</span> <span class="risk-pill">Resistance to change in implementing improvement strategies</span> <span class="risk-pill">Inconsistent service quality despite implemented changes</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
