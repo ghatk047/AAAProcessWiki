@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Experience & Loyalty &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MK-CX-02 &mdash; Member Loyalty and Rewards Programme Operation &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -492,33 +494,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Marketing & Member Experience</a>
+          <a href="../../shared-marketing/index.html">Marketing & Member Experience</a> &rsaquo;
+          <a href="../../shared-marketing/member-experience/index.html">Member Experience & Loyalty</a>
         </div>
-        <h1>📣 Member Experience & Loyalty</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MK-CX-02 &mdash; Member Loyalty and Rewards Programme Operation
+        </h1>
+        <p>Operational process for managing and executing the Member Loyalty and Rewards Programme, including enrollment, reward distribution, and reporting.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mk-cx-01.html">SHARED-MK-CX-01</a></td><td>Member Satisfaction NPS Programme Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MK-CX-02</td><td>Member Loyalty and Rewards Programme Operation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-03</td><td>Personalised Offer Engine (Salesforce Einstein and AI)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-04</td><td>Contact Centre Quality Monitoring and Coaching</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-05</td><td>Member Complaint Handling and Resolution (Ombudsman process)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-06</td><td>Digital Experience Analytics and Conversion Optimisation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-07</td><td>Co-Branded Partnership (Credit Card and Airlines and Hotels)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-08</td><td>Member Research and Insights Programme</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mk-cx-02.png" data-lightbox data-title="SHARED-MK-CX-02 BPMN">
+              <img src="../../assets/img/shared-mk-cx-02.png" alt="SHARED-MK-CX-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MK-CX-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Marketing & Member Experience</td></tr>
+            <tr><th>L2 Process</th><td>Member Experience & Loyalty</td></tr>
+            <tr><th>L3 Name</th><td>Member Loyalty and Rewards Programme Operation</td></tr>
+            <tr><th>Trigger</th><td>Annual review of member engagement data or specific milestone achievements by members.</td></tr>
+            <tr><th>Outcome</th><td>Enhanced member loyalty through personalized rewards and recognition, leading to increased membership retention and satisfaction.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a different set of systems for reward processing compared to AAA Northeast. CAA SCO relies more on Salesforce and Guidewire InsuranceSuite for reward distribution.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag snowflake">Snowflake</span> <span class="sys-tag salesforce">Salesforce (Einstein AI)</span> <span class="sys-tag powerbi">Power BI</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Loyalty Programme Review</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Annual member engagement data</td>
+          <td>Loyalty programme review report</td>
+          <td>Engagement rate increase by 5% within the first quarter</td>
+          <td>Data integration issues between Salesforce and other systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Define Reward Tiers</td>
+          <td>Marketing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Loyalty programme review report</td>
+          <td>Reward tier definitions</td>
+          <td>Number of reward tiers updated annually</td>
+          <td>Inconsistent data interpretation across teams</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Enroll Members in Rewards Programme</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>New member applications</td>
+          <td>Enrolled members list</td>
+          <td>95% enrollment rate within 30 days of application submission</td>
+          <td>Manual data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Calculate Rewards Points</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Member activity logs</td>
+          <td>Rewards points calculation report</td>
+          <td>Accuracy of reward point calculations > 98%</td>
+          <td>Data latency issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Distribute Rewards</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Rewards points calculation report</td>
+          <td>Reward distribution list</td>
+          <td>90% of rewards distributed within 1 month of calculation</td>
+          <td>Complex reward rules and calculations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Loyalty Programme Report</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag powerbi">Power BI</span></td>
+          <td>Enrolled members list, rewards distribution list</td>
+          <td>Loyalty programme performance report</td>
+          <td>Report generation time < 2 hours</td>
+          <td>Data visualization complexity</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Adjust Programme</td>
+          <td>Marketing Director</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Loyalty programme performance report</td>
+          <td>Programme adjustment plan</td>
+          <td>Number of programme adjustments per year < 3</td>
+          <td>Resource allocation for programme enhancements</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Communicate Programme Changes</td>
+          <td>Marketing Specialist</td>
+          <td><span class="sys-tag aaa-app">AAA App/CAA MyCAA App</span></td>
+          <td>Programme adjustment plan</td>
+          <td>Communication campaign plan</td>
+          <td>90% member awareness of programme changes within 1 week</td>
+          <td>Effective communication strategy</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Monitor Programme Performance</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Programme adjustment plan</td>
+          <td>Performance monitoring dashboard</td>
+          <td>Dashboard update frequency > 1 per week</td>
+          <td>Real-time data processing capabilities</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Adjust Programme Based on Feedback</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Member feedback and performance monitoring dashboard</td>
+          <td>Finalized programme adjustments</td>
+          <td>Number of feedback-driven adjustments per year < 2</td>
+          <td>Feedback collection and analysis</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Engagement rate increase by 5% within the first quarter</span> <span class="kpi-pill">95% enrollment rate within 30 days of application submission</span> <span class="kpi-pill">Accuracy of reward point calculations > 98%</span> <span class="kpi-pill">90% of rewards distributed within 1 month of calculation</span> <span class="kpi-pill">Report generation time < 2 hours</span> <span class="kpi-pill">Number of programme adjustments per year < 3</span> <span class="kpi-pill">90% member awareness of programme changes within 1 week</span> <span class="kpi-pill">Dashboard update frequency > 1 per week</span> <span class="kpi-pill">Number of feedback-driven adjustments per year < 2</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data integration issues between Salesforce and other systems</span> <span class="risk-pill">Inconsistent data interpretation across teams</span> <span class="risk-pill">Manual data entry errors</span> <span class="risk-pill">Data latency issues</span> <span class="risk-pill">Complex reward rules and calculations</span> <span class="risk-pill">Data visualization complexity</span> <span class="risk-pill">Resource allocation for programme enhancements</span> <span class="risk-pill">Effective communication strategy</span> <span class="risk-pill">Real-time data processing capabilities</span> <span class="risk-pill">Feedback collection and analysis</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
