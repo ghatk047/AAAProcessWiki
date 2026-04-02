@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Approved Auto Repair Network &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-AS-AR-04 &mdash; Complaint Investigation Against Approved Shop &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -422,33 +424,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Automotive Services</a>
+          <a href="../../shared-automotive/index.html">Automotive Services</a> &rsaquo;
+          <a href="../../shared-automotive/approved-auto-repair/index.html">Approved Auto Repair Network</a>
         </div>
-        <h1>🔧 Approved Auto Repair Network</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-AS-AR-04 &mdash; Complaint Investigation Against Approved Shop
+        </h1>
+        <p>This process involves investigating complaints against approved auto repair shops within the AAA Northeast network. It ensures that any issues are thoroughly reviewed and resolved to maintain the integrity of the service network.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-as-ar-01.html">SHARED-AS-AR-01</a></td><td>Shop Inspection and AAA and CAA Approved Certification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-02.html">SHARED-AS-AR-02</a></td><td>Shop Re-Inspection and Annual Compliance Audit</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-03.html">SHARED-AS-AR-03</a></td><td>Member Referral to Approved Shop (Digital and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-AS-AR-04</td><td>Complaint Investigation Against Approved Shop</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-05</td><td>Shop Dispute Mediation and Arbitration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-06</td><td>Auto Repair Cost Estimator Publication (Mitchell 1 data)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-07</td><td>Shop Performance Reporting and Tier Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-08</td><td>AAA and CAA Co-Branded Marketing with Approved Shops</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-as-ar-04.png" data-lightbox data-title="SHARED-AS-AR-04 BPMN">
+              <img src="../../assets/img/shared-as-ar-04.png" alt="SHARED-AS-AR-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-AS-AR-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Automotive Services</td></tr>
+            <tr><th>L2 Process</th><td>Approved Auto Repair Network</td></tr>
+            <tr><th>L3 Name</th><td>Complaint Investigation Against Approved Shop</td></tr>
+            <tr><th>Trigger</th><td>A member files a complaint against an approved auto repair shop through the AAA App or by contacting customer service.</td></tr>
+            <tr><th>Outcome</th><td>The complaint is investigated, and appropriate actions are taken based on the findings. The member receives a resolution notification, and the shop may be subject to corrective action if necessary.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO differs in that complaints are primarily handled through their CAA MyCAA App and may involve additional regulatory oversight by the FSRA.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag agero">Agero Swoop dispatch</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Complaint</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Complaint form</td>
+          <td>Complaint registered in system</td>
+          <td>Time to register complaint < 24 hours</td>
+          <td>Delayed registration of complaints</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Complaint</td>
+          <td>Complaint Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Registered complaint</td>
+          <td>Assigned to Claims Adjuster</td>
+          <td>Time to assign < 1 hour</td>
+          <td>Overlooked or misassigned complaints</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Initial Review</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, SAP S/4HANA</span></td>
+          <td>Assigned complaint</td>
+          <td>Review notes and preliminary findings</td>
+          <td>Time to review < 2 hours</td>
+          <td>Incomplete or inaccurate reviews</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Contact Shop for Clarification</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch, Phone</span></td>
+          <td>Review notes</td>
+          <td>Shop's response or explanation</td>
+          <td>Response time from shop < 4 hours</td>
+          <td>Non-responsive shops</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Gather Additional Evidence</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Snowflake</span></td>
+          <td>Shop's response</td>
+          <td>Additional evidence or data</td>
+          <td>Time to gather evidence < 24 hours</td>
+          <td>Lack of sufficient evidence</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Final Decision</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, SAP S/4HANA</span></td>
+          <td>All gathered information</td>
+          <td>Decision document and resolution plan</td>
+          <td>Time to finalize decision < 1 hour</td>
+          <td>Unjustified decisions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Member</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Decision document</td>
+          <td>Notification sent to member</td>
+          <td>Time to notify < 1 hour</td>
+          <td>Delayed notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Implement Corrective Actions</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, Guidewire ClaimCenter</span></td>
+          <td>Decision document</td>
+          <td>Corrective actions implemented</td>
+          <td>Time to implement < 24 hours</td>
+          <td>Non-compliance with corrective measures</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Case</td>
+          <td>Complaint Coordinator</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, Guidewire ClaimCenter</span></td>
+          <td>All actions completed</td>
+          <td>Case closed in system</td>
+          <td>Time to close < 1 hour</td>
+          <td>Open cases</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to register complaint < 24 hours</span> <span class="kpi-pill">Time to assign < 1 hour</span> <span class="kpi-pill">Time to review < 2 hours</span> <span class="kpi-pill">Response time from shop < 4 hours</span> <span class="kpi-pill">Time to gather evidence < 24 hours</span> <span class="kpi-pill">Time to finalize decision < 1 hour</span> <span class="kpi-pill">Time to notify < 1 hour</span> <span class="kpi-pill">Time to implement < 24 hours</span> <span class="kpi-pill">Time to close < 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed registration of complaints</span> <span class="risk-pill">Overlooked or misassigned complaints</span> <span class="risk-pill">Incomplete or inaccurate reviews</span> <span class="risk-pill">Non-responsive shops</span> <span class="risk-pill">Lack of sufficient evidence</span> <span class="risk-pill">Unjustified decisions</span> <span class="risk-pill">Delayed notifications</span> <span class="risk-pill">Non-compliance with corrective measures</span> <span class="risk-pill">Open cases</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
