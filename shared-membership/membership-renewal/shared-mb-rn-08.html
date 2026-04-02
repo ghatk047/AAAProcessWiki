@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Renewal & Retention &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-RN-08 &mdash; Membership Winback Campaign (12-36 Month Lapsed) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -254,33 +256,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-renewal/index.html">Membership Renewal & Retention</a>
         </div>
-        <h1>👥 Membership Renewal & Retention</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-RN-08 &mdash; Membership Winback Campaign (12-36 Month Lapsed)
+        </h1>
+        <p>This process aims to initiate and execute a membership winback campaign for AAA Northeast members who have lapsed between 12 to 36 months. The goal is to re-engage these members through targeted communications and incentives, aiming to increase retention rates.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-rn-01.html">SHARED-MB-RN-01</a></td><td>Annual Renewal Notice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-02.html">SHARED-MB-RN-02</a></td><td>Auto-Renewal Processing (Credit Card on File)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-03.html">SHARED-MB-RN-03</a></td><td>Lapsed Member Reinstatement Campaign</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-04.html">SHARED-MB-RN-04</a></td><td>Membership Upgrade and Tier Change Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-05.html">SHARED-MB-RN-05</a></td><td>Associate and Household Member Add-On Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-06.html">SHARED-MB-RN-06</a></td><td>Cancellation Request Handling and Save Offer</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-rn-07.html">SHARED-MB-RN-07</a></td><td>Renewal Rate Review and Pricing Update</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-RN-08</td><td>Membership Winback Campaign (12-36 Month Lapsed)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-rn-08.png" data-lightbox data-title="SHARED-MB-RN-08 BPMN">
+              <img src="../../assets/img/shared-mb-rn-08.png" alt="SHARED-MB-RN-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-RN-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Renewal & Retention</td></tr>
+            <tr><th>L3 Name</th><td>Membership Winback Campaign (12-36 Month Lapsed)</td></tr>
+            <tr><th>Trigger</th><td>Identification of lapsed members via the SAP S/4HANA system who have been inactive for 12-36 months.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion of the winback campaign results in a significant increase in membership renewals within the target period.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Guidewire InsuranceSuite instead of SAP S/4HANA for member management and communication. Additionally, CAA SCO has a different telematics system (CAA Connect) compared to AAA Northeast's DriveAssist.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag salesforce">Agentforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Lapsed Members</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member database</td>
+          <td>Lapsed member list</td>
+          <td>Number of identified lapsed members (Target: 10,000)</td>
+          <td>Data accuracy and completeness in the SAP system</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Segment Lapsed Members</td>
+          <td>Marketing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Lapsed member list</td>
+          <td>Segmented lapsed member groups</td>
+          <td>Number of segments created (Target: 5)</td>
+          <td>Dynamic segmentation logic in Salesforce</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Develop Winback Campaign Strategy</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Segmented lapsed member groups</td>
+          <td>Winback campaign strategy document</td>
+          <td>Number of strategies developed (Target: 3)</td>
+          <td>Resource allocation for different strategies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Create Campaign Materials</td>
+          <td>Creative Designer</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Winback campaign strategy document</td>
+          <td>Campaign materials (emails, letters, digital ads)</td>
+          <td>Number of materials created (Target: 10)</td>
+          <td>Consistent branding and messaging</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Launch Campaign</td>
+          <td>Marketing Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Campaign materials</td>
+          <td>Launched campaign</td>
+          <td>Campaign launch date (Target: Within 1 week of strategy approval)</td>
+          <td>Technical issues with Salesforce platform</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Campaign Performance</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Campaign data</td>
+          <td>Performance report</td>
+          <td>Open rate and click-through rate (Target: Open rate > 20%, Click-through rate > 10%)</td>
+          <td>Real-time data monitoring</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Adjust Campaign Strategy</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Performance report</td>
+          <td>Adjusted campaign strategy document</td>
+          <td>Number of adjustments made (Target: 2 or less per campaign)</td>
+          <td>Balancing between testing and maintaining momentum</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Campaign Review</td>
+          <td>Marketing Director</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Adjusted campaign strategy document</td>
+          <td>Campaign review report</td>
+          <td>Number of renewals achieved (Target: 2,000+)</td>
+          <td>Measuring long-term impact</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Campaign</td>
+          <td>Marketing Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Agentforce)</span></td>
+          <td>Campaign review report</td>
+          <td>Closed campaign</td>
+          <td>Campaign closure date (Target: Within 1 week of final review)</td>
+          <td>Archiving and reporting</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Number of identified lapsed members (Target: 10,000)</span> <span class="kpi-pill">Open rate and click-through rate (Target: Open rate > 20%, Click-through rate > 10%)</span> <span class="kpi-pill">Number of renewals achieved (Target: 2,000+)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate data leading to missegmentation</span> <span class="risk-pill">Technical issues with Salesforce platform affecting campaign launch and monitoring</span> <span class="risk-pill">Low engagement rates despite multiple adjustments</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
