@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Notice of Loss (FNOL) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-FN-05 &mdash; Initial Reserves Setting &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -399,33 +401,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
         </div>
-        <h1>📋 First Notice of Loss (FNOL)</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-FN-05 &mdash; Initial Reserves Setting
+        </h1>
+        <p>The Initial Reserves Setting process is initiated upon the receipt of a First Notice of Loss (FNOL) and sets the initial reserves for claim handling. Successful completion ensures proper allocation of resources and timely communication with policyholders.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-fn-01.html">SHARED-CL-FN-01</a></td><td>FNOL Intake (Phone and Digital and Agent Reported)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-02.html">SHARED-CL-FN-02</a></td><td>Claimant Identity Verification and Policy Lookup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-03.html">SHARED-CL-FN-03</a></td><td>Loss Details Capture (Date and Location and Parties)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-04.html">SHARED-CL-FN-04</a></td><td>Coverage Verification and Reservation of Rights Letter</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-FN-05</td><td>Initial Reserves Setting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-06</td><td>Claim Assignment to Adjuster (Rules-Based Routing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-07</td><td>Acknowledgement Letter and Digital Notification to Claimant</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-08</td><td>Third-Party Claimant Notification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-fn-05.png" data-lightbox data-title="SHARED-CL-FN-05 BPMN">
+              <img src="../../assets/img/shared-cl-fn-05.png" alt="SHARED-CL-FN-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-FN-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>First Notice of Loss (FNOL)</td></tr>
+            <tr><th>L3 Name</th><td>Initial Reserves Setting</td></tr>
+            <tr><th>Trigger</th><td>Receipt of a First Notice of Loss (FNOL)</td></tr>
+            <tr><th>Outcome</th><td>Properly set initial reserves for claims management, ensuring timely communication and resource allocation.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Guidewire PolicyCenter/ClaimCenter/BillingCenter in the cloud, while CAA SCO utilizes Guidewire InsuranceSuite. The main difference lies in the specific systems used for FNOL processing and reserve setting.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive FNOL</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>FNOL form</td>
+          <td>Claim record in Guidewire ClaimCenter</td>
+          <td>Time to first response < 24 hours</td>
+          <td>Delayed FNOL processing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim record</td>
+          <td>Assessment report</td>
+          <td>Assessment completed within 48 hours of FNOL</td>
+          <td>Inaccurate initial assessments</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Reserve Setting</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Assessment report</td>
+          <td>Initial reserves set</td>
+          <td>Reserves set within 72 hours of FNOL</td>
+          <td>Over/underestimation of reserves</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Notify Policyholder</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce</span></td>
+          <td>Initial reserves set</td>
+          <td>Notification letter/email sent to policyholder</td>
+          <td>90% of notifications sent within 5 days of FNOL</td>
+          <td>Lost or delayed notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review and Adjust Reserves</td>
+          <td>Senior Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Initial reserves set</td>
+          <td>Adjusted reserves if necessary</td>
+          <td>95% of reserve adjustments made within 1 week of FNOL</td>
+          <td>Inconsistent reserve adjustments</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Claim Record</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Adjusted reserves</td>
+          <td>Updated claim record in Guidewire ClaimCenter</td>
+          <td>100% of claim records updated within 24 hours of reserve adjustment</td>
+          <td>Outdated claim records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Policyholder of Adjusted Reserves</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce</span></td>
+          <td>Adjusted reserves</td>
+          <td>Notification letter/email sent to policyholder</td>
+          <td>90% of notifications sent within 3 days of reserve adjustment</td>
+          <td>Lost or delayed notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Final Review and Approval</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Updated claim record</td>
+          <td>Approval of final reserves</td>
+          <td>90% of approvals completed within 2 weeks of FNOL</td>
+          <td>Delays in final approval</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Claim Record</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Final reserves approved</td>
+          <td>Closed claim record in Guidewire ClaimCenter</td>
+          <td>100% of claims closed within 3 weeks of FNOL</td>
+          <td>Open claim records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Notification to Policyholder</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce</span></td>
+          <td>Closed claim record</td>
+          <td>Final notification letter/email sent to policyholder</td>
+          <td>90% of notifications sent within 5 days of claim closure</td>
+          <td>Lost or delayed final notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first response < 24 hours</span> <span class="kpi-pill">Assessment completed within 48 hours of FNOL</span> <span class="kpi-pill">Reserves set within 72 hours of FNOL</span> <span class="kpi-pill">90% of notifications sent within 5 days of FNOL</span> <span class="kpi-pill">95% of reserve adjustments made within 1 week of FNOL</span> <span class="kpi-pill">100% of claim records updated within 24 hours of reserve adjustment</span> <span class="kpi-pill">90% of approvals completed within 2 weeks of FNOL</span> <span class="kpi-pill">100% of claims closed within 3 weeks of FNOL</span> <span class="kpi-pill">90% of notifications sent within 5 days of claim closure</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in FNOL processing</span> <span class="risk-pill">Inaccurate initial assessments leading to over/underestimation of reserves</span> <span class="risk-pill">Lost or delayed notifications to policyholders</span> <span class="risk-pill">Inconsistent reserve adjustments</span> <span class="risk-pill">Outdated claim records due to delays in updating</span> <span class="risk-pill">Delays in final approval of reserves</span> <span class="risk-pill">Open claim records affecting customer satisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
