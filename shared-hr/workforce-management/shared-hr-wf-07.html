@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workforce Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-HR-WF-07 &mdash; Disciplinary and Grievance Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -473,33 +475,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Human Resources & Workforce</a>
+          <a href="../../shared-hr/index.html">Human Resources & Workforce</a> &rsaquo;
+          <a href="../../shared-hr/workforce-management/index.html">Workforce Management</a>
         </div>
-        <h1>👤 Workforce Management</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-HR-WF-07 &mdash; Disciplinary and Grievance Management
+        </h1>
+        <p>This process handles the initiation, processing, and closure of disciplinary actions and grievances within the organization. It ensures fair and consistent handling of employee misconduct and disputes.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-hr-wf-01.html">SHARED-HR-WF-01</a></td><td>Staffing Model and Headcount Planning (Branch and Call Centre)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-02.html">SHARED-HR-WF-02</a></td><td>Shift Scheduling and Overtime Management (Roadside surge)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-WF-03</td><td>Payroll Processing (SAP Payroll bi-weekly)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="shared-hr-wf-04.html">SHARED-HR-WF-04</a></td><td>Performance Review Cycle and Rating Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-05.html">SHARED-HR-WF-05</a></td><td>Employee Onboarding and Systems Access Provisioning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-06.html">SHARED-HR-WF-06</a></td><td>Labour Relations and Collective Agreement Compliance</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-WF-07</td><td>Disciplinary and Grievance Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-WF-08</td><td>Employee Wellbeing and Benefits Administration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-hr-wf-07.png" data-lightbox data-title="SHARED-HR-WF-07 BPMN">
+              <img src="../../assets/img/shared-hr-wf-07.png" alt="SHARED-HR-WF-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-HR-WF-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Human Resources & Workforce</td></tr>
+            <tr><th>L2 Process</th><td>Workforce Management</td></tr>
+            <tr><th>L3 Name</th><td>Disciplinary and Grievance Management</td></tr>
+            <tr><th>Trigger</th><td>Report of employee misconduct or a formal grievance by an employee</td></tr>
+            <tr><th>Outcome</th><td>A documented resolution to the disciplinary action or grievance, including any necessary corrective actions or disciplinary measures.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under FSRA regulations, which may require additional compliance steps not present in AAA Northeast's process.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Receipt</td>
+          <td>Human Resources Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Disciplinary report or grievance form</td>
+          <td>Case registered in SAP S/4HANA</td>
+          <td>Time to register case < 24 hours</td>
+          <td>Delayed registration can lead to compliance issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Registered case details</td>
+          <td>Assessment report</td>
+          <td>Time to complete assessment < 3 business days</td>
+          <td>Inaccurate assessments can lead to unfair outcomes.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Investigation Initiation</td>
+          <td>Investigator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Assessment report</td>
+          <td>Investigation plan</td>
+          <td>Time to initiate investigation < 2 business days</td>
+          <td>Delayed investigations can escalate issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Data Collection</td>
+          <td>Investigator</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Investigation plan</td>
+          <td>Collected evidence</td>
+          <td>Time to collect all evidence < 5 business days</td>
+          <td>Incomplete data can lead to flawed conclusions.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Investigation Report</td>
+          <td>Investigator</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Collected evidence</td>
+          <td>Investigation report</td>
+          <td>Time to complete investigation report < 3 business days</td>
+          <td>Inaccurate reports can lead to unfair disciplinary actions.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Decision</td>
+          <td>HR Manager</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Investigation report</td>
+          <td>Decision document</td>
+          <td>Time to make decision < 2 business days</td>
+          <td>Unfair decisions can lead to legal issues.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notification of Decision</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Decision document</td>
+          <td>Notified employee</td>
+          <td>Time to notify employee < 1 business day</td>
+          <td>Delayed notifications can lead to morale issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Appeal Process</td>
+          <td>HR Manager</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Appeal request</td>
+          <td>Final decision document</td>
+          <td>Time to complete appeal process < 5 business days</td>
+          <td>Inconsistent appeals can undermine trust.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Closure of Case</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag salesforce">SAP S/4HANA, Salesforce</span></td>
+          <td>Final decision document</td>
+          <td>Closed case record</td>
+          <td>Time to close case < 1 business day</td>
+          <td>Open cases can lead to ongoing HR issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to register case < 24 hours</span> <span class="kpi-pill">Time to complete assessment < 3 business days</span> <span class="kpi-pill">Time to initiate investigation < 2 business days</span> <span class="kpi-pill">Time to collect all evidence < 5 business days</span> <span class="kpi-pill">Time to complete investigation report < 3 business days</span> <span class="kpi-pill">Time to make decision < 2 business days</span> <span class="kpi-pill">Time to notify employee < 1 business day</span> <span class="kpi-pill">Time to complete appeal process < 5 business days</span> <span class="kpi-pill">Time to close case < 1 business day</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate assessments leading to unfair outcomes.</span> <span class="risk-pill">Delayed investigations causing issues escalation.</span> <span class="risk-pill">Incomplete data leading to flawed conclusions.</span> <span class="risk-pill">Unfair decisions resulting in legal issues.</span> <span class="risk-pill">Delayed notifications affecting employee morale.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
