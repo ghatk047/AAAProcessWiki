@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-03 &mdash; Phone Enrolment via Contact Centre &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -241,33 +243,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-03 &mdash; Phone Enrolment via Contact Centre
+        </h1>
+        <p>The Phone Enrolment via Contact Centre process involves a contact centre agent guiding a member through the enrolment and sales process over the phone. This includes collecting necessary information, processing payments, and finalizing membership.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-03</td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-04</td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-05</td><td>Membership Tier Selection and Upsell</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-06</td><td>Payment Processing and First-Year Billing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-07</td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-03.png" data-lightbox data-title="SHARED-MB-EN-03 BPMN">
+              <img src="../../assets/img/shared-mb-en-03.png" alt="SHARED-MB-EN-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Phone Enrolment via Contact Centre</td></tr>
+            <tr><th>Trigger</th><td>A member calls the contact centre to enquire about or initiate membership enrolment.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a new member being enrolled with active membership and payment processed.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Salesforce for customer interactions and SAP S/4HANA for financial processing. CAA SCO also uses Salesforce but integrates more closely with Guidewire InsuranceSuite for policy management.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Call Handling</td>
+          <td>Contact Centre Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Member's contact information and enrolment details</td>
+          <td>Enrolment form filled out in Salesforce</td>
+          <td>Call handling time < 5 minutes</td>
+          <td>Handling complex enrolment scenarios</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Eligibility</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Enrolment form from Salesforce</td>
+          <td>Eligibility status and any required additional information</td>
+          <td>95% eligibility verification accuracy</td>
+          <td>Inconsistent data entry across systems</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Collect Payment Information</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Eligibility status and enrolment details</td>
+          <td>Payment processed and receipt generated</td>
+          <td>98% successful payment rate</td>
+          <td>Handling declined payments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Process Enrolment in Guidewire</td>
+          <td>Policy Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Payment receipt and enrolment details</td>
+          <td>Active membership record in Guidewire</td>
+          <td>Enrolment processing time < 3 minutes</td>
+          <td>Integration issues between Salesforce and Guidewire</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Confirmation Email</td>
+          <td>Email Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Active membership record from Guidewire</td>
+          <td>Confirmation email sent to member</td>
+          <td>90% open rate for confirmation emails</td>
+          <td>Email delivery failures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Member Records</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Confirmation email sent status</td>
+          <td>Updated member record in SAP S/4HANA</td>
+          <td>100% accurate record updates</td>
+          <td>Data synchronization issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Post-Enrolment Follow-Up</td>
+          <td>Contact Centre Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Updated member record from SAP S/4HANA</td>
+          <td>Follow-up call notes and satisfaction survey</td>
+          <td>95% customer satisfaction rate</td>
+          <td>Low follow-up response rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Case in Salesforce</td>
+          <td>Contact Centre Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Follow-up call notes and satisfaction survey</td>
+          <td>Closed case in Salesforce</td>
+          <td>100% cases closed within 24 hours</td>
+          <td>Overlooked case closures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Call handling time < 5 minutes</span> <span class="kpi-pill">95% eligibility verification accuracy</span> <span class="kpi-pill">98% successful payment rate</span> <span class="kpi-pill">Enrolment processing time < 3 minutes</span> <span class="kpi-pill">90% open rate for confirmation emails</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Integration issues between Salesforce and Guidewire</span> <span class="risk-pill">Email delivery failures</span> <span class="risk-pill">Data synchronization issues</span> <span class="risk-pill">Low follow-up response rates</span> <span class="risk-pill">Overlooked case closures</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
