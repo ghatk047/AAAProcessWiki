@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency & Broker Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-AG-02 &mdash; RIBO Licence Renewal Tracking &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -324,33 +326,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-agency-operations/index.html">Insurance Agency & Broker Operations</a>
         </div>
-        <h1>🍁 Insurance Agency & Broker Operations</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-AG-02 &mdash; RIBO Licence Renewal Tracking
+        </h1>
+        <p>This process tracks the renewal of RIBO licences for insurance agencies and brokers in Ontario. It ensures compliance with FSRA regulations and manages the workflow through Guidewire InsuranceSuite.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-ag-01.html">CAA-CI-AG-01</a></td><td>Broker Appointment and RIBO Registration Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-AG-02</td><td>RIBO Licence Renewal Tracking</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-03</td><td>CAA Member Cross-Sell Auto and Home Bundle</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-04</td><td>CAA Connect Telematics Enrolment for UBI Discount</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-05</td><td>Broker Performance Reporting (Guidewire Analytics)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-06</td><td>Travel Medical Insurance Sales and Underwriting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-07</td><td>Pet Insurance Sales Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-08</td><td>Life Insurance Lead Referral (CAA Life Insurance)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-ag-02.png" data-lightbox data-title="CAA-CI-AG-02 BPMN">
+              <img src="../../assets/img/caa-ci-ag-02.png" alt="CAA-CI-AG-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-AG-02</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency & Broker Operations</td></tr>
+            <tr><th>L3 Name</th><td>RIBO Licence Renewal Tracking</td></tr>
+            <tr><th>Trigger</th><td>Renewal notification from licensed insurance agents or brokers</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces an updated licence record, confirmation email to the agent/broker, and a report for audit purposes.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario has specific requirements for RIBO licence renewal that differ slightly from AAA's process, particularly in terms of FSRA compliance and local regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag galileo">Galileo GDS</span> <span class="sys-tag sys-generic">ClientBase</span> <span class="sys-tag powerbi">Power BI</span> <span class="sys-tag aws">AWS</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Renewal Request</td>
+          <td>Licensed Insurance Agent/Broker</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Renewal application form</td>
+          <td>Renewal request in Guidewire</td>
+          <td>Time to initiate renewal < 2 days</td>
+          <td>Delays in submitting renewal forms</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Application</td>
+          <td>Licence Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Renewal request in Guidewire</td>
+          <td>Application review notes</td>
+          <td>Time to review application < 3 days</td>
+          <td>Inconsistent application review criteria</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Approve or Reject Application</td>
+          <td>Licence Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Application review notes</td>
+          <td>Approval/rejection decision</td>
+          <td>Time to approve/reject < 1 day</td>
+          <td>Delays in approval process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Renewal Form</td>
+          <td>Licence Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Approval decision</td>
+          <td>Renewal form for signing</td>
+          <td>Time to generate form < 2 days</td>
+          <td>Errors in generated forms</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Sign and Submit Form</td>
+          <td>Licensed Insurance Agent/Broker</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Renewal form for signing</td>
+          <td>Signed renewal form</td>
+          <td>Time to sign and submit < 3 days</td>
+          <td>Difficulty in accessing digital signature tools</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Verify Payment</td>
+          <td>Finance Officer</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Signed renewal form</td>
+          <td>Payment confirmation</td>
+          <td>Time to verify payment < 1 day</td>
+          <td>Incorrect payment processing</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Licence Record</td>
+          <td>Licence Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Payment confirmation</td>
+          <td>Updated licence record</td>
+          <td>Time to update record < 2 days</td>
+          <td>Data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Send Confirmation Email</td>
+          <td>Licence Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Updated licence record</td>
+          <td>Confirmation email to agent/broker</td>
+          <td>Time to send email < 1 day</td>
+          <td>Email delivery failures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Generate Audit Report</td>
+          <td>Internal Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Updated licence record</td>
+          <td>Audit report</td>
+          <td>Time to generate report < 2 days</td>
+          <td>Inaccurate audit data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Review Audit Report</td>
+          <td>Internal Auditor</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Audit report</td>
+          <td>Audit review notes</td>
+          <td>Time to review report < 1 day</td>
+          <td>Inconsistent audit criteria</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate renewal < 2 days</span> <span class="kpi-pill">Time to review application < 3 days</span> <span class="kpi-pill">Time to approve/reject < 1 day</span> <span class="kpi-pill">Time to generate form < 2 days</span> <span class="kpi-pill">Time to sign and submit < 3 days</span> <span class="kpi-pill">Time to verify payment < 1 day</span> <span class="kpi-pill">Time to update record < 2 days</span> <span class="kpi-pill">Time to send email < 1 day</span> <span class="kpi-pill">Time to generate report < 2 days</span> <span class="kpi-pill">Time to review report < 1 day</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Non-compliance with FSRA regulations</span> <span class="risk-pill">Delays in processing renewal forms</span> <span class="risk-pill">Errors in generated and signed documents</span> <span class="risk-pill">Payment processing issues</span> <span class="risk-pill">Data entry errors in licence records</span> <span class="risk-pill">Email delivery failures</span> <span class="risk-pill">Inaccurate audit data</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
