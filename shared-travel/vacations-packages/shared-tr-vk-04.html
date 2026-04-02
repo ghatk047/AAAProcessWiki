@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA/CAA Vacations & Packages &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-VK-04 &mdash; Dynamic Package Bundling (Air and Hotel and Car) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -374,33 +376,168 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/vacations-packages/index.html">AAA/CAA Vacations & Packages</a>
         </div>
-        <h1>✈️ AAA/CAA Vacations & Packages</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-VK-04 &mdash; Dynamic Package Bundling (Air and Hotel and Car)
+        </h1>
+        <p>This process involves bundling air, hotel, and car packages for AAA Northeast members. It ensures seamless integration of various travel components to provide a comprehensive vacation experience.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-vk-01.html">SHARED-TR-VK-01</a></td><td>AAA and CAA Vacations Package Catalogue Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-02.html">SHARED-TR-VK-02</a></td><td>Supplier Contract Negotiation and Allotment Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-vk-03.html">SHARED-TR-VK-03</a></td><td>Package Pricing and Margin Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-VK-04</td><td>Dynamic Package Bundling (Air and Hotel and Car)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-05</td><td>Theme Travel Product Design (River Cruises and Tours and Sports)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-06</td><td>Member-Exclusive Rate Loading and Promotion</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-07</td><td>Agency Commission Reconciliation and BSP Settlement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-VK-08</td><td>Travel Supplier Performance Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-vk-04.png" data-lightbox data-title="SHARED-TR-VK-04 BPMN">
+              <img src="../../assets/img/shared-tr-vk-04.png" alt="SHARED-TR-VK-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-VK-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>AAA/CAA Vacations & Packages</td></tr>
+            <tr><th>L3 Name</th><td>Dynamic Package Bundling (Air and Hotel and Car)</td></tr>
+            <tr><th>Trigger</th><td>A customer initiates the package bundling request through the AAA App or contact center.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a customized vacation package that includes airfare, hotel booking, and car rental, all processed and confirmed for the customer.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight. The process at CAA SCO might involve more stringent compliance checks and different systems integration.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag galileo">Galileo GDS</span> <span class="sys-tag agero">Agero Swoop</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer Inquiry Reception</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Customer inquiry details</td>
+          <td>Inquiry logged and routed to Travel Consultant</td>
+          <td>Response time within 30 minutes</td>
+          <td>Handling complex customer requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Package Design</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, Salesforce</span></td>
+          <td>Customer preferences and travel dates</td>
+          <td>Proposed package bundle</td>
+          <td>Package design completion within 1 hour</td>
+          <td>Balancing customer needs with available inventory</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Airfare Booking</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Sabre GDS, Salesforce</span></td>
+          <td>Proposed package bundle</td>
+          <td>Confirmed airfare booking</td>
+          <td>95% success rate in booking flights</td>
+          <td>Flight availability and pricing fluctuations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Hotel Booking</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Galileo GDS, Salesforce</span></td>
+          <td>Confirmed airfare booking</td>
+          <td>Confirmed hotel reservation</td>
+          <td>90% success rate in booking hotels</td>
+          <td>Hotel availability and pricing issues</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Car Rental Booking</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Agero Swoop, Salesforce</span></td>
+          <td>Confirmed hotel reservation</td>
+          <td>Confirmed car rental booking</td>
+          <td>85% success rate in booking cars</td>
+          <td>Car availability and pricing challenges</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Package Confirmation</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Confirmed car rental booking</td>
+          <td>Final package confirmation to customer</td>
+          <td>100% accuracy in final package details</td>
+          <td>Ensuring all components are correctly integrated</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Booking Follow-Up</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Final package confirmation</td>
+          <td>Customer satisfaction survey</td>
+          <td>90% customer satisfaction rate</td>
+          <td>Managing customer expectations post-booking</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 30 minutes</span> <span class="kpi-pill">Package design completion within 1 hour</span> <span class="kpi-pill">95% success rate in booking flights</span> <span class="kpi-pill">90% success rate in booking hotels</span> <span class="kpi-pill">85% success rate in booking cars</span> <span class="kpi-pill">100% accuracy in final package details</span> <span class="kpi-pill">90% customer satisfaction rate</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Flight availability and pricing fluctuations</span> <span class="risk-pill">Hotel availability and pricing issues</span> <span class="risk-pill">Car availability and pricing challenges</span> <span class="risk-pill">Customer dissatisfaction due to incorrect integration</span> <span class="risk-pill">Regulatory compliance issues at CAA SCO</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
