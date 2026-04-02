@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-DT-IT-09 &mdash; Data Governance and Snowflake Data Platform Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -464,45 +466,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>9 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-DT-IT-09 &mdash; Data Governance and Snowflake Data Platform Management
+        </h1>
+        <p>This process outlines the governance and management of the Snowflake data platform for AAA Northeast, ensuring data integrity, security, and compliance with state DOI regulations.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-01.html">CAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-02.html">AAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-02.html">CAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-03.html">AAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-03.html">CAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="caa-dt-it-07.html">CAA-DT-IT-07</a></td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-08.html">AAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-08.html">CAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-dt-it-09.png" data-lightbox data-title="AAA-DT-IT-09 BPMN">
+              <img src="../../assets/img/aaa-dt-it-09.png" alt="AAA-DT-IT-09 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-DT-IT-09</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>Data Governance and Snowflake Data Platform Management</td></tr>
+            <tr><th>Trigger</th><td>Initiated by a quarterly review of data governance policies or upon detection of data breaches or anomalies in the Snowflake environment.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion ensures that the Snowflake data platform is secure, compliant, and efficiently managed, supporting AAA Northeast's digital transformation initiatives.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on state-specific regulations and integrates with multiple cloud platforms like Guidewire Cloud, while CAA SCO has a broader focus across provinces and specific insurance suite requirements.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag snowflake">Snowflake</span> <span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag aws">AWS</span> <span class="sys-tag sys-generic">State DOI</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Governance Review</td>
+          <td>Data Governance Manager</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Current data governance policies</td>
+          <td>Updated data governance policy document</td>
+          <td>Policy review cycle time < 30 days</td>
+          <td>Lack of timely updates to data governance policies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Security Audit</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Audit checklist</td>
+          <td>Security audit report</td>
+          <td>Audit completion rate > 90%</td>
+          <td>Inadequate security measures leading to data breaches</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Data Integration Testing</td>
+          <td>IT Data Engineer</td>
+          <td><span class="sys-tag guidewire">Snowflake, Guidewire Cloud</span></td>
+          <td>Integration test cases</td>
+          <td>Test results report</td>
+          <td>Test pass rate > 95%</td>
+          <td>Data discrepancies between Snowflake and other systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Performance Monitoring Setup</td>
+          <td>IT Performance Engineer</td>
+          <td><span class="sys-tag snowflake">Snowflake</span></td>
+          <td>Monitoring configuration templates</td>
+          <td>Configured monitoring dashboards</td>
+          <td>Response time < 500ms</td>
+          <td>Slow query performance impacting user experience</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Compliance Check</td>
+          <td>Regulatory Compliance Officer</td>
+          <td><span class="sys-tag snowflake">Snowflake, State DOI</span></td>
+          <td>State DOI compliance guidelines</td>
+          <td>Compliance status report</td>
+          <td>Compliance rate > 98%</td>
+          <td>Non-compliance with state regulations leading to fines</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Data Backup and Recovery Plan Review</td>
+          <td>IT Disaster Recovery Specialist</td>
+          <td><span class="sys-tag snowflake">Snowflake, AWS</span></td>
+          <td>Backup plan document</td>
+          <td>Updated backup and recovery plan</td>
+          <td>Recovery time objective (RTO) < 2 hours</td>
+          <td>Data loss due to inadequate backup procedures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Policy review cycle time < 30 days</span> <span class="kpi-pill">Audit completion rate > 90%</span> <span class="kpi-pill">Test pass rate > 95%</span> <span class="kpi-pill">Response time < 500ms</span> <span class="kpi-pill">Compliance rate > 98%</span> <span class="kpi-pill">Recovery time objective (RTO) < 2 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inadequate data governance policies leading to non-compliance</span> <span class="risk-pill">Security vulnerabilities resulting in data breaches</span> <span class="risk-pill">Data discrepancies between integrated systems causing operational issues</span> <span class="risk-pill">Slow query performance impacting user experience</span> <span class="risk-pill">Non-compliance with state regulations leading to fines</span> <span class="risk-pill">Data loss due to inadequate backup procedures</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
