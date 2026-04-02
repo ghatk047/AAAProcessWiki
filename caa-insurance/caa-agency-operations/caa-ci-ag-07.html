@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency & Broker Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-AG-07 &mdash; Pet Insurance Sales Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -329,33 +331,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-agency-operations/index.html">Insurance Agency & Broker Operations</a>
         </div>
-        <h1>🍁 Insurance Agency & Broker Operations</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-AG-07 &mdash; Pet Insurance Sales Processing
+        </h1>
+        <p>This process handles the sales and processing of pet insurance policies for CAA South Central Ontario. It involves capturing customer information, underwriting, and issuing policies while adhering to FSRA regulations.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-ag-01.html">CAA-CI-AG-01</a></td><td>Broker Appointment and RIBO Registration Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-02.html">CAA-CI-AG-02</a></td><td>RIBO Licence Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-03.html">CAA-CI-AG-03</a></td><td>CAA Member Cross-Sell Auto and Home Bundle</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-04.html">CAA-CI-AG-04</a></td><td>CAA Connect Telematics Enrolment for UBI Discount</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-05.html">CAA-CI-AG-05</a></td><td>Broker Performance Reporting (Guidewire Analytics)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-06.html">CAA-CI-AG-06</a></td><td>Travel Medical Insurance Sales and Underwriting</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-AG-07</td><td>Pet Insurance Sales Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-CI-AG-08</td><td>Life Insurance Lead Referral (CAA Life Insurance)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-ag-07.png" data-lightbox data-title="CAA-CI-AG-07 BPMN">
+              <img src="../../assets/img/caa-ci-ag-07.png" alt="CAA-CI-AG-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-AG-07</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency & Broker Operations</td></tr>
+            <tr><th>L3 Name</th><td>Pet Insurance Sales Processing</td></tr>
+            <tr><th>Trigger</th><td>A customer contacts a Licensed Insurance Agent at CAA South Central Ontario to inquire about pet insurance.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the issuance of a pet insurance policy to the customer, with all necessary documentation and payments processed.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario operates under FSRA regulations, which requires strict adherence to underwriting guidelines and policy issuance processes. This differs from AAA's approach, which may have more flexibility in certain areas due to different regulatory environments.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer Inquiry</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Customer contact details and inquiry about pet insurance</td>
+          <td>Initial quote or policy proposal</td>
+          <td>Average time to provide initial quote: 15 minutes</td>
+          <td>Handling complex customer inquiries efficiently</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Underwriting Review</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Customer application and quote details</td>
+          <td>Underwriting decision (approved/denied)</td>
+          <td>Underwriting approval rate: 85%</td>
+          <td>Managing underwriting risks while maintaining customer satisfaction</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Policy Issuance</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Underwriting approval and customer details</td>
+          <td>Issued policy document</td>
+          <td>Average time to issue policy: 30 minutes</td>
+          <td>Ensuring accurate policy issuance and compliance with FSRA regulations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Payment Processing</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Policy premium payment details</td>
+          <td>Processed payment receipt</td>
+          <td>Payment processing accuracy rate: 98%</td>
+          <td>Handling late payments and ensuring timely financial reconciliation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Customer Communication</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Issued policy document and payment receipt</td>
+          <td>Confirmation email to customer</td>
+          <td>Customer satisfaction score: 90%</td>
+          <td>Providing clear communication and addressing customer concerns promptly</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Policy Activation</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Issued policy document</td>
+          <td>Activated policy in the system</td>
+          <td>Average time to activate policy: 5 minutes</td>
+          <td>Ensuring timely activation of policies to avoid coverage gaps</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Policy Documentation</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Activated policy details</td>
+          <td>Complete policy documentation</td>
+          <td>Documentation accuracy rate: 95%</td>
+          <td>Maintaining accurate and up-to-date policy records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Policy Review</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Activated policy details</td>
+          <td>Review report</td>
+          <td>Review completion rate: 90%</td>
+          <td>Conducting thorough reviews to ensure compliance and risk management</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Average time to provide initial quote: 15 minutes</span> <span class="kpi-pill">Underwriting approval rate: 85%</span> <span class="kpi-pill">Average time to issue policy: 30 minutes</span> <span class="kpi-pill">Payment processing accuracy rate: 98%</span> <span class="kpi-pill">Customer satisfaction score: 90%</span> <span class="kpi-pill">Average time to activate policy: 5 minutes</span> <span class="kpi-pill">Documentation accuracy rate: 95%</span> <span class="kpi-pill">Review completion rate: 90%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Non-compliance with FSRA regulations leading to fines and penalties</span> <span class="risk-pill">Delays in underwriting process affecting customer satisfaction</span> <span class="risk-pill">Errors in payment processing causing financial discrepancies</span> <span class="risk-pill">Inaccurate policy documentation leading to claims issues</span> <span class="risk-pill">Failure to conduct thorough reviews resulting in increased risk exposure</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
