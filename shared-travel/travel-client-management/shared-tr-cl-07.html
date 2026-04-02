@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Management & Servicing &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-CL-07 &mdash; Corporate Travel Account Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -369,33 +371,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
         </div>
-        <h1>✈️ Client Management & Servicing</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-CL-07 &mdash; Corporate Travel Account Management
+        </h1>
+        <p>This process manages the client accounts for corporate travel services, ensuring seamless onboarding, maintenance, and service delivery to AAA Northeast members.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-cl-01.html">SHARED-TR-CL-01</a></td><td>Client Profile Creation and Preference Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-02.html">SHARED-TR-CL-02</a></td><td>Visa and Passport Advisory Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-03.html">SHARED-TR-CL-03</a></td><td>Pre-Departure Document Checklist and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-04.html">SHARED-TR-CL-04</a></td><td>Post-Booking Amendment and Cancellation Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-05.html">SHARED-TR-CL-05</a></td><td>Refund and Credit Processing (Airline and Supplier)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-06.html">SHARED-TR-CL-06</a></td><td>Group Travel Coordination and Group Contract Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-CL-07</td><td>Corporate Travel Account Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-08</td><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-cl-07.png" data-lightbox data-title="SHARED-TR-CL-07 BPMN">
+              <img src="../../assets/img/shared-tr-cl-07.png" alt="SHARED-TR-CL-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-CL-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Client Management & Servicing</td></tr>
+            <tr><th>L3 Name</th><td>Corporate Travel Account Management</td></tr>
+            <tr><th>Trigger</th><td>Client account creation request from a corporate entity or existing client renewal</td></tr>
+            <tr><th>Outcome</th><td>A fully operational corporate travel account with assigned resources and customized service plans.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under FSRA regulations and uses different systems for policy management compared to AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag sys-generic">Zoom</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Client Inquiry</td>
+          <td>Client Relationship Manager (CRM)</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Inquiry form or email</td>
+          <td>Client profile creation in Salesforce</td>
+          <td>Response time within 24 hours</td>
+          <td>Handling large volumes of inquiries efficiently</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Account Setup</td>
+          <td>Client Relationship Manager (CRM)</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Client profile from Salesforce</td>
+          <td>Corporate travel account setup in Guidewire</td>
+          <td>Account creation within 3 business days</td>
+          <td>Data consistency between systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Service Plan Customization</td>
+          <td>Corporate Travel Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Client requirements and preferences</td>
+          <td>Customized service plan document</td>
+          <td>Plan customization within 2 business days</td>
+          <td>Tailoring plans to diverse client needs</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Approval Process</td>
+          <td>Corporate Travel Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Customized service plan document</td>
+          <td>Approved service plan</td>
+          <td>Approval within 1 business day</td>
+          <td>Navigating approval workflows</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Onboarding Communication</td>
+          <td>Client Relationship Manager (CRM)</td>
+          <td><span class="sys-tag salesforce">Salesforce, Email</span></td>
+          <td>Approved service plan</td>
+          <td>Onboarding email and materials sent to client</td>
+          <td>Communication sent within 1 business day of approval</td>
+          <td>Ensuring all stakeholders receive information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Training Session</td>
+          <td>Corporate Travel Specialist</td>
+          <td><span class="sys-tag salesforce">Zoom, Salesforce</span></td>
+          <td>Client contact details</td>
+          <td>Training session conducted and recorded</td>
+          <td>Training session within 1 week of approval</td>
+          <td>Engaging clients in training sessions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Service Plan Review</td>
+          <td>Client Relationship Manager (CRM)</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, Salesforce</span></td>
+          <td>Client feedback on service plan</td>
+          <td>Updated service plan document</td>
+          <td>Review and update within 2 business days of feedback</td>
+          <td>Iterating on plans based on client feedback</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Service Delivery Monitoring</td>
+          <td>Corporate Travel Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, Salesforce</span></td>
+          <td>Service plan and usage data</td>
+          <td>Monthly service delivery report</td>
+          <td>Report generated within 1 business day of the end of the month</td>
+          <td>Accurate data collection for reporting</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Performance Review Meeting</td>
+          <td>Client Relationship Manager (CRM)</td>
+          <td><span class="sys-tag salesforce">Zoom, Salesforce</span></td>
+          <td>Service delivery report and client feedback</td>
+          <td>Action plan document</td>
+          <td>Meeting held within 1 week of the end of the month</td>
+          <td>Facilitating productive meetings with clients</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Action Plan Implementation</td>
+          <td>Corporate Travel Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter, Salesforce</span></td>
+          <td>Action plan document</td>
+          <td>Implemented changes and updates to service plan</td>
+          <td>Changes implemented within 2 business days of the meeting</td>
+          <td>Executing action plans promptly</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 24 hours</span> <span class="kpi-pill">Account creation within 3 business days</span> <span class="kpi-pill">Plan customization within 2 business days</span> <span class="kpi-pill">Approval within 1 business day</span> <span class="kpi-pill">Communication sent within 1 business day of approval</span> <span class="kpi-pill">Training session within 1 week of approval</span> <span class="kpi-pill">Review and update within 2 business days of feedback</span> <span class="kpi-pill">Report generated within 1 business day of the end of the month</span> <span class="kpi-pill">Meeting held within 1 week of the end of the month</span> <span class="kpi-pill">Changes implemented within 2 business days of the meeting</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent data between systems</span> <span class="risk-pill">Delays in client communication and training sessions</span> <span class="risk-pill">Difficulty tailoring service plans to diverse client needs</span> <span class="risk-pill">Challenges navigating approval workflows</span> <span class="risk-pill">Issues with accurate data collection for reporting</span> <span class="risk-pill">Difficulties facilitating productive meetings with clients</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
