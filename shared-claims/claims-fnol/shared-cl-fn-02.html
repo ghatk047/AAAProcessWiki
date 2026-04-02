@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Notice of Loss (FNOL) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-FN-02 &mdash; Claimant Identity Verification and Policy Lookup &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -396,33 +398,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
         </div>
-        <h1>📋 First Notice of Loss (FNOL)</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-FN-02 &mdash; Claimant Identity Verification and Policy Lookup
+        </h1>
+        <p>This process involves verifying the identity of a claimant and looking up their policy details upon receiving a First Notice of Loss (FNOL). The goal is to ensure accurate and timely processing of claims.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-fn-01.html">SHARED-CL-FN-01</a></td><td>FNOL Intake (Phone and Digital and Agent Reported)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-FN-02</td><td>Claimant Identity Verification and Policy Lookup</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-03</td><td>Loss Details Capture (Date and Location and Parties)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-04</td><td>Coverage Verification and Reservation of Rights Letter</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-05</td><td>Initial Reserves Setting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-06</td><td>Claim Assignment to Adjuster (Rules-Based Routing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-07</td><td>Acknowledgement Letter and Digital Notification to Claimant</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-FN-08</td><td>Third-Party Claimant Notification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-fn-02.png" data-lightbox data-title="SHARED-CL-FN-02 BPMN">
+              <img src="../../assets/img/shared-cl-fn-02.png" alt="SHARED-CL-FN-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-FN-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>First Notice of Loss (FNOL)</td></tr>
+            <tr><th>L3 Name</th><td>Claimant Identity Verification and Policy Lookup</td></tr>
+            <tr><th>Trigger</th><td>Receiving a FNOL from a member or third party</td></tr>
+            <tr><th>Outcome</th><td>Successful verification of claimant identity and retrieval of policy details, enabling the initiation of the claims process.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Guidewire PolicyCenter for policy lookup, while CAA SCO may use additional systems like ClientBase for supplementary data.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive FNOL</td>
+          <td>Claims Clerk</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>FNOL form or call details</td>
+          <td>Recorded FNOL in SAP S/4HANA</td>
+          <td>FNOL received within 5 minutes of notification</td>
+          <td>Delayed FNOL recording leading to claim delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Claimant Identity</td>
+          <td>Claims Clerk</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>FNOL details</td>
+          <td>Verified claimant identity</td>
+          <td>95% accuracy in identity verification within 10 minutes</td>
+          <td>Incorrect identity verification leading to policy mismatches</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Lookup Policy Details</td>
+          <td>Claims Clerk</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Verified claimant identity</td>
+          <td>Policy details retrieved</td>
+          <td>100% policy lookup success rate within 5 minutes</td>
+          <td>Missing or incorrect policy data affecting claims processing</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Policy Coverage</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Policy details</td>
+          <td>Coverage determination</td>
+          <td>90% accurate coverage determination within 30 minutes</td>
+          <td>Misinterpretation of policy terms leading to denied claims</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Initiate Claim Process</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Coverage determination</td>
+          <td>Claim process initiated in Guidewire ClaimCenter</td>
+          <td>85% claims initiation within 1 hour of FNOL receipt</td>
+          <td>Delayed claim initiation causing member dissatisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Claimant</td>
+          <td>Claims Clerk</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Claim process initiation details</td>
+          <td>Claimant notification sent</td>
+          <td>98% successful claim notifications within 24 hours</td>
+          <td>Failed notifications leading to missed communication with members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Claim Status</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim process status updates</td>
+          <td>Status report</td>
+          <td>95% accurate claim status reporting within 24 hours</td>
+          <td>Inaccurate status reports affecting member trust</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Claim Process</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Final claim details</td>
+          <td>Claim process closed in Guidewire ClaimCenter</td>
+          <td>90% claims closure within 14 days of initiation</td>
+          <td>Extended claim processing times leading to member dissatisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Member Records</td>
+          <td>Claims Clerk</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Claim closure details</td>
+          <td>Updated member records in SAP S/4HANA</td>
+          <td>100% accurate record updates within 24 hours of claim closure</td>
+          <td>Incorrect record updates causing future processing errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">FNOL received within 5 minutes of notification</span> <span class="kpi-pill">95% accuracy in identity verification within 10 minutes</span> <span class="kpi-pill">100% policy lookup success rate within 5 minutes</span> <span class="kpi-pill">90% accurate coverage determination within 30 minutes</span> <span class="kpi-pill">85% claims initiation within 1 hour of FNOL receipt</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed FNOL recording leading to claim delays</span> <span class="risk-pill">Incorrect identity verification leading to policy mismatches</span> <span class="risk-pill">Misinterpretation of policy terms leading to denied claims</span> <span class="risk-pill">Failed notifications leading to missed communication with members</span> <span class="risk-pill">Extended claim processing times leading to member dissatisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
