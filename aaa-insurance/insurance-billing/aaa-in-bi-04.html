@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billing & Premium Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-BI-04 &mdash; NSF and Failed Payment Handling and Notice &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -284,33 +286,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-billing/index.html">Billing & Premium Management</a>
         </div>
-        <h1>🛡️ Billing & Premium Management</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-BI-04 &mdash; NSF and Failed Payment Handling and Notice
+        </h1>
+        <p>This process handles NSF (Non-Sufficient Funds) and failed payment scenarios for AAA Northeast members. It ensures timely communication, accurate record-keeping, and appropriate follow-up actions.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-bi-01.html">AAA-IN-BI-01</a></td><td>Premium Invoice Generation and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-02.html">AAA-IN-BI-02</a></td><td>Installment Plan Setup and Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-bi-03.html">AAA-IN-BI-03</a></td><td>Payment Receipt and EFT and Credit Card Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-BI-04</td><td>NSF and Failed Payment Handling and Notice</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-05</td><td>Agent Commission Calculation and Statement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-06</td><td>Refund Processing (Cancellation and Overpayment)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-07</td><td>Premium Audit (Commercial Lines)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-BI-08</td><td>Statutory Reserve and Premium Tax Calculation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-bi-04.png" data-lightbox data-title="AAA-IN-BI-04 BPMN">
+              <img src="../../assets/img/aaa-in-bi-04.png" alt="AAA-IN-BI-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-BI-04</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management</td></tr>
+            <tr><th>L3 Name</th><td>NSF and Failed Payment Handling and Notice</td></tr>
+            <tr><th>Trigger</th><td>Detection of an NSF or failed payment in the billing system.</td></tr>
+            <tr><th>Outcome</th><td>Successful resolution of the NSF or failed payment issue, with updated records and member notifications.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on direct member communication through Salesforce Einstein AI for personalized interactions, while CAA may rely more on automated email notifications.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire BillingCenter</span> <span class="sys-tag salesforce">Salesforce Einstein AI</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sys-generic">Word Processor</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Detect NSF or Failed Payment</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Payment transaction data</td>
+          <td>NSF/Failed Payment Report</td>
+          <td>Detection rate of NSF payments within 24 hours</td>
+          <td>Manual review required for false positives</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Generate Notification Letter</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag sys-generic">Word Processor (e.g., Microsoft Word)</span></td>
+          <td>NSF/Failed Payment Report</td>
+          <td>Notification Letter</td>
+          <td>Notification letter generation within 1 business day</td>
+          <td>Customization for each member</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Send Notification via Mail</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Notification Letter</td>
+          <td>Confirmation of mailing</td>
+          <td>Mailing completion rate above 95%</td>
+          <td>Address validation issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send Notification via Email</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI</span></td>
+          <td>Notification Letter</td>
+          <td>Confirmation of email delivery</td>
+          <td>Email delivery rate above 90%</td>
+          <td>Spam filters</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Monitor Response from Member</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI, AAA App</span></td>
+          <td>Member response</td>
+          <td>Response Log</td>
+          <td>Response rate within 7 days of notification</td>
+          <td>Low response rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Billing Records</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Response Log</td>
+          <td>Updated Billing Record</td>
+          <td>Record update accuracy above 98%</td>
+          <td>Data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Escalate to Collections if Necessary</td>
+          <td>Collections Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, Salesforce Einstein AI</span></td>
+          <td>Response Log</td>
+          <td>Collection Case</td>
+          <td>Escalation rate for unresolved cases below 10%</td>
+          <td>Overdue payments</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Final Communication with Member</td>
+          <td>Collections Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI, AAA App</span></td>
+          <td>Collection Case</td>
+          <td>Final Communication Log</td>
+          <td>Resolution rate within 30 days of final communication</td>
+          <td>Non-responsive members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Detection rate of NSF payments within 24 hours</span> <span class="kpi-pill">Notification letter generation within 1 business day</span> <span class="kpi-pill">Mailing completion rate above 95%</span> <span class="kpi-pill">Email delivery rate above 90%</span> <span class="kpi-pill">Response rate within 7 days of notification</span> <span class="kpi-pill">Record update accuracy above 98%</span> <span class="kpi-pill">Escalation rate for unresolved cases below 10%</span> <span class="kpi-pill">Resolution rate within 30 days of final communication</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed detection of NSF payments leading to late fees and penalties</span> <span class="risk-pill">Inaccurate notification letters causing confusion among members</span> <span class="risk-pill">Failed mailings or email delivery issues resulting in missed communications</span> <span class="risk-pill">Data entry errors in billing records affecting financial accuracy</span> <span class="risk-pill">Non-responsive members leading to prolonged unresolved cases</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
