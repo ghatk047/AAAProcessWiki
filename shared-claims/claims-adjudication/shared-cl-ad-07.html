@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claims Adjudication & Settlement &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-AD-07 &mdash; Salvage Title Processing and Vehicle Total Loss Declaration &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -409,33 +411,168 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
         </div>
-        <h1>📋 Claims Adjudication & Settlement</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-AD-07 &mdash; Salvage Title Processing and Vehicle Total Loss Declaration
+        </h1>
+        <p>This process handles the declaration of vehicle total loss and the issuance of salvage titles for AAA Northeast members. It ensures timely and accurate processing to minimize customer impact.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-ad-01.html">SHARED-CL-AD-01</a></td><td>Field Inspection and Damage Assessment Scheduling</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-02.html">SHARED-CL-AD-02</a></td><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-03.html">SHARED-CL-AD-03</a></td><td>Liability Determination and Coverage Decision</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-04.html">SHARED-CL-AD-04</a></td><td>Subrogation Identification and Preservation of Rights</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-05.html">SHARED-CL-AD-05</a></td><td>Settlement Negotiation and Authority Approval Levels</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-06.html">SHARED-CL-AD-06</a></td><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-AD-07</td><td>Salvage Title Processing and Vehicle Total Loss Declaration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-08</td><td>Claim Closure and Reserve Release</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-ad-07.png" data-lightbox data-title="SHARED-CL-AD-07 BPMN">
+              <img src="../../assets/img/shared-cl-ad-07.png" alt="SHARED-CL-AD-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-AD-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Claims Adjudication & Settlement</td></tr>
+            <tr><th>L3 Name</th><td>Salvage Title Processing and Vehicle Total Loss Declaration</td></tr>
+            <tr><th>Trigger</th><td>A claim is filed indicating a total loss of a vehicle.</td></tr>
+            <tr><th>Outcome</th><td>The vehicle is declared as a total loss, a salvage title is issued, and all related financial settlements are completed.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO processes may differ in the specific forms used for salvage titles and additional regulatory requirements due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sys-generic">State DMV System</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Claim Notification</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim Form</td>
+          <td>Claim Record in Guidewire</td>
+          <td>Time to first response: 24 hours</td>
+          <td>Delays in claim notification can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assess Total Loss</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Vehicle Damage Report</td>
+          <td>Total Loss Assessment</td>
+          <td>Accuracy of total loss assessment: 95%</td>
+          <td>Incorrect assessments can lead to disputes and additional claims.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Initiate Salvage Title Request</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Total Loss Assessment</td>
+          <td>Salvage Title Request Form</td>
+          <td>Time to initiate salvage title request: 48 hours from total loss assessment</td>
+          <td>Delays in initiating the salvage title process can cause additional delays.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Submit Salvage Title Application</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag sys-generic">State DMV System</span></td>
+          <td>Salvage Title Request Form</td>
+          <td>Salvage Title Issuance Confirmation</td>
+          <td>Time to receive salvage title: 7 days from submission</td>
+          <td>Delays in receiving the salvage title can impact customer's ability to sell or trade the vehicle.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Notify Member of Salvage Title Issuance</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Salvage Title Issuance Confirmation</td>
+          <td>Notification to Member</td>
+          <td>Response time for notification: 24 hours from salvage title issuance</td>
+          <td>Delayed notifications can cause confusion and frustration among members.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Finalize Financial Settlement</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Grasshopper Bank</span></td>
+          <td>Salvage Title Issuance Confirmation</td>
+          <td>Settlement Payment</td>
+          <td>Time to complete financial settlement: 10 days from salvage title issuance</td>
+          <td>Delays in financial settlements can lead to additional claims and disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Claim File</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Settlement Payment Confirmation</td>
+          <td>Closed Claim Record</td>
+          <td>Accuracy of claim closure: 100%</td>
+          <td>Incomplete or inaccurate claim closures can lead to reopened claims.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first response: 24 hours</span> <span class="kpi-pill">Accuracy of total loss assessment: 95%</span> <span class="kpi-pill">Time to initiate salvage title request: 48 hours from total loss assessment</span> <span class="kpi-pill">Time to receive salvage title: 7 days from submission</span> <span class="kpi-pill">Response time for notification: 24 hours from salvage title issuance</span> <span class="kpi-pill">Time to complete financial settlement: 10 days from salvage title issuance</span> <span class="kpi-pill">Accuracy of claim closure: 100%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in claim notification and response can lead to customer dissatisfaction.</span> <span class="risk-pill">Incorrect total loss assessments can result in disputes and additional claims.</span> <span class="risk-pill">Delays in initiating the salvage title process can cause further delays.</span> <span class="risk-pill">Delays in receiving the salvage title can impact the member's ability to sell or trade the vehicle.</span> <span class="risk-pill">Delayed financial settlements can lead to additional claims and disputes.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
