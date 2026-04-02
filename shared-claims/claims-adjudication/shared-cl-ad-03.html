@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claims Adjudication & Settlement &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-AD-03 &mdash; Liability Determination and Coverage Decision &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -405,33 +407,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
         </div>
-        <h1>📋 Claims Adjudication & Settlement</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-AD-03 &mdash; Liability Determination and Coverage Decision
+        </h1>
+        <p>The Liability Determination and Coverage Decision process involves assessing the liability of an incident and determining the appropriate insurance coverage. This ensures that claims are accurately adjudicated based on policy terms.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-ad-01.html">SHARED-CL-AD-01</a></td><td>Field Inspection and Damage Assessment Scheduling</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-02.html">SHARED-CL-AD-02</a></td><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-AD-03</td><td>Liability Determination and Coverage Decision</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-04</td><td>Subrogation Identification and Preservation of Rights</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-05</td><td>Settlement Negotiation and Authority Approval Levels</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-06</td><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-07</td><td>Salvage Title Processing and Vehicle Total Loss Declaration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-08</td><td>Claim Closure and Reserve Release</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-ad-03.png" data-lightbox data-title="SHARED-CL-AD-03 BPMN">
+              <img src="../../assets/img/shared-cl-ad-03.png" alt="SHARED-CL-AD-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-AD-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Claims Adjudication & Settlement</td></tr>
+            <tr><th>L3 Name</th><td>Liability Determination and Coverage Decision</td></tr>
+            <tr><th>Trigger</th><td>Receipt of a claim notification from a member or third party involved in an incident.</td></tr>
+            <tr><th>Outcome</th><td>A decision is made regarding liability and coverage, leading to either approval or denial of the claim.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under FSRA regulations which require additional compliance checks compared to AAA Northeast.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag aaa-app">AAA App/CAA MyCAA App</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Claim Notification Receipt</td>
+          <td>Claims Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim notification form</td>
+          <td>Claim record in Guidewire ClaimCenter</td>
+          <td>Time to first response < 24 hours</td>
+          <td>Delays in claim notification receipt</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim record</td>
+          <td>Assessment report</td>
+          <td>80% accuracy in initial assessment</td>
+          <td>Inaccurate initial assessments</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Liability Determination</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Assessment report</td>
+          <td>Liability determination document</td>
+          <td>95% consistency in liability determinations</td>
+          <td>Discrepancies in liability determinations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Coverage Review</td>
+          <td>Policy Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Liability determination document</td>
+          <td>Coverage review report</td>
+          <td>100% coverage accuracy</td>
+          <td>Errors in coverage review</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Claim Settlement Decision</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Coverage review report</td>
+          <td>Settlement decision document</td>
+          <td>90% satisfaction rate from members</td>
+          <td>Member dissatisfaction with settlement decisions</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Documentation Update</td>
+          <td>Claims Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Settlement decision document</td>
+          <td>Updated claim record</td>
+          <td>100% accurate documentation updates</td>
+          <td>Inaccurate documentation updates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notification to Member</td>
+          <td>Claims Coordinator</td>
+          <td><span class="sys-tag aaa-app">AAA App/CAA MyCAA App</span></td>
+          <td>Updated claim record</td>
+          <td>Notification sent to member</td>
+          <td>95% notification delivery rate</td>
+          <td>Failed notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Final Review</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Notification sent to member</td>
+          <td>Final review document</td>
+          <td>0% errors in final reviews</td>
+          <td>Errors in final reviews</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Claim Record</td>
+          <td>Claims Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Final review document</td>
+          <td>Closed claim record</td>
+          <td>100% accurate closure of claims</td>
+          <td>Incomplete claim closures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first response < 24 hours</span> <span class="kpi-pill">80% accuracy in initial assessment</span> <span class="kpi-pill">95% consistency in liability determinations</span> <span class="kpi-pill">100% coverage accuracy</span> <span class="kpi-pill">90% satisfaction rate from members</span> <span class="kpi-pill">100% accurate documentation updates</span> <span class="kpi-pill">95% notification delivery rate</span> <span class="kpi-pill">0% errors in final reviews</span> <span class="kpi-pill">100% accurate closure of claims</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in claim notification receipt</span> <span class="risk-pill">Inaccurate initial assessments</span> <span class="risk-pill">Discrepancies in liability determinations</span> <span class="risk-pill">Errors in coverage review</span> <span class="risk-pill">Member dissatisfaction with settlement decisions</span> <span class="risk-pill">Inaccurate documentation updates</span> <span class="risk-pill">Failed notifications</span> <span class="risk-pill">Errors in final reviews</span> <span class="risk-pill">Incomplete claim closures</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
