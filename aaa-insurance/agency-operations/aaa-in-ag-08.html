@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-AG-08 &mdash; AAA Approved Auto Repair Insurance Referral Process &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -296,33 +298,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/agency-operations/index.html">Insurance Agency Operations</a>
         </div>
-        <h1>🛡️ Insurance Agency Operations</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-AG-08 &mdash; AAA Approved Auto Repair Insurance Referral Process
+        </h1>
+        <p>The AAA Approved Auto Repair Insurance Referral Process is designed to facilitate the referral of auto repair claims to approved repair shops. This process ensures that members receive timely and quality repairs while maintaining compliance with insurance policies.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-ag-01.html">AAA-IN-AG-01</a></td><td>Licensed Agent Appointment and Onboarding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-02.html">AAA-IN-AG-02</a></td><td>Agent Continuing Education and License Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-03.html">AAA-IN-AG-03</a></td><td>Agency Performance Reporting and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-04.html">AAA-IN-AG-04</a></td><td>E and O Compliance Review</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-05.html">AAA-IN-AG-05</a></td><td>Cross-Sell Insurance to Existing AAA Members</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-06.html">AAA-IN-AG-06</a></td><td>Insurance Lead Management and Pipeline (Salesforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-07.html">AAA-IN-AG-07</a></td><td>Agent Commission Dispute Resolution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-AG-08</td><td>AAA Approved Auto Repair Insurance Referral Process</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-ag-08.png" data-lightbox data-title="AAA-IN-AG-08 BPMN">
+              <img src="../../assets/img/aaa-in-ag-08.png" alt="AAA-IN-AG-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-AG-08</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency Operations</td></tr>
+            <tr><th>L3 Name</th><td>AAA Approved Auto Repair Insurance Referral Process</td></tr>
+            <tr><th>Trigger</th><td>A member submits an auto repair claim through the AAA App or directly to a licensed insurance agent.</td></tr>
+            <tr><th>Outcome</th><td>The claim is processed, repaired at an approved auto repair shop, and the member receives a settlement for the repair costs.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific state regulations that differ from other regions. The process also integrates with Guidewire Cloud for policy management and claims handling.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag verisk">Verisk ISO rating</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Claim</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim form from member or agent</td>
+          <td>Claim record in Guidewire</td>
+          <td>Time to first response < 24 hours</td>
+          <td>Delays in claim submission</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim record from Guidewire</td>
+          <td>Assessment report</td>
+          <td>Assessment completion within 48 hours</td>
+          <td>Complex claim evaluations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Referral to Approved Repair Shop</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Sabre GDS</span></td>
+          <td>Assessment report</td>
+          <td>Repair shop referral</td>
+          <td>Repair shop selection within 24 hours</td>
+          <td>Limited availability of approved shops</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Member</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Repair shop referral</td>
+          <td>Notification to member</td>
+          <td>Member notification within 1 hour of referral</td>
+          <td>Communication delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Repair Completion Verification</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Verisk ISO rating</span></td>
+          <td>Repair shop completion report</td>
+          <td>Verification report</td>
+          <td>Verification within 7 days of repair completion</td>
+          <td>Inaccurate repair reports</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Settlement Payment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, Grasshopper Bank</span></td>
+          <td>Verification report</td>
+          <td>Payment to member</td>
+          <td>Payment within 5 business days of verification</td>
+          <td>Banking delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to first response < 24 hours</span> <span class="kpi-pill">Assessment completion within 48 hours</span> <span class="kpi-pill">Repair shop selection within 24 hours</span> <span class="kpi-pill">Member notification within 1 hour of referral</span> <span class="kpi-pill">Verification within 7 days of repair completion</span> <span class="kpi-pill">Payment within 5 business days of verification</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in claim submission due to technical issues or member error</span> <span class="risk-pill">Complex claim evaluations leading to extended processing times</span> <span class="risk-pill">Limited availability of approved auto repair shops in certain areas</span> <span class="risk-pill">Communication delays between claims adjusters and members</span> <span class="risk-pill">Inaccurate repair reports from repair shops</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
