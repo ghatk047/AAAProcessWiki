@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dispatch Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-DI-06 &mdash; Service Provider On-Scene Confirmation and Job Completion &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -336,33 +338,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-dispatch/index.html">Dispatch Operations</a>
         </div>
-        <h1>🚨 Dispatch Operations</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-DI-06 &mdash; Service Provider On-Scene Confirmation and Job Completion
+        </h1>
+        <p>This process involves confirming the presence of a service provider on scene and completing the job for roadside assistance services.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-di-01.html">SHARED-RS-DI-01</a></td><td>Member Call Intake and Coverage Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-02.html">SHARED-RS-DI-02</a></td><td>Digital Request Intake (App and Web Self-Serve)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-03.html">SHARED-RS-DI-03</a></td><td>Breakdown Type Classification and Service Code Assignment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-04.html">SHARED-RS-DI-04</a></td><td>Service Provider Dispatch via Agero Swoop</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-di-05.html">SHARED-RS-DI-05</a></td><td>Real-Time GPS Tracking and ETA Communication to Member</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-DI-06</td><td>Service Provider On-Scene Confirmation and Job Completion</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-DI-07</td><td>Post-Service Quality Survey (NPS)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-DI-08</td><td>Dispatch Performance Monitoring (SLA and Swoop Dashboard)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-di-06.png" data-lightbox data-title="SHARED-RS-DI-06 BPMN">
+              <img src="../../assets/img/shared-rs-di-06.png" alt="SHARED-RS-DI-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-DI-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Dispatch Operations</td></tr>
+            <tr><th>L3 Name</th><td>Service Provider On-Scene Confirmation and Job Completion</td></tr>
+            <tr><th>Trigger</th><td>Service provider arrives at the incident location as dispatched by the dispatch center.</td></tr>
+            <tr><th>Outcome</th><td>Successful confirmation of the service provider's arrival and completion of the job, with accurate documentation and billing.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional compliance requirements due to FSRA regulation that AAA Northeast does not have.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag guidewire">BillingCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Dispatch Center Notifies Service Provider</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Incident details from the AAA App or telematics system</td>
+          <td>Notification to service provider with job details</td>
+          <td>Response time within 5 minutes of dispatch notification</td>
+          <td>Delayed notifications affecting service provider's availability</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Service Provider Confirms Arrival</td>
+          <td>Service Provider</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Confirmation from service provider's mobile app or phone call</td>
+          <td>Arrival confirmation recorded in the system</td>
+          <td>Arrival confirmation within 10 minutes of notification</td>
+          <td>Missed confirmations leading to delayed service</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Service Provider Completes Job</td>
+          <td>Service Provider</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Job completion details from the service provider's mobile app or phone call</td>
+          <td>Completed job recorded in the system</td>
+          <td>Job completion within 30 minutes of arrival</td>
+          <td>Extended job durations affecting member satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Service Provider Updates System</td>
+          <td>Service Provider</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Job completion details</td>
+          <td>Updated job status and documentation in the system</td>
+          <td>100% accurate job updates within 5 minutes of completion</td>
+          <td>Inaccurate or delayed updates leading to billing errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Billing Center Processes Invoice</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, BillingCenter</span></td>
+          <td>Completed job details from the system</td>
+          <td>Generated invoice for the member</td>
+          <td>Invoice generation within 24 hours of job completion</td>
+          <td>Delayed invoicing affecting cash flow</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Member Receives Invoice</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, BillingCenter</span></td>
+          <td>Generated invoice</td>
+          <td>Invoice sent to the member via email or postal mail</td>
+          <td>100% successful delivery of invoices within 3 business days</td>
+          <td>Undelivered invoices leading to payment delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Member Confirms Receipt</td>
+          <td>Member</td>
+          <td><span class="sys-tag guidewire">AAA App, BillingCenter</span></td>
+          <td>Confirmation from the member via email or app</td>
+          <td>Receipt confirmation recorded in the system</td>
+          <td>95% receipt confirmations within 7 days of invoice delivery</td>
+          <td>Non-confirmation affecting billing accuracy</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Service Provider Receives Payment</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">SAP S/4HANA, BillingCenter</span></td>
+          <td>Payment from the member</td>
+          <td>Payment recorded in the system</td>
+          <td>100% successful payments within 30 days of invoice delivery</td>
+          <td>Non-payment affecting service provider's revenue</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Dispatch Center Updates Job Status</td>
+          <td>Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA, Agero Swoop dispatch</span></td>
+          <td>Payment confirmation from the system</td>
+          <td>Final job status updated in the system</td>
+          <td>100% accurate final job status updates within 24 hours of payment</td>
+          <td>Inaccurate job statuses affecting reporting</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 5 minutes of dispatch notification</span> <span class="kpi-pill">Arrival confirmation within 10 minutes of notification</span> <span class="kpi-pill">Job completion within 30 minutes of arrival</span> <span class="kpi-pill">100% accurate job updates within 5 minutes of completion</span> <span class="kpi-pill">Invoice generation within 24 hours of job completion</span> <span class="kpi-pill">100% successful delivery of invoices within 3 business days</span> <span class="kpi-pill">95% receipt confirmations within 7 days of invoice delivery</span> <span class="kpi-pill">100% successful payments within 30 days of invoice delivery</span> <span class="kpi-pill">100% accurate final job status updates within 24 hours of payment</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed notifications affecting service provider's availability</span> <span class="risk-pill">Missed confirmations leading to delayed service</span> <span class="risk-pill">Extended job durations affecting member satisfaction</span> <span class="risk-pill">Inaccurate or delayed updates leading to billing errors</span> <span class="risk-pill">Delayed invoicing affecting cash flow</span> <span class="risk-pill">Undelivered invoices leading to payment delays</span> <span class="risk-pill">Non-confirmation affecting billing accuracy</span> <span class="risk-pill">Non-payment affecting service provider's revenue</span> <span class="risk-pill">Inaccurate job statuses affecting reporting</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
