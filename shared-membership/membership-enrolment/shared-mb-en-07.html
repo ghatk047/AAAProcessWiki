@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-07 &mdash; Welcome Kit and Digital Card Issuance &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -245,33 +247,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-07 &mdash; Welcome Kit and Digital Card Issuance
+        </h1>
+        <p>This process handles the issuance of welcome kits and digital cards to new members upon successful enrollment. It ensures that all necessary documentation is generated, distributed, and tracked.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-03.html">SHARED-MB-EN-03</a></td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-04.html">SHARED-MB-EN-04</a></td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-05.html">SHARED-MB-EN-05</a></td><td>Membership Tier Selection and Upsell</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-06.html">SHARED-MB-EN-06</a></td><td>Payment Processing and First-Year Billing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-07</td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-07.png" data-lightbox data-title="SHARED-MB-EN-07 BPMN">
+              <img src="../../assets/img/shared-mb-en-07.png" alt="SHARED-MB-EN-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Welcome Kit and Digital Card Issuance</td></tr>
+            <tr><th>Trigger</th><td>New member enrollment completion</td></tr>
+            <tr><th>Outcome</th><td>Welcome kit sent to new member; digital card issued and activated.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a different telematics system (CAA Connect) compared to AAA Northeast's DriveAssist. Additionally, CAA SCO has stricter compliance requirements with FSRA regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag agero">Agero Swoop dispatch</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Enrollment Completion Verification</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>New member enrollment data</td>
+          <td>Verified enrollment record</td>
+          <td>Enrollment verification time < 5 minutes</td>
+          <td>Delayed enrollment verifications causing backlogs</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Welcome Kit Preparation</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Verified enrollment record</td>
+          <td>Prepared welcome kit list</td>
+          <td>Kit preparation time < 10 minutes</td>
+          <td>Incorrect kit items leading to customer complaints</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Digital Card Generation</td>
+          <td>IT Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Verified enrollment record</td>
+          <td>Generated digital card</td>
+          <td>Card generation time < 2 minutes</td>
+          <td>Failed card activations affecting member access</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Digital Card Activation</td>
+          <td>IT Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Generated digital card</td>
+          <td>Activated digital card</td>
+          <td>Activation time < 1 minute</td>
+          <td>Security issues with card activations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Welcome Kit Distribution</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Prepared welcome kit list</td>
+          <td>Kit dispatched to member address</td>
+          <td>Dispatch time < 24 hours</td>
+          <td>Delayed kit deliveries affecting customer satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Digital Card Issuance Confirmation</td>
+          <td>Membership Officer</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Activated digital card</td>
+          <td>Issuance confirmation sent to member</td>
+          <td>Confirmation time < 1 hour</td>
+          <td>Failed confirmations leading to unresolved issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Enrollment verification time < 5 minutes</span> <span class="kpi-pill">Kit preparation time < 10 minutes</span> <span class="kpi-pill">Card generation time < 2 minutes</span> <span class="kpi-pill">Activation time < 1 minute</span> <span class="kpi-pill">Dispatch time < 24 hours</span> <span class="kpi-pill">Confirmation time < 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed enrollment verifications causing backlogs</span> <span class="risk-pill">Incorrect kit items leading to customer complaints</span> <span class="risk-pill">Failed card activations affecting member access</span> <span class="risk-pill">Security issues with card activations</span> <span class="risk-pill">Delayed kit deliveries affecting customer satisfaction</span> <span class="risk-pill">Failed confirmations leading to unresolved issues</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
