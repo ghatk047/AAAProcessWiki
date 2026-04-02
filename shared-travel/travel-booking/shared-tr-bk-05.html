@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Booking & Reservations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-BK-05 &mdash; Car Rental Booking via GDS &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -359,33 +361,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-booking/index.html">Travel Booking & Reservations</a>
         </div>
-        <h1>✈️ Travel Booking & Reservations</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-BK-05 &mdash; Car Rental Booking via GDS
+        </h1>
+        <p>This process involves booking car rentals through a Global Distribution System (GDS) for AAA Northeast members. It ensures seamless reservation and management of rental vehicles, including communication with external partners and internal systems.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-bk-01.html">SHARED-TR-BK-01</a></td><td>Client Travel Needs Assessment and Itinerary Planning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-bk-02.html">SHARED-TR-BK-02</a></td><td>Air Booking via GDS (Sabre and Galileo)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-bk-03.html">SHARED-TR-BK-03</a></td><td>Hotel Booking via GDS and Direct Supplier</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-bk-04.html">SHARED-TR-BK-04</a></td><td>Cruise Booking (Direct Cruise Line and Consortium)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-BK-05</td><td>Car Rental Booking via GDS</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-06</td><td>Package Holiday Booking (Wholesale Supplier)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-07</td><td>Travel Insurance Sales (Trip Cancellation and Medical)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-08</td><td>Booking Confirmation and Itinerary Document Generation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-bk-05.png" data-lightbox data-title="SHARED-TR-BK-05 BPMN">
+              <img src="../../assets/img/shared-tr-bk-05.png" alt="SHARED-TR-BK-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-BK-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Travel Booking & Reservations</td></tr>
+            <tr><th>L3 Name</th><td>Car Rental Booking via GDS</td></tr>
+            <tr><th>Trigger</th><td>A customer initiates a car rental request via the AAA App or directly to an AAA Northeast agent.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a confirmed car rental booking, including vehicle details, pickup/drop-off information, and payment processing.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may use different GDS partners and have additional compliance requirements due to FSRA regulation. CAA SCO also integrates with their own telematics system for enhanced tracking and reporting.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer Inquiry</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Customer booking request</td>
+          <td>Booking confirmation</td>
+          <td>Response time within 30 minutes</td>
+          <td>Handling last-minute requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>GDS Search</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Customer preferences (date, location, budget)</td>
+          <td>List of available rental options</td>
+          <td>Search results within 1 minute</td>
+          <td>Inconsistent data availability across GDS providers</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Quote Selection</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>List of available rental options</td>
+          <td>Selected rental quote</td>
+          <td>Quote selection accuracy rate 95%</td>
+          <td>Customer preference alignment with available quotes</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Payment Processing</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Selected rental quote</td>
+          <td>Payment confirmation</td>
+          <td>Payment success rate 98%</td>
+          <td>Handling declined payments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Reservation Confirmation</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Payment confirmation</td>
+          <td>Final reservation details</td>
+          <td>Reservation accuracy rate 99%</td>
+          <td>Updating internal systems with reservation data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Customer Notification</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Final reservation details</td>
+          <td>Notification sent to customer</td>
+          <td>Notification delivery rate 95%</td>
+          <td>Ensuring timely notification delivery</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Booking Review</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Final reservation details</td>
+          <td>Updated customer profile</td>
+          <td>Profile update accuracy rate 98%</td>
+          <td>Handling data discrepancies in internal systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Compliance Check</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Final reservation details</td>
+          <td>Compliance report</td>
+          <td>Compliance rate 100%</td>
+          <td>Ensuring all compliance requirements are met</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 30 minutes</span> <span class="kpi-pill">Search results within 1 minute</span> <span class="kpi-pill">Quote selection accuracy rate 95%</span> <span class="kpi-pill">Payment success rate 98%</span> <span class="kpi-pill">Reservation accuracy rate 99%</span> <span class="kpi-pill">Notification delivery rate 95%</span> <span class="kpi-pill">Profile update accuracy rate 98%</span> <span class="kpi-pill">Compliance rate 100%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent data availability across GDS providers</span> <span class="risk-pill">Handling declined payments</span> <span class="risk-pill">Updating internal systems with reservation data</span> <span class="risk-pill">Ensuring timely notification delivery</span> <span class="risk-pill">Handling data discrepancies in internal systems</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
