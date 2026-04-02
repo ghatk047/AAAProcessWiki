@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Talent Acquisition & Development &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-HR-TA-03 &mdash; Interview and Offer and Background Check Process &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -477,33 +479,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Human Resources & Workforce</a>
+          <a href="../../shared-hr/index.html">Human Resources & Workforce</a> &rsaquo;
+          <a href="../../shared-hr/talent-development/index.html">Talent Acquisition & Development</a>
         </div>
-        <h1>👤 Talent Acquisition & Development</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-HR-TA-03 &mdash; Interview and Offer and Background Check Process
+        </h1>
+        <p>This process outlines the steps for conducting interviews, making offers, and performing background checks for new hires at AAA Northeast. It ensures a smooth and efficient recruitment process while adhering to organizational policies.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-hr-ta-01.html">SHARED-HR-TA-01</a></td><td>Workforce Planning and Job Requisition Approval</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-ta-02.html">SHARED-HR-TA-02</a></td><td>Recruitment and Sourcing (LinkedIn and Indeed and Campus)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-TA-03</td><td>Interview and Offer and Background Check Process</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-TA-04</td><td>Guidewire and Salesforce and SAP Systems Training (New Hire)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-TA-05</td><td>Insurance Licensing Education and Exam Support</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-TA-06</td><td>Leadership Development and Succession Planning</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-TA-07</td><td>DEI Programme Execution and Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-HR-TA-08</td><td>Employee Retention and Engagement Survey</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-hr-ta-03.png" data-lightbox data-title="SHARED-HR-TA-03 BPMN">
+              <img src="../../assets/img/shared-hr-ta-03.png" alt="SHARED-HR-TA-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-HR-TA-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Human Resources & Workforce</td></tr>
+            <tr><th>L2 Process</th><td>Talent Acquisition & Development</td></tr>
+            <tr><th>L3 Name</th><td>Interview and Offer and Background Check Process</td></tr>
+            <tr><th>Trigger</th><td>Receiving a job application that meets the minimum qualifications</td></tr>
+            <tr><th>Outcome</th><td>A successful completion of this process results in the hiring of a qualified candidate with a signed offer letter and cleared background check.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements for background checks due to FSRA regulations. Additionally, CAA SCO might use different systems for certain steps, such as using ClientBase instead of Salesforce for some HR processes.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Screening Applications</td>
+          <td>Recruitment Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Job application form</td>
+          <td>Shortlisted candidates list</td>
+          <td>Application response time within 2 business days</td>
+          <td>Delays in processing applications due to system overload</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Scheduling Interviews</td>
+          <td>Recruitment Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Shortlisted candidates list</td>
+          <td>Interview schedule</td>
+          <td>Interview scheduling within 1 business day of shortlisting</td>
+          <td>Difficulty in coordinating interview times with candidates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Conducting Interviews</td>
+          <td>Hiring Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Interview schedule</td>
+          <td>Interview notes and feedback</td>
+          <td>90% of interviews completed within scheduled time</td>
+          <td>No-shows or cancellations by candidates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Reviewing Interview Feedback</td>
+          <td>Hiring Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Interview notes and feedback</td>
+          <td>Shortlisted candidates for offer</td>
+          <td>Feedback review completed within 1 business day of interviews</td>
+          <td>Disagreements in interview feedback</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Preparing Offer Letter</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Shortlisted candidates for offer</td>
+          <td>Offer letter</td>
+          <td>Offer letters prepared within 2 business days of feedback review</td>
+          <td>Delays in generating offer letters due to system issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Sending Offer Letter</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Offer letter</td>
+          <td>Confirmation of receipt from candidate</td>
+          <td>95% of offer letters sent within 1 business day of preparation</td>
+          <td>Candidates declining offers without reason</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Initiating Background Check</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Accepted offer letter</td>
+          <td>Background check report</td>
+          <td>Background checks completed within 5 business days of offer acceptance</td>
+          <td>False positives in background checks leading to unnecessary delays</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Reviewing Background Check Report</td>
+          <td>HR Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Background check report</td>
+          <td>Clearance to start work</td>
+          <td>90% of background checks reviewed within 1 business day of completion</td>
+          <td>Inaccurate or incomplete reports causing delays</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application response time within 2 business days</span> <span class="kpi-pill">Interview scheduling within 1 business day of shortlisting</span> <span class="kpi-pill">90% of interviews completed within scheduled time</span> <span class="kpi-pill">Feedback review completed within 1 business day of interviews</span> <span class="kpi-pill">Offer letters prepared within 2 business days of feedback review</span> <span class="kpi-pill">95% of offer letters sent within 1 business day of preparation</span> <span class="kpi-pill">Background checks completed within 5 business days of offer acceptance</span> <span class="kpi-pill">90% of background checks reviewed within 1 business day of completion</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in processing applications due to system overload</span> <span class="risk-pill">Difficulty in coordinating interview times with candidates</span> <span class="risk-pill">No-shows or cancellations by candidates</span> <span class="risk-pill">Disagreements in interview feedback</span> <span class="risk-pill">Delays in generating offer letters due to system issues</span> <span class="risk-pill">Candidates declining offers without reason</span> <span class="risk-pill">False positives in background checks leading to unnecessary delays</span> <span class="risk-pill">Inaccurate or incomplete reports causing delays</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
