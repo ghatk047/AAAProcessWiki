@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-DT-IT-08 &mdash; IT Service Desk and ITSM &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -462,45 +464,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>7 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-DT-IT-08 &mdash; IT Service Desk and ITSM
+        </h1>
+        <p>This process outlines the IT Service Desk and ITSM operations for AAA Northeast, focusing on incident management, problem resolution, and service request handling across key systems like Guidewire Cloud, Sabre, Verisk, Salesforce, and USD.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-01.html">CAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-02.html">AAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-02.html">CAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-03.html">AAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-03.html">CAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="caa-dt-it-07.html">CAA-DT-IT-07</a></td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-dt-it-08.png" data-lightbox data-title="AAA-DT-IT-08 BPMN">
+              <img src="../../assets/img/aaa-dt-it-08.png" alt="AAA-DT-IT-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-DT-IT-08</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>IT Service Desk and ITSM</td></tr>
+            <tr><th>Trigger</th><td>An IT-related issue reported by a user or detected by monitoring tools.</td></tr>
+            <tr><th>Outcome</th><td>The successful completion of this process results in the resolution of the incident, restoration of services, and documentation of the incident for future reference.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast operates under different regulatory requirements compared to CAA South Central Ontario. This includes specific compliance with state DOI regulations and distinct service levels agreements (SLAs).</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag sabre">Sabre</span> <span class="sys-tag verisk">Verisk</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sys-generic">USD</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Incident Logging</td>
+          <td>IT Service Desk Analyst</td>
+          <td><span class="sys-tag sys-generic">ServiceNow</span></td>
+          <td>User report or automated alert</td>
+          <td>Incident ticket in ServiceNow</td>
+          <td>Incident logging time < 5 minutes</td>
+          <td>Delays in incident logging can lead to prolonged outages.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Assessment</td>
+          <td>IT Service Desk Analyst</td>
+          <td><span class="sys-tag sys-generic">ServiceNow</span></td>
+          <td>Incident ticket</td>
+          <td>Updated incident ticket with priority and impact</td>
+          <td>Initial assessment completed within 10 minutes</td>
+          <td>Inaccurate initial assessments can delay resolution.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>First Level Escalation</td>
+          <td>IT Service Desk Analyst</td>
+          <td><span class="sys-tag sys-generic">ServiceNow</span></td>
+          <td>Incident ticket with priority and impact</td>
+          <td>Escalated incident to the appropriate support team</td>
+          <td>First level escalation within 15 minutes</td>
+          <td>Delays in first-level escalations can lead to user dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Problem Identification</td>
+          <td>IT Support Engineer</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Sabre, Verisk, Salesforce, USD</span></td>
+          <td>Incident ticket and system logs</td>
+          <td>Root cause analysis report</td>
+          <td>Problem identification completed within 30 minutes</td>
+          <td>Failure to identify the root cause can lead to recurring incidents.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Resolution Planning</td>
+          <td>IT Support Engineer</td>
+          <td><span class="sys-tag sys-generic">ServiceNow</span></td>
+          <td>Root cause analysis report</td>
+          <td>Resolution plan and estimated time to resolution</td>
+          <td>Resolution planning completed within 1 hour</td>
+          <td>Inadequate resolution plans can prolong incident resolution.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Implementation of Resolution</td>
+          <td>IT Support Engineer</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Sabre, Verisk, Salesforce, USD</span></td>
+          <td>Resolution plan</td>
+          <td>Incident resolved and system restored</td>
+          <td>Incident resolved within 2 hours</td>
+          <td>Delays in implementing the resolution can cause further user impact.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Resolution Review</td>
+          <td>IT Service Desk Analyst</td>
+          <td><span class="sys-tag sys-generic">ServiceNow</span></td>
+          <td>Incident ticket and resolution details</td>
+          <td>Updated incident ticket with closure notes</td>
+          <td>Post-resolution review completed within 30 minutes</td>
+          <td>Lack of post-resolution reviews can lead to missed learning opportunities.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Service Restoration Notification</td>
+          <td>IT Service Desk Analyst</td>
+          <td><span class="sys-tag sys-generic">ServiceNow, Email System</span></td>
+          <td>Incident ticket with closure notes</td>
+          <td>Notification to affected users</td>
+          <td>Service restoration notification sent within 15 minutes of resolution</td>
+          <td>Delayed notifications can cause user confusion and frustration.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Incident logging time < 5 minutes</span> <span class="kpi-pill">Initial assessment completed within 10 minutes</span> <span class="kpi-pill">First level escalation within 15 minutes</span> <span class="kpi-pill">Problem identification completed within 30 minutes</span> <span class="kpi-pill">Resolution planning completed within 1 hour</span> <span class="kpi-pill">Incident resolved within 2 hours</span> <span class="kpi-pill">Post-resolution review completed within 30 minutes</span> <span class="kpi-pill">Service restoration notification sent within 15 minutes of resolution</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in incident logging can lead to prolonged outages.</span> <span class="risk-pill">Inaccurate initial assessments can delay resolution.</span> <span class="risk-pill">Delays in first-level escalations can lead to user dissatisfaction.</span> <span class="risk-pill">Failure to identify the root cause can lead to recurring incidents.</span> <span class="risk-pill">Inadequate resolution plans can prolong incident resolution.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
