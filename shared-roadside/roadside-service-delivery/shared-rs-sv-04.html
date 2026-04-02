@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadside Service Delivery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-SV-04 &mdash; Fuel Delivery Service &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -342,33 +344,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/roadside-service-delivery/index.html">Roadside Service Delivery</a>
         </div>
-        <h1>🚨 Roadside Service Delivery</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-SV-04 &mdash; Fuel Delivery Service
+        </h1>
+        <p>The Fuel Delivery Service process involves initiating a fuel delivery request, processing the order through various systems, and ensuring successful delivery to the member.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-sv-01.html">SHARED-RS-SV-01</a></td><td>Towing Service Light Duty Dispatch and Hook-Up</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-02.html">SHARED-RS-SV-02</a></td><td>Battery Jump-Start and Battery Replacement Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-sv-03.html">SHARED-RS-SV-03</a></td><td>Flat Tyre Service (Change or Inflate)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-SV-04</td><td>Fuel Delivery Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-05</td><td>Lockout Service (Slim-Jim and Locksmith Dispatch)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-06</td><td>Winching and Extraction Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-07</td><td>EV Roadside Assistance (Mobile Charge and Tow to Charger)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-SV-08</td><td>After-Hours and Winter Surge Operations</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-sv-04.png" data-lightbox data-title="SHARED-RS-SV-04 BPMN">
+              <img src="../../assets/img/shared-rs-sv-04.png" alt="SHARED-RS-SV-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-SV-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Roadside Service Delivery</td></tr>
+            <tr><th>L3 Name</th><td>Fuel Delivery Service</td></tr>
+            <tr><th>Trigger</th><td>A member contacts AAA Northeast or CAA SCO roadside assistance for a fuel delivery service.</td></tr>
+            <tr><th>Outcome</th><td>Successful delivery of fuel to the member's vehicle with accurate billing and documentation.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Salesforce for customer interaction while CAA SCO relies on their own internal systems. Additionally, AAA Northeast integrates with Sabre GDS for travel services, whereas CAA SCO does not have this integration.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag agero">Agero Swoop dispatch</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Request</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member's contact information and vehicle details</td>
+          <td>Service request ticket in SAP S/4HANA</td>
+          <td>Response time within 5 minutes</td>
+          <td>Delayed response times affecting member satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Assign Service Technician</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Service request ticket</td>
+          <td>Assigned technician details</td>
+          <td>Technician assignment within 10 minutes</td>
+          <td>Inefficient technician assignment leading to delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Confirm Availability</td>
+          <td>Service Technician</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Assigned technician details</td>
+          <td>Confirmation of availability and estimated arrival time</td>
+          <td>Availability confirmation within 2 minutes</td>
+          <td>Technician unavailability affecting service delivery</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Dispatch Technician</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Confirmation of availability</td>
+          <td>Dispatch order to technician</td>
+          <td>Dispatch time within 1 minute</td>
+          <td>Delayed dispatch affecting service delivery</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Arrive at Location</td>
+          <td>Service Technician</td>
+          <td><span class="sys-tag agero">Agero Swoop dispatch</span></td>
+          <td>Dispatch order</td>
+          <td>Technician arrives at member's location</td>
+          <td>Arrival time within 15 minutes of dispatch</td>
+          <td>Late arrivals causing frustration for members</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Deliver Fuel</td>
+          <td>Service Technician</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Technician arrives at location</td>
+          <td>Fuel delivered to member's vehicle</td>
+          <td>Fuel delivery time within 5 minutes</td>
+          <td>Extended fuel delivery times affecting members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Record Service Completion</td>
+          <td>Service Technician</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Fuel delivered to member's vehicle</td>
+          <td>Service completion record in SAP S/4HANA</td>
+          <td>Completion recording within 2 minutes</td>
+          <td>Delayed service completion records affecting billing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Generate Invoice</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Service completion record</td>
+          <td>Invoice for fuel delivery service</td>
+          <td>Invoice generation within 1 hour</td>
+          <td>Late invoice generation affecting member payments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Send Invoice to Member</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Generated invoice</td>
+          <td>Invoice sent to member via email or SMS</td>
+          <td>Invoice delivery within 30 minutes of generation</td>
+          <td>Delayed invoice delivery causing confusion for members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Update Member Status</td>
+          <td>Roadside Assistance Dispatcher</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Invoice sent to member</td>
+          <td>Member status updated in SAP S/4HANA</td>
+          <td>Status update within 5 minutes of invoice delivery</td>
+          <td>Delayed status updates affecting future service requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 5 minutes</span> <span class="kpi-pill">Technician assignment within 10 minutes</span> <span class="kpi-pill">Availability confirmation within 2 minutes</span> <span class="kpi-pill">Dispatch time within 1 minute</span> <span class="kpi-pill">Arrival time within 15 minutes of dispatch</span> <span class="kpi-pill">Fuel delivery time within 5 minutes</span> <span class="kpi-pill">Completion recording within 2 minutes</span> <span class="kpi-pill">Invoice generation within 1 hour</span> <span class="kpi-pill">Invoice delivery within 30 minutes of generation</span> <span class="kpi-pill">Status update within 5 minutes of invoice delivery</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Technician unavailability leading to service delays</span> <span class="risk-pill">Late dispatch affecting service delivery</span> <span class="risk-pill">Late arrivals causing frustration for members</span> <span class="risk-pill">Extended fuel delivery times affecting members</span> <span class="risk-pill">Delayed service completion records affecting billing</span> <span class="risk-pill">Late invoice generation affecting member payments</span> <span class="risk-pill">Delayed invoice delivery causing confusion for members</span> <span class="risk-pill">Delayed status updates affecting future service requests</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
