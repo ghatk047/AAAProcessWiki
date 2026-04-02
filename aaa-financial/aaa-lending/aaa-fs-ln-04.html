@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Lending Products &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-LN-04 &mdash; Mortgage Referral and Origination (Partner Lenders) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -390,33 +392,168 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-lending/index.html">AAA Lending Products</a>
         </div>
-        <h1>🏦 AAA Lending Products</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-LN-04 &mdash; Mortgage Referral and Origination (Partner Lenders)
+        </h1>
+        <p>This process involves the referral and origination of mortgage loans for AAA Northeast members through partner lenders. It leverages Guidewire Cloud, Sabre, Verisk, Salesforce, and USD systems to manage the entire lifecycle from application to closing.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-ln-01.html">AAA-FS-LN-01</a></td><td>Auto Loan Application and Pre-Approval</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-ln-02.html">AAA-FS-LN-02</a></td><td>Credit Decision and Underwriting (Vantage Score)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-ln-03.html">AAA-FS-LN-03</a></td><td>Auto Loan Funding and Lien Recording</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-LN-04</td><td>Mortgage Referral and Origination (Partner Lenders)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-LN-05</td><td>Student Loan Product Advisory and Application</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-LN-06</td><td>Loan Payment Processing and Account Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-LN-07</td><td>Delinquency Management and Collections</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-LN-08</td><td>AAA Credit Card Application (Comenity Bank) and Approval</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-ln-04.png" data-lightbox data-title="AAA-FS-LN-04 BPMN">
+              <img src="../../assets/img/aaa-fs-ln-04.png" alt="AAA-FS-LN-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-LN-04</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Lending Products</td></tr>
+            <tr><th>L3 Name</th><td>Mortgage Referral and Origination (Partner Lenders)</td></tr>
+            <tr><th>Trigger</th><td>A member contacts an AAA Licensed Insurance Agent or Mortgage Specialist expressing interest in a mortgage loan.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the origination of a mortgage loan for the member through a partner lender, with all necessary documentation processed and funds disbursed.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on direct member engagement through its network of licensed agents, while CAA may have more centralized processing. Additionally, AAA uses USD for financial transactions, whereas CAA might use different systems or currencies.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span> <span class="sys-tag salesforce">Salesforce (Einstein AI)</span> <span class="sys-tag verisk">Verisk ISO rating</span> <span class="sys-tag grasshopper">USD (Grasshopper Bank, Comenity Bank)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Contact and Qualification</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Member's contact information and loan interest</td>
+          <td>Qualified lead for mortgage referral</td>
+          <td>Lead qualification rate > 80%</td>
+          <td>High volume of unqualified leads</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Mortgage Application Initiation</td>
+          <td>Mortgage Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Qualified lead information</td>
+          <td>Mortgage application form</td>
+          <td>Application initiation rate > 90%</td>
+          <td>Delayed application processing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Credit and Risk Assessment</td>
+          <td>Risk Analyst</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Mortgage application form</td>
+          <td>Credit report and risk assessment</td>
+          <td>Assessment accuracy > 95%</td>
+          <td>Inaccurate credit data</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Loan Underwriting</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Credit report and risk assessment</td>
+          <td>Underwriting decision</td>
+          <td>Approval rate > 75%</td>
+          <td>High denial rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Partner Lender Selection</td>
+          <td>Mortgage Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Underwriting decision</td>
+          <td>Selected partner lender</td>
+          <td>Lender selection accuracy > 85%</td>
+          <td>Inconsistent lender performance</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Loan Documentation Preparation</td>
+          <td>Document Controller</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Selected partner lender</td>
+          <td>Complete loan documentation package</td>
+          <td>Documentation completion rate > 98%</td>
+          <td>Missing or incomplete documents</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Loan Closing and Disbursement</td>
+          <td>Mortgage Specialist</td>
+          <td><span class="sys-tag grasshopper">USD (Grasshopper Bank, Comenity Bank)</span></td>
+          <td>Complete loan documentation package</td>
+          <td>Closed mortgage loan with funds disbursed</td>
+          <td>Closing rate > 90%</td>
+          <td>Delays in fund disbursement</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Lead qualification rate > 80%</span> <span class="kpi-pill">Application initiation rate > 90%</span> <span class="kpi-pill">Assessment accuracy > 95%</span> <span class="kpi-pill">Approval rate > 75%</span> <span class="kpi-pill">Lender selection accuracy > 85%</span> <span class="kpi-pill">Documentation completion rate > 98%</span> <span class="kpi-pill">Closing rate > 90%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate credit data leading to incorrect risk assessments</span> <span class="risk-pill">High denial rates due to underwriting errors</span> <span class="risk-pill">Inconsistent lender performance affecting loan origination timelines</span> <span class="risk-pill">Missing or incomplete documents causing delays in closing</span> <span class="risk-pill">Delays in fund disbursement impacting member satisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
