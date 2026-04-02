@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-AG-06 &mdash; Insurance Lead Management and Pipeline (Salesforce) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -294,33 +296,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/agency-operations/index.html">Insurance Agency Operations</a>
         </div>
-        <h1>🛡️ Insurance Agency Operations</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-AG-06 &mdash; Insurance Lead Management and Pipeline (Salesforce)
+        </h1>
+        <p>This process manages the lead generation and pipeline for insurance agencies within AAA Northeast. It involves capturing leads through various channels, qualifying them, assigning them to agents, and tracking their progress through the sales cycle.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-ag-01.html">AAA-IN-AG-01</a></td><td>Licensed Agent Appointment and Onboarding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-02.html">AAA-IN-AG-02</a></td><td>Agent Continuing Education and License Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-03.html">AAA-IN-AG-03</a></td><td>Agency Performance Reporting and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-04.html">AAA-IN-AG-04</a></td><td>E and O Compliance Review</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-ag-05.html">AAA-IN-AG-05</a></td><td>Cross-Sell Insurance to Existing AAA Members</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-AG-06</td><td>Insurance Lead Management and Pipeline (Salesforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-AG-07</td><td>Agent Commission Dispute Resolution</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-IN-AG-08</td><td>AAA Approved Auto Repair Insurance Referral Process</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-ag-06.png" data-lightbox data-title="AAA-IN-AG-06 BPMN">
+              <img src="../../assets/img/aaa-in-ag-06.png" alt="AAA-IN-AG-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-AG-06</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency Operations</td></tr>
+            <tr><th>L3 Name</th><td>Insurance Lead Management and Pipeline (Salesforce)</td></tr>
+            <tr><th>Trigger</th><td>Lead capture from digital marketing campaigns, website forms, or direct contact</td></tr>
+            <tr><th>Outcome</th><td>Qualified leads are assigned to licensed insurance agents, and the pipeline is maintained with regular updates on lead status and conversion rates.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses heavily on digital lead generation and Salesforce integration for streamlined operations compared to CAA's more manual processes.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag verisk">Verisk ISO rating</span> <span class="sys-tag snowflake">Snowflake</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Capture Lead</td>
+          <td>Digital Marketing Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Website form submission or digital marketing campaign data</td>
+          <td>Lead record in Salesforce</td>
+          <td>Lead capture rate: 50 leads/day</td>
+          <td>High volume of unqualified leads</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Qualify Lead</td>
+          <td>Sales Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Lead record in Salesforce</td>
+          <td>Qualified lead status update</td>
+          <td>Qualification rate: 80% of leads qualify</td>
+          <td>Inconsistent qualification criteria</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Assign Lead to Agent</td>
+          <td>Sales Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Qualified lead status update</td>
+          <td>Assigned lead record in Salesforce</td>
+          <td>Lead assignment rate: 90% of qualified leads assigned within 24 hours</td>
+          <td>Overloaded agents</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Follow-Up with Agent</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Assigned lead record in Salesforce</td>
+          <td>Follow-up note and status update in Salesforce</td>
+          <td>Follow-up rate: 70% of leads followed up within 48 hours</td>
+          <td>Low follow-up rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Pipeline</td>
+          <td>Sales Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Follow-up note and status update in Salesforce</td>
+          <td>Updated pipeline report in Salesforce</td>
+          <td>Pipeline health: 75% of leads progress to next stage</td>
+          <td>Stagnant pipeline</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Close Sale</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Updated pipeline report in Salesforce</td>
+          <td>Closed sale record in Salesforce</td>
+          <td>Conversion rate: 20% of leads convert to sales</td>
+          <td>Low conversion rates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Sale Follow-Up</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Closed sale record in Salesforce</td>
+          <td>Post-sale follow-up note and customer satisfaction survey</td>
+          <td>Customer satisfaction: 90% of customers rate service as excellent</td>
+          <td>Low customer satisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Adjust</td>
+          <td>Sales Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Post-sale follow-up note and customer satisfaction survey</td>
+          <td>Updated sales strategy document</td>
+          <td>Strategy review frequency: 1 review/month</td>
+          <td>Inconsistent strategy adjustments</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Lead capture rate: 50 leads/day</span> <span class="kpi-pill">Qualification rate: 80% of leads qualify</span> <span class="kpi-pill">Lead assignment rate: 90% of qualified leads assigned within 24 hours</span> <span class="kpi-pill">Follow-up rate: 70% of leads followed up within 48 hours</span> <span class="kpi-pill">Pipeline health: 75% of leads progress to next stage</span> <span class="kpi-pill">Conversion rate: 20% of leads convert to sales</span> <span class="kpi-pill">Customer satisfaction: 90% of customers rate service as excellent</span> <span class="kpi-pill">Strategy review frequency: 1 review/month</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">High volume of unqualified leads</span> <span class="risk-pill">Inconsistent qualification criteria</span> <span class="risk-pill">Overloaded agents</span> <span class="risk-pill">Low follow-up rates</span> <span class="risk-pill">Stagnant pipeline</span> <span class="risk-pill">Low conversion rates</span> <span class="risk-pill">Low customer satisfaction</span> <span class="risk-pill">Inconsistent strategy adjustments</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
