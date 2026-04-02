@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Services & Benefits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-SV-06 &mdash; Lost and Stolen Membership Card Replacement &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -260,33 +262,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/member-services/index.html">Member Services & Benefits</a>
         </div>
-        <h1>👥 Member Services & Benefits</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-SV-06 &mdash; Lost and Stolen Membership Card Replacement
+        </h1>
+        <p>This process outlines the steps for replacing a lost or stolen membership card for members of AAA Northeast. It ensures that the member's information is securely updated and a new card is issued promptly.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-sv-01.html">SHARED-MB-SV-01</a></td><td>Member Discount Partner Redemption</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-02.html">SHARED-MB-SV-02</a></td><td>Passport Photo Service Delivery (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-03.html">SHARED-MB-SV-03</a></td><td>International Driving Permit (IDP) Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-04.html">SHARED-MB-SV-04</a></td><td>Notary and Document Authentication Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-sv-05.html">SHARED-MB-SV-05</a></td><td>Member Portal Profile and Preferences Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-SV-06</td><td>Lost and Stolen Membership Card Replacement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-07</td><td>Member Data Privacy Request (CCPA and PIPEDA)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-SV-08</td><td>Member Satisfaction Survey and NPS Tracking</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-sv-06.png" data-lightbox data-title="SHARED-MB-SV-06 BPMN">
+              <img src="../../assets/img/shared-mb-sv-06.png" alt="SHARED-MB-SV-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-SV-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Member Services & Benefits</td></tr>
+            <tr><th>L3 Name</th><td>Lost and Stolen Membership Card Replacement</td></tr>
+            <tr><th>Trigger</th><td>A member reports their membership card as lost or stolen through the AAA Northeast website, mobile app, or by contacting customer service.</td></tr>
+            <tr><th>Outcome</th><td>The member receives a replacement membership card with updated security features, and their account status is verified and secured.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight. They might also use different systems for telematics and account management portals.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Report Lost/Stolen Card</td>
+          <td>Member Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Member's contact information and card details</td>
+          <td>Case created in Salesforce</td>
+          <td>Time to create case < 5 minutes</td>
+          <td>Handling multiple simultaneous reports</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Member Identity</td>
+          <td>Membership Services Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Case details from Salesforce</td>
+          <td>Verified member identity</td>
+          <td>Identity verification within 10 minutes</td>
+          <td>Incorrect or incomplete information</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Member Record</td>
+          <td>Membership Services Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Verified member identity</td>
+          <td>Updated member record in SAP</td>
+          <td>Record update within 5 minutes</td>
+          <td>System downtime affecting updates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Generate Replacement Card</td>
+          <td>Membership Services Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Updated member record from SAP</td>
+          <td>Replacement card request sent to Grasshopper Bank</td>
+          <td>Card generation request within 10 minutes</td>
+          <td>Bank system delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Issue Replacement Card</td>
+          <td>Membership Services Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Replacement card from Grasshopper Bank</td>
+          <td>Physical replacement card sent to member</td>
+          <td>Card issuance within 24 hours</td>
+          <td>Shipping delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Confirm Receipt of Card</td>
+          <td>Member Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Confirmation from member</td>
+          <td>Case closed in Salesforce</td>
+          <td>Case closure within 30 minutes of receipt confirmation</td>
+          <td>Member not responding</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to create case < 5 minutes</span> <span class="kpi-pill">Identity verification within 10 minutes</span> <span class="kpi-pill">Record update within 5 minutes</span> <span class="kpi-pill">Card generation request within 10 minutes</span> <span class="kpi-pill">Card issuance within 24 hours</span> <span class="kpi-pill">Case closure within 30 minutes of receipt confirmation</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">System downtime affecting updates</span> <span class="risk-pill">Bank system delays</span> <span class="risk-pill">Shipping delays</span> <span class="risk-pill">Incorrect or incomplete information</span> <span class="risk-pill">Member not responding</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
