@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-02 &mdash; Third-Party Demand Letter and Liability Analysis &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -412,33 +414,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-02 &mdash; Third-Party Demand Letter and Liability Analysis
+        </h1>
+        <p>This process involves the issuance of a third-party demand letter and conducting a liability analysis to determine responsibility in claims management. It aims to recover costs from liable parties.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-02</td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-03</td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-04</td><td>Recovery Negotiation and Settlement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-05</td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-06</td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-07</td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-02.png" data-lightbox data-title="SHARED-CL-SP-02 BPMN">
+              <img src="../../assets/img/shared-cl-sp-02.png" alt="SHARED-CL-SP-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Third-Party Demand Letter and Liability Analysis</td></tr>
+            <tr><th>Trigger</th><td>When a claim is identified as having potential subrogation opportunities or when there are indications that another party may be at fault.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the issuance of a demand letter, determination of liability, and initiation of recovery actions if applicable.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Guidewire PolicyCenter/ClaimCenter/BillingCenter for claim management, while CAA SCO utilizes Guidewire InsuranceSuite. Additionally, AAA Northeast leverages Salesforce Einstein AI for enhanced analysis, whereas CAA SCO relies on Power BI for reporting.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce (AAA) / Power BI (CAA)</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Claim Details</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim file</td>
+          <td>Claim summary report</td>
+          <td>Time to review claim details < 2 days</td>
+          <td>Complex claims with multiple parties involved</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Conduct Liability Analysis</td>
+          <td>Liability Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim summary report</td>
+          <td>Liability analysis report</td>
+          <td>Accuracy of liability determination > 95%</td>
+          <td>Insufficient data for accurate analysis</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Demand Letter</td>
+          <td>Legal Counsel</td>
+          <td><span class="sys-tag salesforce">Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Liability analysis report</td>
+          <td>Demand letter draft</td>
+          <td>Time to prepare demand letter < 3 days</td>
+          <td>Legal compliance issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approve Demand Letter</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Demand letter draft</td>
+          <td>Approved demand letter</td>
+          <td>Time to approve demand letter < 1 day</td>
+          <td>Approval delays due to conflicting interests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Send Demand Letter</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter / Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Approved demand letter</td>
+          <td>Demand letter sent confirmation</td>
+          <td>Time to send demand letter < 1 day</td>
+          <td>Delivery failures due to incorrect addresses</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor Response</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter / Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Demand letter sent confirmation</td>
+          <td>Response from third party</td>
+          <td>Time to receive response < 10 days</td>
+          <td>Non-responsive third parties</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Evaluate Response</td>
+          <td>Liability Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter / Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Response from third party</td>
+          <td>Evaluation report</td>
+          <td>Accuracy of response evaluation > 90%</td>
+          <td>Misunderstandings in communication</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Initiate Recovery Actions</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter / Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Evaluation report</td>
+          <td>Recovery actions initiated</td>
+          <td>Time to initiate recovery actions < 5 days</td>
+          <td>Resource constraints for recovery efforts</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Close Case</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter / Salesforce (AAA) / Power BI (CAA)</span></td>
+          <td>Recovery actions initiated</td>
+          <td>Case closed</td>
+          <td>Time to close case < 2 days</td>
+          <td>Unresolved issues leading to extended closure times</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to review claim details < 2 days</span> <span class="kpi-pill">Accuracy of liability determination > 95%</span> <span class="kpi-pill">Time to prepare demand letter < 3 days</span> <span class="kpi-pill">Time to approve demand letter < 1 day</span> <span class="kpi-pill">Time to send demand letter < 1 day</span> <span class="kpi-pill">Time to receive response < 10 days</span> <span class="kpi-pill">Accuracy of response evaluation > 90%</span> <span class="kpi-pill">Time to initiate recovery actions < 5 days</span> <span class="kpi-pill">Time to close case < 2 days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Complex claims with multiple parties involved</span> <span class="risk-pill">Insufficient data for accurate analysis</span> <span class="risk-pill">Legal compliance issues</span> <span class="risk-pill">Approval delays due to conflicting interests</span> <span class="risk-pill">Delivery failures due to incorrect addresses</span> <span class="risk-pill">Non-responsive third parties</span> <span class="risk-pill">Misunderstandings in communication</span> <span class="risk-pill">Resource constraints for recovery efforts</span> <span class="risk-pill">Unresolved issues leading to extended closure times</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
