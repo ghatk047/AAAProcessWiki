@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-04 &mdash; Affiliate and Employer Group Enrolment &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -242,33 +244,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-04 &mdash; Affiliate and Employer Group Enrolment
+        </h1>
+        <p>This process manages the enrolment of affiliates and employer groups into AAA Northeast's membership program. It involves collecting, validating, and processing application data to ensure successful onboarding.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-03.html">SHARED-MB-EN-03</a></td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-04</td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-05</td><td>Membership Tier Selection and Upsell</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-06</td><td>Payment Processing and First-Year Billing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-07</td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-04.png" data-lightbox data-title="SHARED-MB-EN-04 BPMN">
+              <img src="../../assets/img/shared-mb-en-04.png" alt="SHARED-MB-EN-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Affiliate and Employer Group Enrolment</td></tr>
+            <tr><th>Trigger</th><td>A new affiliate or employer group submits an enrolment application through the AAA App or online portal.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the creation of a new member record in SAP S/4HANA, with access to AAA services and benefits.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Guidewire InsuranceSuite for policy management instead of SAP S/4HANA. Additionally, CAA SCO has stricter regulatory requirements due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag aaa-app">AAA App / Online Portal</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Application Submission</td>
+          <td>Affiliate Relations Specialist</td>
+          <td><span class="sys-tag aaa-app">AAA App / Online Portal</span></td>
+          <td>Enrolment application form</td>
+          <td>Submitted application data</td>
+          <td>Application submission rate (per hour)</td>
+          <td>Handling incomplete or inaccurate applications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Initial Validation</td>
+          <td>Data Entry Clerk</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Submitted application data</td>
+          <td>Validated application data</td>
+          <td>Validation accuracy rate (95%+)</td>
+          <td>Data entry errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Underwriting Review</td>
+          <td>Underwriter</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Validated application data</td>
+          <td>Underwriting decision</td>
+          <td>Average underwriting time (30 minutes)</td>
+          <td>Delays in underwriting reviews</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Policy Issuance</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Underwriting decision</td>
+          <td>Issued policy document</td>
+          <td>Policy issuance time (1 hour)</td>
+          <td>Policy generation errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Member Onboarding</td>
+          <td>Membership Coordinator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Issued policy document</td>
+          <td>Active member record</td>
+          <td>Onboarding completion rate (98%+)</td>
+          <td>System integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Welcome Communication</td>
+          <td>Marketing Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Active member record</td>
+          <td>Welcome email and SMS</td>
+          <td>Response rate to welcome communication (80%+)</td>
+          <td>Email deliverability issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application submission rate (per hour) - Target: 10 applications/hour</span> <span class="kpi-pill">Validation accuracy rate (95%+)</span> <span class="kpi-pill">Average underwriting time (30 minutes)</span> <span class="kpi-pill">Policy issuance time (1 hour)</span> <span class="kpi-pill">Onboarding completion rate (98%+)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data entry errors leading to validation failures</span> <span class="risk-pill">Delays in underwriting reviews affecting policy issuance timelines</span> <span class="risk-pill">System integration issues during member onboarding</span> <span class="risk-pill">Email deliverability issues impacting welcome communication</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
