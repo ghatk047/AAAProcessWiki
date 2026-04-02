@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Notice of Loss (FNOL) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-FN-08 &mdash; Third-Party Claimant Notification &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -402,33 +404,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-fnol/index.html">First Notice of Loss (FNOL)</a>
         </div>
-        <h1>📋 First Notice of Loss (FNOL)</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-FN-08 &mdash; Third-Party Claimant Notification
+        </h1>
+        <p>The Third-Party Claimant Notification process is initiated upon receiving a First Notice of Loss (FNOL) and aims to promptly notify the third-party claimant of the incident details, claim status, and next steps.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-fn-01.html">SHARED-CL-FN-01</a></td><td>FNOL Intake (Phone and Digital and Agent Reported)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-02.html">SHARED-CL-FN-02</a></td><td>Claimant Identity Verification and Policy Lookup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-03.html">SHARED-CL-FN-03</a></td><td>Loss Details Capture (Date and Location and Parties)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-04.html">SHARED-CL-FN-04</a></td><td>Coverage Verification and Reservation of Rights Letter</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-05.html">SHARED-CL-FN-05</a></td><td>Initial Reserves Setting</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-06.html">SHARED-CL-FN-06</a></td><td>Claim Assignment to Adjuster (Rules-Based Routing)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-fn-07.html">SHARED-CL-FN-07</a></td><td>Acknowledgement Letter and Digital Notification to Claimant</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-FN-08</td><td>Third-Party Claimant Notification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-fn-08.png" data-lightbox data-title="SHARED-CL-FN-08 BPMN">
+              <img src="../../assets/img/shared-cl-fn-08.png" alt="SHARED-CL-FN-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-FN-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>First Notice of Loss (FNOL)</td></tr>
+            <tr><th>L3 Name</th><td>Third-Party Claimant Notification</td></tr>
+            <tr><th>Trigger</th><td>Receiving a First Notice of Loss (FNOL) from a policyholder or an external source.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces a notification sent to the third-party claimant with all relevant information regarding the loss incident and the claims process.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Guidewire PolicyCenter/ClaimCenter for FNOL processing, while CAA SCO utilizes the Guidewire InsuranceSuite. Additionally, AAA Northeast integrates Salesforce Einstein AI for enhanced agent support, whereas CAA SCO relies on Salesforce for general communication but does not have an AI component integrated.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter</span> <span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Record FNOL in PolicyCenter/InsuranceSuite</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>FNOL form with incident details</td>
+          <td>FNOL record created in the system</td>
+          <td>FNOL entry accuracy rate > 95%</td>
+          <td>Inaccurate data entry leading to delays in processing.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Claimant Information</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>FNOL record</td>
+          <td>Validated claimant information</td>
+          <td>Claimant info validation completion time < 15 minutes</td>
+          <td>Missing or incorrect claimant details causing delays.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Notification Template</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Validated claimant information and FNOL record</td>
+          <td>Notification template with incident details</td>
+          <td>Template generation time < 5 minutes</td>
+          <td>Complex templates slowing down the notification process.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review and Approve Notification</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Notification template</td>
+          <td>Approved notification document</td>
+          <td>Approval time < 30 minutes</td>
+          <td>Delays in approval due to high volume of claims.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Send Notification via Email/SMS</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Approved notification document</td>
+          <td>Sent email/SMS to third-party claimant</td>
+          <td>Notification delivery time < 1 hour</td>
+          <td>Email/SMS delivery failures due to incorrect contact information.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Log Notification Sent</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Sent notification document</td>
+          <td>Notification log entry in the system</td>
+          <td>Log entry accuracy rate > 98%</td>
+          <td>Incorrect logging causing discrepancies in tracking.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Monitor Notification Acknowledgment</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Notification log entry</td>
+          <td>Acknowledgment status update in the system</td>
+          <td>Acknowledgment response time < 24 hours</td>
+          <td>Delayed acknowledgments affecting claims processing.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update FNOL Status</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter (AAA) / Guidewire InsuranceSuite (CAA)</span></td>
+          <td>Acknowledgment status update</td>
+          <td>Updated FNOL record in the system</td>
+          <td>FNOL status update accuracy rate > 95%</td>
+          <td>Incorrect status updates leading to confusion.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">FNOL entry accuracy rate > 95%</span> <span class="kpi-pill">Template generation time < 5 minutes</span> <span class="kpi-pill">Approval time < 30 minutes</span> <span class="kpi-pill">Notification delivery time < 1 hour</span> <span class="kpi-pill">Log entry accuracy rate > 98%</span> <span class="kpi-pill">Acknowledgment response time < 24 hours</span> <span class="kpi-pill">FNOL status update accuracy rate > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data entry errors leading to delays in processing.</span> <span class="risk-pill">Missing or incorrect claimant details causing delays.</span> <span class="risk-pill">Complex templates slowing down the notification process.</span> <span class="risk-pill">Delays in approval due to high volume of claims.</span> <span class="risk-pill">Email/SMS delivery failures due to incorrect contact information.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
