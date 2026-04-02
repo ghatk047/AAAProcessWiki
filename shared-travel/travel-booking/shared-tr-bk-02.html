@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Booking & Reservations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-BK-02 &mdash; Air Booking via GDS (Sabre and Galileo) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -356,33 +358,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-booking/index.html">Travel Booking & Reservations</a>
         </div>
-        <h1>✈️ Travel Booking & Reservations</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-BK-02 &mdash; Air Booking via GDS (Sabre and Galileo)
+        </h1>
+        <p>This process involves booking air travel for customers using Global Distribution Systems (GDS) such as Sabre and Galileo. It includes the initiation of a booking request, processing through the GDS, and finalizing the reservation.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-bk-01.html">SHARED-TR-BK-01</a></td><td>Client Travel Needs Assessment and Itinerary Planning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-BK-02</td><td>Air Booking via GDS (Sabre and Galileo)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-03</td><td>Hotel Booking via GDS and Direct Supplier</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-04</td><td>Cruise Booking (Direct Cruise Line and Consortium)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-05</td><td>Car Rental Booking via GDS</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-06</td><td>Package Holiday Booking (Wholesale Supplier)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-07</td><td>Travel Insurance Sales (Trip Cancellation and Medical)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-08</td><td>Booking Confirmation and Itinerary Document Generation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-bk-02.png" data-lightbox data-title="SHARED-TR-BK-02 BPMN">
+              <img src="../../assets/img/shared-tr-bk-02.png" alt="SHARED-TR-BK-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-BK-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Travel Booking & Reservations</td></tr>
+            <tr><th>L3 Name</th><td>Air Booking via GDS (Sabre and Galileo)</td></tr>
+            <tr><th>Trigger</th><td>A customer or agent initiates an air travel booking request via the AAA Northeast website or contact center.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces a confirmed air travel reservation with all necessary details such as flight information, passenger names, and booking confirmation number.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Galileo GDS instead of Sabre. Additionally, CAA SCO has stricter regulatory requirements due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag galileo">Galileo GDS</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Booking Request</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">AAA App or Salesforce</span></td>
+          <td>Customer booking request with travel details</td>
+          <td>Booking request logged in system</td>
+          <td>Time to log booking request < 5 minutes</td>
+          <td>Delayed logging of booking requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Booking Details</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Logged booking request</td>
+          <td>Validated booking details</td>
+          <td>Validation accuracy > 95%</td>
+          <td>Incorrect validation of travel details</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Search for Available Flights</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS (AAA) / Galileo GDS (CAA SCO)</span></td>
+          <td>Validated booking details</td>
+          <td>List of available flights</td>
+          <td>Flight search response time < 30 seconds</td>
+          <td>Slow flight search responses</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Select Flight and Confirm Booking</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS (AAA) / Galileo GDS (CAA SCO)</span></td>
+          <td>List of available flights</td>
+          <td>Confirmed flight booking</td>
+          <td>Booking confirmation rate > 90%</td>
+          <td>Failed booking confirmations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Process Payment</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank / Comenity Bank</span></td>
+          <td>Confirmed flight booking</td>
+          <td>Payment confirmation</td>
+          <td>Payment processing time < 5 minutes</td>
+          <td>Payment processing delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Generate Booking Confirmation</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Payment confirmation</td>
+          <td>Booking confirmation document</td>
+          <td>Confirmation document generation time < 2 minutes</td>
+          <td>Delayed confirmation document generation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Send Confirmation to Customer</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">AAA App or Salesforce</span></td>
+          <td>Booking confirmation document</td>
+          <td>Customer notification of booking confirmation</td>
+          <td>Notification delivery rate > 98%</td>
+          <td>Failed customer notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Update Internal Records</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Customer notification of booking confirmation</td>
+          <td>Updated internal records</td>
+          <td>Record update accuracy > 95%</td>
+          <td>Inaccurate record updates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Monitor Booking Status</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS (AAA) / Galileo GDS (CAA SCO)</span></td>
+          <td>Updated internal records</td>
+          <td>Booking status monitoring</td>
+          <td>Status monitoring frequency > 1x per day</td>
+          <td>Missed booking status updates</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Resolve Booking Issues</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS (AAA) / Galileo GDS (CAA SCO)</span></td>
+          <td>Booking status monitoring</td>
+          <td>Resolved booking issues</td>
+          <td>Issue resolution time < 24 hours</td>
+          <td>Delayed issue resolutions</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to log booking request < 5 minutes</span> <span class="kpi-pill">Validation accuracy > 95%</span> <span class="kpi-pill">Flight search response time < 30 seconds</span> <span class="kpi-pill">Booking confirmation rate > 90%</span> <span class="kpi-pill">Payment processing time < 5 minutes</span> <span class="kpi-pill">Confirmation document generation time < 2 minutes</span> <span class="kpi-pill">Notification delivery rate > 98%</span> <span class="kpi-pill">Record update accuracy > 95%</span> <span class="kpi-pill">Status monitoring frequency > 1x per day</span> <span class="kpi-pill">Issue resolution time < 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delayed logging of booking requests due to system issues</span> <span class="risk-pill">Incorrect validation leading to failed bookings</span> <span class="risk-pill">Slow flight search responses affecting customer satisfaction</span> <span class="risk-pill">Failed booking confirmations due to GDS connectivity problems</span> <span class="risk-pill">Payment processing delays causing booking cancellations</span> <span class="risk-pill">Delayed confirmation document generation impacting customer notifications</span> <span class="risk-pill">Failed customer notifications leading to lost business</span> <span class="risk-pill">Inaccurate record updates causing discrepancies in internal systems</span> <span class="risk-pill">Missed booking status updates resulting in unresolved issues</span> <span class="risk-pill">Delayed issue resolutions affecting customer experience</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
