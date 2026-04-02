@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claims Adjudication & Settlement &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-AD-04 &mdash; Subrogation Identification and Preservation of Rights &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -406,33 +408,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-adjudication/index.html">Claims Adjudication & Settlement</a>
         </div>
-        <h1>📋 Claims Adjudication & Settlement</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-AD-04 &mdash; Subrogation Identification and Preservation of Rights
+        </h1>
+        <p>This process involves identifying and preserving rights during the subrogation phase of claims management. It ensures that all relevant parties' interests are protected and that potential recoveries are maximized.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-ad-01.html">SHARED-CL-AD-01</a></td><td>Field Inspection and Damage Assessment Scheduling</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-02.html">SHARED-CL-AD-02</a></td><td>Estimate Preparation (Mitchell RepairCenter and CCC ONE)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-ad-03.html">SHARED-CL-AD-03</a></td><td>Liability Determination and Coverage Decision</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-AD-04</td><td>Subrogation Identification and Preservation of Rights</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-05</td><td>Settlement Negotiation and Authority Approval Levels</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-06</td><td>Payment Issuance (EFT and Cheque and Repair Shop Direct)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-07</td><td>Salvage Title Processing and Vehicle Total Loss Declaration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-AD-08</td><td>Claim Closure and Reserve Release</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-ad-04.png" data-lightbox data-title="SHARED-CL-AD-04 BPMN">
+              <img src="../../assets/img/shared-cl-ad-04.png" alt="SHARED-CL-AD-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-AD-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Claims Adjudication & Settlement</td></tr>
+            <tr><th>L3 Name</th><td>Subrogation Identification and Preservation of Rights</td></tr>
+            <tr><th>Trigger</th><td>The initiation of this process is triggered by the detection of a third-party liability in a claim where AAA Northeast or CAA SCO has incurred losses.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion of this process results in the identification of subrogation opportunities, preservation of legal rights, and documentation of all relevant communications and agreements.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Guidewire PolicyCenter/ClaimCenter for claims management, while CAA SCO utilizes the Guidewire InsuranceSuite. Additionally, AAA Northeast integrates with Salesforce for customer interactions, whereas CAA SCO relies more on internal portals like ClientBase.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce (AAA) / ClientBase (CAA)</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Third-Party Liability</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim details</td>
+          <td>Subrogation report</td>
+          <td>Percentage of claims identified for subrogation within 24 hours: 90%</td>
+          <td>Delays in identifying third-party liabilities can lead to missed recovery opportunities.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Preserve Legal Rights</td>
+          <td>Legal Counsel</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Subrogation report</td>
+          <td>Rights preservation document</td>
+          <td>Time taken to preserve rights: 3 days</td>
+          <td>Failure to preserve legal rights can result in loss of potential recoveries.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Notify Third Party</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (AAA) / ClientBase (CAA)</span></td>
+          <td>Rights preservation document</td>
+          <td>Notification letter</td>
+          <td>Response time from third party: 7 days</td>
+          <td>Delayed responses can prolong the subrogation process.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Document Communication</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (AAA) / ClientBase (CAA)</span></td>
+          <td>Communication logs</td>
+          <td>Updated claim file</td>
+          <td>Accuracy of communication documentation: 95%</td>
+          <td>Inaccurate documentation can lead to misunderstandings and legal issues.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Assess Subrogation Potential</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (AAA) / ClientBase (CAA)</span></td>
+          <td>Third-party response</td>
+          <td>Subrogation potential assessment</td>
+          <td>Time taken to assess subrogation potential: 5 days</td>
+          <td>Delays in assessing potential can miss valuable recovery opportunities.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Subrogation Case</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce (AAA) / ClientBase (CAA)</span></td>
+          <td>Subrogation potential assessment</td>
+          <td>Closed subrogation case record</td>
+          <td>Accuracy of final subrogation decision: 98%</td>
+          <td>Incorrect decisions can lead to financial losses or legal disputes.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Percentage of claims identified for subrogation within 24 hours: 90%</span> <span class="kpi-pill">Time taken to preserve rights: 3 days</span> <span class="kpi-pill">Response time from third party: 7 days</span> <span class="kpi-pill">Accuracy of communication documentation: 95%</span> <span class="kpi-pill">Time taken to assess subrogation potential: 5 days</span> <span class="kpi-pill">Accuracy of final subrogation decision: 98%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Missed recovery opportunities due to delayed identification of third-party liabilities.</span> <span class="risk-pill">Loss of legal rights if preservation steps are not followed correctly.</span> <span class="risk-pill">Prolonged subrogation process due to slow response times from third parties.</span> <span class="risk-pill">Misunderstandings and legal issues due to inaccurate documentation.</span> <span class="risk-pill">Financial losses or legal disputes due to incorrect final decisions.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
