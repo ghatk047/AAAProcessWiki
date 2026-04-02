@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Banking & Deposits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-BK-04 &mdash; Debit Card Issuance and PIN Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -382,33 +384,168 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
         </div>
-        <h1>🏦 AAA Banking & Deposits</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-BK-04 &mdash; Debit Card Issuance and PIN Management
+        </h1>
+        <p>This process handles the issuance of debit cards and management of PINs for AAA Northeast members. It involves multiple systems to ensure secure and efficient card processing.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-bk-01.html">AAA-FS-BK-01</a></td><td>AAA Triple Advantage Checking Account Opening (Grasshopper Bank)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-02.html">AAA-FS-BK-02</a></td><td>Certificate of Deposit Application and Funding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-03.html">AAA-FS-BK-03</a></td><td>EFT and Direct Deposit Setup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-BK-04</td><td>Debit Card Issuance and PIN Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-05</td><td>Online and Mobile Banking Onboarding</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-06</td><td>Account Closure and Fund Transfer Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-07</td><td>FDIC Compliance and Regulatory Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-08</td><td>Banking Product Rate Review and Competitive Pricing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-bk-04.png" data-lightbox data-title="AAA-FS-BK-04 BPMN">
+              <img src="../../assets/img/aaa-fs-bk-04.png" alt="AAA-FS-BK-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-BK-04</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Banking & Deposits</td></tr>
+            <tr><th>L3 Name</th><td>Debit Card Issuance and PIN Management</td></tr>
+            <tr><th>Trigger</th><td>Application submission by a member through the AAA App or online portal</td></tr>
+            <tr><th>Outcome</th><td>Successful issuance of a debit card with a securely generated PIN, and updated member records in all relevant systems.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on direct member interactions via mobile apps and digital portals, whereas CAA may have more physical branch operations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag verisk">Verisk ISO Rating</span> <span class="sys-tag aaa-app">AAA App</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Member Application Submission</td>
+          <td>Digital Engagement Specialist</td>
+          <td><span class="sys-tag salesforce">AAA App / Salesforce</span></td>
+          <td>Application form with member details</td>
+          <td>Submitted application in Salesforce</td>
+          <td>Application submission rate (per hour)</td>
+          <td>High volume of applications during peak times</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Fraud Verification</td>
+          <td>Fraud Analyst</td>
+          <td><span class="sys-tag verisk">Verisk ISO Rating</span></td>
+          <td>Application details from Salesforce</td>
+          <td>Fraud assessment report</td>
+          <td>Fraud detection rate (%)</td>
+          <td>False positives leading to delayed card issuance</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Card Issuance Request</td>
+          <td>Banking Operations Manager</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Verified application and fraud report</td>
+          <td>Card issuance request to Grasshopper Bank</td>
+          <td>Average time for card issuance (days)</td>
+          <td>Delays in bank processing</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>PIN Generation</td>
+          <td>IT Security Specialist</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank</span></td>
+          <td>Card issuance confirmation</td>
+          <td>Secured PIN for the card</td>
+          <td>PIN generation success rate (%)</td>
+          <td>Security breaches compromising PINs</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Card and PIN Distribution</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">AAA App / Salesforce</span></td>
+          <td>Card and PIN details from Grasshopper Bank</td>
+          <td>Notification to member via AAA App or email</td>
+          <td>Member notification success rate (%)</td>
+          <td>Members not receiving notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Member Records</td>
+          <td>Data Administrator</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter / BillingCenter</span></td>
+          <td>Card and PIN details</td>
+          <td>Updated member records in Guidewire systems</td>
+          <td>Record update accuracy (%)</td>
+          <td>Data integrity issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Final Review and Confirmation</td>
+          <td>Account Manager</td>
+          <td><span class="sys-tag guidewire">Salesforce / Guidewire PolicyCenter</span></td>
+          <td>Updated records and member feedback</td>
+          <td>Final confirmation of card issuance</td>
+          <td>Member satisfaction score (%)</td>
+          <td>Low member satisfaction due to process issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application submission rate (per hour) - Target: >100 applications/hour</span> <span class="kpi-pill">Fraud detection rate (%) - Target: >95%</span> <span class="kpi-pill">Average time for card issuance (days) - Target: <3 days</span> <span class="kpi-pill">PIN generation success rate (%) - Target: 100%</span> <span class="kpi-pill">Member notification success rate (%) - Target: 100%</span> <span class="kpi-pill">Record update accuracy (%) - Target: 99%</span> <span class="kpi-pill">Member satisfaction score (%) - Target: >85%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">High volume of applications during peak times</span> <span class="risk-pill">Delays in bank processing</span> <span class="risk-pill">Security breaches compromising PINs</span> <span class="risk-pill">Members not receiving notifications</span> <span class="risk-pill">Data integrity issues</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
