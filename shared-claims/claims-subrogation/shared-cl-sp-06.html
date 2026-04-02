@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-06 &mdash; Anti-Fraud Investigation Referral (SIU) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -416,33 +418,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>5 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-06 &mdash; Anti-Fraud Investigation Referral (SIU)
+        </h1>
+        <p>This process outlines the steps for referring anti-fraud cases to the Special Investigation Unit (SIU) within the claims management subrogation and recovery domain. It ensures that suspicious activities are thoroughly investigated to recover losses.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-02.html">SHARED-CL-SP-02</a></td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-03.html">SHARED-CL-SP-03</a></td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-04.html">SHARED-CL-SP-04</a></td><td>Recovery Negotiation and Settlement</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-05.html">SHARED-CL-SP-05</a></td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-06</td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-07</td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-06.png" data-lightbox data-title="SHARED-CL-SP-06 BPMN">
+              <img src="../../assets/img/shared-cl-sp-06.png" alt="SHARED-CL-SP-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-06</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Anti-Fraud Investigation Referral (SIU)</td></tr>
+            <tr><th>Trigger</th><td>Detection of suspicious activity or fraud indicators during the claims handling process.</td></tr>
+            <tr><th>Outcome</th><td>Successful referral of the case to the SIU for further investigation, leading to potential recovery of funds and prevention of future fraudulent activities.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast uses Guidewire PolicyCenter/ClaimCenter/BillingCenter for claim management, while CAA SCO utilizes Guidewire InsuranceSuite. Additionally, AAA Northeast relies on Salesforce for Einstein AI and Agentforce, whereas CAA SCO uses Salesforce without these specific tools.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Suspicious Activity</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim details and transaction history</td>
+          <td>Suspicious activity report</td>
+          <td>Detection rate of suspicious activities (80%)</td>
+          <td>Manual review leading to potential oversight</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review and Document Suspicious Activity</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Suspicious activity report</td>
+          <td>Detailed investigation report</td>
+          <td>Documentation accuracy (95%)</td>
+          <td>Lack of standardized documentation process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Refer Case to SIU</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Detailed investigation report</td>
+          <td>SIU referral letter</td>
+          <td>Referral accuracy (90%)</td>
+          <td>Delayed referrals due to manual processes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notify Stakeholders</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>SIU referral letter</td>
+          <td>Stakeholder notification email</td>
+          <td>Notification timeliness (24 hours)</td>
+          <td>Inaccurate stakeholder information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor SIU Investigation Progress</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>SIU investigation status updates</td>
+          <td>Investigation progress report</td>
+          <td>Progress monitoring frequency (weekly)</td>
+          <td>Lack of real-time communication with SIU</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Case Based on SIU Outcome</td>
+          <td>Claims Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>SIU investigation outcome</td>
+          <td>Case closure document</td>
+          <td>Closure accuracy (95%)</td>
+          <td>Inconsistent case closure procedures</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Detection rate of suspicious activities (80%)</span> <span class="kpi-pill">Documentation accuracy (95%)</span> <span class="kpi-pill">Referral accuracy (90%)</span> <span class="kpi-pill">Notification timeliness (24 hours)</span> <span class="kpi-pill">Progress monitoring frequency (weekly)</span> <span class="kpi-pill">Closure accuracy (95%)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Manual review leading to potential oversight</span> <span class="risk-pill">Lack of standardized documentation process</span> <span class="risk-pill">Delayed referrals due to manual processes</span> <span class="risk-pill">Inaccurate stakeholder information</span> <span class="risk-pill">Lack of real-time communication with SIU</span> <span class="risk-pill">Inconsistent case closure procedures</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
