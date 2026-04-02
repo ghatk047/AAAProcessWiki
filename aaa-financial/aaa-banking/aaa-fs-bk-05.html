@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Banking & Deposits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-BK-05 &mdash; Online and Mobile Banking Onboarding &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -383,33 +385,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
         </div>
-        <h1>🏦 AAA Banking & Deposits</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-BK-05 &mdash; Online and Mobile Banking Onboarding
+        </h1>
+        <p>The process for onboarding members to online and mobile banking services at AAA Northeast.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-bk-01.html">AAA-FS-BK-01</a></td><td>AAA Triple Advantage Checking Account Opening (Grasshopper Bank)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-02.html">AAA-FS-BK-02</a></td><td>Certificate of Deposit Application and Funding</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-03.html">AAA-FS-BK-03</a></td><td>EFT and Direct Deposit Setup</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-fs-bk-04.html">AAA-FS-BK-04</a></td><td>Debit Card Issuance and PIN Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-BK-05</td><td>Online and Mobile Banking Onboarding</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-06</td><td>Account Closure and Fund Transfer Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-07</td><td>FDIC Compliance and Regulatory Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-08</td><td>Banking Product Rate Review and Competitive Pricing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-bk-05.png" data-lightbox data-title="AAA-FS-BK-05 BPMN">
+              <img src="../../assets/img/aaa-fs-bk-05.png" alt="AAA-FS-BK-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-BK-05</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Banking & Deposits</td></tr>
+            <tr><th>L3 Name</th><td>Online and Mobile Banking Onboarding</td></tr>
+            <tr><th>Trigger</th><td>Member application submission through the AAA website or mobile app.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the member being able to access their banking services online and via mobile devices.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses heavily on digital engagement, utilizing Salesforce for customer interactions and Guidewire Cloud for policy management. Unlike CAA, AAA does not have a telematics component for this process.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag grasshopper">Grasshopper Bank System</span> <span class="sys-tag comenity">Comenity Bank Mobile App</span> <span class="sys-tag comenity">Comenity Bank Online Portal</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Application Submission</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Member application form</td>
+          <td>Submitted application in Salesforce</td>
+          <td>Application submission rate within 2 minutes</td>
+          <td>Delays in application processing due to system downtime</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Application Review</td>
+          <td>Financial Services Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud</span></td>
+          <td>Submitted application in Salesforce</td>
+          <td>Approved or declined application in Guidewire</td>
+          <td>Application review time within 5 minutes</td>
+          <td>High volume of applications causing delays</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Bank Account Setup</td>
+          <td>Grasshopper Bank Employee</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank System</span></td>
+          <td>Approved application from Guidewire</td>
+          <td>New bank account created</td>
+          <td>Account setup time within 10 minutes</td>
+          <td>Bank system integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Mobile Banking Activation</td>
+          <td>Comenity Bank Employee</td>
+          <td><span class="sys-tag comenity">Comenity Bank Mobile App</span></td>
+          <td>New bank account details</td>
+          <td>Activated mobile banking access</td>
+          <td>Activation time within 5 minutes</td>
+          <td>App store connectivity issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Online Banking Activation</td>
+          <td>Comenity Bank Employee</td>
+          <td><span class="sys-tag comenity">Comenity Bank Online Portal</span></td>
+          <td>New bank account details</td>
+          <td>Activated online banking access</td>
+          <td>Activation time within 5 minutes</td>
+          <td>Portal login issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Confirmation Email</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Activated online and mobile banking access</td>
+          <td>Sent confirmation email to member</td>
+          <td>Email delivery rate 99%</td>
+          <td>Spam filters blocking emails</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Post-Activation Follow-Up</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Confirmation email sent</td>
+          <td>Follow-up call or email to member</td>
+          <td>Response rate within 24 hours</td>
+          <td>Low response rates from members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Feedback Collection</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Follow-up interaction with member</td>
+          <td>Collected feedback on banking experience</td>
+          <td>Feedback collection rate 80%</td>
+          <td>Low engagement from members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application submission rate within 2 minutes</span> <span class="kpi-pill">Application review time within 5 minutes</span> <span class="kpi-pill">Account setup time within 10 minutes</span> <span class="kpi-pill">Activation time within 5 minutes for mobile banking</span> <span class="kpi-pill">Activation time within 5 minutes for online banking</span> <span class="kpi-pill">Email delivery rate 99%</span> <span class="kpi-pill">Response rate within 24 hours</span> <span class="kpi-pill">Feedback collection rate 80%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">System downtime affecting application submission and review</span> <span class="risk-pill">Bank system integration issues during account setup</span> <span class="risk-pill">App store connectivity issues preventing mobile banking activation</span> <span class="risk-pill">Portal login issues affecting online banking access</span> <span class="risk-pill">Spam filters blocking confirmation emails</span> <span class="risk-pill">Low response rates from members to follow-up interactions</span> <span class="risk-pill">Low engagement from members in providing feedback</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
