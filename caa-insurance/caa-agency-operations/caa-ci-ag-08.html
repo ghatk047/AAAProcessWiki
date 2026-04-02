@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Agency & Broker Operations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-AG-08 &mdash; Life Insurance Lead Referral (CAA Life Insurance) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -330,33 +332,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-agency-operations/index.html">Insurance Agency & Broker Operations</a>
         </div>
-        <h1>🍁 Insurance Agency & Broker Operations</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-AG-08 &mdash; Life Insurance Lead Referral (CAA Life Insurance)
+        </h1>
+        <p>The Life Insurance Lead Referral process involves identifying potential life insurance clients and referring them to licensed agents for further evaluation and sales.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-ag-01.html">CAA-CI-AG-01</a></td><td>Broker Appointment and RIBO Registration Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-02.html">CAA-CI-AG-02</a></td><td>RIBO Licence Renewal Tracking</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-03.html">CAA-CI-AG-03</a></td><td>CAA Member Cross-Sell Auto and Home Bundle</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-04.html">CAA-CI-AG-04</a></td><td>CAA Connect Telematics Enrolment for UBI Discount</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-05.html">CAA-CI-AG-05</a></td><td>Broker Performance Reporting (Guidewire Analytics)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-06.html">CAA-CI-AG-06</a></td><td>Travel Medical Insurance Sales and Underwriting</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-ag-07.html">CAA-CI-AG-07</a></td><td>Pet Insurance Sales Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-AG-08</td><td>Life Insurance Lead Referral (CAA Life Insurance)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-ag-08.png" data-lightbox data-title="CAA-CI-AG-08 BPMN">
+              <img src="../../assets/img/caa-ci-ag-08.png" alt="CAA-CI-AG-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-AG-08</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Insurance Agency & Broker Operations</td></tr>
+            <tr><th>L3 Name</th><td>Life Insurance Lead Referral (CAA Life Insurance)</td></tr>
+            <tr><th>Trigger</th><td>Receiving a lead from various sources such as online forms, telematics data, or direct contact.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the referral of leads to licensed insurance agents, leading to increased client acquisition and policy sales.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario focuses on FSRA regulations and uses Guidewire InsuranceSuite for policy management. Key differences include the use of Galileo GDS for travel-related services and a strong emphasis on telematics data for risk assessment.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag caa-connect">CAA Connect Telematics</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag galileo">Galileo GDS</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Lead Capture</td>
+          <td>Telematics Analyst</td>
+          <td><span class="sys-tag caa-connect">CAA Connect Telematics</span></td>
+          <td>Telematics data and client contact information</td>
+          <td>Captured lead in the CAA database</td>
+          <td>Number of leads captured per day (target: 50)</td>
+          <td>Data quality issues from telematics system</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Lead Qualification</td>
+          <td>Life Insurance Lead Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Captured lead data</td>
+          <td>Qualified lead status in Guidewire</td>
+          <td>Percentage of leads qualified (target: 70%)</td>
+          <td>Inconsistent qualification criteria</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Agent Assignment</td>
+          <td>Life Insurance Lead Coordinator</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Qualified lead data</td>
+          <td>Assigned agent in Guidewire</td>
+          <td>Average time to assign an agent (target: 1 hour)</td>
+          <td>Agent availability and workload</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Contact Preparation</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Lead data and agent notes</td>
+          <td>Prepared contact script and materials</td>
+          <td>Number of prepared contacts per day (target: 20)</td>
+          <td>Time-consuming preparation process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Client Contact</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite, Salesforce</span></td>
+          <td>Prepared contact script and materials</td>
+          <td>Contact summary in Guidewire and Salesforce</td>
+          <td>Number of successful contacts per day (target: 15)</td>
+          <td>High no-show rate for scheduled calls</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Policy Evaluation</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Client feedback and requirements</td>
+          <td>Policy evaluation report in Guidewire</td>
+          <td>Average time to evaluate policy (target: 2 hours)</td>
+          <td>Complexity of policy options</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Policy Presentation</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite, Salesforce</span></td>
+          <td>Policy evaluation report</td>
+          <td>Presentation summary in Guidewire and Salesforce</td>
+          <td>Number of policy presentations per day (target: 10)</td>
+          <td>Client engagement during presentations</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Policy Sale</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite, Salesforce</span></td>
+          <td>Presentation summary and client decision</td>
+          <td>Sold policy in Guidewire and Salesforce</td>
+          <td>Number of policies sold per day (target: 5)</td>
+          <td>Client hesitation during sale process</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.5</td>
+          <td>Post-Sale Follow-Up</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite, Salesforce</span></td>
+          <td>Sold policy data</td>
+          <td>Follow-up notes in Guidewire and Salesforce</td>
+          <td>Number of follow-ups per day (target: 10)</td>
+          <td>Client satisfaction monitoring</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Number of leads captured per day (target: 50)</span> <span class="kpi-pill">Percentage of leads qualified (target: 70%)</span> <span class="kpi-pill">Average time to assign an agent (target: 1 hour)</span> <span class="kpi-pill">Number of prepared contacts per day (target: 20)</span> <span class="kpi-pill">Number of successful contacts per day (target: 15)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data quality issues from telematics system</span> <span class="risk-pill">Agent availability and workload</span> <span class="risk-pill">High no-show rate for scheduled calls</span> <span class="risk-pill">Complexity of policy options</span> <span class="risk-pill">Client hesitation during sale process</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
