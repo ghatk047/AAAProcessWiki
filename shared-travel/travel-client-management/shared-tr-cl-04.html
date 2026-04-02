@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Management & Servicing &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-CL-04 &mdash; Post-Booking Amendment and Cancellation Processing &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -366,33 +368,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
         </div>
-        <h1>✈️ Client Management & Servicing</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-CL-04 &mdash; Post-Booking Amendment and Cancellation Processing
+        </h1>
+        <p>This process handles post-booking amendments and cancellations for travel agency packages. It ensures that changes to bookings are accurately reflected in the system, affecting both the client's experience and the agency's financial records.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-cl-01.html">SHARED-TR-CL-01</a></td><td>Client Profile Creation and Preference Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-02.html">SHARED-TR-CL-02</a></td><td>Visa and Passport Advisory Service</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-cl-03.html">SHARED-TR-CL-03</a></td><td>Pre-Departure Document Checklist and Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-CL-04</td><td>Post-Booking Amendment and Cancellation Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-05</td><td>Refund and Credit Processing (Airline and Supplier)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-06</td><td>Group Travel Coordination and Group Contract Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-07</td><td>Corporate Travel Account Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-08</td><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-cl-04.png" data-lightbox data-title="SHARED-TR-CL-04 BPMN">
+              <img src="../../assets/img/shared-tr-cl-04.png" alt="SHARED-TR-CL-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-CL-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Client Management & Servicing</td></tr>
+            <tr><th>L3 Name</th><td>Post-Booking Amendment and Cancellation Processing</td></tr>
+            <tr><th>Trigger</th><td>Client requests an amendment or cancellation of a booked travel package.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in updated booking records, accurate billing, and communication with the client regarding any changes or refunds.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Salesforce for customer interactions and SAP S/4HANA for financial management. CAA SCO relies more on Guidewire InsuranceSuite for policy and claim processing, with a focus on regulatory compliance due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Client Request</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Client request for amendment or cancellation</td>
+          <td>Logged client request in Salesforce</td>
+          <td>Response time to client inquiries within 24 hours</td>
+          <td>Handling complex requests that require multiple steps</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Request</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Logged client request in Salesforce</td>
+          <td>Validation report</td>
+          <td>Request validation accuracy rate above 95%</td>
+          <td>Inaccurate data entry leading to validation errors</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Booking Record</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Validation report</td>
+          <td>Updated booking record in SAP S/4HANA</td>
+          <td>Booking update accuracy rate above 98%</td>
+          <td>Synchronization issues between Salesforce and SAP S/4HANA</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Generate Refund or Adjustment</td>
+          <td>Finance Specialist</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated booking record in SAP S/4HANA</td>
+          <td>Refund or adjustment document</td>
+          <td>Refund processing time within 3 business days</td>
+          <td>Delays in refund processing affecting client satisfaction</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Communicate with Client</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Refund or adjustment document</td>
+          <td>Client communication record in Salesforce</td>
+          <td>Client satisfaction score above 85%</td>
+          <td>Miscommunication leading to client dissatisfaction</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Close Case</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Client communication record in Salesforce</td>
+          <td>Closed case in Salesforce</td>
+          <td>Case closure rate above 90%</td>
+          <td>Incomplete or inaccurate documentation leading to unresolved cases</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time to client inquiries within 24 hours</span> <span class="kpi-pill">Request validation accuracy rate above 95%</span> <span class="kpi-pill">Booking update accuracy rate above 98%</span> <span class="kpi-pill">Refund processing time within 3 business days</span> <span class="kpi-pill">Client satisfaction score above 85%</span> <span class="kpi-pill">Case closure rate above 90%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Complex client requests leading to delays in processing</span> <span class="risk-pill">Data entry errors causing validation issues</span> <span class="risk-pill">Synchronization problems between Salesforce and SAP S/4HANA</span> <span class="risk-pill">Delays in refund processing affecting client satisfaction</span> <span class="risk-pill">Miscommunication with clients leading to dissatisfaction</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
