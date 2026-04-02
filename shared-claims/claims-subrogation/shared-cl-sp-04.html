@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrogation & Recovery &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-CL-SP-04 &mdash; Recovery Negotiation and Settlement &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -414,33 +416,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Claims Management</a>
+          <a href="../../shared-claims/index.html">Claims Management</a> &rsaquo;
+          <a href="../../shared-claims/claims-subrogation/index.html">Subrogation & Recovery</a>
         </div>
-        <h1>📋 Subrogation & Recovery</h1>
-        <p>3 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-CL-SP-04 &mdash; Recovery Negotiation and Settlement
+        </h1>
+        <p>The Recovery Negotiation and Settlement process involves negotiating with third parties to recover costs related to claims. This process is initiated when a claim has been settled, and there are potential recoveries from other parties involved in the incident.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-cl-sp-01.html">SHARED-CL-SP-01</a></td><td>Subrogation Opportunity Identification (at FNOL and Adjudication)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-02.html">SHARED-CL-SP-02</a></td><td>Third-Party Demand Letter and Liability Analysis</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-cl-sp-03.html">SHARED-CL-SP-03</a></td><td>Arbitration Filing (Inter-Company Arbitration)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-CL-SP-04</td><td>Recovery Negotiation and Settlement</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-05</td><td>Salvage Vehicle Processing and Auction</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-06</td><td>Anti-Fraud Investigation Referral (SIU)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-07</td><td>Recovery Proceeds Accounting and Reserve Credit</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-CL-SP-08</td><td>Reinsurance Recovery Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-cl-sp-04.png" data-lightbox data-title="SHARED-CL-SP-04 BPMN">
+              <img src="../../assets/img/shared-cl-sp-04.png" alt="SHARED-CL-SP-04 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-CL-SP-04</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Claims Management</td></tr>
+            <tr><th>L2 Process</th><td>Subrogation & Recovery</td></tr>
+            <tr><th>L3 Name</th><td>Recovery Negotiation and Settlement</td></tr>
+            <tr><th>Trigger</th><td>Completion of a claim settlement</td></tr>
+            <tr><th>Outcome</th><td>Successful recovery of funds from third parties involved in the claim</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Guidewire InsuranceSuite for policy management, while AAA Northeast primarily uses Guidewire PolicyCenter/ClaimCenter/BillingCenter. CAA SCO also has stricter regulatory requirements due to FSRA oversight.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Identify Potential Third Parties</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Claim details and incident report</td>
+          <td>List of potential third parties</td>
+          <td>Number of identified third parties within 3 business days</td>
+          <td>Inconsistent identification of third parties</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Prepare Recovery Letter</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>List of potential third parties</td>
+          <td>Recovery letter template</td>
+          <td>Recovery letters prepared within 1 business day</td>
+          <td>Delays in preparing recovery letters</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Send Recovery Letter</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Recovery letter template</td>
+          <td>Sent recovery letters</td>
+          <td>Recovery letters sent within 1 business day of preparation</td>
+          <td>Inconsistent delivery of recovery letters</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Monitor Responses</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Sent recovery letters</td>
+          <td>Responses from third parties</td>
+          <td>Response rate of 80% within 30 days</td>
+          <td>Low response rates from third parties</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Negotiate Settlements</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Responses from third parties</td>
+          <td>Negotiated settlements</td>
+          <td>Average settlement amount of $500 per claim</td>
+          <td>Difficult negotiations leading to lower settlements</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Finalize Settlements</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Negotiated settlements</td>
+          <td>Finalized settlement agreements</td>
+          <td>Final settlements completed within 2 business days of negotiation</td>
+          <td>Delays in finalizing settlements</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Claim Records</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Finalized settlement agreements</td>
+          <td>Updated claim records</td>
+          <td>100% of claim records updated within 1 business day of finalization</td>
+          <td>Incomplete or inaccurate updates to claim records</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Recovery Case</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Updated claim records</td>
+          <td>Closed recovery case</td>
+          <td>Recovery cases closed within 1 business day of final settlement update</td>
+          <td>Open recovery cases leading to audit findings</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Number of identified third parties within 3 business days</span> <span class="kpi-pill">Recovery letters prepared within 1 business day</span> <span class="kpi-pill">Recovery letters sent within 1 business day of preparation</span> <span class="kpi-pill">Response rate of 80% within 30 days</span> <span class="kpi-pill">Average settlement amount of $500 per claim</span> <span class="kpi-pill">Final settlements completed within 2 business days of negotiation</span> <span class="kpi-pill">100% of claim records updated within 1 business day of finalization</span> <span class="kpi-pill">Recovery cases closed within 1 business day of final settlement update</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent identification of third parties</span> <span class="risk-pill">Delays in preparing recovery letters</span> <span class="risk-pill">Inconsistent delivery of recovery letters</span> <span class="risk-pill">Low response rates from third parties</span> <span class="risk-pill">Difficult negotiations leading to lower settlements</span> <span class="risk-pill">Delays in finalizing settlements</span> <span class="risk-pill">Incomplete or inaccurate updates to claim records</span> <span class="risk-pill">Open recovery cases leading to audit findings</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
