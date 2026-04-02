@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Billing & Premium Management (CAA) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-BI-08 &mdash; Premium Tax Filing (Ontario 2 percent provincial tax) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -322,33 +324,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-insurance-billing/index.html">Billing & Premium Management (CAA)</a>
         </div>
-        <h1>🍁 Billing & Premium Management (CAA)</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-BI-08 &mdash; Premium Tax Filing (Ontario 2 percent provincial tax)
+        </h1>
+        <p>The Premium Tax Filing process for CAA South Central Ontario involves calculating and filing the 2 percent provincial tax on insurance premiums collected from policyholders. This ensures compliance with Ontario regulations and FSRA requirements.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-bi-01.html">CAA-CI-BI-01</a></td><td>Guidewire BillingCenter Premium Invoice Generation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-02.html">CAA-CI-BI-02</a></td><td>Installment Plan Configuration (Monthly and Quarterly and Annual)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-03.html">CAA-CI-BI-03</a></td><td>EFT and Credit Card and Cheque Payment Processing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-04.html">CAA-CI-BI-04</a></td><td>NSF Handling and Policy Suspension (Ontario Insurance Act)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-05.html">CAA-CI-BI-05</a></td><td>Agent and Broker Commission Statement (BillingCenter)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-06.html">CAA-CI-BI-06</a></td><td>Refund and Returned Premium Calculation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-bi-07.html">CAA-CI-BI-07</a></td><td>HST Calculation and Remittance (Ontario 13 percent)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-BI-08</td><td>Premium Tax Filing (Ontario 2 percent provincial tax)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-bi-08.png" data-lightbox data-title="CAA-CI-BI-08 BPMN">
+              <img src="../../assets/img/caa-ci-bi-08.png" alt="CAA-CI-BI-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-BI-08</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Billing & Premium Management (CAA)</td></tr>
+            <tr><th>L3 Name</th><td>Premium Tax Filing (Ontario 2 percent provincial tax)</td></tr>
+            <tr><th>Trigger</th><td>Monthly billing cycle completion</td></tr>
+            <tr><th>Outcome</th><td>Successful submission of premium tax reports to the Ontario government, ensuring financial compliance and avoiding penalties.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario operates under stricter regulatory oversight compared to AAA, requiring more detailed record-keeping and reporting for provincial taxes.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag powerbi">Power BI</span> <span class="sys-tag galileo">Galileo GDS</span> <span class="sys-tag sys-generic">Ontario Revenue System</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Premium Tax Calculation</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Monthly billing data from PolicyCenter</td>
+          <td>Premium tax calculation report</td>
+          <td>Accuracy of tax calculations (99.5%)</td>
+          <td>Complexity in handling multiple policy types and varying rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Tax Calculation Report</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag powerbi">Power BI</span></td>
+          <td>Premium tax calculation report</td>
+          <td>Approved premium tax report</td>
+          <td>Time to review and approve (3 working days)</td>
+          <td>Manual adjustments required for discrepancies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Prepare Tax Filing Documents</td>
+          <td>Tax Specialist</td>
+          <td><span class="sys-tag galileo">Galileo GDS</span></td>
+          <td>Approved premium tax report</td>
+          <td>Completed tax filing documents</td>
+          <td>Document preparation time (2 working days)</td>
+          <td>Integration issues with Galileo system</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Submit Tax Filing to Ontario Government</td>
+          <td>Tax Specialist</td>
+          <td><span class="sys-tag sys-generic">Ontario Revenue System</span></td>
+          <td>Completed tax filing documents</td>
+          <td>Confirmation of submission</td>
+          <td>Submission accuracy (100%)</td>
+          <td>Late submissions due to system downtime</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Record Tax Filing in Internal Systems</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Confirmation of submission</td>
+          <td>Updated internal records</td>
+          <td>Time to update records (1 working day)</td>
+          <td>Data entry errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Generate Tax Filing Summary Report</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag powerbi">Power BI</span></td>
+          <td>Updated internal records</td>
+          <td>Tax filing summary report</td>
+          <td>Report generation time (1 working day)</td>
+          <td>Inconsistent data formats</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Accuracy of tax calculations (99.5%)</span> <span class="kpi-pill">Time to review and approve (3 working days)</span> <span class="kpi-pill">Document preparation time (2 working days)</span> <span class="kpi-pill">Submission accuracy (100%)</span> <span class="kpi-pill">Time to update records (1 working day)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Complexity in handling multiple policy types and varying rates</span> <span class="risk-pill">Integration issues with Galileo system</span> <span class="risk-pill">Late submissions due to system downtime</span> <span class="risk-pill">Data entry errors</span> <span class="risk-pill">Inconsistent data formats</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
