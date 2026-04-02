@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-DT-IT-03 &mdash; AWS Cloud Infrastructure Operations and Cost Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -459,45 +461,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>4 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-DT-IT-03 &mdash; AWS Cloud Infrastructure Operations and Cost Management
+        </h1>
+        <p>This process manages AWS cloud infrastructure operations and cost management for AAA Northeast, ensuring efficient resource utilization and compliance with state regulations.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-01.html">CAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-02.html">AAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-02.html">CAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-03</td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-03</td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-04</td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-08</td><td>IT Service Desk and ITSM</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-09</td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-10</td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-dt-it-03.png" data-lightbox data-title="AAA-DT-IT-03 BPMN">
+              <img src="../../assets/img/aaa-dt-it-03.png" alt="AAA-DT-IT-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-DT-IT-03</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>AWS Cloud Infrastructure Operations and Cost Management</td></tr>
+            <tr><th>Trigger</th><td>Monthly review of AWS usage reports or detection of unusual activity in the cloud environment.</td></tr>
+            <tr><th>Outcome</th><td>Optimized AWS cloud infrastructure with controlled costs, improved performance, and adherence to regulatory requirements.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on cost optimization through automated billing and usage monitoring, while CAA may have more emphasis on security compliance due to FSRA regulations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aws">AWS Cloud</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review AWS Usage Reports</td>
+          <td>Cloud Engineer</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Monthly AWS usage reports</td>
+          <td>Analyzed report with cost breakdown</td>
+          <td>Cost reduction target of 5% month-over-month</td>
+          <td>Uncontrolled cloud spending</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Identify Cost Optimization Opportunities</td>
+          <td>Cloud Engineer</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Analyzed report with cost breakdown</td>
+          <td>Cost optimization plan</td>
+          <td>Number of optimized resources identified per month</td>
+          <td>Inefficient resource allocation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Implement Cost Optimization Measures</td>
+          <td>Cloud Engineer</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Cost optimization plan</td>
+          <td>Optimized AWS infrastructure</td>
+          <td>Time to implement cost optimizations (hours)</td>
+          <td>Long implementation times</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Monitor Cloud Security Compliance</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Daily security logs</td>
+          <td>Security compliance report</td>
+          <td>Number of security incidents detected per month</td>
+          <td>Security breaches</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Address Security Compliance Issues</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Security compliance report</td>
+          <td>Resolved security issues</td>
+          <td>Time to resolve security incidents (hours)</td>
+          <td>Delayed incident resolution</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Update Security Policies and Procedures</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Resolved security issues</td>
+          <td>Updated security policies</td>
+          <td>Number of policy updates per quarter</td>
+          <td>Outdated security policies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Review and Adjust Billing Settings</td>
+          <td>Cloud Engineer</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Monthly billing statements</td>
+          <td>Adjusted billing settings</td>
+          <td>Accuracy of billing data (percentage)</td>
+          <td>Billing errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Generate Cost Management Report</td>
+          <td>Cloud Engineer</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Adjusted billing settings</td>
+          <td>Cost management report</td>
+          <td>Number of cost management reports generated per month</td>
+          <td>Lack of reporting</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Present Report to Stakeholders</td>
+          <td>IT Manager</td>
+          <td><span class="sys-tag aws">AWS Cloud</span></td>
+          <td>Cost management report</td>
+          <td>Stakeholder approval</td>
+          <td>Stakeholder satisfaction (percentage)</td>
+          <td>Unsatisfied stakeholders</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Cost reduction target of 5% month-over-month</span> <span class="kpi-pill">Number of optimized resources identified per month</span> <span class="kpi-pill">Time to implement cost optimizations (hours)</span> <span class="kpi-pill">Number of security incidents detected per month</span> <span class="kpi-pill">Time to resolve security incidents (hours)</span> <span class="kpi-pill">Accuracy of billing data (percentage)</span> <span class="kpi-pill">Number of cost management reports generated per month</span> <span class="kpi-pill">Stakeholder satisfaction (percentage)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Uncontrolled cloud spending leading to budget overruns</span> <span class="risk-pill">Security breaches compromising sensitive data</span> <span class="risk-pill">Billing errors resulting in inaccurate financial reporting</span> <span class="risk-pill">Delayed incident resolution causing prolonged security risks</span> <span class="risk-pill">Outdated security policies failing to protect against new threats</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
