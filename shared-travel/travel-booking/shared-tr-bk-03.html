@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Booking & Reservations &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-BK-03 &mdash; Hotel Booking via GDS and Direct Supplier &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -357,33 +359,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-booking/index.html">Travel Booking & Reservations</a>
         </div>
-        <h1>✈️ Travel Booking & Reservations</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-BK-03 &mdash; Hotel Booking via GDS and Direct Supplier
+        </h1>
+        <p>This process involves booking hotel reservations via a Global Distribution System (GDS) and direct suppliers for AAA Northeast members. The process ensures efficient reservation management, real-time availability checks, and seamless communication between the travel agency and hotel providers.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-bk-01.html">SHARED-TR-BK-01</a></td><td>Client Travel Needs Assessment and Itinerary Planning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-tr-bk-02.html">SHARED-TR-BK-02</a></td><td>Air Booking via GDS (Sabre and Galileo)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-BK-03</td><td>Hotel Booking via GDS and Direct Supplier</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-04</td><td>Cruise Booking (Direct Cruise Line and Consortium)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-05</td><td>Car Rental Booking via GDS</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-06</td><td>Package Holiday Booking (Wholesale Supplier)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-07</td><td>Travel Insurance Sales (Trip Cancellation and Medical)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-BK-08</td><td>Booking Confirmation and Itinerary Document Generation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-bk-03.png" data-lightbox data-title="SHARED-TR-BK-03 BPMN">
+              <img src="../../assets/img/shared-tr-bk-03.png" alt="SHARED-TR-BK-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-BK-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Travel Booking & Reservations</td></tr>
+            <tr><th>L3 Name</th><td>Hotel Booking via GDS and Direct Supplier</td></tr>
+            <tr><th>Trigger</th><td>A customer request for hotel booking through the AAA Northeast website or call center.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion of this process results in confirmed hotel reservations with real-time pricing and availability updates, along with automated notifications to the customer and internal team.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may use different GDS providers and have additional compliance requirements due to FSRA regulation. CAA SCO also integrates with ClientBase for member management.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Booking Request</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Customer booking request</td>
+          <td>Booking confirmation</td>
+          <td>Response time within 30 seconds</td>
+          <td>High volume of requests during peak travel seasons</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Customer Eligibility</td>
+          <td>Membership Services Officer</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Customer details</td>
+          <td>Eligibility status</td>
+          <td>98% accuracy in eligibility checks</td>
+          <td>Incorrect membership data causing delays</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Search for Available Hotels</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Booking criteria (dates, location, preferences)</td>
+          <td>Hotel availability list</td>
+          <td>95% accuracy in hotel search results</td>
+          <td>Limited availability during peak travel periods</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review Hotel Options</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Hotel availability list</td>
+          <td>Selected hotel details</td>
+          <td>Average review time of 1 minute per option</td>
+          <td>Complexity in filtering options based on customer preferences</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Book Hotel via GDS</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Selected hotel details</td>
+          <td>GDS booking confirmation</td>
+          <td>90% successful bookings through GDS</td>
+          <td>System downtime affecting booking availability</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.4</td>
+          <td>Verify Booking Details</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>GDS booking confirmation</td>
+          <td>Verified booking details</td>
+          <td>100% accuracy in booking verification</td>
+          <td>Manual data entry errors leading to discrepancies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Send Booking Confirmation to Customer</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Verified booking details</td>
+          <td>Customer notification</td>
+          <td>95% customer satisfaction rate in booking confirmations</td>
+          <td>Delays in sending notifications affecting customer experience</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Internal Reservation System</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Verified booking details</td>
+          <td>Updated reservation record</td>
+          <td>98% accuracy in updating internal systems</td>
+          <td>Data synchronization issues between systems</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Monitor Booking Status</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag sabre">Sabre GDS</span></td>
+          <td>Booking confirmation</td>
+          <td>Real-time booking status updates</td>
+          <td>90% timely updates on booking status</td>
+          <td>Inaccurate or delayed status updates affecting customer service</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.4</td>
+          <td>Resolve Booking Issues</td>
+          <td>Travel Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI)</span></td>
+          <td>Booking issues reported by customers</td>
+          <td>Resolved booking issue</td>
+          <td>95% resolution rate for booking issues within 24 hours</td>
+          <td>Complexity in resolving multi-system integration issues</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time within 30 seconds</span> <span class="kpi-pill">98% accuracy in eligibility checks</span> <span class="kpi-pill">95% accuracy in hotel search results</span> <span class="kpi-pill">Average review time of 1 minute per option</span> <span class="kpi-pill">90% successful bookings through GDS</span> <span class="kpi-pill">100% accuracy in booking verification</span> <span class="kpi-pill">95% customer satisfaction rate in booking confirmations</span> <span class="kpi-pill">98% accuracy in updating internal systems</span> <span class="kpi-pill">90% timely updates on booking status</span> <span class="kpi-pill">95% resolution rate for booking issues within 24 hours</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">High volume of requests during peak travel seasons</span> <span class="risk-pill">Limited availability during peak travel periods</span> <span class="risk-pill">System downtime affecting booking availability</span> <span class="risk-pill">Manual data entry errors leading to discrepancies</span> <span class="risk-pill">Delays in sending notifications affecting customer experience</span> <span class="risk-pill">Data synchronization issues between systems</span> <span class="risk-pill">Inaccurate or delayed status updates affecting customer service</span> <span class="risk-pill">Complexity in resolving multi-system integration issues</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
