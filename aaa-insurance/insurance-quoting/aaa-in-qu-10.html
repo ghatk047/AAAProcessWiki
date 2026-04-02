@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quoting & Underwriting &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-IN-QU-10 &mdash; Multi-Policy Discount Calculation and Bundling &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -272,35 +274,204 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Insurance</a>
+          <a href="../../aaa-insurance/index.html">AAA Insurance</a> &rsaquo;
+          <a href="../../aaa-insurance/insurance-quoting/index.html">Quoting & Underwriting</a>
         </div>
-        <h1>🛡️ Quoting & Underwriting</h1>
-        <p>9 of 10 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-IN-QU-10 &mdash; Multi-Policy Discount Calculation and Bundling
+        </h1>
+        <p>This process calculates and bundles multi-policy discounts for AAA Northeast members using Guidewire Cloud, Sabre GDS, Verisk ISO rating, Salesforce, and USD.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-in-qu-01.html">AAA-IN-QU-01</a></td><td>Auto Insurance Quote Initiation (Web and Agent and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-02.html">AAA-IN-QU-02</a></td><td>Driver and Vehicle Information Capture</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-03.html">AAA-IN-QU-03</a></td><td>MVR Pull and Scoring</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-04.html">AAA-IN-QU-04</a></td><td>Credit Score Pull and Rating Tier Assignment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-05.html">AAA-IN-QU-05</a></td><td>ISO Rating Engine Calculation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-06.html">AAA-IN-QU-06</a></td><td>Policy Comparison and Coverage Options Presentation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-07.html">AAA-IN-QU-07</a></td><td>Underwriting Rule Application and Referral Decision</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-08.html">AAA-IN-QU-08</a></td><td>Quote Bind Conversion and Application Submission</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-in-qu-09.html">AAA-IN-QU-09</a></td><td>Home Insurance Quote and Property Risk Assessment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-IN-QU-10</td><td>Multi-Policy Discount Calculation and Bundling</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-in-qu-10.png" data-lightbox data-title="AAA-IN-QU-10 BPMN">
+              <img src="../../assets/img/aaa-in-qu-10.png" alt="AAA-IN-QU-10 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-IN-QU-10</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Insurance</td></tr>
+            <tr><th>L2 Process</th><td>Quoting & Underwriting</td></tr>
+            <tr><th>L3 Name</th><td>Multi-Policy Discount Calculation and Bundling</td></tr>
+            <tr><th>Trigger</th><td>A customer initiates a quote request through the AAA App or directly with an AAA Licensed Insurance Agent.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces a bundled quote with applicable multi-policy discounts for the customer to review and purchase.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast may have specific state DOI requirements that differ from other regions, affecting discount calculations and bundling rules.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag verisk">Verisk ISO rating</span> <span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer initiates quote request</td>
+          <td>AAA Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Customer information and policy details</td>
+          <td>Quote request logged in Salesforce</td>
+          <td>Time to log quote request < 5 minutes</td>
+          <td>Delays in logging customer requests can lead to missed sales opportunities.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Retrieve policy data from Guidewire Cloud</td>
+          <td>Underwriting Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Customer ID and policy types</td>
+          <td>Policy data retrieved</td>
+          <td>Data retrieval accuracy > 99%</td>
+          <td>Inaccurate or incomplete data can lead to incorrect discount calculations.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Calculate multi-policy discounts using Verisk ISO rating</td>
+          <td>Underwriting Analyst</td>
+          <td><span class="sys-tag verisk">Verisk ISO rating</span></td>
+          <td>Policy data and customer information</td>
+          <td>Discount calculation report</td>
+          <td>Discount accuracy > 95%</td>
+          <td>Incorrect discount calculations can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>Bundle policies and discounts in Guidewire Cloud</td>
+          <td>Underwriting Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Discount calculation report</td>
+          <td>Bundled quote with discounts</td>
+          <td>Quote bundling accuracy > 98%</td>
+          <td>Inaccurate bundling can lead to customer confusion and potential loss of business.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.5</td>
+          <td>Send bundled quote to Salesforce for review</td>
+          <td>Underwriting Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Bundled quote with discounts</td>
+          <td>Quote sent to Salesforce</td>
+          <td>Time to send quote < 10 minutes</td>
+          <td>Delays in sending quotes can lead to customer dissatisfaction and loss of business.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review bundled quote in Salesforce</td>
+          <td>AAA Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Bundled quote with discounts</td>
+          <td>Quote reviewed and approved</td>
+          <td>Quote review accuracy > 97%</td>
+          <td>Incorrect reviews can lead to customer dissatisfaction and potential loss of business.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Send quote to customer via AAA App</td>
+          <td>AAA Licensed Insurance Agent</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Approved bundled quote</td>
+          <td>Quote sent to customer</td>
+          <td>Time to send quote < 5 minutes</td>
+          <td>Delays in sending quotes can lead to customer dissatisfaction and loss of business.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Customer reviews and accepts quote</td>
+          <td>Customer</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Bundled quote with discounts</td>
+          <td>Quote accepted by customer</td>
+          <td>Customer acceptance rate > 85%</td>
+          <td>Low acceptance rates can lead to lost sales opportunities.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Process payment through Grasshopper Bank or Comenity Bank</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank, Comenity Bank</span></td>
+          <td>Accepted quote and customer payment information</td>
+          <td>Payment processed</td>
+          <td>Payment processing time < 30 minutes</td>
+          <td>Delays in payment processing can lead to customer dissatisfaction.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update policy records in Guidewire Cloud</td>
+          <td>Billing Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter (Cloud)</span></td>
+          <td>Payment confirmation and policy details</td>
+          <td>Policy records updated</td>
+          <td>Record update accuracy > 99%</td>
+          <td>Inaccurate record updates can lead to billing errors.</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to log quote request < 5 minutes</span> <span class="kpi-pill">Data retrieval accuracy > 99%</span> <span class="kpi-pill">Discount accuracy > 95%</span> <span class="kpi-pill">Quote bundling accuracy > 98%</span> <span class="kpi-pill">Time to send quote < 10 minutes</span> <span class="kpi-pill">Quote review accuracy > 97%</span> <span class="kpi-pill">Time to send quote < 5 minutes</span> <span class="kpi-pill">Customer acceptance rate > 85%</span> <span class="kpi-pill">Payment processing time < 30 minutes</span> <span class="kpi-pill">Record update accuracy > 99%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in logging customer requests can lead to missed sales opportunities.</span> <span class="risk-pill">Inaccurate or incomplete data can lead to incorrect discount calculations.</span> <span class="risk-pill">Incorrect discount calculations can lead to customer dissatisfaction.</span> <span class="risk-pill">Inaccurate bundling can lead to customer confusion and potential loss of business.</span> <span class="risk-pill">Incorrect reviews can lead to customer dissatisfaction and potential loss of business.</span> <span class="risk-pill">Delays in sending quotes can lead to customer dissatisfaction and loss of business.</span> <span class="risk-pill">Low acceptance rates can lead to lost sales opportunities.</span> <span class="risk-pill">Delays in payment processing can lead to customer dissatisfaction.</span> <span class="risk-pill">Inaccurate record updates can lead to billing errors.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
