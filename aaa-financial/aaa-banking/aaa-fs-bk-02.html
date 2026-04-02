@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AAA Banking & Deposits &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-FS-BK-02 &mdash; Certificate of Deposit Application and Funding &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -380,33 +382,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">AAA Financial Services</a>
+          <a href="../../aaa-financial/index.html">AAA Financial Services</a> &rsaquo;
+          <a href="../../aaa-financial/aaa-banking/index.html">AAA Banking & Deposits</a>
         </div>
-        <h1>🏦 AAA Banking & Deposits</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-FS-BK-02 &mdash; Certificate of Deposit Application and Funding
+        </h1>
+        <p>The process for applying and funding a Certificate of Deposit (CD) at AAA Northeast involves collecting customer information, processing the application through Guidewire Cloud, and managing the deposit lifecycle using various systems.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-fs-bk-01.html">AAA-FS-BK-01</a></td><td>AAA Triple Advantage Checking Account Opening (Grasshopper Bank)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-FS-BK-02</td><td>Certificate of Deposit Application and Funding</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-03</td><td>EFT and Direct Deposit Setup</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-04</td><td>Debit Card Issuance and PIN Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-05</td><td>Online and Mobile Banking Onboarding</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-06</td><td>Account Closure and Fund Transfer Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-07</td><td>FDIC Compliance and Regulatory Reporting</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-FS-BK-08</td><td>Banking Product Rate Review and Competitive Pricing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-fs-bk-02.png" data-lightbox data-title="AAA-FS-BK-02 BPMN">
+              <img src="../../assets/img/aaa-fs-bk-02.png" alt="AAA-FS-BK-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-FS-BK-02</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>AAA Financial Services</td></tr>
+            <tr><th>L2 Process</th><td>AAA Banking & Deposits</td></tr>
+            <tr><th>L3 Name</th><td>Certificate of Deposit Application and Funding</td></tr>
+            <tr><th>Trigger</th><td>A customer initiates a CD application either through an in-person visit, phone call, or online via the AAA App.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces a funded Certificate of Deposit account for the customer with accurate records maintained across all relevant systems.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on direct customer interactions and digital channels, whereas CAA may have more emphasis on telematics integration and different regulatory requirements.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag comenity">Comenity Bank</span> <span class="sys-tag aaa-app">AAA App</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Customer Contact</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">AAA App / Salesforce</span></td>
+          <td>Customer information (name, address, contact details)</td>
+          <td>CD application form</td>
+          <td>Application initiation rate within 24 hours of customer contact</td>
+          <td>Handling incomplete or incorrect initial data entries</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>CD Application Submission</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Completed CD application form</td>
+          <td>Application record in Guidewire</td>
+          <td>Application submission accuracy rate (95%+)</td>
+          <td>Data synchronization issues between AAA App and Guidewire</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>CD Application Review</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Application record in Guidewire</td>
+          <td>Approved or declined application status</td>
+          <td>Average review time (2 business days)</td>
+          <td>Delays in processing high-risk applications</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.4</td>
+          <td>CD Funding</td>
+          <td>Banking Officer</td>
+          <td><span class="sys-tag grasshopper">Grasshopper Bank / Comenity Bank</span></td>
+          <td>Approved application status</td>
+          <td>Funded CD account</td>
+          <td>Funding success rate (98%+)</td>
+          <td>Banking system integration issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.5</td>
+          <td>Customer Notification</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce / AAA App</span></td>
+          <td>Funded CD account details</td>
+          <td>Notification to customer (email, SMS)</td>
+          <td>Customer notification accuracy rate (99%+)</td>
+          <td>Incorrect or delayed notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.6</td>
+          <td>CD Monitoring</td>
+          <td>Financial Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter / Grasshopper Bank</span></td>
+          <td>Funded CD account details</td>
+          <td>Regular monitoring reports</td>
+          <td>Monitoring frequency (daily)</td>
+          <td>Data discrepancies between systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application initiation rate within 24 hours of customer contact</span> <span class="kpi-pill">Application submission accuracy rate (95%+)</span> <span class="kpi-pill">Average review time (2 business days)</span> <span class="kpi-pill">Funding success rate (98%+)</span> <span class="kpi-pill">Customer notification accuracy rate (99%+)</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data synchronization issues between AAA App and Guidewire</span> <span class="risk-pill">Delays in processing high-risk applications</span> <span class="risk-pill">Banking system integration issues</span> <span class="risk-pill">Incorrect or delayed notifications</span> <span class="risk-pill">Data discrepancies between systems</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
