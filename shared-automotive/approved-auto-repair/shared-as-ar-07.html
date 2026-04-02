@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Approved Auto Repair Network &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-AS-AR-07 &mdash; Shop Performance Reporting and Tier Management &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -425,33 +427,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Automotive Services</a>
+          <a href="../../shared-automotive/index.html">Automotive Services</a> &rsaquo;
+          <a href="../../shared-automotive/approved-auto-repair/index.html">Approved Auto Repair Network</a>
         </div>
-        <h1>🔧 Approved Auto Repair Network</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-AS-AR-07 &mdash; Shop Performance Reporting and Tier Management
+        </h1>
+        <p>This process involves the reporting and management of shop performance within the Approved Auto Repair Network. It ensures that repair shops meet quality and efficiency standards, impacting member satisfaction and AAA Northeast's reputation.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-as-ar-01.html">SHARED-AS-AR-01</a></td><td>Shop Inspection and AAA and CAA Approved Certification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-02.html">SHARED-AS-AR-02</a></td><td>Shop Re-Inspection and Annual Compliance Audit</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-03.html">SHARED-AS-AR-03</a></td><td>Member Referral to Approved Shop (Digital and Phone)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-04.html">SHARED-AS-AR-04</a></td><td>Complaint Investigation Against Approved Shop</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-05.html">SHARED-AS-AR-05</a></td><td>Shop Dispute Mediation and Arbitration</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-as-ar-06.html">SHARED-AS-AR-06</a></td><td>Auto Repair Cost Estimator Publication (Mitchell 1 data)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-AS-AR-07</td><td>Shop Performance Reporting and Tier Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-AS-AR-08</td><td>AAA and CAA Co-Branded Marketing with Approved Shops</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-as-ar-07.png" data-lightbox data-title="SHARED-AS-AR-07 BPMN">
+              <img src="../../assets/img/shared-as-ar-07.png" alt="SHARED-AS-AR-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-AS-AR-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Automotive Services</td></tr>
+            <tr><th>L2 Process</th><td>Approved Auto Repair Network</td></tr>
+            <tr><th>L3 Name</th><td>Shop Performance Reporting and Tier Management</td></tr>
+            <tr><th>Trigger</th><td>Monthly end-of-month cycle or upon significant changes in shop performance metrics.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a tiered classification of repair shops based on their performance, leading to targeted improvements and potential adjustments in the network.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO operates under FSRA regulations and uses different systems for reporting and management compared to AAA Northeast. For instance, CAA SCO uses ClientBase instead of Salesforce for some operations.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Collection</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Repair shop performance data</td>
+          <td>Collected data report</td>
+          <td>Data accuracy rate > 95%</td>
+          <td>Inconsistent data entry across different shops</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Analysis</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Collected data report</td>
+          <td>Performance analysis report</td>
+          <td>Analysis completion time < 5 days</td>
+          <td>Lack of historical performance data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Tier Classification</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Performance analysis report</td>
+          <td>Shop tier classification report</td>
+          <td>Classification accuracy > 90%</td>
+          <td>Subjective criteria for tiering</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Communication Plan Development</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Shop tier classification report</td>
+          <td>Communication plan</td>
+          <td>Plan development time < 3 days</td>
+          <td>Engaging all stakeholders in the communication plan</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Notification to Shops</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Communication plan</td>
+          <td>Notifications sent to shops</td>
+          <td>Notification response rate > 80%</td>
+          <td>Handling non-responsive shops</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Feedback Collection</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Notifications sent to shops</td>
+          <td>Shops' feedback report</td>
+          <td>Feedback collection rate > 70%</td>
+          <td>Encouraging detailed and constructive feedback</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Action Plan Development</td>
+          <td>Network Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Shops' feedback report</td>
+          <td>Action plan for improvement</td>
+          <td>Plan development time < 5 days</td>
+          <td>Aligning actions with available resources</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Implementation of Improvements</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Action plan for improvement</td>
+          <td>Improvement implementation report</td>
+          <td>Implementation completion time < 7 days</td>
+          <td>Executing changes across multiple shops</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Monitoring and Review</td>
+          <td>Shop Performance Analyst</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Improvement implementation report</td>
+          <td>Performance review report</td>
+          <td>Review completion time < 10 days</td>
+          <td>Continuous monitoring of performance metrics</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Data accuracy rate > 95%</span> <span class="kpi-pill">Analysis completion time < 5 days</span> <span class="kpi-pill">Classification accuracy > 90%</span> <span class="kpi-pill">Plan development time < 3 days</span> <span class="kpi-pill">Notification response rate > 80%</span> <span class="kpi-pill">Feedback collection rate > 70%</span> <span class="kpi-pill">Implementation completion time < 7 days</span> <span class="kpi-pill">Review completion time < 10 days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent data entry across different shops</span> <span class="risk-pill">Lack of historical performance data</span> <span class="risk-pill">Subjective criteria for tiering</span> <span class="risk-pill">Engaging all stakeholders in the communication plan</span> <span class="risk-pill">Handling non-responsive shops</span> <span class="risk-pill">Encouraging detailed and constructive feedback</span> <span class="risk-pill">Aligning actions with available resources</span> <span class="risk-pill">Executing changes across multiple shops</span> <span class="risk-pill">Continuous monitoring of performance metrics</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
