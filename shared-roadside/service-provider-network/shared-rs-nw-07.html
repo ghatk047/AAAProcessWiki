@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Provider Network Mgmt &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-NW-07 &mdash; Equipment and Compliance Verification &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -353,33 +355,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
         </div>
-        <h1>🚨 Service Provider Network Mgmt</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-NW-07 &mdash; Equipment and Compliance Verification
+        </h1>
+        <p>This process ensures that all equipment and compliance requirements are met for service providers in the roadside assistance network. It involves verifying that vehicles, tools, and personnel meet necessary standards.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-nw-01.html">SHARED-RS-NW-01</a></td><td>Service Provider Onboarding and Vetting (Background Check)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-02.html">SHARED-RS-NW-02</a></td><td>Contract and Rate Negotiation with Tow Providers</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-03.html">SHARED-RS-NW-03</a></td><td>Service Provider Performance Monitoring and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-04.html">SHARED-RS-NW-04</a></td><td>Provider Payment Processing and Invoice Reconciliation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-05.html">SHARED-RS-NW-05</a></td><td>Provider Complaint and Incident Investigation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-06.html">SHARED-RS-NW-06</a></td><td>Network Coverage Gap Analysis and Recruitment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-NW-07</td><td>Equipment and Compliance Verification</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-RS-NW-08</td><td>Swoop API Integration with Provider Dispatch Software</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-nw-07.png" data-lightbox data-title="SHARED-RS-NW-07 BPMN">
+              <img src="../../assets/img/shared-rs-nw-07.png" alt="SHARED-RS-NW-07 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-NW-07</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Service Provider Network Mgmt</td></tr>
+            <tr><th>L3 Name</th><td>Equipment and Compliance Verification</td></tr>
+            <tr><th>Trigger</th><td>Initiated by a new service provider application or an update to existing provider details.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the approval of the service provider's equipment and compliance status, allowing them to be included in the roadside assistance network.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional regulatory requirements due to FSRA oversight that AAA Northeast does not face.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Review Service Provider Application</td>
+          <td>Service Provider Network Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>New service provider application form</td>
+          <td>Application review notes</td>
+          <td>Application review time < 2 business days</td>
+          <td>Delays in reviewing applications can impact network expansion.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Verify Equipment Compliance</td>
+          <td>Equipment Inspector</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Service provider equipment list</td>
+          <td>Compliance report</td>
+          <td>Equipment verification time < 3 business days</td>
+          <td>Non-compliant equipment can lead to service disruptions.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Conduct Background Check</td>
+          <td>Background Investigator</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Service provider personnel details</td>
+          <td>Background check report</td>
+          <td>Background check completion time < 5 business days</td>
+          <td>Failed background checks can delay network inclusion.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Review Compliance Report</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Equipment compliance report</td>
+          <td>Compliance approval or rejection letter</td>
+          <td>Report review time < 1 business day</td>
+          <td>Inaccurate reports can lead to incorrect approvals.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Review Background Check Report</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Background check report</td>
+          <td>Background approval or rejection letter</td>
+          <td>Report review time < 1 business day</td>
+          <td>Inaccurate reports can lead to incorrect approvals.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Prepare Network Inclusion Document</td>
+          <td>Network Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Compliance and background approval letters</td>
+          <td>Network inclusion document</td>
+          <td>Document preparation time < 1 business day</td>
+          <td>Delays in preparing documents can impact network operations.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Notify Service Provider of Approval</td>
+          <td>Service Provider Network Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Network inclusion document</td>
+          <td>Approval notification email</td>
+          <td>Notification time < 1 business day</td>
+          <td>Late notifications can cause provider dissatisfaction.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Network Database</td>
+          <td>Network Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Network inclusion document</td>
+          <td>Updated network database</td>
+          <td>Database update time < 1 business day</td>
+          <td>Outdated databases can lead to operational errors.</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Monitor Compliance and Background Checks</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter, Salesforce</span></td>
+          <td>Network inclusion document</td>
+          <td>Monitoring report</td>
+          <td>Monthly monitoring time < 1 business day</td>
+          <td>Ongoing non-compliance can affect network reliability.</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Application review time < 2 business days</span> <span class="kpi-pill">Equipment verification time < 3 business days</span> <span class="kpi-pill">Background check completion time < 5 business days</span> <span class="kpi-pill">Report review time < 1 business day</span> <span class="kpi-pill">Document preparation time < 1 business day</span> <span class="kpi-pill">Notification time < 1 business day</span> <span class="kpi-pill">Database update time < 1 business day</span> <span class="kpi-pill">Monthly monitoring time < 1 business day</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Delays in reviewing applications can impact network expansion.</span> <span class="risk-pill">Non-compliant equipment can lead to service disruptions.</span> <span class="risk-pill">Failed background checks can delay network inclusion.</span> <span class="risk-pill">Inaccurate reports can lead to incorrect approvals.</span> <span class="risk-pill">Ongoing non-compliance can affect network reliability.</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
