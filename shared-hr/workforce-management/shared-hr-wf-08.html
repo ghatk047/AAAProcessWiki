@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workforce Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-HR-WF-08 &mdash; Employee Wellbeing and Benefits Administration &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -474,33 +476,168 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Human Resources & Workforce</a>
+          <a href="../../shared-hr/index.html">Human Resources & Workforce</a> &rsaquo;
+          <a href="../../shared-hr/workforce-management/index.html">Workforce Management</a>
         </div>
-        <h1>👤 Workforce Management</h1>
-        <p>6 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-HR-WF-08 &mdash; Employee Wellbeing and Benefits Administration
+        </h1>
+        <p>This process manages the administration of employee wellbeing programs and benefits for AAA Northeast. It ensures that all employees have access to appropriate health, wellness, and benefit offerings.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-hr-wf-01.html">SHARED-HR-WF-01</a></td><td>Staffing Model and Headcount Planning (Branch and Call Centre)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-02.html">SHARED-HR-WF-02</a></td><td>Shift Scheduling and Overtime Management (Roadside surge)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-WF-03</td><td>Payroll Processing (SAP Payroll bi-weekly)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="shared-hr-wf-04.html">SHARED-HR-WF-04</a></td><td>Performance Review Cycle and Rating Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-05.html">SHARED-HR-WF-05</a></td><td>Employee Onboarding and Systems Access Provisioning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-06.html">SHARED-HR-WF-06</a></td><td>Labour Relations and Collective Agreement Compliance</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-07.html">SHARED-HR-WF-07</a></td><td>Disciplinary and Grievance Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-WF-08</td><td>Employee Wellbeing and Benefits Administration</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-hr-wf-08.png" data-lightbox data-title="SHARED-HR-WF-08 BPMN">
+              <img src="../../assets/img/shared-hr-wf-08.png" alt="SHARED-HR-WF-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-HR-WF-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Human Resources & Workforce</td></tr>
+            <tr><th>L2 Process</th><td>Workforce Management</td></tr>
+            <tr><th>L3 Name</th><td>Employee Wellbeing and Benefits Administration</td></tr>
+            <tr><th>Trigger</th><td>Annual review cycle or change in employee status (hire, promotion, termination)</td></tr>
+            <tr><th>Outcome</th><td>Employees receive updated information on available benefits, enrollment forms are processed, and changes are reflected in the HR system.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO has a different regulatory environment due to FSRA compliance, which may require additional steps for certain benefit programs.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Employee Wellbeing Program Review</td>
+          <td>HR Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Annual review schedule, employee data</td>
+          <td>Review checklist</td>
+          <td>Time to initiate review < 1 week</td>
+          <td>Delays in initiating the review process</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Update Benefit Offerings</td>
+          <td>Benefits Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Review checklist, market trends</td>
+          <td>Updated benefit offerings document</td>
+          <td>Number of updated benefits < 5</td>
+          <td>Inaccurate or outdated benefit information</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Notify Employees</td>
+          <td>HR Coordinator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Updated benefit offerings document</td>
+          <td>Notification emails</td>
+          <td>Response rate to notifications > 80%</td>
+          <td>Low response rates from employees</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Collect Enrollment Forms</td>
+          <td>Benefits Administrator</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Notification emails</td>
+          <td>Enrollment forms</td>
+          <td>Time to collect enrollment forms < 1 month</td>
+          <td>Delayed submission of enrollment forms</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Process Enrollment Forms</td>
+          <td>Benefits Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Enrollment forms</td>
+          <td>Processed enrollment records</td>
+          <td>Accuracy of processed enrollments > 95%</td>
+          <td>Errors in processing enrollment forms</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update HR System</td>
+          <td>HR Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Processed enrollment records</td>
+          <td>Updated HR system records</td>
+          <td>Time to update HR system < 2 weeks</td>
+          <td>Delays in updating the HR system</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Review and Finalize</td>
+          <td>HR Director</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Updated HR system records</td>
+          <td>Finalized employee wellbeing program report</td>
+          <td>Number of discrepancies < 10%</td>
+          <td>Discrepancies in the final report</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate review < 1 week</span> <span class="kpi-pill">Number of updated benefits < 5</span> <span class="kpi-pill">Response rate to notifications > 80%</span> <span class="kpi-pill">Time to collect enrollment forms < 1 month</span> <span class="kpi-pill">Accuracy of processed enrollments > 95%</span> <span class="kpi-pill">Time to update HR system < 2 weeks</span> <span class="kpi-pill">Number of discrepancies < 10%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inaccurate or outdated benefit information</span> <span class="risk-pill">Low response rates from employees</span> <span class="risk-pill">Delayed submission of enrollment forms</span> <span class="risk-pill">Errors in processing enrollment forms</span> <span class="risk-pill">Delays in updating the HR system</span> <span class="risk-pill">Discrepancies in the final report</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
