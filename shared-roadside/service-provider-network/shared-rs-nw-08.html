@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Provider Network Mgmt &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-RS-NW-08 &mdash; Swoop API Integration with Provider Dispatch Software &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -354,33 +356,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Roadside Assistance</a>
+          <a href="../../shared-roadside/index.html">Roadside Assistance</a> &rsaquo;
+          <a href="../../shared-roadside/service-provider-network/index.html">Service Provider Network Mgmt</a>
         </div>
-        <h1>🚨 Service Provider Network Mgmt</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-RS-NW-08 &mdash; Swoop API Integration with Provider Dispatch Software
+        </h1>
+        <p>This process integrates the Agero Swoop dispatch software with AAA Northeast's provider network management system to facilitate efficient roadside assistance services.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-rs-nw-01.html">SHARED-RS-NW-01</a></td><td>Service Provider Onboarding and Vetting (Background Check)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-02.html">SHARED-RS-NW-02</a></td><td>Contract and Rate Negotiation with Tow Providers</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-03.html">SHARED-RS-NW-03</a></td><td>Service Provider Performance Monitoring and Scorecard</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-04.html">SHARED-RS-NW-04</a></td><td>Provider Payment Processing and Invoice Reconciliation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-05.html">SHARED-RS-NW-05</a></td><td>Provider Complaint and Incident Investigation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-06.html">SHARED-RS-NW-06</a></td><td>Network Coverage Gap Analysis and Recruitment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-rs-nw-07.html">SHARED-RS-NW-07</a></td><td>Equipment and Compliance Verification</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-RS-NW-08</td><td>Swoop API Integration with Provider Dispatch Software</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-rs-nw-08.png" data-lightbox data-title="SHARED-RS-NW-08 BPMN">
+              <img src="../../assets/img/shared-rs-nw-08.png" alt="SHARED-RS-NW-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-RS-NW-08</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Roadside Assistance</td></tr>
+            <tr><th>L2 Process</th><td>Service Provider Network Mgmt</td></tr>
+            <tr><th>L3 Name</th><td>Swoop API Integration with Provider Dispatch Software</td></tr>
+            <tr><th>Trigger</th><td>A member requests roadside assistance through the AAA App or contact center.</td></tr>
+            <tr><th>Outcome</th><td>The service request is routed to an available provider, and the dispatch details are updated in both systems for tracking and billing purposes.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a similar process but integrates with their own Guidewire InsuranceSuite instead of Agero Swoop. CAA SCO also has additional compliance requirements due to FSRA regulation.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aaa-app">AAA App</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag agero">Agero Swoop</span> <span class="sys-tag sap">SAP S/4HANA</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Receive Service Request</td>
+          <td>Roadside Assistance Coordinator</td>
+          <td><span class="sys-tag salesforce">AAA App, Salesforce</span></td>
+          <td>Service request from member</td>
+          <td>Service request ticket in Salesforce</td>
+          <td>Response time to service request < 5 minutes</td>
+          <td>Delays in receiving service requests</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Validate Service Request</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Service request ticket</td>
+          <td>Validation status update</td>
+          <td>Validation accuracy > 95%</td>
+          <td>Incorrect validation leading to missed services</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Dispatch Service Request</td>
+          <td>Service Dispatcher</td>
+          <td><span class="sys-tag sap">Agero Swoop, SAP S/4HANA</span></td>
+          <td>Validated service request ticket</td>
+          <td>Dispatch details in Agero Swoop and SAP S/4HANA</td>
+          <td>Average dispatch time < 10 minutes</td>
+          <td>Delays in dispatching services</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Service Status</td>
+          <td>Service Dispatcher</td>
+          <td><span class="sys-tag sap">Agero Swoop, SAP S/4HANA</span></td>
+          <td>Provider status updates</td>
+          <td>Updated service status in both systems</td>
+          <td>Status update accuracy > 90%</td>
+          <td>Inaccurate status updates causing confusion</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Complete Service Request</td>
+          <td>Roadside Assistance Coordinator</td>
+          <td><span class="sys-tag sap">Agero Swoop, SAP S/4HANA</span></td>
+          <td>Final service details and billing information</td>
+          <td>Completed service ticket in both systems</td>
+          <td>Service completion rate > 98%</td>
+          <td>Incomplete or delayed service completions</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Generate Billing Invoice</td>
+          <td>Billing Specialist</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter, SAP S/4HANA</span></td>
+          <td>Completed service ticket</td>
+          <td>Billing invoice for member</td>
+          <td>Invoice accuracy > 95%</td>
+          <td>Incorrect billing leading to disputes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Response time to service request < 5 minutes</span> <span class="kpi-pill">Validation accuracy > 95%</span> <span class="kpi-pill">Average dispatch time < 10 minutes</span> <span class="kpi-pill">Status update accuracy > 90%</span> <span class="kpi-pill">Service completion rate > 98%</span> <span class="kpi-pill">Invoice accuracy > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">System integration failures between Agero Swoop and SAP S/4HANA</span> <span class="risk-pill">Data discrepancies between Guidewire PolicyCenter and Salesforce</span> <span class="risk-pill">Provider availability issues leading to delayed dispatches</span> <span class="risk-pill">Billing errors due to incorrect data input</span> <span class="risk-pill">Compliance risks with FSRA regulations for CAA SCO</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
