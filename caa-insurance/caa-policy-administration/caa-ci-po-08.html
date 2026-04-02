@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Policy Administration (CAA) &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAA-CI-PO-08 &mdash; Guidewire Account Management Portal Policyholder Self-Service &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -314,33 +316,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">CAA Insurance (Ontario)</a>
+          <a href="../../caa-insurance/index.html">CAA Insurance (Ontario)</a> &rsaquo;
+          <a href="../../caa-insurance/caa-policy-administration/index.html">Policy Administration (CAA)</a>
         </div>
-        <h1>🍁 Policy Administration (CAA)</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-caa">CAA</span>
+          CAA-CI-PO-08 &mdash; Guidewire Account Management Portal Policyholder Self-Service
+        </h1>
+        <p>The process enables policyholders to manage their policies through the Guidewire Account Management Portal, allowing them to view policy details, make payments, and update contact information.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="caa-ci-po-01.html">CAA-CI-PO-01</a></td><td>New Policy Issuance via Guidewire PolicyCenter</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-02.html">CAA-CI-PO-02</a></td><td>Policy Endorsement Processing (Mid-Term Change)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-03.html">CAA-CI-PO-03</a></td><td>Annual Renewal and FSRA Rate Change Filing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-04.html">CAA-CI-PO-04</a></td><td>Non-Renewal Notice (15-Day Statutory Requirement)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-05.html">CAA-CI-PO-05</a></td><td>Cancellation Processing (Flat and Pro-Rata and Statutory)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-06.html">CAA-CI-PO-06</a></td><td>Pink Slip (OPCF 17) Issuance and Digital Delivery</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-ci-po-07.html">CAA-CI-PO-07</a></td><td>Reinsurance Arrangement and Treaty Reporting</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>CAA-CI-PO-08</td><td>Guidewire Account Management Portal Policyholder Self-Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/caa-ci-po-08.png" data-lightbox data-title="CAA-CI-PO-08 BPMN">
+              <img src="../../assets/img/caa-ci-po-08.png" alt="CAA-CI-PO-08 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>CAA-CI-PO-08</td></tr>
+            <tr><th>Organisation</th><td>CAA</td></tr>
+            <tr><th>L1 Domain</th><td>CAA Insurance (Ontario)</td></tr>
+            <tr><th>L2 Process</th><td>Policy Administration (CAA)</td></tr>
+            <tr><th>L3 Name</th><td>Guidewire Account Management Portal Policyholder Self-Service</td></tr>
+            <tr><th>Trigger</th><td>Policyholder logs into the CAA MyCAA App or accesses the Guidewire Account Management Portal.</td></tr>
+            <tr><th>Outcome</th><td>Policyholders can self-service their policy information, leading to improved customer satisfaction and reduced administrative workload for CAA staff.</td></tr>
+            <tr><th>Org Notes</th><td>CAA South Central Ontario uses the FSRA-regulated Guidewire InsuranceSuite, ensuring compliance with Ontario regulations. The process differs from AAA in that it integrates directly with Galileo GDS for travel-related services.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span> <span class="sys-tag caa-app">CAA MyCAA App</span> <span class="sys-tag grasshopper">Grasshopper Bank</span> <span class="sys-tag salesforce">Salesforce</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Policyholder Login</td>
+          <td>Customer</td>
+          <td><span class="sys-tag guidewire">CAA MyCAA App / Guidewire Account Management Portal</span></td>
+          <td>Credentials (username/password)</td>
+          <td>Access to policy information</td>
+          <td>Login Success Rate: 95% within 3 attempts</td>
+          <td>Frequent login failures due to credential issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>View Policy Details</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Policyholder request</td>
+          <td>Policy summary and details</td>
+          <td>Average time to retrieve policy details: 1 minute</td>
+          <td>Slow retrieval of policy information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Make Payment</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite / Grasshopper Bank</span></td>
+          <td>Payment details (amount, method)</td>
+          <td>Confirmation of payment receipt</td>
+          <td>Successful payment rate: 98% within 2 attempts</td>
+          <td>Payment processing failures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Update Contact Information</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>New contact details (address, phone number)</td>
+          <td>Updated policy record</td>
+          <td>Contact update accuracy: 99%</td>
+          <td>Incorrect data entry leading to updates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Policyholder Feedback</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite / Salesforce</span></td>
+          <td>Feedback from policyholder</td>
+          <td>Service improvement action plan</td>
+          <td>Positive feedback rate: 85%</td>
+          <td>Low customer satisfaction with self-service options</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Close Case</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag guidewire">Guidewire InsuranceSuite</span></td>
+          <td>Completed transaction details</td>
+          <td>Closed case record</td>
+          <td>Case closure time: 5 minutes</td>
+          <td>Delays in closing cases</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Login Success Rate: 95% within 3 attempts</span> <span class="kpi-pill">Average time to retrieve policy details: 1 minute</span> <span class="kpi-pill">Successful payment rate: 98% within 2 attempts</span> <span class="kpi-pill">Contact update accuracy: 99%</span> <span class="kpi-pill">Positive feedback rate: 85%</span> <span class="kpi-pill">Case closure time: 5 minutes</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data security breaches due to inadequate encryption measures</span> <span class="risk-pill">Non-compliance with FSRA regulations leading to fines</span> <span class="risk-pill">System downtime affecting policyholder access</span> <span class="risk-pill">Inaccurate data entry causing errors in policy updates</span> <span class="risk-pill">High customer churn due to unsatisfactory self-service options</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
