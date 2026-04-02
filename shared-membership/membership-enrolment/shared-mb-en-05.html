@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Enrolment & Sales &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MB-EN-05 &mdash; Membership Tier Selection and Upsell &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain open">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -243,33 +245,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Membership Management</a>
+          <a href="../../shared-membership/index.html">Membership Management</a> &rsaquo;
+          <a href="../../shared-membership/membership-enrolment/index.html">Membership Enrolment & Sales</a>
         </div>
-        <h1>👥 Membership Enrolment & Sales</h1>
-        <p>4 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MB-EN-05 &mdash; Membership Tier Selection and Upsell
+        </h1>
+        <p>This process manages the selection and upselling of membership tiers for AAA Northeast members. It involves evaluating member needs, recommending appropriate tiers, and handling any exceptions or pain points during the process.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mb-en-01.html">SHARED-MB-EN-01</a></td><td>New Member Walk-In Enrolment (Branch)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-02.html">SHARED-MB-EN-02</a></td><td>Online Membership Self-Enrolment (Web/App)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-03.html">SHARED-MB-EN-03</a></td><td>Phone Enrolment via Contact Centre</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mb-en-04.html">SHARED-MB-EN-04</a></td><td>Affiliate and Employer Group Enrolment</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MB-EN-05</td><td>Membership Tier Selection and Upsell</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-06</td><td>Payment Processing and First-Year Billing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-07</td><td>Welcome Kit and Digital Card Issuance</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MB-EN-08</td><td>Duplicate Member Detection and Merge</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mb-en-05.png" data-lightbox data-title="SHARED-MB-EN-05 BPMN">
+              <img src="../../assets/img/shared-mb-en-05.png" alt="SHARED-MB-EN-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MB-EN-05</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Membership Management</td></tr>
+            <tr><th>L2 Process</th><td>Membership Enrolment & Sales</td></tr>
+            <tr><th>L3 Name</th><td>Membership Tier Selection and Upsell</td></tr>
+            <tr><th>Trigger</th><td>Member enrollment or renewal request</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces a customized membership tier recommendation and upsell opportunity for the member.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses Guidewire InsuranceSuite instead of PolicyCenter/ClaimCenter/BillingCenter. CAA also has additional telematics integration with CAA Connect.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag guidewire">Guidewire PolicyCenter</span> <span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span> <span class="sys-tag guidewire">Guidewire ClaimCenter</span> <span class="sys-tag guidewire">Guidewire BillingCenter</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Membership Tier Selection</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Member enrollment or renewal request</td>
+          <td>Initial member profile and needs assessment</td>
+          <td>Time to initial assessment < 2 minutes</td>
+          <td>Data accuracy in SAP S/4HANA</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Evaluate Member Needs</td>
+          <td>Membership Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Initial member profile and needs assessment</td>
+          <td>Detailed needs evaluation report</td>
+          <td>Accuracy of needs evaluation > 90%</td>
+          <td>Data integration between SAP S/4HANA and Guidewire</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Recommend Membership Tier</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter</span></td>
+          <td>Detailed needs evaluation report</td>
+          <td>Recommended membership tier</td>
+          <td>Tier recommendation accuracy > 85%</td>
+          <td>Manual override of recommendations</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Upsell Opportunity Presentation</td>
+          <td>Licensed Insurance Agent</td>
+          <td><span class="sys-tag salesforce">Salesforce (Einstein AI, Agentforce)</span></td>
+          <td>Recommended membership tier</td>
+          <td>Upsell presentation script and materials</td>
+          <td>Upsell presentation success rate > 70%</td>
+          <td>Agent training for new tiers</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Member Consultation</td>
+          <td>Claims Adjuster</td>
+          <td><span class="sys-tag guidewire">Guidewire ClaimCenter</span></td>
+          <td>Upsell presentation script and materials</td>
+          <td>Consultation notes and member feedback</td>
+          <td>Member satisfaction with consultation > 80%</td>
+          <td>Handling complex member queries</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Finalize Membership Tier</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire BillingCenter</span></td>
+          <td>Consultation notes and member feedback</td>
+          <td>Finalized membership tier agreement</td>
+          <td>Agreement acceptance rate > 95%</td>
+          <td>Billing discrepancies</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Update Member Records</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Finalized membership tier agreement</td>
+          <td>Updated member records in SAP S/4HANA</td>
+          <td>Record update accuracy > 98%</td>
+          <td>Data synchronization issues</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Notify Member of Changes</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag aaa-app">AAA App</span></td>
+          <td>Updated member records in SAP S/4HANA</td>
+          <td>Notification sent to member</td>
+          <td>Notification delivery rate > 90%</td>
+          <td>App notification failures</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Close Process</td>
+          <td>Membership Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Notification sent to member</td>
+          <td>Process completion report</td>
+          <td>Process closure rate > 95%</td>
+          <td>Final record verification</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initial assessment < 2 minutes</span> <span class="kpi-pill">Accuracy of needs evaluation > 90%</span> <span class="kpi-pill">Tier recommendation accuracy > 85%</span> <span class="kpi-pill">Upsell presentation success rate > 70%</span> <span class="kpi-pill">Member satisfaction with consultation > 80%</span> <span class="kpi-pill">Agreement acceptance rate > 95%</span> <span class="kpi-pill">Record update accuracy > 98%</span> <span class="kpi-pill">Notification delivery rate > 90%</span> <span class="kpi-pill">Process closure rate > 95%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Data inaccuracy in SAP S/4HANA</span> <span class="risk-pill">Integration issues between SAP S/4HANA and Guidewire</span> <span class="risk-pill">Manual override of recommendations</span> <span class="risk-pill">Agent training for new tiers</span> <span class="risk-pill">Handling complex member queries</span> <span class="risk-pill">Billing discrepancies</span> <span class="risk-pill">Data synchronization issues</span> <span class="risk-pill">App notification failures</span> <span class="risk-pill">Final record verification</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
