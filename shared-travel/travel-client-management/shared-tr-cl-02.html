@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Client Management & Servicing &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-TR-CL-02 &mdash; Visa and Passport Advisory Service &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -364,33 +366,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Travel Agency & Packages</a>
+          <a href="../../shared-travel/index.html">Travel Agency & Packages</a> &rsaquo;
+          <a href="../../shared-travel/travel-client-management/index.html">Client Management & Servicing</a>
         </div>
-        <h1>✈️ Client Management & Servicing</h1>
-        <p>1 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-TR-CL-02 &mdash; Visa and Passport Advisory Service
+        </h1>
+        <p>The Visa and Passport Advisory Service process is designed to assist clients in obtaining necessary travel documents such as visas and passports. It involves client consultation, document submission, tracking, and communication.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-tr-cl-01.html">SHARED-TR-CL-01</a></td><td>Client Profile Creation and Preference Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-TR-CL-02</td><td>Visa and Passport Advisory Service</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-03</td><td>Pre-Departure Document Checklist and Distribution</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-04</td><td>Post-Booking Amendment and Cancellation Processing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-05</td><td>Refund and Credit Processing (Airline and Supplier)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-06</td><td>Group Travel Coordination and Group Contract Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-07</td><td>Corporate Travel Account Management</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-TR-CL-08</td><td>Travel Advisory Communication (FCDO and State Dept Alerts)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-tr-cl-02.png" data-lightbox data-title="SHARED-TR-CL-02 BPMN">
+              <img src="../../assets/img/shared-tr-cl-02.png" alt="SHARED-TR-CL-02 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-TR-CL-02</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Travel Agency & Packages</td></tr>
+            <tr><th>L2 Process</th><td>Client Management & Servicing</td></tr>
+            <tr><th>L3 Name</th><td>Visa and Passport Advisory Service</td></tr>
+            <tr><th>Trigger</th><td>Client inquiry or request for visa and passport services</td></tr>
+            <tr><th>Outcome</th><td>Successful issuance of visa and passport documents with satisfied client</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast primarily uses Salesforce and Guidewire PolicyCenter/ClaimCenter/BillingCenter. CAA SCO may use additional systems like ClientBase and Power BI for data analysis.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span> <span class="sys-tag sys-generic">ClientBase</span> <span class="sys-tag powerbi">Power BI</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initial Consultation</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Client inquiry</td>
+          <td>Consultation notes</td>
+          <td>Average consultation time < 30 minutes</td>
+          <td>Handling complex visa requirements</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Document Gathering</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Consultation notes</td>
+          <td>Collected documents</td>
+          <td>90% document submission accuracy</td>
+          <td>Missing or incorrect documents</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Submission to Visa Authority</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Collected documents</td>
+          <td>Submission confirmation</td>
+          <td>95% successful submissions</td>
+          <td>Processing delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Tracking Application Status</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Submission confirmation</td>
+          <td>Application status updates</td>
+          <td>Daily status update accuracy > 90%</td>
+          <td>Inaccurate status information</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Client Communication</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Application status updates</td>
+          <td>Client communication logs</td>
+          <td>90% client satisfaction with communication</td>
+          <td>Miscommunication or delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Document Issuance Notification</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag guidewire">Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Issuance confirmation</td>
+          <td>Client notification</td>
+          <td>100% timely issuance notifications</td>
+          <td>Late notifications</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Final Consultation</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Client notification</td>
+          <td>Final consultation notes</td>
+          <td>Average final consultation time < 20 minutes</td>
+          <td>Handling client concerns</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Feedback Collection</td>
+          <td>Travel Consultant</td>
+          <td><span class="sys-tag salesforce">Salesforce</span></td>
+          <td>Final consultation notes</td>
+          <td>Client feedback</td>
+          <td>90% client feedback response rate</td>
+          <td>Low response rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Process Review and Improvement</td>
+          <td>Process Analyst</td>
+          <td><span class="sys-tag guidewire">Salesforce, Guidewire PolicyCenter/ClaimCenter/BillingCenter</span></td>
+          <td>Client feedback</td>
+          <td>Process improvement plan</td>
+          <td>100% process review completion within 30 days</td>
+          <td>Lack of continuous improvement</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Average consultation time < 30 minutes</span> <span class="kpi-pill">90% document submission accuracy</span> <span class="kpi-pill">95% successful submissions</span> <span class="kpi-pill">Daily status update accuracy > 90%</span> <span class="kpi-pill">90% client satisfaction with communication</span> <span class="kpi-pill">100% timely issuance notifications</span> <span class="kpi-pill">Average final consultation time < 20 minutes</span> <span class="kpi-pill">90% client feedback response rate</span> <span class="kpi-pill">100% process review completion within 30 days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Processing delays by visa authorities</span> <span class="risk-pill">Missing or incorrect documents from clients</span> <span class="risk-pill">Inaccurate status information provided to clients</span> <span class="risk-pill">Miscommunication or delays in client communication</span> <span class="risk-pill">Late notifications of document issuance</span> <span class="risk-pill">Handling complex visa requirements during initial consultation</span> <span class="risk-pill">Low response rates for client feedback</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
