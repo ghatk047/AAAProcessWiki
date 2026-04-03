@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workforce Management &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-HR-WF-03 &mdash; Payroll Processing (SAP Payroll bi-weekly) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -500,33 +502,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Human Resources & Workforce</a>
+          <a href="../../shared-hr/index.html">Human Resources & Workforce</a> &rsaquo;
+          <a href="../../shared-hr/workforce-management/index.html">Workforce Management</a>
         </div>
-        <h1>👤 Workforce Management</h1>
-        <p>7 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-HR-WF-03 &mdash; Payroll Processing (SAP Payroll bi-weekly)
+        </h1>
+        <p>This process handles the bi-weekly payroll processing for AAA Northeast. It ensures timely and accurate payment of salaries to employees.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-hr-wf-01.html">SHARED-HR-WF-01</a></td><td>Staffing Model and Headcount Planning (Branch and Call Centre)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-02.html">SHARED-HR-WF-02</a></td><td>Shift Scheduling and Overtime Management (Roadside surge)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-HR-WF-03</td><td>Payroll Processing (SAP Payroll bi-weekly)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="shared-hr-wf-04.html">SHARED-HR-WF-04</a></td><td>Performance Review Cycle and Rating Distribution</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-05.html">SHARED-HR-WF-05</a></td><td>Employee Onboarding and Systems Access Provisioning</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-06.html">SHARED-HR-WF-06</a></td><td>Labour Relations and Collective Agreement Compliance</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-07.html">SHARED-HR-WF-07</a></td><td>Disciplinary and Grievance Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-hr-wf-08.html">SHARED-HR-WF-08</a></td><td>Employee Wellbeing and Benefits Administration</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-hr-wf-03.png" data-lightbox data-title="SHARED-HR-WF-03 BPMN">
+              <img src="../../assets/img/shared-hr-wf-03.png" alt="SHARED-HR-WF-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-HR-WF-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Human Resources & Workforce</td></tr>
+            <tr><th>L2 Process</th><td>Workforce Management</td></tr>
+            <tr><th>L3 Name</th><td>Payroll Processing (SAP Payroll bi-weekly)</td></tr>
+            <tr><th>Trigger</th><td>The payroll cycle is initiated at the start of each bi-weekly period, typically on a Monday.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in the accurate payment of salaries to all eligible employees via direct deposit or check.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO may have additional compliance requirements related to FSRA regulations that need to be considered during payroll processing.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag mitchell">Mitchell 1</span> <span class="sys-tag grasshopper">Grasshopper Bank</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Payroll Run</td>
+          <td>Payroll Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Employee data, time sheets, and attendance records</td>
+          <td>Payroll run initiated in SAP</td>
+          <td>Time to initiate payroll run < 2 hours</td>
+          <td>Late submission of time sheets by employees</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review Payroll Data</td>
+          <td>Payroll Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Generated payroll report</td>
+          <td>Approved payroll data</td>
+          <td>Data review completion within 1 hour</td>
+          <td>Errors in employee data entry</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Generate Payroll Report</td>
+          <td>Payroll Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved payroll data</td>
+          <td>Final payroll report</td>
+          <td>Report generation within 30 minutes</td>
+          <td>Technical issues with SAP system</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Approve Payroll Report</td>
+          <td>Finance Manager</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Final payroll report</td>
+          <td>Approved payroll for payment</td>
+          <td>Approval time < 1 hour</td>
+          <td>Delays in financial approvals</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Process Payment</td>
+          <td>Payroll Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Approved payroll for payment</td>
+          <td>Payment processed and completed</td>
+          <td>Payment processing time < 2 hours</td>
+          <td>Banking system downtime</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Final Review and Close</td>
+          <td>Payroll Administrator</td>
+          <td><span class="sys-tag sap">SAP S/4HANA</span></td>
+          <td>Payment confirmation</td>
+          <td>Closed payroll cycle</td>
+          <td>Cycle closure within 1 hour</td>
+          <td>Audit discrepancies</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Time to initiate payroll run < 2 hours</span> <span class="kpi-pill">Data review completion within 1 hour</span> <span class="kpi-pill">Report generation within 30 minutes</span> <span class="kpi-pill">Approval time < 1 hour</span> <span class="kpi-pill">Payment processing time < 2 hours</span> <span class="kpi-pill">Cycle closure within 1 hour</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Late submission of time sheets by employees</span> <span class="risk-pill">Errors in employee data entry</span> <span class="risk-pill">Technical issues with SAP system</span> <span class="risk-pill">Delays in financial approvals</span> <span class="risk-pill">Banking system downtime</span> <span class="risk-pill">Audit discrepancies</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
