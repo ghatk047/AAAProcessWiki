@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-DT-IT-05 &mdash; Zero-Trust Architecture Implementation and Access Review &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -495,45 +497,192 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>15 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-DT-IT-05 &mdash; Zero-Trust Architecture Implementation and Access Review
+        </h1>
+        <p>This process outlines the implementation of a Zero-Trust Architecture and subsequent access reviews for AAA Northeast. It ensures secure access to critical systems like Guidewire Cloud, Sabre GDS, Verisk ISO rating, Salesforce, and USD.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-01.html">CAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-02.html">AAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-02.html">CAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-03.html">AAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-03.html">CAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-04.html">AAA-DT-IT-04</a></td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-04.html">CAA-DT-IT-04</a></td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-05</td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="caa-dt-it-07.html">CAA-DT-IT-07</a></td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-08.html">AAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-08.html">CAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-09.html">AAA-DT-IT-09</a></td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-09.html">CAA-DT-IT-09</a></td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-10.html">AAA-DT-IT-10</a></td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-10.html">CAA-DT-IT-10</a></td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-dt-it-05.png" data-lightbox data-title="AAA-DT-IT-05 BPMN">
+              <img src="../../assets/img/aaa-dt-it-05.png" alt="AAA-DT-IT-05 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-DT-IT-05</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>Zero-Trust Architecture Implementation and Access Review</td></tr>
+            <tr><th>Trigger</th><td>Initiated by the IT Security Officer upon detection of a security breach or after a major system upgrade.</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in a fully implemented Zero-Trust Architecture with regular access reviews to maintain compliance and security.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on cloud-based systems for efficiency, while CAA may have more legacy systems. AAA's process emphasizes continuous monitoring and real-time threat detection.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag aws">AWS</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate Zero-Trust Architecture Plan</td>
+          <td>IT Security Officer</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Security Breach Report or System Upgrade Notice</td>
+          <td>Zero-Trust Architecture Implementation Plan</td>
+          <td>Plan completion within 1 week</td>
+          <td>Lack of clear guidelines for Zero-Trust implementation</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Define Security Policies</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Zero-Trust Architecture Implementation Plan</td>
+          <td>Security Policies Document</td>
+          <td>Policies defined within 2 weeks</td>
+          <td>Inconsistent policy enforcement across departments</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.3</td>
+          <td>Configure Identity and Access Management (IAM)</td>
+          <td>IT Security Engineer</td>
+          <td><span class="sys-tag salesforce">AWS, Salesforce</span></td>
+          <td>Security Policies Document</td>
+          <td>Configured IAM Settings</td>
+          <td>IAM configuration completed within 1 month</td>
+          <td>Complexity in managing multiple IAM systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Implement Network Segmentation</td>
+          <td>Network Engineer</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Security Policies Document</td>
+          <td>Network Segmentation Plan</td>
+          <td>Network segmentation plan completed within 2 weeks</td>
+          <td>Interdepartmental coordination for network changes</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Deploy Endpoint Protection</td>
+          <td>IT Security Engineer</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Security Policies Document</td>
+          <td>Endpoint Protection Deployment Plan</td>
+          <td>Deployment plan completed within 1 month</td>
+          <td>Resource constraints for endpoint protection</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Conduct Initial Access Review</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Access Request Forms</td>
+          <td>Access Review Report</td>
+          <td>Initial access review completed within 1 week</td>
+          <td>High volume of access requests</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Monitor and Audit Access</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag salesforce">AWS, Salesforce</span></td>
+          <td>Access Review Report</td>
+          <td>Audit Logs</td>
+          <td>Daily audit log review completed within 24 hours</td>
+          <td>Scalability issues with current monitoring tools</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Update Security Policies</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Audit Logs</td>
+          <td>Updated Security Policies Document</td>
+          <td>Policy updates completed within 1 month</td>
+          <td>Resistance to change in policy enforcement</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Report Findings</td>
+          <td>IT Security Officer</td>
+          <td><span class="sys-tag sys-generic">None</span></td>
+          <td>Audit Logs, Updated Security Policies Document</td>
+          <td>Security Review Report</td>
+          <td>Quarterly review report completed within 1 week</td>
+          <td>Resource allocation for ongoing security reviews</td>
+          <td><span class="decision-y">Y</span></td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Plan completion within 1 week</span> <span class="kpi-pill">Policies defined within 2 weeks</span> <span class="kpi-pill">IAM configuration completed within 1 month</span> <span class="kpi-pill">Network segmentation plan completed within 2 weeks</span> <span class="kpi-pill">Deployment plan completed within 1 month</span> <span class="kpi-pill">Initial access review completed within 1 week</span> <span class="kpi-pill">Daily audit log review completed within 24 hours</span> <span class="kpi-pill">Policy updates completed within 1 month</span> <span class="kpi-pill">Quarterly review report completed within 1 week</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent policy enforcement across departments</span> <span class="risk-pill">Complexity in managing multiple IAM systems</span> <span class="risk-pill">Interdepartmental coordination for network changes</span> <span class="risk-pill">Resource constraints for endpoint protection</span> <span class="risk-pill">High volume of access requests</span> <span class="risk-pill">Scalability issues with current monitoring tools</span> <span class="risk-pill">Resistance to change in policy enforcement</span> <span class="risk-pill">Resource allocation for ongoing security reviews</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
