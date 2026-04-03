@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Experience & Loyalty &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARED-MK-CX-03 &mdash; Personalised Offer Engine (Salesforce Einstein and AI) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -501,33 +503,156 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Marketing & Member Experience</a>
+          <a href="../../shared-marketing/index.html">Marketing & Member Experience</a> &rsaquo;
+          <a href="../../shared-marketing/member-experience/index.html">Member Experience & Loyalty</a>
         </div>
-        <h1>📣 Member Experience & Loyalty</h1>
-        <p>2 of 8 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-shared">SHARED</span>
+          SHARED-MK-CX-03 &mdash; Personalised Offer Engine (Salesforce Einstein and AI)
+        </h1>
+        <p>The Personalised Offer Engine leverages Salesforce Einstein AI to analyze member data and generate personalized offers for AAA Northeast members. This process aims to enhance member engagement and drive sales through targeted marketing strategies.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="shared-mk-cx-01.html">SHARED-MK-CX-01</a></td><td>Member Satisfaction NPS Programme Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="shared-mk-cx-02.html">SHARED-MK-CX-02</a></td><td>Member Loyalty and Rewards Programme Operation</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>SHARED-MK-CX-03</td><td>Personalised Offer Engine (Salesforce Einstein and AI)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-04</td><td>Contact Centre Quality Monitoring and Coaching</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-05</td><td>Member Complaint Handling and Resolution (Ombudsman process)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-06</td><td>Digital Experience Analytics and Conversion Optimisation</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-07</td><td>Co-Branded Partnership (Credit Card and Airlines and Hotels)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>SHARED-MK-CX-08</td><td>Member Research and Insights Programme</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/shared-mk-cx-03.png" data-lightbox data-title="SHARED-MK-CX-03 BPMN">
+              <img src="../../assets/img/shared-mk-cx-03.png" alt="SHARED-MK-CX-03 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>SHARED-MK-CX-03</td></tr>
+            <tr><th>Organisation</th><td>SHARED</td></tr>
+            <tr><th>L1 Domain</th><td>Marketing & Member Experience</td></tr>
+            <tr><th>L2 Process</th><td>Member Experience & Loyalty</td></tr>
+            <tr><th>L3 Name</th><td>Personalised Offer Engine (Salesforce Einstein and AI)</td></tr>
+            <tr><th>Trigger</th><td>Member activity or lifecycle event (e.g., policy renewal, claim submission)</td></tr>
+            <tr><th>Outcome</th><td>Successful completion produces personalized offers sent to members via email or mobile app, leading to increased engagement and potential sales.</td></tr>
+            <tr><th>Org Notes</th><td>CAA SCO uses a similar process but integrates with Guidewire InsuranceSuite instead of Salesforce Einstein AI. CAA SCO also has additional telematics data from CAA Connect that influences offer generation.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sap">SAP S/4HANA</span> <span class="sys-tag aaa-app">AAA App</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Data Collection</td>
+          <td>Data Analyst</td>
+          <td><span class="sys-tag salesforce">Salesforce, SAP S/4HANA</span></td>
+          <td>Member activity logs, policy details, claim history</td>
+          <td>Aggregated member data</td>
+          <td>Data collection accuracy rate > 95%</td>
+          <td>Inconsistent data quality from different systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Data Enrichment</td>
+          <td>Data Scientist</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI</span></td>
+          <td>Aggregated member data</td>
+          <td>Enriched member profile with predictive insights</td>
+          <td>Insight accuracy rate > 80%</td>
+          <td>Model drift affecting insight quality</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Offer Generation</td>
+          <td>Marketing Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce Einstein AI, Salesforce</span></td>
+          <td>Enriched member profile</td>
+          <td>Personalized offer templates</td>
+          <td>Number of unique offers generated per day > 1000</td>
+          <td>Scalability issues with high volume of data</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Offer Review</td>
+          <td>Marketing Manager</td>
+          <td><span class="sys-tag salesforce">Salesforce, SAP S/4HANA</span></td>
+          <td>Personalized offer templates</td>
+          <td>Approved offers for deployment</td>
+          <td>Review cycle time < 1 hour</td>
+          <td>Delays in review process affecting timely offer delivery</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Offer Deployment</td>
+          <td>Digital Marketing Specialist</td>
+          <td><span class="sys-tag salesforce">Salesforce, AAA App</span></td>
+          <td>Approved offers for deployment</td>
+          <td>Offers sent to members</td>
+          <td>Deployment success rate > 98%</td>
+          <td>Technical issues with email or app delivery</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Feedback Collection</td>
+          <td>Customer Service Representative</td>
+          <td><span class="sys-tag salesforce">Salesforce, SAP S/4HANA</span></td>
+          <td>Member feedback on offers</td>
+          <td>Feedback analysis report</td>
+          <td>Response rate to feedback requests > 70%</td>
+          <td>Low response rates from members</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Data collection accuracy rate > 95%</span> <span class="kpi-pill">Insight accuracy rate > 80%</span> <span class="kpi-pill">Number of unique offers generated per day > 1000</span> <span class="kpi-pill">Review cycle time < 1 hour</span> <span class="kpi-pill">Deployment success rate > 98%</span> <span class="kpi-pill">Response rate to feedback requests > 70%</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Inconsistent data quality from different systems</span> <span class="risk-pill">Model drift affecting insight quality</span> <span class="risk-pill">Scalability issues with high volume of data</span> <span class="risk-pill">Delays in review process affecting timely offer delivery</span> <span class="risk-pill">Technical issues with email or app delivery</span> <span class="risk-pill">Low response rates from members</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
