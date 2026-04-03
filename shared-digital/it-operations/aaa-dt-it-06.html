@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Operations & Cybersecurity &mdash; AAA / CAA Process Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA-DT-IT-06 &mdash; PCI DSS Compliance (Payment Card Processing) &mdash; AAA / CAA Process Wiki</title>
   <link rel="stylesheet" href="../../assets/css/wiki.css">
 </head>
 <body>
@@ -13,7 +14,8 @@
     <span class="topbar-spacer"></span>
   </div>
   <div class="wiki-layout">
-    <nav id="sidebar"><button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
+    <nav id="sidebar">
+      <button id="sidebarToggle" title="Collapse sidebar">&#9664;</button>
 <nav class="wiki-nav">
 <div class="nav-domain">
   <a class="nav-l1" href="../../shared-membership/index.html"><span class="nav-l1-icon">👥</span><span class="nav-org-dot shared"></span><span class="nav-l1-text">Membership Management</span><span class="nav-l1-caret">&#9654;</span></a>
@@ -497,45 +499,180 @@
   </div>
 </div>
 </nav>
-</nav>
+
+    </nav>
     <main class="wiki-main">
       <div class="page-header">
         <div class="breadcrumb">
           <a href="../../index.html">Home</a> &rsaquo;
-          <a href="../index.html">Digital & Technology</a>
+          <a href="../../shared-digital/index.html">Digital & Technology</a> &rsaquo;
+          <a href="../../shared-digital/it-operations/index.html">IT Operations & Cybersecurity</a>
         </div>
-        <h1>💻 IT Operations & Cybersecurity</h1>
-        <p>17 of 20 processes complete</p>
+        <h1>
+          <span class="pid-badge org-badge-aaa">AAA</span>
+          AAA-DT-IT-06 &mdash; PCI DSS Compliance (Payment Card Processing)
+        </h1>
+        <p>This process ensures PCI DSS compliance for payment card processing in AAA Northeast, covering state DOI, Guidewire Cloud, Sabre GDS, Verisk ISO rating, Salesforce, and USD transactions.</p>
       </div>
+
+      <!-- BPMN Diagram -->
       <div class="card">
-        <div class="card-header">Process List</div>
+        <div class="card-header">&#x1F5FA; BPMN Process Flow</div>
         <div class="card-body">
-          <table class="l4-table" style="min-width:500px">
-            <thead><tr><th>PID</th><th>L3 Process Name</th><th>Status</th></tr></thead>
-            <tbody><tr><td><a href="aaa-dt-it-01.html">AAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-01.html">CAA-DT-IT-01</a></td><td>Guidewire Cloud Platform Administration and Upgrades</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-02.html">AAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-02.html">CAA-DT-IT-02</a></td><td>Salesforce Org Management and Release Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-03.html">AAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-03.html">CAA-DT-IT-03</a></td><td>AWS Cloud Infrastructure Operations and Cost Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-04.html">AAA-DT-IT-04</a></td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-04.html">CAA-DT-IT-04</a></td><td>Cybersecurity Monitoring and SOC Operations (Splunk and SIEM)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-05.html">AAA-DT-IT-05</a></td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-05.html">CAA-DT-IT-05</a></td><td>Zero-Trust Architecture Implementation and Access Review</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td>AAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>CAA-DT-IT-06</td><td>PCI DSS Compliance (Payment Card Processing)</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td>AAA-DT-IT-07</td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#94a3b8">&#x23F3; Queued</span></td></tr>
-<tr><td><a href="caa-dt-it-07.html">CAA-DT-IT-07</a></td><td>Disaster Recovery and Business Continuity Testing</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-08.html">AAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-08.html">CAA-DT-IT-08</a></td><td>IT Service Desk and ITSM</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-09.html">AAA-DT-IT-09</a></td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-09.html">CAA-DT-IT-09</a></td><td>Data Governance and Snowflake Data Platform Management</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="aaa-dt-it-10.html">AAA-DT-IT-10</a></td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-<tr><td><a href="caa-dt-it-10.html">CAA-DT-IT-10</a></td><td>AI and ML Model Governance (Salesforce Einstein and Agentforce)</td><td><span style="color:#16a34a;font-weight:700">&#x2705; Complete</span></td></tr>
-</tbody>
+          <div class="diagram-wrap">
+            <a href="../../assets/img/aaa-dt-it-06.png" data-lightbox data-title="AAA-DT-IT-06 BPMN">
+              <img src="../../assets/img/aaa-dt-it-06.png" alt="AAA-DT-IT-06 BPMN Diagram">
+            </a>
+            <p>Click diagram to zoom &amp; pan &bull; Scroll to zoom &bull; Drag to pan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Attributes -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; Process Attributes</div>
+        <div class="card-body">
+          <table class="attr-table">
+            <tr><th>Process ID</th><td>AAA-DT-IT-06</td></tr>
+            <tr><th>Organisation</th><td>AAA</td></tr>
+            <tr><th>L1 Domain</th><td>Digital & Technology</td></tr>
+            <tr><th>L2 Process</th><td>IT Operations & Cybersecurity</td></tr>
+            <tr><th>L3 Name</th><td>PCI DSS Compliance (Payment Card Processing)</td></tr>
+            <tr><th>Trigger</th><td>Annual audit or detection of a security breach</td></tr>
+            <tr><th>Outcome</th><td>Successful completion results in certified PCI DSS compliance, ensuring secure handling of payment card data.</td></tr>
+            <tr><th>Org Notes</th><td>AAA Northeast focuses on state-specific regulations and integrates with multiple cloud-based systems for seamless operations. CAA SCO has different regional requirements and uses different GDS solutions.</td></tr>
+            <tr><th>Systems</th><td><span class="sys-tag guidewire">Guidewire Cloud</span> <span class="sys-tag salesforce">Salesforce</span> <span class="sys-tag sabre">Sabre GDS</span> <span class="sys-tag verisk">Verisk ISO rating</span></td></tr>
           </table>
         </div>
       </div>
+
+      <!-- L4 Steps -->
+      <div class="card">
+        <div class="card-header">&#x1F4CB; L4 Process Steps</div>
+        <div class="card-body">
+          <div class="l4-table-wrap">
+            <table class="l4-table">
+              <thead>
+                <tr>
+                  <th>Step</th><th>Name</th><th>Role</th><th>System</th>
+                  <th>Input</th><th>Output</th><th>KPI</th><th>Pain Point / Risk</th>
+                  <th>Decision?</th><th>Exception?</th>
+                </tr>
+              </thead>
+              <tbody>
+        <tr>
+          <td class="step-num">1.1</td>
+          <td>Initiate PCI DSS Audit</td>
+          <td>IT Security Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud</span></td>
+          <td>Audit checklist</td>
+          <td>Audit report</td>
+          <td>Audit completion time within 30 days</td>
+          <td>Complex integration with multiple systems</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">1.2</td>
+          <td>Review and Remediate Findings</td>
+          <td>IT Security Analyst</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Salesforce</span></td>
+          <td>Audit report</td>
+          <td>Remediation plan</td>
+          <td>90% remediation within 60 days</td>
+          <td>Resource allocation for remediation</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">2.1</td>
+          <td>Update Payment Processing Policies</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag guidewire">Salesforce, Guidewire Cloud</span></td>
+          <td>Remediation plan</td>
+          <td>Updated policies</td>
+          <td>Policy updates completed within 30 days</td>
+          <td>Stakeholder approval delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.2</td>
+          <td>Conduct Training for Staff</td>
+          <td>IT Security Trainer</td>
+          <td><span class="sys-tag guidewire">Salesforce, Guidewire Cloud</span></td>
+          <td>Updated policies</td>
+          <td>Training records</td>
+          <td>100% staff trained within 30 days</td>
+          <td>Low attendance rates</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">2.3</td>
+          <td>Test Payment Processing Systems</td>
+          <td>IT Test Engineer</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Sabre GDS</span></td>
+          <td>Updated policies</td>
+          <td>Test results</td>
+          <td>95% successful test cases within 10 days</td>
+          <td>System integration issues</td>
+          <td><span class="decision-y">Y</span></td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td class="step-num">3.1</td>
+          <td>Finalize Remediation and Documentation</td>
+          <td>IT Security Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Salesforce</span></td>
+          <td>Test results</td>
+          <td>Final remediation report</td>
+          <td>Remediation report submitted within 10 days</td>
+          <td>Documentation errors</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.2</td>
+          <td>Obtain PCI DSS Certification</td>
+          <td>Compliance Officer</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Salesforce</span></td>
+          <td>Final remediation report</td>
+          <td>PCI DSS certification</td>
+          <td>Certification received within 30 days</td>
+          <td>Vendor delays</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+        <tr>
+          <td class="step-num">3.3</td>
+          <td>Review and Update Compliance Plan</td>
+          <td>IT Security Manager</td>
+          <td><span class="sys-tag guidewire">Guidewire Cloud, Salesforce</span></td>
+          <td>PCI DSS certification</td>
+          <td>Updated compliance plan</td>
+          <td>Plan updates completed within 10 days</td>
+          <td>Resource constraints</td>
+          <td>N</td>
+          <td><span class="exception-y">Y</span></td>
+        </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs & Risks -->
+      <div class="card">
+        <div class="card-header">&#x1F4CA; KPIs &amp; Risk Register</div>
+        <div class="card-body">
+          <p class="mb-8"><strong>KPIs</strong></p>
+          <div class="kpi-list mb-8"><span class="kpi-pill">Audit completion time within 30 days</span> <span class="kpi-pill">90% remediation within 60 days</span> <span class="kpi-pill">Policy updates completed within 30 days</span> <span class="kpi-pill">100% staff trained within 30 days</span> <span class="kpi-pill">95% successful test cases within 10 days</span> <span class="kpi-pill">Remediation report submitted within 10 days</span> <span class="kpi-pill">Certification received within 30 days</span> <span class="kpi-pill">Plan updates completed within 10 days</span></div>
+          <p class="mb-8" style="margin-top:16px"><strong>Key Risks</strong></p>
+          <div class="kpi-list"><span class="risk-pill">Complex integration with multiple systems</span> <span class="risk-pill">Resource allocation for remediation</span> <span class="risk-pill">Stakeholder approval delays</span> <span class="risk-pill">Low attendance rates</span> <span class="risk-pill">System integration issues</span> <span class="risk-pill">Documentation errors</span> <span class="risk-pill">Vendor delays</span> <span class="risk-pill">Resource constraints</span></div>
+        </div>
+      </div>
+
     </main>
   </div>
   <div id="lightbox"><img id="lightboxImg" src="" alt=""></div>
