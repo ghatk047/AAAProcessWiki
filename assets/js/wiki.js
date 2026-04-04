@@ -35,12 +35,21 @@
         if (sidebar.classList.contains('collapsed')) return;
         var domain = el.closest('.nav-domain');
         if (!domain) return;
+        var href = el.getAttribute('href');
+        var isOpen = domain.classList.contains('open');
+        /* Close all other domains */
         sidebar.querySelectorAll('.nav-domain.open').forEach(function (d) {
           if (d !== domain) d.classList.remove('open');
         });
+        /* If already open and has a nav target: navigate without toggling closed */
+        if (isOpen && href && href !== '#') {
+          e.preventDefault();
+          window.location.href = href;
+          return;
+        }
+        /* Otherwise toggle open/closed */
         domain.classList.toggle('open');
         e.preventDefault();
-        var href = el.getAttribute('href');
         if (href && href !== '#') setTimeout(function(){ window.location.href = href; }, 120);
       });
     });
